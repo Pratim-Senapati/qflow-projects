@@ -1,0 +1,26 @@
+Qflow DRC logfile created on Tue Feb 18 00:35:47 IST 2025
+magic -dnull -noconsole  /home/tombert/qflow_projects/demo_qflow/layout/run_drc_map9v3.tcl
+
+Magic 8.3 revision 50 - Compiled on Tue Feb 11 22:24:09 IST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+Loading "/home/tombert/qflow_projects/demo_qflow/layout/run_drc_map9v3.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+This action cannot be undone.
+LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
+LEF read, Line 17 (Message): Unknown keyword "PIN" in LEF file; ignoring.
+LEF read: Processed 3179 lines.
+Scaled magic input cell map9v3 geometry by factor of 2
+Processing timestamp mismatches: FILL, BUFX2, INVX1, NOR2X1, AOI21X1, DFFSR, NAND2X1, OAI21X1, INVX2, NAND3X1, MUX2X1, AND2X2, XOR2X1, XNOR2X1, CLKBUF1, BUFX4, NOR3X1, AOI22X1, INVX8, INVX4.
+drc = 0
+DRC checking script ended on Tue Feb 18 00:35:47 IST 2025

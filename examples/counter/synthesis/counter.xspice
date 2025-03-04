@@ -1,0 +1,67 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+*SPICE netlist created from BLIF module counter by blif2BSpice
+.subckt counter a_vdd a_gnd a_clk a_rst a_vdd a_gnd a_count_0_ a_count_1_ a_count_2_ a_count_3_
+ANOR2X1_1 [_4_ _3_] _0__2_ d_lut_NOR2X1
+AXNOR2X1_1 [_2_ _5__3_] _0__3_ d_lut_XNOR2X1
+AINVX1_1 [_5__0_] _0__0_ d_lut_INVX1
+AINVX2_1 [rst] _1_ d_lut_INVX2
+ABUFX2_1 [_5__0_] count_0_ d_lut_BUFX2
+ABUFX2_2 [_5__1_] count_1_ d_lut_BUFX2
+ABUFX2_3 [_5__2_] count_2_ d_lut_BUFX2
+ABUFX2_4 [_5__3_] count_3_ d_lut_BUFX2
+ADFFSR_1 _0__0_ clk ~vdd ~_1_ _5__0_ NULL ddflop
+ADFFSR_2 _0__1_ clk ~vdd ~_1_ _5__1_ NULL ddflop
+ADFFSR_3 _0__2_ clk ~vdd ~_1_ _5__2_ NULL ddflop
+ADFFSR_4 _0__3_ clk ~vdd ~_1_ _5__3_ NULL ddflop
+AXOR2X1_1 [_5__0_ _5__1_] _0__1_ d_lut_XOR2X1
+ANAND3X1_1 [_5__0_ _5__1_ _5__2_] _2_ d_lut_NAND3X1
+AINVX1_2 [_2_] _3_ d_lut_INVX1
+AAOI21X1_1 [_5__0_ _5__1_ _5__2_] _4_ d_lut_AOI21X1
+ABUFX2_5 [gnd] gnd d_lut_BUFX2
+ABUFX2_6 [vdd] vdd d_lut_BUFX2
+
+.model todig_3v3 adc_bridge(in_high=2.1999999999999997 in_low=1.0999999999999999 rise_delay=10n fall_delay=10n)
+.model toana_3v3 dac_bridge(out_high=3.3 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=1n fall_delay=1n)
+.model dzero d_pulldown(load=1p)
+.model done d_pullup(load=1p)
+
+AD2A1 [vdd] [a_vdd] toana_3v3
+AD2A2 [gnd] [a_gnd] toana_3v3
+AA2D1 [a_clk] [clk] todig_3v3
+AA2D2 [a_rst] [rst] todig_3v3
+AD2A3 [count_0_] [a_count_0_] toana_3v3
+AD2A4 [count_1_] [a_count_1_] toana_3v3
+AD2A5 [count_2_] [a_count_2_] toana_3v3
+AD2A6 [count_3_] [a_count_3_] toana_3v3
+
+.ends counter
+ 
+
+* NOR2X1 (!(A+B))
+.model d_lut_NOR2X1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "1000")
+* XNOR2X1 (!(A^B))
+.model d_lut_XNOR2X1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "1001")
+* INVX1 (!A)
+.model d_lut_INVX1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "10")
+* INVX2 (!A)
+.model d_lut_INVX2 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "10")
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+* DFFSR P0002
+* XOR2X1 (A^B)
+.model d_lut_XOR2X1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "0110")
+* NAND3X1 (!((A B) C))
+.model d_lut_NAND3X1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "11111110")
+* AOI21X1 (!((A B)+C))
+.model d_lut_AOI21X1 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "11100000")
+.end

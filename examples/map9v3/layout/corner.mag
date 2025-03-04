@@ -1,0 +1,9 @@
+magic
+tech scmos
+timestamp 0
+<< properties >>
+string LEFclass PAD
+string FIXED_BBOX 0 0 1500 1500
+string LEFsymmetry R90 Y
+string LEFview TRUE
+<< end >>

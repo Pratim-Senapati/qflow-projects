@@ -1,0 +1,28 @@
+magic
+tech scmos
+timestamp 1739818576
+<< metal1 >>
+rect 3 1010 447 1497
+rect 0 521 450 1010
+rect 3 489 447 521
+rect 0 0 450 489
+<< metal2 >>
+rect 3 1010 447 1497
+rect 0 648 450 1010
+rect 3 626 447 648
+rect 0 521 450 626
+rect 3 489 447 521
+rect 0 384 450 489
+rect 3 362 447 384
+rect 0 0 450 362
+<< metal3 >>
+rect 3 3 447 1497
+<< metal4 >>
+rect 3 3 447 1497
+<< properties >>
+string LEFsite IO
+string LEFclass PAD
+string FIXED_BBOX 0 0 450 1500
+string LEFsymmetry R90
+string LEFview TRUE
+<< end >>

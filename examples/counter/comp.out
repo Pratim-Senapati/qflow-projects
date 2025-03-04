@@ -1,0 +1,49 @@
+Flattening unmatched subcell XOR2X1 in circuit counter (2)(1 instance)
+Flattening unmatched subcell NAND3X1 in circuit counter (2)(1 instance)
+Flattening unmatched subcell BUFX2 in circuit counter (2)(4 instances)
+Flattening unmatched subcell AOI21X1 in circuit counter (2)(1 instance)
+Flattening unmatched subcell INVX2 in circuit counter (2)(1 instance)
+Flattening unmatched subcell NOR2X1 in circuit counter (2)(1 instance)
+Flattening unmatched subcell DFFSR in circuit counter (2)(4 instances)
+Flattening unmatched subcell XNOR2X1 in circuit counter (2)(1 instance)
+Flattening unmatched subcell INVX1 in circuit counter (2)(2 instances)
+
+Cell counter (1) disconnected node: a_vdd
+Cell counter (1) disconnected node: a_gnd
+Cell counter (1) disconnected node: a_clk
+Cell counter (1) disconnected node: a_rst
+Cell counter (1) disconnected node: a_count_0_
+Cell counter (1) disconnected node: a_count_1_
+Cell counter (1) disconnected node: a_count_2_
+Cell counter (1) disconnected node: a_count_3_
+Cell counter (2) disconnected node: vdd
+Cell counter (2) disconnected node: clk
+Cell counter (2) disconnected node: rst
+Cell counter (2) disconnected node: count[0]
+Cell counter (2) disconnected node: count[1]
+Cell counter (2) disconnected node: count[2]
+Cell counter (2) disconnected node: count[3]
+
+Subcircuit pins:
+Circuit 1: counter                         |Circuit 2: counter                         
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |vdd                                        
+(no matching pin)                          |clk                                        
+(no matching pin)                          |rst                                        
+(no matching pin)                          |count[0]                                   
+(no matching pin)                          |count[1]                                   
+(no matching pin)                          |count[2]                                   
+(no matching pin)                          |count[3]                                   
+a_vdd                                      |(no matching pin)                          
+a_gnd                                      |(no matching pin)                          
+a_clk                                      |(no matching pin)                          
+a_rst                                      |(no matching pin)                          
+a_count_0_                                 |(no matching pin)                          
+a_count_1_                                 |(no matching pin)                          
+a_count_2_                                 |(no matching pin)                          
+a_count_3_                                 |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes counter and counter are equivalent.
+
+Final result: Verify:  cell layout/counter.spice has no elements and/or nodes.  Not checked.

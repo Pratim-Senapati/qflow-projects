@@ -1,0 +1,417 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Q",
+        "CLK",
+        "R",
+        "S",
+        "D",
+        "gnd",
+        "vdd"
+      ], [
+        "Q",
+        "CLK",
+        "R",
+        "S",
+        "D",
+        "gnd",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "cordic",
+      "cordic"
+   ],
+   "devices": [
+       [
+         ["AND2X2", 6],
+         ["NAND2X1", 17],
+         ["DFFSR", 32],
+         ["XNOR2X1", 14],
+         ["INVX1", 22],
+         ["INVX8", 1],
+         ["NOR3X1", 7],
+         ["CLKBUF1", 5],
+         ["NAND3X1", 9],
+         ["XOR2X1", 6],
+         ["BUFX4", 5],
+         ["OAI21X1", 8],
+         ["BUFX2", 32],
+         ["AOI21X1", 1],
+         ["NOR2X1", 12 ]
+       ], [
+         ["AND2X2", 6 ],
+         ["NAND2X1", 17 ],
+         ["DFFSR", 32 ],
+         ["XNOR2X1", 14 ],
+         ["INVX1", 22 ],
+         ["INVX8", 1 ],
+         ["NOR3X1", 7 ],
+         ["CLKBUF1", 5 ],
+         ["NAND3X1", 9 ],
+         ["XOR2X1", 6 ],
+         ["BUFX4", 5 ],
+         ["OAI21X1", 8 ],
+         ["BUFX2", 32 ],
+         ["AOI21X1", 1 ],
+         ["NOR2X1", 12 ]
+       ]
+   ],
+   "nets": [
+    181,
+    181
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "rst",
+        "sine[12]",
+        "sine[10]",
+        "cosine[14]",
+        "cosine[13]",
+        "cosine[5]",
+        "cosine[11]",
+        "sine[6]",
+        "cosine[3]",
+        "sine[4]",
+        "cosine[7]",
+        "cosine[9]",
+        "cosine[1]",
+        "sine[2]",
+        "sine[1]",
+        "sine[0]",
+        "sine[11]",
+        "sine[9]",
+        "sine[8]",
+        "sine[7]",
+        "sine[5]",
+        "sine[3]",
+        "sine[14]",
+        "sine[13]",
+        "cosine[15]",
+        "cosine[8]",
+        "cosine[12]",
+        "cosine[6]",
+        "cosine[10]",
+        "sine[15]",
+        "cosine[2]",
+        "cosine[4]",
+        "cosine[0]",
+        "vdd",
+        "gnd",
+        "clk",
+        "theta[0]",
+        "theta[1]",
+        "theta[2]",
+        "theta[3]",
+        "theta[4]",
+        "theta[5]",
+        "theta[6]",
+        "theta[7]",
+        "theta[8]",
+        "theta[9]",
+        "theta[10]",
+        "theta[11]",
+        "theta[12]",
+        "theta[13]",
+        "theta[14]",
+        "theta[15]"
+      ], [
+        "rst",
+        "sine[12]",
+        "sine[10]",
+        "cosine[14]",
+        "cosine[13]",
+        "cosine[5]",
+        "cosine[11]",
+        "sine[6]",
+        "cosine[3]",
+        "sine[4]",
+        "cosine[7]",
+        "cosine[9]",
+        "cosine[1]",
+        "sine[2]",
+        "sine[1]",
+        "sine[0]",
+        "sine[11]",
+        "sine[9]",
+        "sine[8]",
+        "sine[7]",
+        "sine[5]",
+        "sine[3]",
+        "sine[14]",
+        "sine[13]",
+        "cosine[15]",
+        "cosine[8]",
+        "cosine[12]",
+        "cosine[6]",
+        "cosine[10]",
+        "sine[15]",
+        "cosine[2]",
+        "cosine[4]",
+        "cosine[0]",
+        "vdd",
+        "gnd",
+        "clk",
+        "theta[0]",
+        "theta[1]",
+        "theta[2]",
+        "theta[3]",
+        "theta[4]",
+        "theta[5]",
+        "theta[6]",
+        "theta[7]",
+        "theta[8]",
+        "theta[9]",
+        "theta[10]",
+        "theta[11]",
+        "theta[12]",
+        "theta[13]",
+        "theta[14]",
+        "theta[15]"
+      ]
+   ]
+  }
+]

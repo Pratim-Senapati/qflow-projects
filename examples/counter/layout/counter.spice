@@ -1,0 +1,82 @@
+* NGSPICE file created from counter.ext - technology: scmos
+
+* Black-box entry subcircuit for FILL abstract view
+.subckt FILL gnd vdd
+.ends
+
+* Black-box entry subcircuit for NAND3X1 abstract view
+.subckt NAND3X1 A B C gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for XOR2X1 abstract view
+.subckt XOR2X1 A B gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for BUFX2 abstract view
+.subckt BUFX2 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for AOI21X1 abstract view
+.subckt AOI21X1 A B C gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for INVX2 abstract view
+.subckt INVX2 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for NOR2X1 abstract view
+.subckt NOR2X1 A B gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for DFFSR abstract view
+.subckt DFFSR Q CLK R S D gnd vdd
+.ends
+
+* Black-box entry subcircuit for XNOR2X1 abstract view
+.subckt XNOR2X1 A B gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for INVX1 abstract view
+.subckt INVX1 A gnd Y vdd
+.ends
+
+.subckt counter vdd gnd clk rst count[0] count[1] count[2] count[3]
+XFILL_0_0_0 gnd vdd FILL
+XFILL_0_0_1 gnd vdd FILL
+XFILL_0_0_2 gnd vdd FILL
+XNAND3X1_1 BUFX2_1/A BUFX2_2/A BUFX2_3/A gnd INVX1_2/A vdd NAND3X1
+XFILL_1_1_0 gnd vdd FILL
+XXOR2X1_1 BUFX2_1/A BUFX2_2/A gnd DFFSR_2/D vdd XOR2X1
+XFILL_1_1_1 gnd vdd FILL
+XFILL_1_1_2 gnd vdd FILL
+XBUFX2_1 BUFX2_1/A gnd count[0] vdd BUFX2
+XBUFX2_2 BUFX2_2/A gnd count[1] vdd BUFX2
+XAOI21X1_1 BUFX2_1/A BUFX2_2/A BUFX2_3/A gnd NOR2X1_1/A vdd AOI21X1
+XINVX2_1 rst gnd DFFSR_3/R vdd INVX2
+XBUFX2_3 BUFX2_3/A gnd count[2] vdd BUFX2
+XNOR2X1_1 NOR2X1_1/A INVX1_2/Y gnd DFFSR_3/D vdd NOR2X1
+XFILL_2_0_0 gnd vdd FILL
+XBUFX2_4 DFFSR_4/Q gnd count[3] vdd BUFX2
+XFILL_2_0_2 gnd vdd FILL
+XFILL_2_0_1 gnd vdd FILL
+XBUFX2_5 gnd gnd gnd vdd BUFX2
+XFILL_0_1_0 gnd vdd FILL
+XBUFX2_6 vdd gnd vdd vdd BUFX2
+XFILL_0_1_1 gnd vdd FILL
+XFILL_0_1_2 gnd vdd FILL
+XFILL_1_0_1 gnd vdd FILL
+XFILL_1_0_0 gnd vdd FILL
+XFILL_1_0_2 gnd vdd FILL
+XDFFSR_1 BUFX2_1/A clk DFFSR_3/R vdd DFFSR_1/D gnd vdd DFFSR
+XDFFSR_3 BUFX2_3/A clk DFFSR_3/R vdd DFFSR_3/D gnd vdd DFFSR
+XDFFSR_2 BUFX2_2/A clk DFFSR_3/R vdd DFFSR_2/D gnd vdd DFFSR
+XFILL_2_1_0 gnd vdd FILL
+XDFFSR_4 DFFSR_4/Q clk DFFSR_3/R vdd DFFSR_4/D gnd vdd DFFSR
+XFILL_2_1_1 gnd vdd FILL
+XFILL_2_1 gnd vdd FILL
+XXNOR2X1_1 INVX1_2/A DFFSR_4/Q gnd DFFSR_4/D vdd XNOR2X1
+XINVX1_1 BUFX2_1/A gnd DFFSR_1/D vdd INVX1
+XFILL_2_1_2 gnd vdd FILL
+XINVX1_2 INVX1_2/A gnd INVX1_2/Y vdd INVX1
+.ends
+
