@@ -11,7 +11,7 @@ This repository contains **pre-generated results** of different Verilog projects
    ```
 2. **Run setup script (installs required tools)**
    ```sh
-   python3 install_and_run.py
+   python install_and_run.py
    ```
 3. **Explore Results**
    Open examples/ folder to see different projects.
