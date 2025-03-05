@@ -6,12 +6,12 @@ This repository contains **pre-generated results** of different Verilog projects
 
 1. **Clone this repo**
    ```sh
-   git clone https://github.com/yourusername/qflow_results.git
-   cd qflow_results
+   git clone https://github.com/Pratim-Senapati/qflow-projects.git
+   cd qflow-projects
    ```
 2. **Run setup script (installs required tools)**
    ```sh
-   bash install_and_view.sh
+   python3 install_and_run.py
    ```
 3. **Explore Results**
    Open examples/ folder to see different projects.
