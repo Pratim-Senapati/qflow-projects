@@ -5,13 +5,13 @@ import platform
 
 def install_tools_linux():
     """Installs Qflow and dependencies automatically."""
-        print("Updating system and installing required tools...")
-        subprocess.run(["sudo", "apt", "update"])
-        subprocess.run([
-            "sudo", "apt", "install", "-y",
-            "qflow", "magic", "netgen", "yosys", "graywolf", "imagemagick"
-        ])
-        print("Installation complete.")
+    print("Updating system and installing required tools...")
+    subprocess.run(["sudo", "apt", "update"])
+    subprocess.run([
+        "sudo", "apt", "install", "-y",
+        "qflow", "magic", "netgen", "yosys", "graywolf", "imagemagick"
+    ])
+    print("Installation complete.")
 
 def setup_qflow():
     """Sets up tech files and configuration files automatically."""
