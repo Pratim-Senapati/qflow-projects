@@ -4,19 +4,48 @@ import sys
 import platform
 
 def install_tools_linux():
-    """Installs required tools on Linux (Ubuntu/Debian)."""
-    print("Installing required tools on Linux...")
+    """Installs Qflow and dependencies automatically."""
+        print("Updating system and installing required tools...")
+        subprocess.run(["sudo", "apt", "update"])
+        subprocess.run([
+            "sudo", "apt", "install", "-y",
+            "qflow", "magic", "netgen", "yosys", "graywolf", "imagemagick"
+        ])
+        print("Installation complete.")
 
-    try:
-        subprocess.run(["sudo", "apt", "update"], check=True)
-        subprocess.run(["sudo", "apt", "install", "-y", "magic", "netgen", "imagemagick"], check=True)
-    except subprocess.CalledProcessError:
-        print("Error installing packages. Please check your internet connection and try again.")
-        sys.exit(1)
+def setup_qflow():
+    """Sets up tech files and configuration files automatically."""
+    print("Setting up Qflow and Magic configuration...")
 
-    print("Setup complete!")
-    print("You can now explore the results in the 'examples' folder.")
-    print("To view layouts, use: magic -d XR -T <layout_file>.mag")
+    # Set up .magicrc
+    magicrc_content = """
+path search /usr/local/lib/magic/sys
+tech scmos
+"""
+    magicrc_path = os.path.expanduser("~/.magicrc")
+    with open(magicrc_path, "w") as f:
+        f.write(magicrc_content)
+    print(f"Created: {magicrc_path}")
+
+    # Set up Netgen config
+    netgenrc_content = """
+readnet /usr/local/lib/netgen/scmos.setup
+"""
+    netgenrc_path = os.path.expanduser("~/.netgenrc")
+    with open(netgenrc_path, "w") as f:
+        f.write(netgenrc_content)
+    print(f"Created: {netgenrc_path}")
+
+    # Set up Yosys config
+    yosys_config_content = """
+setattr -set keep_hierarchy 1
+"""
+    yosys_config_path = os.path.expanduser("~/.yosys_config.tcl")
+    with open(yosys_config_path, "w") as f:
+        f.write(yosys_config_content)
+    print(f"Created: {yosys_config_path}")
+
+    print("Qflow setup complete.")
 
 def windows_instructions():
     """Displays instructions for Windows users."""
@@ -28,11 +57,19 @@ def windows_instructions():
     print("   python3 install_and_run.py")
     print("3. Alternatively, use a Linux VM or dual-boot setup.\n")
 
+def main():
+    """Runs the full setup process."""
+    install_tools_linux()
+    setup_qflow()
+    print("\nSetup is complete! You can now use Qflow as expected.")
+    print("To view results, try running:")
+    print("magic -T scmos.tech examples/project1/layout/final_layout.mag")
+
 if __name__ == "__main__":
     os_type = platform.system()
 
     if os_type == "Linux":
-        install_tools_linux()
+        main()
     elif os_type == "Windows":
         windows_instructions()
     else:
