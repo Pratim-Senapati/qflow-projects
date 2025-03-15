@@ -10,47 +10,47 @@ def run_command(command):
     except subprocess.CalledProcessError as e:
         print(f"Error running command: {' '.join(command)}")
         print(e)
+        sys.exit(1)
 
-def install_tools_linux():
-    """Installs Qflow, Graywolf, and dependencies properly."""
-    print("Updating system and installing required tools...")
+def install_dependencies():
+    """Installs necessary dependencies before building tools manually."""
+    print("Updating system and installing dependencies...")
     run_command(["sudo", "apt", "update"])
-
-    # Add Qflow PPA (fixes "no installation candidate" issue)
-    print("Adding Qflow PPA...")
-    run_command(["sudo", "add-apt-repository", "-y", "ppa:open-silicon/qflow"])
-    run_command(["sudo", "apt", "update"])
-
-    # Install available tools
     run_command([
         "sudo", "apt", "install", "-y",
-        "qflow", "magic", "netgen", "yosys", "imagemagick"
+        "build-essential", "cmake", "git", "tcl-dev", "tk-dev", "libx11-dev",
+        "libxaw7-dev", "libxpm-dev", "flex", "bison", "gawk", "libreadline-dev",
+        "imagemagick", "x11-apps", "python3", "python3-tk", "libglib2.0-dev"
     ])
+    print("Dependencies installed.")
 
-    # Install Graywolf manually if unavailable
-    print("Checking if Graywolf is installed...")
-    graywolf_installed = subprocess.run(
-        ["which", "graywolf"], capture_output=True, text=True
-    ).stdout.strip()
+def build_qflow():
+    """Clones and builds Qflow from source."""
+    print("Building Qflow from source...")
+    run_command(["git", "clone", "https://github.com/RTimothyEdwards/qflow.git"])
+    os.chdir("qflow")
+    run_command(["make"])
+    run_command(["sudo", "make", "install"])
+    os.chdir("..")  # Back to original directory
+    print("Qflow installed successfully.")
 
-    if not graywolf_installed:
-        print("Graywolf not found, installing manually...")
-        run_command(["git", "clone", "https://github.com/rubund/graywolf.git"])
-        os.chdir("graywolf")
-        run_command(["mkdir", "-p", "build"])
-        os.chdir("build")
-        run_command(["cmake", ".."])
-        run_command(["make"])
-        run_command(["sudo", "make", "install"])
-        os.chdir("../..")  # Back to original directory
-
-    print("Installation complete.")
+def build_graywolf():
+    """Clones and builds Graywolf from source."""
+    print("Building Graywolf from source...")
+    run_command(["git", "clone", "https://github.com/rubund/graywolf.git"])
+    os.chdir("graywolf")
+    run_command(["mkdir", "-p", "build"])
+    os.chdir("build")
+    run_command(["cmake", ".."])
+    run_command(["make"])
+    run_command(["sudo", "make", "install"])
+    os.chdir("../..")  # Back to original directory
+    print("Graywolf installed successfully.")
 
 def setup_qflow():
-    """Sets up tech files and configuration files automatically."""
+    """Sets up Qflow tech files and configuration."""
     print("Setting up Qflow and Magic configuration...")
 
-    # Ensure ~/.magicrc exists and uses scmos.tech
     magicrc_content = """
 path search /usr/local/lib/magic/sys
 tech scmos
@@ -60,7 +60,6 @@ tech scmos
         f.write(magicrc_content)
     print(f"Created: {magicrc_path}")
 
-    # Ensure ~/.netgenrc exists
     netgenrc_content = """
 readnet /usr/local/lib/netgen/scmos.setup
 """
@@ -69,7 +68,6 @@ readnet /usr/local/lib/netgen/scmos.setup
         f.write(netgenrc_content)
     print(f"Created: {netgenrc_path}")
 
-    # Ensure ~/.yosys_config.tcl exists
     yosys_config_content = """
 setattr -set keep_hierarchy 1
 """
@@ -80,6 +78,25 @@ setattr -set keep_hierarchy 1
 
     print("Qflow setup complete.")
 
+def main():
+    """Runs the full setup process."""
+    install_dependencies()
+
+    # Install Qflow if missing
+    qflow_installed = subprocess.run(["which", "qflow"], capture_output=True, text=True).stdout.strip()
+    if not qflow_installed:
+        build_qflow()
+
+    # Install Graywolf if missing
+    graywolf_installed = subprocess.run(["which", "graywolf"], capture_output=True, text=True).stdout.strip()
+    if not graywolf_installed:
+        build_graywolf()
+
+    setup_qflow()
+    print("\nSetup is complete! You can now use Qflow as expected.")
+    print("To view results, try running:")
+    print("magic -T scmos.tech examples/project1/layout/final_layout.mag")
+
 def windows_instructions():
     """Displays instructions for Windows users."""
     print("\nDetected Windows OS.")
@@ -89,19 +106,9 @@ def windows_instructions():
     print("2. Open WSL and run this script inside it using:")
     print("   python3 install_and_run.py")
     print("3. Alternatively, use a Linux VM or dual-boot setup.\n")
-    print("For detailed setup, check: https://opencircuitdesign.com/qflow/")
-
-def main():
-    """Runs the full setup process."""
-    install_tools_linux()
-    setup_qflow()
-    print("\nSetup is complete! You can now use Qflow as expected.")
-    print("To view results, try running:")
-    print("magic -T scmos.tech examples/project1/layout/final_layout.mag")
 
 if __name__ == "__main__":
     os_type = platform.system()
-
     if os_type == "Linux":
         main()
     elif os_type == "Windows":
