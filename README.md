@@ -18,7 +18,7 @@ This repository contains **pre-generated results** of different Verilog projects
    In any project go to `layout` to find layout file. 
    View layouts using:
    ```sh
-   magic <location of layout file>
+   magic <absolute path of layout file>
    ```
    Check logs in `examples/project1/log/`
    View synthesis reports in `examples/project1/synthesis/`

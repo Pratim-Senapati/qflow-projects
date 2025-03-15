@@ -20,24 +20,47 @@ def install_dependencies():
         "sudo", "apt", "install", "-y",
         "build-essential", "cmake", "git", "tcl-dev", "tk-dev", "libx11-dev",
         "libxaw7-dev", "libxpm-dev", "flex", "bison", "gawk", "libreadline-dev",
-        "imagemagick", "x11-apps", "python3", "python3-tk", "libglib2.0-dev"
+        "imagemagick", "x11-apps", "python3", "python3-tk", "libglib2.0-dev",
+        "autoconf", "automake", "libtool", "libgsl-dev"  # Added libgsl-dev
     ])
     print("Dependencies installed.")
 
 def build_qflow():
     """Clones and builds Qflow from source."""
     print("Building Qflow from source...")
-    run_command(["git", "clone", "https://github.com/RTimothyEdwards/qflow.git"])
+
+    if not os.path.exists("qflow"):
+        run_command(["git", "clone", "https://github.com/RTimothyEdwards/qflow.git"])
+
     os.chdir("qflow")
-    run_command(["make"])
-    run_command(["sudo", "make", "install"])
-    os.chdir("..")  # Back to original directory
+
+    if os.path.exists("CMakeLists.txt"):
+        print("Using CMake to build Qflow...")
+        run_command(["mkdir", "-p", "build"])
+        os.chdir("build")
+        run_command(["cmake", ".."])
+        run_command(["make"])
+        run_command(["sudo", "make", "install"])
+        os.chdir("../..")  # Back to original directory
+    elif os.path.exists("configure"):
+        print("Using Autotools to build Qflow...")
+        run_command(["./configure"])
+        run_command(["make"])
+        run_command(["sudo", "make", "install"])
+        os.chdir("..")
+    else:
+        print("Error: No valid build system found for Qflow!")
+        sys.exit(1)
+
     print("Qflow installed successfully.")
 
 def build_graywolf():
     """Clones and builds Graywolf from source."""
     print("Building Graywolf from source...")
-    run_command(["git", "clone", "https://github.com/rubund/graywolf.git"])
+
+    if not os.path.exists("graywolf"):
+        run_command(["git", "clone", "https://github.com/rubund/graywolf.git"])
+
     os.chdir("graywolf")
     run_command(["mkdir", "-p", "build"])
     os.chdir("build")
@@ -45,6 +68,7 @@ def build_graywolf():
     run_command(["make"])
     run_command(["sudo", "make", "install"])
     os.chdir("../..")  # Back to original directory
+
     print("Graywolf installed successfully.")
 
 def setup_qflow():
@@ -95,23 +119,11 @@ def main():
     setup_qflow()
     print("\nSetup is complete! You can now use Qflow as expected.")
     print("To view results, try running:")
-    print("magic -T scmos.tech examples/project1/layout/final_layout.mag")
-
-def windows_instructions():
-    """Displays instructions for Windows users."""
-    print("\nDetected Windows OS.")
-    print("Qflow and Magic are not natively available on Windows.")
-    print("To run the tools, follow these steps:")
-    print("1. Install WSL (Windows Subsystem for Linux) and set up Ubuntu.")
-    print("2. Open WSL and run this script inside it using:")
-    print("   python3 install_and_run.py")
-    print("3. Alternatively, use a Linux VM or dual-boot setup.\n")
+    print("magic /absolute/path/to/layout")
 
 if __name__ == "__main__":
-    os_type = platform.system()
-    if os_type == "Linux":
+    if platform.system() == "Linux":
         main()
-    elif os_type == "Windows":
-        windows_instructions()
     else:
-        print("Unsupported OS detected. This script is designed for Linux and WSL.")
+        print("This script is designed for Linux (or WSL).")
+
