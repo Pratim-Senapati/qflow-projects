@@ -21,7 +21,7 @@ def install_dependencies():
         "build-essential", "cmake", "git", "tcl-dev", "tk-dev", "libx11-dev",
         "libxaw7-dev", "libxpm-dev", "flex", "bison", "gawk", "libreadline-dev",
         "imagemagick", "x11-apps", "python3", "python3-tk", "libglib2.0-dev",
-        "autoconf", "automake", "libtool", "libgsl-dev"  # Added libgsl-dev
+        "autoconf", "automake", "libtool", "libgsl-dev", "magic", "netgen", "yosys", "imagemagick"
     ])
     print("Dependencies installed.")
 
@@ -77,7 +77,7 @@ def setup_qflow():
 
     magicrc_content = """
 path search /usr/local/lib/magic/sys
-tech scmos
+drc off
 """
     magicrc_path = os.path.expanduser("~/.magicrc")
     with open(magicrc_path, "w") as f:
@@ -102,6 +102,17 @@ setattr -set keep_hierarchy 1
 
     print("Qflow setup complete.")
 
+def windows_instructions():
+    """Displays instructions for Windows users."""
+    print("\nDetected Windows OS.")
+    print("Qflow and Magic are not natively available on Windows.")
+    print("To run the tools, follow these steps:")
+    print("1. Install WSL (Windows Subsystem for Linux) and set up Ubuntu.")
+    print("2. Open WSL and run this script inside it using:")
+    print("   python3 install_and_run.py")
+    print("3. Alternatively, use a Linux VM or dual-boot setup.\n")
+    print("For detailed setup, check: https://opencircuitdesign.com/qflow/")
+
 def main():
     """Runs the full setup process."""
     install_dependencies()
@@ -122,8 +133,11 @@ def main():
     print("magic /absolute/path/to/layout")
 
 if __name__ == "__main__":
-    if platform.system() == "Linux":
-        main()
-    else:
-        print("This script is designed for Linux (or WSL).")
+    os_type = platform.system()
 
+    if os_type == "Linux":
+        main()
+    elif os_type == "Windows":
+        windows_instructions()
+    else:
+        print("Unsupported OS detected. This script is designed for Linux and WSL.")
