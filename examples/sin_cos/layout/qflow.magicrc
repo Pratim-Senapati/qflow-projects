@@ -10,6 +10,7 @@ set VDD vdd
 
 drc euclidean on
 drc off
+drc style no_check
 
 addpath digital
 
