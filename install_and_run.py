@@ -76,8 +76,21 @@ def setup_qflow():
     print("Setting up Qflow and Magic configuration...")
 
     magicrc_content = """
-path search /usr/local/lib/magic/sys
+#-----------------------------------------------------
+# .magicrc startup file for OSU035 project under qflow
+#-----------------------------------------------------
+
+path sys +/usr/local/share/qflow/tech/osu035
+tech load SCN4M_SUBM.20 -noprompt
+scalegrid 1 4
+set GND gnd
+set VDD vdd
+
+drc euclidean on
 drc off
+
+addpath digital
+
 """
     magicrc_path = os.path.expanduser("~/.magicrc")
     with open(magicrc_path, "w") as f:
