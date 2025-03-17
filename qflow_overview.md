@@ -26,18 +26,6 @@ Qflow is an **open-source digital synthesis flow** used for generating ASIC layo
 
 5. **DRC & LVS Checks** (Verifies correctness)
    - Tool: `magic` (for **Design Rule Check**)
-   - Command: `magic -d XR -T layout/final_layout.mag`
+   - Command: `magic <absolute path to layout file>`
    - Tool: `netgen` (for **Layout vs. Schematic Check**)
-   - Command: `netgen -batch lvs layout/final_layout.spice synthesis/project.spice`
-
-## 📂 Files in This Repo  
-- **Verilog Source Files (`examples/project/src/`)** → Original design files
-- **Synthesis Results (`examples/project/synthesis/`)** → Converted to logic gates
-- **Final Layout (`examples/project/layout/`)** → Chip representation
-- **Logs (`examples/project/log/`)** → Step-by-step processing info
-
-## 🔍 How to View Layouts  
-To open a layout file, use:
-```sh
-magic -d XR -T examples/project/layout/final_layout.mag
-```
+   - Command: `netgen -batch lvs layout/project.spice synthesis/project.spc`

@@ -1,10 +1,10 @@
-Qflow placement logfile created on Fri Feb 28 10:05:23 IST 2025
+Qflow placement logfile created on Mon Mar 17 19:10:10 IST 2025
 Running blif2cel to generate input files for graywolf
-blif2cel.tcl --blif /home/tombert/qflow_projects/counter_project/synthesis/counter.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_projects/counter_project/layout/counter.cel 
-Opened BLIF file (/home/tombert/qflow_projects/counter_project/synthesis/counter.blif) for reading ...
-Opened CEL file (/home/tombert/qflow_projects/counter_project/layout/counter.cel) for writing...
+blif2cel.tcl --blif /home/tombert/qflow_results/examples/counter/synthesis/counter.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_results/examples/counter/layout/counter.cel 
+Opened BLIF file (/home/tombert/qflow_results/examples/counter/synthesis/counter.blif) for reading ...
+Opened CEL file (/home/tombert/qflow_results/examples/counter/layout/counter.cel) for writing...
 Loaded /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef file for reading...
-1st pass of blif file /home/tombert/qflow_projects/counter_project/synthesis/counter.blif. . .
+1st pass of blif file /home/tombert/qflow_results/examples/counter/synthesis/counter.blif. . .
 Reading macros and/or technology data from LEF file. . .
 LEF file specifies route layer Y pitch as 2
 LEF file specifies route layer X pitch as 1.6
@@ -284,19 +284,19 @@ Reading DEF file counter.def. . .
 Recalculating pin positions
 Writing DEF file counter_mod.def. . .
 Done with arrangepins.tcl
-blifanno.tcl /home/tombert/qflow_projects/counter_project/synthesis/counter.blif counter.def /home/tombert/qflow_projects/counter_project/synthesis/counter_anno.blif
+blifanno.tcl /home/tombert/qflow_results/examples/counter/synthesis/counter.blif counter.def /home/tombert/qflow_results/examples/counter/synthesis/counter_anno.blif
 Running blifanno.tcl
 Reading DEF file counter.def. . .
 Done with blifanno.tcl
 
 Generating RTL verilog and SPICE netlist file in directory
-   /home/tombert/qflow_projects/counter_project/synthesis
+   /home/tombert/qflow_results/examples/counter/synthesis
 Files:
-   Verilog: /home/tombert/qflow_projects/counter_project/synthesis/counter.rtl.v
-   Verilog: /home/tombert/qflow_projects/counter_project/synthesis/counter.rtlnopwr.v
-   Verilog: /home/tombert/qflow_projects/counter_project/synthesis/counter.rtlbb.v
-   Spice:   /home/tombert/qflow_projects/counter_project/synthesis/counter.spc
+   Verilog: /home/tombert/qflow_results/examples/counter/synthesis/counter.rtl.v
+   Verilog: /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlnopwr.v
+   Verilog: /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlbb.v
+   Spice:   /home/tombert/qflow_results/examples/counter/synthesis/counter.spc
 
 Running blif2Verilog.
 Running blif2BSpice.
-Placement script ended on Fri Feb 28 10:05:26 IST 2025
+Placement script ended on Mon Mar 17 19:10:12 IST 2025

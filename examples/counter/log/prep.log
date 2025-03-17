@@ -1,4 +1,4 @@
-Qflow project preparation output log Fri Feb 28 10:05:19 2025
+Qflow project preparation output log Mon Mar 17 19:10:08 2025
 
 --------------------------------
 Qflow project setup
@@ -8,5 +8,5 @@ Technology set to osu035
 Regenerating files for existing project counter
 
 No actions specified on command line;
-creating qflow script file /home/tombert/qflow_projects/counter_project/qflow_exec.sh only.
+creating qflow script file /home/tombert/qflow_results/examples/counter/qflow_exec.sh only.
 Uncomment lines in this file and source the file to run the flow.

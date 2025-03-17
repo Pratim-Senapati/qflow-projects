@@ -1,7 +1,7 @@
 magic
 tech scmos
 magscale 1 2
-timestamp 1740717622
+timestamp 1742218814
 << metal1 >>
 rect 520 606 526 614
 rect 534 606 540 614
@@ -306,161 +306,169 @@ rect 532 206 540 214
 rect 548 206 556 214
 rect 564 206 568 214
 rect 520 0 568 206
-use BUFX2  BUFX2_5
-timestamp 1740717622
-transform -1 0 56 0 1 210
-box -10 -6 56 210
-use FILL  FILL_18
-timestamp 1740717622
-transform -1 0 392 0 -1 210
-box -16 -6 32 210
-use FILL  FILL_17
-timestamp 1740717622
-transform 1 0 88 0 1 210
-box -16 -6 32 210
-use FILL  FILL_16
-timestamp 1740717622
-transform 1 0 72 0 1 210
-box -16 -6 32 210
-use FILL  FILL_15
-timestamp 1740717622
-transform 1 0 56 0 1 210
-box -16 -6 32 210
-use FILL  FILL_14
-timestamp 1740717622
-transform -1 0 376 0 -1 210
-box -16 -6 32 210
-use DFFSR  DFFSR_3
-timestamp 1740717622
-transform 1 0 104 0 1 210
-box -16 -6 368 210
-use DFFSR  DFFSR_2
-timestamp 1740717622
-transform 1 0 8 0 -1 210
-box -16 -6 368 210
-use FILL  FILL_9
-timestamp 1740717622
-transform 1 0 568 0 1 210
-box -16 -6 32 210
-use FILL  FILL_10
-timestamp 1740717622
-transform -1 0 408 0 -1 210
-box -16 -6 32 210
-use FILL  FILL_11
-timestamp 1740717622
-transform 1 0 440 0 -1 210
-box -16 -6 32 210
-use FILL  FILL_12
-timestamp 1740717622
-transform 1 0 456 0 -1 210
-box -16 -6 32 210
-use FILL  FILL_13
-timestamp 1740717622
-transform 1 0 472 0 -1 210
-box -16 -6 32 210
-use INVX1  INVX1_1
-timestamp 1740717622
-transform -1 0 440 0 -1 210
-box -18 -6 52 210
-use XOR2X1  XOR2X1_0
-timestamp 1740717622
-transform 1 0 456 0 1 210
-box -16 -6 128 210
-use BUFX2  BUFX2_4
-timestamp 1740717622
-transform 1 0 728 0 1 210
-box -10 -6 56 210
-use FILL  FILL_7
-timestamp 1740717622
-transform 1 0 584 0 1 210
-box -16 -6 32 210
-use FILL  FILL_8
-timestamp 1740717622
-transform 1 0 600 0 1 210
-box -16 -6 32 210
-use XNOR2X1  XNOR2X1_0
-timestamp 1740717622
-transform 1 0 616 0 1 210
-box -16 -6 128 210
 use DFFSR  DFFSR_1
-timestamp 1740717622
+timestamp 1742218814
+transform 1 0 8 0 -1 210
+box -4 -6 356 206
+use FILL  FILL_0_0_0
+timestamp 1742218814
+transform -1 0 376 0 -1 210
+box -4 -6 20 206
+use BUFX2  BUFX2_6
+timestamp 1742218814
+transform -1 0 56 0 1 210
+box -4 -6 52 206
+use FILL  FILL_1_0_0
+timestamp 1742218814
+transform 1 0 56 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_0_1
+timestamp 1742218814
+transform 1 0 72 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_0_2
+timestamp 1742218814
+transform 1 0 88 0 1 210
+box -4 -6 20 206
+use DFFSR  DFFSR_2
+timestamp 1742218814
+transform 1 0 104 0 1 210
+box -4 -6 356 206
+use XOR2X1  XOR2X1_1
+timestamp 1742218814
+transform 1 0 456 0 1 210
+box -4 -6 116 206
+use FILL  FILL_0_1_2
+timestamp 1742218814
+transform 1 0 472 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_1_1
+timestamp 1742218814
+transform 1 0 456 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_1_0
+timestamp 1742218814
+transform 1 0 440 0 -1 210
+box -4 -6 20 206
+use INVX1  INVX1_1
+timestamp 1742218814
+transform -1 0 440 0 -1 210
+box -4 -6 36 206
+use FILL  FILL_0_0_2
+timestamp 1742218814
+transform -1 0 408 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_0_1
+timestamp 1742218814
+transform -1 0 392 0 -1 210
+box -4 -6 20 206
+use BUFX2  BUFX2_4
+timestamp 1742218814
+transform 1 0 728 0 1 210
+box -4 -6 52 206
+use XNOR2X1  XNOR2X1_1
+timestamp 1742218814
+transform 1 0 616 0 1 210
+box -4 -6 116 206
+use FILL  FILL_1_1_2
+timestamp 1742218814
+transform 1 0 600 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_1_1
+timestamp 1742218814
+transform 1 0 584 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_1_0
+timestamp 1742218814
+transform 1 0 568 0 1 210
+box -4 -6 20 206
+use DFFSR  DFFSR_4
+timestamp 1742218814
 transform 1 0 488 0 -1 210
-box -16 -6 368 210
-use BUFX2  BUFX2_3
-timestamp 1740717622
+box -4 -6 356 206
+use BUFX2  BUFX2_5
+timestamp 1742218814
 transform 1 0 776 0 1 210
-box -10 -6 56 210
-use FILL  FILL_6
-timestamp 1740717622
+box -4 -6 52 206
+use FILL  FILL_2_1
+timestamp 1742218814
 transform 1 0 824 0 1 210
-box -16 -6 32 210
-use FILL  FILL_5
-timestamp 1740717622
-transform 1 0 72 0 -1 610
-box -16 -6 32 210
-use FILL  FILL_4
-timestamp 1740717622
-transform 1 0 56 0 -1 610
-box -16 -6 32 210
-use FILL  FILL_3
-timestamp 1740717622
-transform 1 0 40 0 -1 610
-box -16 -6 32 210
-use DFFSR  DFFSR_0
-timestamp 1740717622
-transform 1 0 88 0 -1 610
-box -16 -6 368 210
-use INVX2  INVX2_0
-timestamp 1740717622
+box -4 -6 20 206
+use INVX2  INVX2_1
+timestamp 1742218814
 transform 1 0 8 0 -1 610
-box -18 -6 52 210
-use BUFX2  BUFX2_2
-timestamp 1740717622
-transform 1 0 744 0 -1 610
-box -10 -6 56 210
-use BUFX2  BUFX2_1
-timestamp 1740717622
-transform 1 0 696 0 -1 610
-box -10 -6 56 210
-use NAND3X1  NAND3X1_0
-timestamp 1740717622
-transform -1 0 696 0 -1 610
-box -16 -6 80 210
-use FILL  FILL_2
-timestamp 1740717622
-transform -1 0 632 0 -1 610
-box -16 -6 32 210
-use FILL  FILL_1
-timestamp 1740717622
-transform -1 0 616 0 -1 610
-box -16 -6 32 210
-use FILL  FILL_0
-timestamp 1740717622
-transform -1 0 600 0 -1 610
-box -16 -6 32 210
-use INVX1  INVX1_0
-timestamp 1740717622
-transform -1 0 584 0 -1 610
-box -18 -6 52 210
-use NOR2X1  NOR2X1_0
-timestamp 1740717622
-transform 1 0 504 0 -1 610
-box -16 -6 64 210
-use AOI21X1  AOI21X1_0
-timestamp 1740717622
+box -4 -6 36 206
+use FILL  FILL_2_0_0
+timestamp 1742218814
+transform 1 0 40 0 -1 610
+box -4 -6 20 206
+use FILL  FILL_2_0_1
+timestamp 1742218814
+transform 1 0 56 0 -1 610
+box -4 -6 20 206
+use FILL  FILL_2_0_2
+timestamp 1742218814
+transform 1 0 72 0 -1 610
+box -4 -6 20 206
+use DFFSR  DFFSR_3
+timestamp 1742218814
+transform 1 0 88 0 -1 610
+box -4 -6 356 206
+use AOI21X1  AOI21X1_1
+timestamp 1742218814
 transform 1 0 440 0 -1 610
-box -14 -6 78 210
-use BUFX2  BUFX2_0
-timestamp 1740717622
+box -4 -6 68 206
+use NOR2X1  NOR2X1_1
+timestamp 1742218814
+transform 1 0 504 0 -1 610
+box -4 -6 52 206
+use INVX1  INVX1_2
+timestamp 1742218814
+transform -1 0 584 0 -1 610
+box -4 -6 36 206
+use FILL  FILL_2_1_0
+timestamp 1742218814
+transform -1 0 600 0 -1 610
+box -4 -6 20 206
+use FILL  FILL_2_1_1
+timestamp 1742218814
+transform -1 0 616 0 -1 610
+box -4 -6 20 206
+use FILL  FILL_2_1_2
+timestamp 1742218814
+transform -1 0 632 0 -1 610
+box -4 -6 20 206
+use NAND3X1  NAND3X1_1
+timestamp 1742218814
+transform -1 0 696 0 -1 610
+box -4 -6 68 206
+use BUFX2  BUFX2_1
+timestamp 1742218814
+transform 1 0 696 0 -1 610
+box -4 -6 52 206
+use BUFX2  BUFX2_2
+timestamp 1742218814
+transform 1 0 744 0 -1 610
+box -4 -6 52 206
+use BUFX2  BUFX2_3
+timestamp 1742218814
 transform 1 0 792 0 -1 610
-box -10 -6 56 210
+box -4 -6 52 206
 << labels >>
-flabel metal3 -16 320 -16 320 7 FreeSans 30 0 0 0 vdd
-flabel metal3 864 320 864 320 3 FreeSans 30 0 0 0 gnd
-flabel metal3 -16 360 -16 360 7 FreeSans 30 0 0 0 clk
-flabel metal3 -16 500 -16 500 7 FreeSans 30 0 0 0 rst
-flabel metal3 864 580 864 580 3 FreeSans 30 90 0 0 count[0]
-flabel metal3 864 540 864 540 3 FreeSans 30 0 0 0 count[1]
-flabel metal3 864 500 864 500 3 FreeSans 30 0 0 0 count[2]
-flabel metal3 864 300 864 300 3 FreeSans 30 0 0 0 count[3]
+flabel metal3 s -16 320 -16 320 7 FreeSans 24 0 0 0 vdd
+port 0 nsew
+flabel metal3 s 864 320 864 320 3 FreeSans 24 0 0 0 gnd
+port 1 nsew
+flabel metal3 s -19 357 -13 363 7 FreeSans 24 0 0 0 clk
+port 2 nsew
+flabel metal3 s -19 497 -13 503 7 FreeSans 24 0 0 0 rst
+port 3 nsew
+flabel metal3 s 861 577 867 583 3 FreeSans 24 90 0 0 count[0]
+port 4 nsew
+flabel metal3 s 861 537 867 543 3 FreeSans 24 0 0 0 count[1]
+port 5 nsew
+flabel metal3 s 861 497 867 503 3 FreeSans 24 0 0 0 count[2]
+port 6 nsew
+flabel metal3 s 861 297 867 303 3 FreeSans 24 0 0 0 count[3]
+port 7 nsew
 << end >>

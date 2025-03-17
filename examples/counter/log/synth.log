@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on Fri Feb 28 10:05:21 IST 2025
+Qflow synthesis logfile created on Mon Mar 17 19:10:10 IST 2025
 Running yosys for verilog parsing and synthesis
 yosys  -s counter.ys
 
@@ -30,8 +30,8 @@ yosys  -s counter.ys
 1. Executing Liberty frontend.
 Imported 39 cell types from liberty file.
 
-2. Executing Verilog-2005 frontend: /home/tombert/qflow_projects/counter_project/source/counter.v
-Parsing Verilog input from `/home/tombert/qflow_projects/counter_project/source/counter.v' to AST representation.
+2. Executing Verilog-2005 frontend: /home/tombert/qflow_results/examples/counter/source/counter.v
+Parsing Verilog input from `/home/tombert/qflow_results/examples/counter/source/counter.v' to AST representation.
 Generating RTLIL representation for module `\counter'.
 Successfully finished Verilog frontend.
 
@@ -52,26 +52,26 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/tombert/qflow_projects/counter_project/source/counter.v:11$1 in module counter.
+Marked 1 switch rules as full_case in process $proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1 in module counter.
 Removed a total of 0 dead cases.
 
 3.2.3. Executing PROC_INIT pass (extract init attributes).
 
 3.2.4. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst in `\counter.$proc$/home/tombert/qflow_projects/counter_project/source/counter.v:11$1'.
+Found async reset \rst in `\counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
 
 3.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\counter.$proc$/home/tombert/qflow_projects/counter_project/source/counter.v:11$1'.
+Creating decoders for process `\counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
      1/1: $0\count[3:0]
 
 3.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\counter.\count' using process `\counter.$proc$/home/tombert/qflow_projects/counter_project/source/counter.v:11$1'.
+Creating register for signal `\counter.\count' using process `\counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
   created $adff cell `$procdff$3' with positive edge clock and positive level reset.
 
 3.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `counter.$proc$/home/tombert/qflow_projects/counter_project/source/counter.v:11$1'.
+Removing empty process `counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
 Cleaned up 0 empty switches.
 
 3.3. Executing OPT_EXPR pass (perform const folding).
@@ -118,8 +118,8 @@ Optimizing module counter.
 3.6.9. Finished OPT passes. (There is nothing left to do.)
 
 3.7. Executing WREDUCE pass (reducing word size of cells).
-Removed top 31 bits (of 32) from port B of cell counter.$add$/home/tombert/qflow_projects/counter_project/source/counter.v:15$2 ($add).
-Removed top 28 bits (of 32) from port Y of cell counter.$add$/home/tombert/qflow_projects/counter_project/source/counter.v:15$2 ($add).
+Removed top 31 bits (of 32) from port B of cell counter.$add$/home/tombert/qflow_results/examples/counter/source/counter.v:15$2 ($add).
+Removed top 28 bits (of 32) from port Y of cell counter.$add$/home/tombert/qflow_results/examples/counter/source/counter.v:15$2 ($add).
 
 3.8. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -140,9 +140,9 @@ No more expansions possible.
 
 3.11. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module counter:
-  creating $macc model for $add$/home/tombert/qflow_projects/counter_project/source/counter.v:15$2 ($add).
-  creating $alu model for $macc $add$/home/tombert/qflow_projects/counter_project/source/counter.v:15$2.
-  creating $alu cell for $add$/home/tombert/qflow_projects/counter_project/source/counter.v:15$2: $auto$alumacc.cc:474:replace_alu$4
+  creating $macc model for $add$/home/tombert/qflow_results/examples/counter/source/counter.v:15$2 ($add).
+  creating $alu model for $macc $add$/home/tombert/qflow_results/examples/counter/source/counter.v:15$2.
+  creating $alu cell for $add$/home/tombert/qflow_results/examples/counter/source/counter.v:15$2: $auto$alumacc.cc:474:replace_alu$4
   created 1 $alu and 0 $macc cells.
 
 3.12. Executing SHARE pass (SAT-based resource sharing).
@@ -520,8 +520,8 @@ ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
-ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.01 sec
-ABC: Memory =    0.38 MB. Time =     0.01 sec
+ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -614,10 +614,10 @@ Optimizing module counter.
      XNOR2X1                         1
      XOR2X1                          1
 
-End of script. Logfile hash: bc7788c87e
-CPU: user 0.22s system 0.03s, MEM: 16.93 MB total, 11.30 MB resident
+End of script. Logfile hash: 781edf9f79
+CPU: user 0.12s system 0.00s, MEM: 17.20 MB total, 11.09 MB resident
 Yosys 0.9 (git sha1 1979e0b)
-Time spent: 26% 1x share (0 sec), 12% 16x opt_clean (0 sec), ...
+Time spent: 25% 1x share (0 sec), 12% 16x opt_clean (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef
 Cleaning up output syntax
@@ -675,16 +675,16 @@ Number of gates changed: 0
 gates resized: 0
 
 Generating RTL verilog and SPICE netlist file in directory
-	 /home/tombert/qflow_projects/counter_project/synthesis
+	 /home/tombert/qflow_results/examples/counter/synthesis
 Files:
-   Verilog: /home/tombert/qflow_projects/counter_project/synthesis/counter.rtl.v
-   Verilog: /home/tombert/qflow_projects/counter_project/synthesis/counter.rtlnopwr.v
-   Verilog: /home/tombert/qflow_projects/counter_project/synthesis/counter.rtlbb.v
-   Spice:   /home/tombert/qflow_projects/counter_project/synthesis/counter.spc
+   Verilog: /home/tombert/qflow_results/examples/counter/synthesis/counter.rtl.v
+   Verilog: /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlnopwr.v
+   Verilog: /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlbb.v
+   Spice:   /home/tombert/qflow_results/examples/counter/synthesis/counter.spc
 
 Running blif2Verilog.
 Running blif2BSpice.
 Running spi2xspice.py
 spi2xspice.py "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" counter.spc counter.xspice
 
-Synthesis script ended on Fri Feb 28 10:05:23 IST 2025
+Synthesis script ended on Mon Mar 17 19:10:10 IST 2025

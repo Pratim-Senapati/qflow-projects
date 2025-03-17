@@ -1,5 +1,5 @@
-Qflow DRC logfile created on Fri Feb 28 10:05:30 IST 2025
-magic -dnull -noconsole  /home/tombert/qflow_projects/counter_project/layout/run_drc_counter.tcl
+Qflow DRC logfile created on Mon Mar 17 19:10:15 IST 2025
+magic -dnull -noconsole  /home/tombert/qflow_results/examples/counter/layout/run_drc_counter.tcl
 
 Magic 8.3 revision 50 - Compiled on Tue Feb 11 22:24:09 IST 2025.
 Starting magic under Tcl interpreter
@@ -14,7 +14,7 @@ Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 4 Magic internal units = 1 Lambda
-Loading "/home/tombert/qflow_projects/counter_project/layout/run_drc_counter.tcl" from command line.
+Loading "/home/tombert/qflow_results/examples/counter/layout/run_drc_counter.tcl" from command line.
 Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
 This action cannot be undone.
 LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
@@ -23,4 +23,4 @@ LEF read: Processed 3179 lines.
 Scaled magic input cell counter geometry by factor of 2
 Processing timestamp mismatches: BUFX2, NAND3X1, FILL, INVX1, NOR2X1, AOI21X1, DFFSR, INVX2, XNOR2X1, XOR2X1.
 drc = 0
-DRC checking script ended on Fri Feb 28 10:05:30 IST 2025
+DRC checking script ended on Mon Mar 17 19:10:15 IST 2025

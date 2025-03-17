@@ -10,7 +10,6 @@ set VDD vdd
 
 drc euclidean on
 drc off
-drc style no_check
 
 addpath digital
 
@@ -19,9 +18,8 @@ addpath digital
 openwrapper
 box 0 0 0 0
 drc off
-gds read /usr/local/share/qflow/tech/osu035/osu035_stdcells.gds2
-load gds_top
-gds read counter
+lef read /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef
+load counter
 select top cell
 expand
 view

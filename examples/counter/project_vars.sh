@@ -1,6 +1,6 @@
 #!/bin/tcsh -f
 #------------------------------------------------------------
-# project variables for project /home/tombert/qflow_projects/counter_project
+# project variables for project /home/tombert/qflow_results/examples/counter
 #------------------------------------------------------------
 
 # Synthesis command options:
@@ -49,7 +49,7 @@ set vesta_options = "--long"
 # set lef_options =
 # set drc_gdsview =
 # set drc_options =
-set gds_options = "-g"
+# set gds_options =
 
 #------------------------------------------------------------
 

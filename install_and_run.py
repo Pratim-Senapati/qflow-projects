@@ -21,38 +21,23 @@ def install_dependencies():
         "build-essential", "cmake", "git", "tcl-dev", "tk-dev", "libx11-dev",
         "libxaw7-dev", "libxpm-dev", "flex", "bison", "gawk", "libreadline-dev",
         "imagemagick", "x11-apps", "python3", "python3-tk", "libglib2.0-dev",
-        "autoconf", "automake", "libtool", "libgsl-dev", "magic", "netgen", "yosys", "imagemagick"
+        "autoconf", "automake", "libtool", "libgsl-dev", "magic", "netgen-lvs", "yosys", "qrouter", "tcsh"
     ])
     print("Dependencies installed.")
 
-def build_qflow():
-    """Clones and builds Qflow from source."""
-    print("Building Qflow from source...")
+def install_qflow():
+    """Installs Qflow v1.3.17 from the official archive."""
+    print("\n🔹 Installing Qflow v1.3.17...")
+    if not os.path.exists("qflow-1.3.17.tar.gz"):
+        run_command(["wget", "http://opencircuitdesign.com/qflow/archive/qflow-1.3.17.tgz"])
 
-    if not os.path.exists("qflow"):
-        run_command(["git", "clone", "https://github.com/RTimothyEdwards/qflow.git"])
-
-    os.chdir("qflow")
-
-    if os.path.exists("CMakeLists.txt"):
-        print("Using CMake to build Qflow...")
-        run_command(["mkdir", "-p", "build"])
-        os.chdir("build")
-        run_command(["cmake", ".."])
-        run_command(["make"])
-        run_command(["sudo", "make", "install"])
-        os.chdir("../..")  # Back to original directory
-    elif os.path.exists("configure"):
-        print("Using Autotools to build Qflow...")
-        run_command(["./configure"])
-        run_command(["make"])
-        run_command(["sudo", "make", "install"])
-        os.chdir("..")
-    else:
-        print("Error: No valid build system found for Qflow!")
-        sys.exit(1)
-
-    print("Qflow installed successfully.")
+    run_command(["tar", "-xvf", "qflow-1.3.17.tgz"])
+    os.chdir("qflow-1.3.17")
+    run_command(["./configure"])
+    run_command(["make"])
+    run_command(["sudo", "make", "install"])
+    os.chdir("..")
+    print("✅ Qflow installed.")
 
 def build_graywolf():
     """Clones and builds Graywolf from source."""
@@ -69,7 +54,25 @@ def build_graywolf():
     run_command(["sudo", "make", "install"])
     os.chdir("../..")  # Back to original directory
 
-    print("Graywolf installed successfully.")
+    # Fix Graywolf symbolic link
+    print("\n🔹 Fixing Graywolf symbolic link...")
+    run_command(["sudo", "rm", "-f", "/usr/local/share/qflow/bin/graywolf"])
+    run_command(["sudo", "ln", "-s", "/usr/local/bin/graywolf", "/usr/local/share/qflow/bin/graywolf"])
+    print("✅ Graywolf installed and link fixed.")
+
+def fixing_qrouter():
+    # Fix Qrouter symbolic link
+    print("\n🔹 Fixing Qrouter symbolic link...")
+    run_command(["sudo", "rm", "-f", "/usr/local/share/qflow/bin/qrouter"])
+    run_command(["sudo", "ln", "-s", "/usr/bin/qrouter", "/usr/local/share/qflow/bin/qrouter"])
+    print("✅ Qrouter installed and link fixed.")
+
+def fixing_netgen():
+    # Fix Netgen symbolic link
+    print("\n🔹 Fixing Netgen symbolic link...")
+    run_command(["sudo", "rm", "-f", "/usr/local/share/qflow/bin/netgen"])
+    run_command(["sudo", "ln", "-s", "/usr/bin/netgen-lvs", "/usr/local/share/qflow/bin/netgen"])
+    print("✅ Netgen installed and link fixed.")
 
 def setup_qflow():
     """Sets up Qflow tech files and configuration."""
@@ -133,14 +136,17 @@ def main():
     # Install Qflow if missing
     qflow_installed = subprocess.run(["which", "qflow"], capture_output=True, text=True).stdout.strip()
     if not qflow_installed:
-        build_qflow()
+        install_qflow()
 
     # Install Graywolf if missing
     graywolf_installed = subprocess.run(["which", "graywolf"], capture_output=True, text=True).stdout.strip()
     if not graywolf_installed:
         build_graywolf()
 
+    fixing_qrouter()
+    fixing_netgen()
     setup_qflow()
+
     print("\nSetup is complete! You can now use Qflow as expected.")
     print("To view results, try running:")
     print("magic /absolute/path/to/layout")

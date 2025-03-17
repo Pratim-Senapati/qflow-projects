@@ -1,4 +1,4 @@
-Qflow route logfile created on Fri Feb 28 10:05:27 IST 2025
+Qflow route logfile created on Mon Mar 17 19:10:13 IST 2025
 qrouter -noc  -s counter.cfg
 Qrouter detail maze router version 1.4.59.T
 Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
@@ -169,10 +169,10 @@ but qrouter wants to write 20 nets and specialnets.
 Final: No failed routes!
 ----------------------------------------------
 *** Writing RC file counter_route.rc
-Running annotate.tcl antenna.out /home/tombert/qflow_projects/counter_project/synthesis/counter.rtlnopwr.v
-  /home/tombert/qflow_projects/counter_project/synthesis/counter.spc /home/tombert/qflow_projects/counter_project/synthesis/counter.rtlnopwr.anno.v
-  /home/tombert/qflow_projects/counter_project/synthesis/counter.anno.spc  /usr/local/share/qflow/tech/osu035/osu035_stdcells.sp /home/tombert/qflow_projects/counter_project/synthesis/counter_powerground
+Running annotate.tcl antenna.out /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlnopwr.v
+  /home/tombert/qflow_results/examples/counter/synthesis/counter.spc /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlnopwr.anno.v
+  /home/tombert/qflow_results/examples/counter/synthesis/counter.anno.spc  /usr/local/share/qflow/tech/osu035/osu035_stdcells.sp /home/tombert/qflow_results/examples/counter/synthesis/counter_powerground
 Running annotate.tcl
 found cell FILL pinlist vdd gnd
 Done with annotate.tcl
-Router script ended on Fri Feb 28 10:05:28 IST 2025
+Router script ended on Mon Mar 17 19:10:13 IST 2025

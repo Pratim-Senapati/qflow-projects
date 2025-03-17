@@ -1,1 +1,100 @@
-Starting new log file Fri Feb 28 10:09:34 2025
+Starting new log file Mon Mar 17 19:09:47 2025
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu035 from existing qflow_vars.sh file
+Regenerating files for existing project counter
+Running yosys for verilog parsing and synthesis
+yosys  -s counter.ys
+
+/----------------------------------------------------------------------------\
+|                                                                            |
+|  yosys -- Yosys Open SYnthesis Suite                                       |
+|                                                                            |
+|  Copyright (C) 2012 - 2019  Clifford Wolf <clifford@clifford.at>           |
+|                                                                            |
+|  Permission to use, copy, modify, and/or distribute this software for any  |
+|  purpose with or without fee is hereby granted, provided that the above    |
+|  copyright notice and this permission notice appear in all copies.         |
+|                                                                            |
+|  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+|  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+|  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+|  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+|  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+|  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+|  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+|                                                                            |
+\----------------------------------------------------------------------------/
+
+Yosys 0.9 (git sha1 1979e0b)
+
+
+-- Executing script file `counter.ys' --
+
+1. Executing Liberty frontend.
+Imported 39 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /home/tombert/qflow_results/examples/counter/source/counter.v
+Parsing Verilog input from `/home/tombert/qflow_results/examples/counter/source/counter.v' to AST representation.
+Generating RTLIL representation for module `\counter'.
+Successfully finished Verilog frontend.
+
+3. Executing SYNTH pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \counter
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \counter
+Removed 0 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+
+LEF Read, Line 135: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 136: NOTE:  Old format VIARULE ignored.
+Qflow project setup
+LEF Read, Line 140: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 141: NOTE:  Old format VIARULE ignored.
+
+LEF Read, Line 151: NOTE:  Old format VIARULE ignored.
+Technology set to osu035 from existing qflow_vars.sh file
+LEF Read, Line 152: NOTE:  Old format VIARULE ignored.
+Regenerating files for existing project counter
+LEF Read, Line 156: NOTE:  Old format VIARULE ignored.
+Qrouter detail maze router version 1.4.59.T
+LEF Read, Line 157: NOTE:  Old format VIARULE ignored.
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+LEF Read, Line 167: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site corner (ignored)
+LEF Read, Line 168: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site IO (ignored)
+LEF Read, Line 172: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site core (ignored)
+LEF Read, Line 173: NOTE:  Old format VIARULE ignored.
+LEF read: Processed 3179 lines.
+LEF Read: encountered 0 errors and 12 warnings total.
+Vertical route layer at non-minimum pitch 3.2.  Using smaller pitch 1.6, will route on 1-of-2 tracks for layer metal4.
+Running blif2cel to generate input files for graywolf
+blif2cel.tcl --blif /home/tombert/qflow_results/examples/counter/synthesis/counter.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_results/examples/counter/layout/counter.cel
+No counter.cel1 file found for project. . . no partial blockages to apply to layout.
+Preparing pin placement hints from counter.cel2
+Running GrayWolf placement
+graywolf  counter
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu035 from existing qflow_vars.sh file
+
