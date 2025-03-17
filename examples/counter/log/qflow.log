@@ -1,4 +1,4 @@
-Starting new log file Mon Mar 17 19:09:47 2025
+Starting new log file Mon Mar 17 20:24:38 2025
 
 --------------------------------
 Qflow project setup
@@ -58,6 +58,40 @@ Removed 0 unused modules.
 3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Cleaned up 0 empty switches.
 
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1 in module counter.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_INIT pass (extract init attributes).
+
+3.2.4. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
+
+3.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
+1/1: $0\count[3:0]
+
+3.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\counter.\count' using process `\counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
+created $adff cell `$procdff$3' with positive edge clock and positive level reset.
+
+3.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `counter.$proc$/home/tombert/qflow_results/examples/counter/source/counter.v:11$1'.
+Cleaned up 0 empty switches.
+
+3.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter.
+
+3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter..
+
+3.5. Executing CHECK pass (checking for obvious problems).
+checking module counter..
+found and reported 0 problems.
+
+3.6. Executing OPT pass (performing simple optimizations).
 
 LEF Read, Line 135: NOTE:  Old format VIARULE ignored.
 --------------------------------
@@ -97,4 +131,116 @@ Qflow project setup
 --------------------------------
 
 Technology set to osu035 from existing qflow_vars.sh file
+Regenerating files for existing project counter
+Running qrouter 1.4.59.T
+qrouter -noc  -s counter.cfg
+*** Running stage1 routing with defaults
+Nets remaining: 10
+Nets remaining: 9
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 1
+Progress: Stage 1 total routes completed: 43
+Failed net routes: 1
+*** Running stage2 routing with options mask 10, effort 10
+Nets remaining: 1
+Progress: Stage 2 total routes completed: 43
+Failed net routes: 1
+*** Running stage2 routing with options mask 20, effort 10
+Nets remaining: 1
+Progress: Stage 2 total routes completed: 43
+Failed net routes: 1
+*** Running stage2 routing with options mask 30, effort 10
+Nets remaining: 1
+Progress: Stage 2 total routes completed: 43
+Failed net routes: 1
+*** Running stage2 routing with options mask 40, effort 10
+Nets remaining: 1
+Progress: Stage 2 total routes completed: 43
+Failed net routes: 1
+*** Running stage2 routing with options mask 50, effort 10
+Nets remaining: 1
+
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu035 from existing qflow_vars.sh file
+Regenerating files for existing project counter
+Running yosys for verilog parsing and synthesis
+yosys  -s counter.ys
+
+/----------------------------------------------------------------------------\
+|                                                                            |
+|  yosys -- Yosys Open SYnthesis Suite                                       |
+|                                                                            |
+|  Copyright (C) 2012 - 2019  Clifford Wolf <clifford@clifford.at>           |
+|                                                                            |
+|  Permission to use, copy, modify, and/or distribute this software for any  |
+|  purpose with or without fee is hereby granted, provided that the above    |
+|  copyright notice and this permission notice appear in all copies.         |
+|                                                                            |
+|  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+|  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+|  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+
+LEF Read, Line 135: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 136: NOTE:  Old format VIARULE ignored.
+Qflow project setup
+LEF Read, Line 140: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 141: NOTE:  Old format VIARULE ignored.
+
+LEF Read, Line 151: NOTE:  Old format VIARULE ignored.
+Technology set to osu035 from existing qflow_vars.sh file
+LEF Read, Line 152: NOTE:  Old format VIARULE ignored.
+Regenerating files for existing project counter
+LEF Read, Line 156: NOTE:  Old format VIARULE ignored.
+Qrouter detail maze router version 1.4.59.T
+LEF Read, Line 157: NOTE:  Old format VIARULE ignored.
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+LEF Read, Line 167: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site corner (ignored)
+LEF Read, Line 168: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site IO (ignored)
+LEF Read, Line 172: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site core (ignored)
+LEF Read, Line 173: NOTE:  Old format VIARULE ignored.
+LEF read: Processed 3179 lines.
+LEF Read: encountered 0 errors and 12 warnings total.
+Vertical route layer at non-minimum pitch 3.2.  Using smaller pitch 1.6, will route on 1-of-2 tracks for layer metal4.
+Running blif2cel to generate input files for graywolf
+blif2cel.tcl --blif /home/tombert/qflow_results/examples/counter/synthesis/counter.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_results/examples/counter/layout/counter.cel
+No counter.cel1 file found for project. . . no partial blockages to apply to layout.
+Preparing pin placement hints from counter.cel2
+Running GrayWolf placement
+graywolf  counter
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu035 from existing qflow_vars.sh file
+Regenerating files for existing project counter
+Running qrouter 1.4.59.T
+qrouter -noc  -s counter.cfg
+*** Running stage1 routing with defaults
+Nets remaining: 10
+Nets remaining: 9
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 1
+Progress: Stage 1 total routes completed: 45
 

@@ -18,8 +18,9 @@ addpath digital
 openwrapper
 box 0 0 0 0
 drc off
-lef read /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef
-load counter
+gds read /usr/local/share/qflow/tech/osu035/osu035_stdcells.gds2
+load gds_top
+gds read counter
 select top cell
 expand
 view

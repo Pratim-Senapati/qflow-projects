@@ -1,4 +1,4 @@
-Qflow placement logfile created on Mon Mar 17 19:10:10 IST 2025
+Qflow placement logfile created on Mon Mar 17 20:25:23 IST 2025
 Running blif2cel to generate input files for graywolf
 blif2cel.tcl --blif /home/tombert/qflow_results/examples/counter/synthesis/counter.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_results/examples/counter/layout/counter.cel 
 Opened BLIF file (/home/tombert/qflow_results/examples/counter/synthesis/counter.blif) for reading ...
@@ -299,4 +299,4 @@ Files:
 
 Running blif2Verilog.
 Running blif2BSpice.
-Placement script ended on Mon Mar 17 19:10:12 IST 2025
+Placement script ended on Mon Mar 17 20:25:25 IST 2025

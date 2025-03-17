@@ -1,9 +1,9 @@
 # Qflow Automated Setup & Example Projects
 
-This repository provides a fully automated setup for Qflow, allowing users to:
-✅ Install all required tools & dependencies with a single script.
-✅ View pre-generated example layouts using Magic.
-✅ Run Qflow on custom Verilog designs to generate layouts.
+This repository provides a fully automated setup for Qflow, allowing users to:  
+✅ Install all required tools & dependencies with a single script.  
+✅ View pre-generated example layouts using Magic.  
+✅ Run Qflow on custom Verilog designs to generate layouts.  
 
 The script ensures that **Qflow, GrayWolf, Netgen, Magic, and other required tools** are installed correctly, resolving common setup issues.
 
@@ -54,7 +54,7 @@ If everything goes smoothly final window should look like this.
 - **Final Layout (`examples/project/layout/`)** → Chip representation
 - **Logs (`examples/project/log/`)** → Step-by-step processing info
 
-### ✅ **Final Notes**
+## ✅ **Final Notes**
 
 In This Repo:
 1. **README.md** → General repo guide

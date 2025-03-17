@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on Mon Mar 17 19:10:10 IST 2025
+Qflow synthesis logfile created on Mon Mar 17 20:25:22 IST 2025
 Running yosys for verilog parsing and synthesis
 yosys  -s counter.ys
 
@@ -615,9 +615,9 @@ Optimizing module counter.
      XOR2X1                          1
 
 End of script. Logfile hash: 781edf9f79
-CPU: user 0.12s system 0.00s, MEM: 17.20 MB total, 11.09 MB resident
+CPU: user 0.13s system 0.00s, MEM: 17.20 MB total, 11.36 MB resident
 Yosys 0.9 (git sha1 1979e0b)
-Time spent: 25% 1x share (0 sec), 12% 16x opt_clean (0 sec), ...
+Time spent: 23% 1x share (0 sec), 12% 16x opt_clean (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef
 Cleaning up output syntax
@@ -687,4 +687,4 @@ Running blif2BSpice.
 Running spi2xspice.py
 spi2xspice.py "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" counter.spc counter.xspice
 
-Synthesis script ended on Mon Mar 17 19:10:10 IST 2025
+Synthesis script ended on Mon Mar 17 20:25:23 IST 2025
