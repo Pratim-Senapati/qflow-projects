@@ -124,8 +124,7 @@ def windows_instructions():
     print("Qflow and Magic are not natively available on Windows.")
     print("To run the tools, follow these steps:")
     print("1. Install WSL (Windows Subsystem for Linux) and set up Ubuntu.")
-    print("2. Open WSL and run this script inside it using:")
-    print("   python3 install_and_run.py")
+    print("2. Open WSL and Go through the steps mentioned")
     print("3. Alternatively, use a Linux VM or dual-boot setup.\n")
     print("For detailed setup, check: https://opencircuitdesign.com/qflow/")
 
