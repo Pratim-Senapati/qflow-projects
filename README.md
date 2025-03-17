@@ -8,22 +8,22 @@ This repository provides a fully automated setup for Qflow, allowing users to:
 The script ensures that **Qflow, GrayWolf, Netgen, Magic, and other required tools** are installed correctly, resolving common setup issues.
 
 ## 🚀 Quick Setup
-
-1. **Clone this repo**:
+1. **For clean procedure, create a new folder and open it in terminal**
+2. **Clone this repo**:
    ```sh
    git clone https://github.com/Pratim-Senapati/qflow-projects.git
    cd qflow-projects
    ```
-2. **Run setup script (installation and setup of required tools)**:
+3. **Run setup script (installation and setup of required tools)**:
    ```sh
    python3 install_and_run.py
    ```
-3. **Verify Installation**:
+4. **Verify Installation**:
    ```sh
    qflow -help
    magic -T scmos.tech
    ```
-4. **Done! 🎉** You can now see example projects or use your own Verilog files.
+5. **Done! 🎉** You can now see example projects or use your own Verilog files.
 
 ## 🔍 How to View Layouts and Run your Own Verilog
 
