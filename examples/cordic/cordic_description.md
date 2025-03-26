@@ -1,7 +1,7 @@
-#📄 CORDIC-Based Sine and Cosine Generator Description
+# 📄 CORDIC-Based Sine and Cosine Generator Description
 This project implements a CORDIC (COordinate Rotation DIgital Computer) algorithm in Verilog to efficiently calculate the sine and cosine of a given input angle. The CORDIC algorithm is a hardware-friendly iterative method that performs vector rotations using only shift and add operations, making it highly efficient for FPGA and ASIC implementations.
 
-##✅ Key Features:
+## ✅ Key Features:
 - Input:
 
 	- `theta`: The input angle in radians, represented as a 16-bit fixed-point number.
@@ -16,7 +16,7 @@ This project implements a CORDIC (COordinate Rotation DIgital Computer) algorith
 
 	- `cosine`: Cosine of the input angle (16-bit fixed-point format).
 
-##⚙️ Algorithm Workflow:
+## ⚙️ Algorithm Workflow:
 1. Initialization:
 
 	- The angle is compared against predefined arctangent values (look-up table).
@@ -31,10 +31,10 @@ This project implements a CORDIC (COordinate Rotation DIgital Computer) algorith
 
 	- The final sine and cosine values are generated in fixed-point format with 16-bit precision.
 
-##🔥 Usage:
+## 🔥 Usage:
 - This module demonstrates fixed-point arithmetic, efficient trigonometric calculations, and iterative algorithms in Verilog.
 
-##📊 Applications:
+## 📊 Applications:
 - **Digital signal processing (DSP):** Used in sine/cosine waveform generation, modulation and demodulation.
 
 - **Communication systems:** For phase modulation, digital oscillators, and vector rotations.

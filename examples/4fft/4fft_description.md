@@ -1,7 +1,7 @@
-#📄 4-Point FFT Description
+# 📄 4-Point FFT Description
 This project implements a 4-point Fast Fourier Transform (FFT) in Verilog, designed to process real-valued input signals and output the magnitude of the frequency components. The FFT is structured as a radix-2, decimation-in-time (DIT) algorithm with two butterfly stages.
 
-##✅ Key Features:
+## ✅ Key Features:
 - **Input:** 4 real-valued signals (x0, x1, x2, x3) of 8 bits each.
 
 - **Output:** 4 frequency-domain magnitude values (8 bits each), representing the combined effect of real and imaginary parts.
@@ -16,10 +16,10 @@ This project implements a 4-point Fast Fourier Transform (FFT) in Verilog, desig
 
 	Magnitude = sqrt(Real^2 + Imag^2)
 
-##🔥 Usage:
+## 🔥 Usage:
 - This module demonstrates digital signal processing (DSP) concepts in Verilog, covering complex arithmetic and efficient data manipulation.
 
-##📊 Applications:
+## 📊 Applications:
 - Frequency analysis of signals.
 
 - Spectrum analyzers, waveform processing, audio and communication systems.

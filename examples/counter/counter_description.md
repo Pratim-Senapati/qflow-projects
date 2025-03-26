@@ -1,7 +1,7 @@
-#📄 4-Bit Synchronous Counter Description
+# 📄 4-Bit Synchronous Counter Description
 This project implements a 4-bit synchronous counter in Verilog, designed to count sequentially from `0` to `15` (in binary). The counter increments on each clock pulse and can be reset to `0` using an active-high reset signal.
 
-##✅ Key Features:
+## ✅ Key Features:
 - Input:
 
 	- `clk`: Clock input signal for synchronizing the counter.
@@ -16,7 +16,7 @@ This project implements a 4-bit synchronous counter in Verilog, designed to coun
 
 	- `count`: The 4-bit output representing the current counter value.
 
-##⚙️ Functionality:
+## ⚙️ Functionality:
 1. Clock and Reset Behavior:
 
 - On every positive edge of the clock, the counter increments by 1.
@@ -33,10 +33,10 @@ This project implements a 4-bit synchronous counter in Verilog, designed to coun
 
 - After reaching `15` (`4'b1111`), the counter rolls over to `0` on the next clock pulse.
 
-##🔥 Usage:
+## 🔥 Usage:
 - This module demonstrates basic synchronous sequential logic, showcasing clocked operations and reset handling in Verilog.
 
-##📊 Applications:
+## 📊 Applications:
 - **Digital systems:** Used as a counter module in digital circuits.
 
 - **Timer or clock generation:** Forms the basis for timing units and frequency dividers.
