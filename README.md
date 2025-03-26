@@ -27,9 +27,9 @@ The script ensures that **Qflow, GrayWolf, Netgen, Magic, and other required too
 
 ## 🔍 How to View Layouts and Run your Own Verilog
 
-To see one of the example files, go to `examples/sin_cos/layout`. Then run
+To see one of the example files, go to `examples/cordic/layout`. Then run
 ```sh
-magic /home/user/qflow-projects/examples/sin_cos/layout/cordic.mag
+magic /home/user/qflow-projects/examples/cordic/layout/cordic.mag
 ```
 This command can be run from anywhere(absolute path of `cordic.mag` needs to be used). Replace `user` with your user name.
 And to use your own verilog code and run it through the whole process, go to the directory the code is in.
