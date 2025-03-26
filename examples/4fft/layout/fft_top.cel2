@@ -1,0 +1,92 @@
+padgroup x0_vector nopermute
+twpin_x0[0]  nonfixed
+twpin_x0[1]  nonfixed
+twpin_x0[2]  nonfixed
+twpin_x0[3]  nonfixed
+twpin_x0[4]  nonfixed
+twpin_x0[5]  nonfixed
+twpin_x0[6]  nonfixed
+twpin_x0[7]  nonfixed
+restrict side L
+
+padgroup x1_vector nopermute
+twpin_x1[0]  nonfixed
+twpin_x1[1]  nonfixed
+twpin_x1[2]  nonfixed
+twpin_x1[3]  nonfixed
+twpin_x1[4]  nonfixed
+twpin_x1[5]  nonfixed
+twpin_x1[6]  nonfixed
+twpin_x1[7]  nonfixed
+twpin_clk  nonfixed
+restrict side L
+
+padgroup x2_vector nopermute
+twpin_x2[0]  nonfixed
+twpin_x2[1]  nonfixed
+twpin_x2[2]  nonfixed
+twpin_x2[3]  nonfixed
+twpin_x2[4]  nonfixed
+twpin_x2[5]  nonfixed
+twpin_x2[6]  nonfixed
+twpin_x2[7]  nonfixed
+restrict side T
+
+padgroup x3_vector nopermute
+twpin_x3[0]  nonfixed
+twpin_x3[1]  nonfixed
+twpin_x3[2]  nonfixed
+twpin_x3[3]  nonfixed
+twpin_x3[4]  nonfixed
+twpin_x3[5]  nonfixed
+twpin_x3[6]  nonfixed
+twpin_x3[7]  nonfixed
+twpin_start  nonfixed
+restrict side T
+
+padgroup X0_mag_vector nopermute
+twpin_X0_mag[0]  nonfixed
+twpin_X0_mag[1]  nonfixed
+twpin_X0_mag[2]  nonfixed
+twpin_X0_mag[3]  nonfixed
+twpin_X0_mag[4]  nonfixed
+twpin_X0_mag[5]  nonfixed
+twpin_X0_mag[6]  nonfixed
+twpin_X0_mag[7]  nonfixed
+restrict side R
+
+padgroup X1_mag_vector nopermute
+twpin_X1_mag[0]  nonfixed
+twpin_X1_mag[1]  nonfixed
+twpin_X1_mag[2]  nonfixed
+twpin_X1_mag[3]  nonfixed
+twpin_X1_mag[4]  nonfixed
+twpin_X1_mag[5]  nonfixed
+twpin_X1_mag[6]  nonfixed
+twpin_X1_mag[7]  nonfixed
+twpin_reset  nonfixed
+restrict side R
+
+padgroup X2_mag_vector nopermute
+twpin_X2_mag[0]  nonfixed
+twpin_X2_mag[1]  nonfixed
+twpin_X2_mag[2]  nonfixed
+twpin_X2_mag[3]  nonfixed
+twpin_X2_mag[4]  nonfixed
+twpin_X2_mag[5]  nonfixed
+twpin_X2_mag[6]  nonfixed
+twpin_X2_mag[7]  nonfixed
+restrict side B
+
+padgroup X3_mag_vector nopermute
+twpin_X3_mag[0]  nonfixed
+twpin_X3_mag[1]  nonfixed
+twpin_X3_mag[2]  nonfixed
+twpin_X3_mag[3]  nonfixed
+twpin_X3_mag[4]  nonfixed
+twpin_X3_mag[5]  nonfixed
+twpin_X3_mag[6]  nonfixed
+twpin_X3_mag[7]  nonfixed
+twpin_done  nonfixed
+restrict side B
+
