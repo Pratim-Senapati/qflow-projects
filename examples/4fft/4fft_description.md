@@ -14,7 +14,7 @@ This project implements a 4-point Fast Fourier Transform (FFT) in Verilog, desig
 
 - **Magnitude Calculation:** The final output combines the real and imaginary parts into a single magnitude value using the formula:
 
-	Magnitude = sqrt(Real^2 + Imag^2)
+	- Magnitude = sqrt(Real^2 + Imag^2)
 
 ## 🔥 Usage:
 - This module demonstrates digital signal processing (DSP) concepts in Verilog, covering complex arithmetic and efficient data manipulation.
