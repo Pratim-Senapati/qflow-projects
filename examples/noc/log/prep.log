@@ -1,0 +1,12 @@
+Qflow project preparation output log Fri Mar 28 07:26:27 2025
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu035
+Regenerating files for existing project noc_top
+
+No actions specified on command line;
+creating qflow script file /home/tombert/qflow_projects/noc/qflow_exec.sh only.
+Uncomment lines in this file and source the file to run the flow.
