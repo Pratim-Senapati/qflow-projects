@@ -58,8 +58,8 @@ If everything goes smoothly final window should look like this.
 
 In This Repo:
 1. **README.md** → General repo guide
-2. **docs/qflow_overview.md** → Explanation of tools used throughout the process
+2. **qflow_overview.md** → Explanation of tools used throughout the process
 
-Go through the examples to figure out how everything works.
+Go through the examples to see some of my complex designs based on **4-point FFT** and **2x2 Mesh Network-on-Chip**.
 
 If run into any issues feel free to refer to `http://opencircuitdesign.com/qflow/tutorial.html`
