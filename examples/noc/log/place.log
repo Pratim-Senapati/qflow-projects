@@ -1,10 +1,10 @@
-Qflow placement logfile created on Fri Mar 28 07:26:33 IST 2025
+Qflow placement logfile created on Tue Apr 1 14:33:51 IST 2025
 Running blif2cel to generate input files for graywolf
-blif2cel.tcl --blif /home/tombert/qflow_projects/noc/synthesis/noc_top.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_projects/noc/layout/noc_top.cel 
-Opened BLIF file (/home/tombert/qflow_projects/noc/synthesis/noc_top.blif) for reading ...
-Opened CEL file (/home/tombert/qflow_projects/noc/layout/noc_top.cel) for writing...
+blif2cel.tcl --blif /home/tombert/qflow_results/examples/noc/synthesis/noc_top.blif  --lef  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef --cel /home/tombert/qflow_results/examples/noc/layout/noc_top.cel 
+Opened BLIF file (/home/tombert/qflow_results/examples/noc/synthesis/noc_top.blif) for reading ...
+Opened CEL file (/home/tombert/qflow_results/examples/noc/layout/noc_top.cel) for writing...
 Loaded /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef file for reading...
-1st pass of blif file /home/tombert/qflow_projects/noc/synthesis/noc_top.blif. . .
+1st pass of blif file /home/tombert/qflow_results/examples/noc/synthesis/noc_top.blif. . .
 Reading macros and/or technology data from LEF file. . .
 LEF file specifies route layer Y pitch as 2
 LEF file specifies route layer X pitch as 1.6
@@ -184,464 +184,464 @@ Authors: Carl Sechen, Kai-Win Lee, and Bill Swartz,
 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 
 151 152 153 154 155 156 157 158 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  250
- tracks = 234 at attempts =  1000
- tracks = 225 at attempts =  2000
- tracks = 221 at attempts =  3000
- tracks = 215 at attempts =  4000
- tracks = 214 at attempts =  5000
- tracks = 212 at attempts =  6000
- tracks = 212 at attempts =  7000
- tracks = 212 at attempts =  8000
- tracks = 212 at attempts =  9000
- tracks = 212 at attempts = 10000
- tracks = 211 at attempts = 11000
- tracks = 211 at attempts = 12000
- tracks = 211 at attempts = 13000
- tracks = 210 at attempts = 14000
- tracks = 210 at attempts = 15000
- tracks = 210 at attempts = 16000
- tracks = 210 at attempts = 17000
- tracks = 210 at attempts = 18000
- tracks = 210 at attempts = 19000
- tracks = 210 at attempts = 20000
- tracks = 210 at attempts = 21000
- tracks = 210 at attempts = 22000
- tracks = 210 at attempts = 23000
- tracks = 210 at attempts = 24000
- tracks = 210 at attempts = 25000
- tracks = 210 at attempts = 26000
- tracks = 210 at attempts = 27000
- tracks = 210 at attempts = 28000
- tracks = 210 at attempts = 29000
- tracks = 210 at attempts = 30000
- tracks = 210 at attempts = 31000
- tracks = 210 at attempts = 32000
- tracks = 210 at attempts = 33000
- tracks = 210 at attempts = 34000
- tracks = 210 at attempts = 35000
- tracks = 210 at attempts = 36000
- tracks = 210 at attempts = 37000
- tracks = 210 at attempts = 38000
- tracks = 210 at attempts = 39000
- tracks = 210 at attempts = 40000
- tracks = 210 at attempts = 41000
+ the starting value of tracks =  275
+ tracks = 256 at attempts =  1000
+ tracks = 250 at attempts =  2000
+ tracks = 244 at attempts =  3000
+ tracks = 239 at attempts =  4000
+ tracks = 237 at attempts =  5000
+ tracks = 235 at attempts =  6000
+ tracks = 234 at attempts =  7000
+ tracks = 234 at attempts =  8000
+ tracks = 233 at attempts =  9000
+ tracks = 233 at attempts = 10000
+ tracks = 233 at attempts = 11000
+ tracks = 233 at attempts = 12000
+ tracks = 233 at attempts = 13000
+ tracks = 233 at attempts = 14000
+ tracks = 233 at attempts = 15000
+ tracks = 233 at attempts = 16000
+ tracks = 233 at attempts = 17000
+ tracks = 233 at attempts = 18000
+ tracks = 233 at attempts = 19000
+ tracks = 233 at attempts = 20000
+ tracks = 233 at attempts = 21000
+ tracks = 233 at attempts = 22000
+ tracks = 233 at attempts = 23000
+ tracks = 233 at attempts = 24000
+ tracks = 233 at attempts = 25000
+ tracks = 233 at attempts = 26000
+ tracks = 233 at attempts = 27000
+ tracks = 233 at attempts = 28000
+ tracks = 233 at attempts = 29000
+ tracks = 233 at attempts = 30000
+ tracks = 233 at attempts = 31000
+ tracks = 233 at attempts = 32000
+ tracks = 233 at attempts = 33000
+ tracks = 233 at attempts = 34000
+ tracks = 233 at attempts = 35000
+ tracks = 233 at attempts = 36000
+ tracks = 233 at attempts = 37000
+ tracks = 233 at attempts = 38000
+ tracks = 233 at attempts = 39000
+ tracks = 233 at attempts = 40000
+ tracks = 233 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  254
- tracks = 237 at attempts =  1000
- tracks = 228 at attempts =  2000
- tracks = 222 at attempts =  3000
- tracks = 218 at attempts =  4000
- tracks = 216 at attempts =  5000
- tracks = 215 at attempts =  6000
- tracks = 215 at attempts =  7000
- tracks = 213 at attempts =  8000
- tracks = 213 at attempts =  9000
- tracks = 213 at attempts = 10000
- tracks = 213 at attempts = 11000
- tracks = 212 at attempts = 12000
- tracks = 212 at attempts = 13000
- tracks = 212 at attempts = 14000
- tracks = 212 at attempts = 15000
- tracks = 212 at attempts = 16000
- tracks = 212 at attempts = 17000
- tracks = 212 at attempts = 18000
- tracks = 212 at attempts = 19000
- tracks = 212 at attempts = 20000
- tracks = 212 at attempts = 21000
- tracks = 212 at attempts = 22000
- tracks = 212 at attempts = 23000
- tracks = 212 at attempts = 24000
- tracks = 212 at attempts = 25000
- tracks = 212 at attempts = 26000
- tracks = 212 at attempts = 27000
- tracks = 212 at attempts = 28000
- tracks = 212 at attempts = 29000
- tracks = 212 at attempts = 30000
- tracks = 212 at attempts = 31000
- tracks = 212 at attempts = 32000
- tracks = 212 at attempts = 33000
- tracks = 212 at attempts = 34000
- tracks = 212 at attempts = 35000
- tracks = 212 at attempts = 36000
- tracks = 212 at attempts = 37000
- tracks = 212 at attempts = 38000
- tracks = 212 at attempts = 39000
- tracks = 212 at attempts = 40000
- tracks = 212 at attempts = 41000
+ the starting value of tracks =  278
+ tracks = 265 at attempts =  1000
+ tracks = 254 at attempts =  2000
+ tracks = 249 at attempts =  3000
+ tracks = 246 at attempts =  4000
+ tracks = 241 at attempts =  5000
+ tracks = 241 at attempts =  6000
+ tracks = 241 at attempts =  7000
+ tracks = 241 at attempts =  8000
+ tracks = 241 at attempts =  9000
+ tracks = 240 at attempts = 10000
+ tracks = 239 at attempts = 11000
+ tracks = 239 at attempts = 12000
+ tracks = 239 at attempts = 13000
+ tracks = 239 at attempts = 14000
+ tracks = 239 at attempts = 15000
+ tracks = 239 at attempts = 16000
+ tracks = 239 at attempts = 17000
+ tracks = 239 at attempts = 18000
+ tracks = 239 at attempts = 19000
+ tracks = 239 at attempts = 20000
+ tracks = 239 at attempts = 21000
+ tracks = 239 at attempts = 22000
+ tracks = 239 at attempts = 23000
+ tracks = 239 at attempts = 24000
+ tracks = 239 at attempts = 25000
+ tracks = 239 at attempts = 26000
+ tracks = 239 at attempts = 27000
+ tracks = 239 at attempts = 28000
+ tracks = 239 at attempts = 29000
+ tracks = 239 at attempts = 30000
+ tracks = 239 at attempts = 31000
+ tracks = 239 at attempts = 32000
+ tracks = 239 at attempts = 33000
+ tracks = 239 at attempts = 34000
+ tracks = 239 at attempts = 35000
+ tracks = 239 at attempts = 36000
+ tracks = 239 at attempts = 37000
+ tracks = 239 at attempts = 38000
+ tracks = 239 at attempts = 39000
+ tracks = 239 at attempts = 40000
+ tracks = 239 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  244
- tracks = 230 at attempts =  1000
- tracks = 223 at attempts =  2000
- tracks = 219 at attempts =  3000
- tracks = 218 at attempts =  4000
- tracks = 218 at attempts =  5000
- tracks = 217 at attempts =  6000
- tracks = 217 at attempts =  7000
- tracks = 216 at attempts =  8000
- tracks = 216 at attempts =  9000
- tracks = 216 at attempts = 10000
- tracks = 216 at attempts = 11000
- tracks = 215 at attempts = 12000
- tracks = 215 at attempts = 13000
- tracks = 215 at attempts = 14000
- tracks = 215 at attempts = 15000
- tracks = 215 at attempts = 16000
- tracks = 215 at attempts = 17000
- tracks = 215 at attempts = 18000
- tracks = 215 at attempts = 19000
- tracks = 215 at attempts = 20000
- tracks = 215 at attempts = 21000
- tracks = 215 at attempts = 22000
- tracks = 215 at attempts = 23000
- tracks = 215 at attempts = 24000
- tracks = 215 at attempts = 25000
- tracks = 215 at attempts = 26000
- tracks = 215 at attempts = 27000
- tracks = 215 at attempts = 28000
- tracks = 215 at attempts = 29000
- tracks = 215 at attempts = 30000
- tracks = 215 at attempts = 31000
- tracks = 215 at attempts = 32000
- tracks = 215 at attempts = 33000
- tracks = 215 at attempts = 34000
- tracks = 215 at attempts = 35000
- tracks = 215 at attempts = 36000
- tracks = 215 at attempts = 37000
- tracks = 215 at attempts = 38000
- tracks = 215 at attempts = 39000
- tracks = 215 at attempts = 40000
- tracks = 215 at attempts = 41000
+ the starting value of tracks =  274
+ tracks = 250 at attempts =  1000
+ tracks = 240 at attempts =  2000
+ tracks = 236 at attempts =  3000
+ tracks = 236 at attempts =  4000
+ tracks = 235 at attempts =  5000
+ tracks = 233 at attempts =  6000
+ tracks = 233 at attempts =  7000
+ tracks = 233 at attempts =  8000
+ tracks = 231 at attempts =  9000
+ tracks = 230 at attempts = 10000
+ tracks = 230 at attempts = 11000
+ tracks = 230 at attempts = 12000
+ tracks = 230 at attempts = 13000
+ tracks = 228 at attempts = 14000
+ tracks = 228 at attempts = 15000
+ tracks = 228 at attempts = 16000
+ tracks = 228 at attempts = 17000
+ tracks = 228 at attempts = 18000
+ tracks = 228 at attempts = 19000
+ tracks = 228 at attempts = 20000
+ tracks = 228 at attempts = 21000
+ tracks = 228 at attempts = 22000
+ tracks = 228 at attempts = 23000
+ tracks = 228 at attempts = 24000
+ tracks = 228 at attempts = 25000
+ tracks = 228 at attempts = 26000
+ tracks = 228 at attempts = 27000
+ tracks = 228 at attempts = 28000
+ tracks = 228 at attempts = 29000
+ tracks = 228 at attempts = 30000
+ tracks = 228 at attempts = 31000
+ tracks = 228 at attempts = 32000
+ tracks = 228 at attempts = 33000
+ tracks = 228 at attempts = 34000
+ tracks = 228 at attempts = 35000
+ tracks = 228 at attempts = 36000
+ tracks = 228 at attempts = 37000
+ tracks = 228 at attempts = 38000
+ tracks = 228 at attempts = 39000
+ tracks = 228 at attempts = 40000
+ tracks = 228 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  292
- tracks = 291 at attempts =  1000
- tracks = 290 at attempts =  2000
- tracks = 290 at attempts =  3000
- tracks = 290 at attempts =  4000
- tracks = 290 at attempts =  5000
- tracks = 290 at attempts =  6000
- tracks = 290 at attempts =  7000
- tracks = 290 at attempts =  8000
- tracks = 290 at attempts =  9000
- tracks = 290 at attempts = 10000
- tracks = 290 at attempts = 11000
- tracks = 290 at attempts = 12000
- tracks = 290 at attempts = 13000
- tracks = 290 at attempts = 14000
- tracks = 290 at attempts = 15000
- tracks = 290 at attempts = 16000
- tracks = 290 at attempts = 17000
- tracks = 290 at attempts = 18000
- tracks = 290 at attempts = 19000
- tracks = 290 at attempts = 20000
- tracks = 290 at attempts = 21000
- tracks = 290 at attempts = 22000
- tracks = 290 at attempts = 23000
- tracks = 290 at attempts = 24000
- tracks = 290 at attempts = 25000
- tracks = 290 at attempts = 26000
- tracks = 290 at attempts = 27000
- tracks = 290 at attempts = 28000
- tracks = 290 at attempts = 29000
- tracks = 290 at attempts = 30000
- tracks = 290 at attempts = 31000
- tracks = 290 at attempts = 32000
- tracks = 290 at attempts = 33000
- tracks = 290 at attempts = 34000
- tracks = 290 at attempts = 35000
- tracks = 290 at attempts = 36000
- tracks = 290 at attempts = 37000
- tracks = 290 at attempts = 38000
- tracks = 290 at attempts = 39000
- tracks = 290 at attempts = 40000
- tracks = 290 at attempts = 41000
+ the starting value of tracks =  320
+ tracks = 320 at attempts =  1000
+ tracks = 319 at attempts =  2000
+ tracks = 319 at attempts =  3000
+ tracks = 319 at attempts =  4000
+ tracks = 319 at attempts =  5000
+ tracks = 319 at attempts =  6000
+ tracks = 319 at attempts =  7000
+ tracks = 319 at attempts =  8000
+ tracks = 319 at attempts =  9000
+ tracks = 319 at attempts = 10000
+ tracks = 319 at attempts = 11000
+ tracks = 319 at attempts = 12000
+ tracks = 319 at attempts = 13000
+ tracks = 319 at attempts = 14000
+ tracks = 319 at attempts = 15000
+ tracks = 319 at attempts = 16000
+ tracks = 319 at attempts = 17000
+ tracks = 319 at attempts = 18000
+ tracks = 319 at attempts = 19000
+ tracks = 319 at attempts = 20000
+ tracks = 319 at attempts = 21000
+ tracks = 319 at attempts = 22000
+ tracks = 319 at attempts = 23000
+ tracks = 319 at attempts = 24000
+ tracks = 319 at attempts = 25000
+ tracks = 319 at attempts = 26000
+ tracks = 319 at attempts = 27000
+ tracks = 319 at attempts = 28000
+ tracks = 319 at attempts = 29000
+ tracks = 319 at attempts = 30000
+ tracks = 319 at attempts = 31000
+ tracks = 319 at attempts = 32000
+ tracks = 319 at attempts = 33000
+ tracks = 319 at attempts = 34000
+ tracks = 319 at attempts = 35000
+ tracks = 319 at attempts = 36000
+ tracks = 319 at attempts = 37000
+ tracks = 319 at attempts = 38000
+ tracks = 319 at attempts = 39000
+ tracks = 319 at attempts = 40000
+ tracks = 319 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  247
- tracks = 226 at attempts =  1000
- tracks = 222 at attempts =  2000
- tracks = 219 at attempts =  3000
- tracks = 218 at attempts =  4000
- tracks = 215 at attempts =  5000
- tracks = 214 at attempts =  6000
- tracks = 214 at attempts =  7000
- tracks = 214 at attempts =  8000
- tracks = 214 at attempts =  9000
- tracks = 214 at attempts = 10000
- tracks = 214 at attempts = 11000
- tracks = 214 at attempts = 12000
- tracks = 214 at attempts = 13000
- tracks = 214 at attempts = 14000
- tracks = 214 at attempts = 15000
- tracks = 214 at attempts = 16000
- tracks = 214 at attempts = 17000
- tracks = 214 at attempts = 18000
- tracks = 214 at attempts = 19000
- tracks = 214 at attempts = 20000
- tracks = 214 at attempts = 21000
- tracks = 214 at attempts = 22000
- tracks = 214 at attempts = 23000
- tracks = 214 at attempts = 24000
- tracks = 214 at attempts = 25000
- tracks = 214 at attempts = 26000
- tracks = 214 at attempts = 27000
- tracks = 214 at attempts = 28000
- tracks = 214 at attempts = 29000
- tracks = 214 at attempts = 30000
- tracks = 214 at attempts = 31000
- tracks = 214 at attempts = 32000
- tracks = 214 at attempts = 33000
- tracks = 214 at attempts = 34000
- tracks = 214 at attempts = 35000
- tracks = 214 at attempts = 36000
- tracks = 214 at attempts = 37000
- tracks = 214 at attempts = 38000
- tracks = 214 at attempts = 39000
- tracks = 214 at attempts = 40000
- tracks = 214 at attempts = 41000
+ the starting value of tracks =  270
+ tracks = 257 at attempts =  1000
+ tracks = 247 at attempts =  2000
+ tracks = 244 at attempts =  3000
+ tracks = 240 at attempts =  4000
+ tracks = 238 at attempts =  5000
+ tracks = 236 at attempts =  6000
+ tracks = 234 at attempts =  7000
+ tracks = 234 at attempts =  8000
+ tracks = 233 at attempts =  9000
+ tracks = 233 at attempts = 10000
+ tracks = 233 at attempts = 11000
+ tracks = 233 at attempts = 12000
+ tracks = 233 at attempts = 13000
+ tracks = 233 at attempts = 14000
+ tracks = 233 at attempts = 15000
+ tracks = 233 at attempts = 16000
+ tracks = 233 at attempts = 17000
+ tracks = 233 at attempts = 18000
+ tracks = 233 at attempts = 19000
+ tracks = 233 at attempts = 20000
+ tracks = 233 at attempts = 21000
+ tracks = 233 at attempts = 22000
+ tracks = 233 at attempts = 23000
+ tracks = 233 at attempts = 24000
+ tracks = 233 at attempts = 25000
+ tracks = 232 at attempts = 26000
+ tracks = 232 at attempts = 27000
+ tracks = 232 at attempts = 28000
+ tracks = 232 at attempts = 29000
+ tracks = 232 at attempts = 30000
+ tracks = 232 at attempts = 31000
+ tracks = 232 at attempts = 32000
+ tracks = 232 at attempts = 33000
+ tracks = 232 at attempts = 34000
+ tracks = 232 at attempts = 35000
+ tracks = 232 at attempts = 36000
+ tracks = 232 at attempts = 37000
+ tracks = 232 at attempts = 38000
+ tracks = 232 at attempts = 39000
+ tracks = 232 at attempts = 40000
+ tracks = 232 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  248
- tracks = 229 at attempts =  1000
- tracks = 221 at attempts =  2000
- tracks = 217 at attempts =  3000
- tracks = 217 at attempts =  4000
- tracks = 215 at attempts =  5000
- tracks = 213 at attempts =  6000
- tracks = 213 at attempts =  7000
- tracks = 212 at attempts =  8000
- tracks = 212 at attempts =  9000
- tracks = 212 at attempts = 10000
- tracks = 212 at attempts = 11000
- tracks = 212 at attempts = 12000
- tracks = 212 at attempts = 13000
- tracks = 212 at attempts = 14000
- tracks = 212 at attempts = 15000
- tracks = 212 at attempts = 16000
- tracks = 212 at attempts = 17000
- tracks = 212 at attempts = 18000
- tracks = 212 at attempts = 19000
- tracks = 212 at attempts = 20000
- tracks = 212 at attempts = 21000
- tracks = 212 at attempts = 22000
- tracks = 212 at attempts = 23000
- tracks = 212 at attempts = 24000
- tracks = 212 at attempts = 25000
- tracks = 212 at attempts = 26000
- tracks = 212 at attempts = 27000
- tracks = 212 at attempts = 28000
- tracks = 212 at attempts = 29000
- tracks = 212 at attempts = 30000
- tracks = 212 at attempts = 31000
- tracks = 211 at attempts = 32000
- tracks = 211 at attempts = 33000
- tracks = 211 at attempts = 34000
- tracks = 211 at attempts = 35000
- tracks = 211 at attempts = 36000
- tracks = 211 at attempts = 37000
- tracks = 211 at attempts = 38000
- tracks = 211 at attempts = 39000
- tracks = 211 at attempts = 40000
- tracks = 211 at attempts = 41000
+ the starting value of tracks =  275
+ tracks = 252 at attempts =  1000
+ tracks = 244 at attempts =  2000
+ tracks = 240 at attempts =  3000
+ tracks = 239 at attempts =  4000
+ tracks = 237 at attempts =  5000
+ tracks = 234 at attempts =  6000
+ tracks = 234 at attempts =  7000
+ tracks = 233 at attempts =  8000
+ tracks = 233 at attempts =  9000
+ tracks = 233 at attempts = 10000
+ tracks = 233 at attempts = 11000
+ tracks = 232 at attempts = 12000
+ tracks = 232 at attempts = 13000
+ tracks = 232 at attempts = 14000
+ tracks = 232 at attempts = 15000
+ tracks = 232 at attempts = 16000
+ tracks = 232 at attempts = 17000
+ tracks = 232 at attempts = 18000
+ tracks = 232 at attempts = 19000
+ tracks = 232 at attempts = 20000
+ tracks = 232 at attempts = 21000
+ tracks = 232 at attempts = 22000
+ tracks = 232 at attempts = 23000
+ tracks = 232 at attempts = 24000
+ tracks = 232 at attempts = 25000
+ tracks = 232 at attempts = 26000
+ tracks = 232 at attempts = 27000
+ tracks = 232 at attempts = 28000
+ tracks = 232 at attempts = 29000
+ tracks = 232 at attempts = 30000
+ tracks = 232 at attempts = 31000
+ tracks = 232 at attempts = 32000
+ tracks = 232 at attempts = 33000
+ tracks = 232 at attempts = 34000
+ tracks = 232 at attempts = 35000
+ tracks = 232 at attempts = 36000
+ tracks = 232 at attempts = 37000
+ tracks = 232 at attempts = 38000
+ tracks = 232 at attempts = 39000
+ tracks = 232 at attempts = 40000
+ tracks = 232 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  251
- tracks = 231 at attempts =  1000
- tracks = 222 at attempts =  2000
- tracks = 218 at attempts =  3000
- tracks = 216 at attempts =  4000
- tracks = 215 at attempts =  5000
- tracks = 212 at attempts =  6000
- tracks = 211 at attempts =  7000
- tracks = 211 at attempts =  8000
- tracks = 211 at attempts =  9000
- tracks = 210 at attempts = 10000
- tracks = 210 at attempts = 11000
- tracks = 210 at attempts = 12000
- tracks = 209 at attempts = 13000
- tracks = 209 at attempts = 14000
- tracks = 209 at attempts = 15000
- tracks = 209 at attempts = 16000
- tracks = 209 at attempts = 17000
- tracks = 209 at attempts = 18000
- tracks = 208 at attempts = 19000
- tracks = 208 at attempts = 20000
- tracks = 208 at attempts = 21000
- tracks = 208 at attempts = 22000
- tracks = 208 at attempts = 23000
- tracks = 208 at attempts = 24000
- tracks = 208 at attempts = 25000
- tracks = 208 at attempts = 26000
- tracks = 208 at attempts = 27000
- tracks = 208 at attempts = 28000
- tracks = 208 at attempts = 29000
- tracks = 208 at attempts = 30000
- tracks = 208 at attempts = 31000
- tracks = 208 at attempts = 32000
- tracks = 208 at attempts = 33000
- tracks = 208 at attempts = 34000
- tracks = 208 at attempts = 35000
- tracks = 208 at attempts = 36000
- tracks = 208 at attempts = 37000
- tracks = 208 at attempts = 38000
- tracks = 208 at attempts = 39000
- tracks = 208 at attempts = 40000
- tracks = 208 at attempts = 41000
+ the starting value of tracks =  271
+ tracks = 251 at attempts =  1000
+ tracks = 243 at attempts =  2000
+ tracks = 239 at attempts =  3000
+ tracks = 237 at attempts =  4000
+ tracks = 235 at attempts =  5000
+ tracks = 234 at attempts =  6000
+ tracks = 234 at attempts =  7000
+ tracks = 233 at attempts =  8000
+ tracks = 233 at attempts =  9000
+ tracks = 233 at attempts = 10000
+ tracks = 232 at attempts = 11000
+ tracks = 232 at attempts = 12000
+ tracks = 232 at attempts = 13000
+ tracks = 232 at attempts = 14000
+ tracks = 232 at attempts = 15000
+ tracks = 232 at attempts = 16000
+ tracks = 231 at attempts = 17000
+ tracks = 231 at attempts = 18000
+ tracks = 231 at attempts = 19000
+ tracks = 231 at attempts = 20000
+ tracks = 231 at attempts = 21000
+ tracks = 231 at attempts = 22000
+ tracks = 231 at attempts = 23000
+ tracks = 231 at attempts = 24000
+ tracks = 231 at attempts = 25000
+ tracks = 231 at attempts = 26000
+ tracks = 231 at attempts = 27000
+ tracks = 231 at attempts = 28000
+ tracks = 231 at attempts = 29000
+ tracks = 231 at attempts = 30000
+ tracks = 231 at attempts = 31000
+ tracks = 231 at attempts = 32000
+ tracks = 231 at attempts = 33000
+ tracks = 231 at attempts = 34000
+ tracks = 231 at attempts = 35000
+ tracks = 231 at attempts = 36000
+ tracks = 231 at attempts = 37000
+ tracks = 231 at attempts = 38000
+ tracks = 231 at attempts = 39000
+ tracks = 231 at attempts = 40000
+ tracks = 231 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
  block left edge is at -399
- the longest block length is 67680
+ the longest block length is 62720
  building the steiner trees
  rebuilding the steiner tree
 
 ----start doing coarse global routing ------ 
  ITERATION  1
 
-  longest Row is:3   Its length is:66880
+  longest Row is:22   Its length is:59840
  doing feed-through pins assignment
  building the net-tree now !
  set up the global routing grids
- the starting value of tracks =  288
- tracks = 287 at attempts =  1000
- tracks = 285 at attempts =  2000
- tracks = 284 at attempts =  3000
- tracks = 284 at attempts =  4000
- tracks = 284 at attempts =  5000
- tracks = 284 at attempts =  6000
- tracks = 284 at attempts =  7000
- tracks = 284 at attempts =  8000
- tracks = 284 at attempts =  9000
- tracks = 284 at attempts = 10000
- tracks = 284 at attempts = 11000
- tracks = 284 at attempts = 12000
- tracks = 284 at attempts = 13000
- tracks = 284 at attempts = 14000
- tracks = 284 at attempts = 15000
- tracks = 284 at attempts = 16000
- tracks = 284 at attempts = 17000
- tracks = 284 at attempts = 18000
- tracks = 284 at attempts = 19000
- tracks = 284 at attempts = 20000
- tracks = 284 at attempts = 21000
- tracks = 284 at attempts = 22000
- tracks = 284 at attempts = 23000
- tracks = 284 at attempts = 24000
- tracks = 284 at attempts = 25000
- tracks = 284 at attempts = 26000
- tracks = 284 at attempts = 27000
- tracks = 284 at attempts = 28000
- tracks = 284 at attempts = 29000
- tracks = 284 at attempts = 30000
- tracks = 284 at attempts = 31000
- tracks = 284 at attempts = 32000
- tracks = 284 at attempts = 33000
- tracks = 284 at attempts = 34000
- tracks = 284 at attempts = 35000
- tracks = 284 at attempts = 36000
- tracks = 284 at attempts = 37000
- tracks = 284 at attempts = 38000
- tracks = 284 at attempts = 39000
- tracks = 284 at attempts = 40000
- tracks = 284 at attempts = 41000
+ the starting value of tracks =  315
+ tracks = 315 at attempts =  1000
+ tracks = 314 at attempts =  2000
+ tracks = 314 at attempts =  3000
+ tracks = 314 at attempts =  4000
+ tracks = 314 at attempts =  5000
+ tracks = 314 at attempts =  6000
+ tracks = 314 at attempts =  7000
+ tracks = 314 at attempts =  8000
+ tracks = 314 at attempts =  9000
+ tracks = 314 at attempts = 10000
+ tracks = 314 at attempts = 11000
+ tracks = 314 at attempts = 12000
+ tracks = 314 at attempts = 13000
+ tracks = 314 at attempts = 14000
+ tracks = 314 at attempts = 15000
+ tracks = 314 at attempts = 16000
+ tracks = 314 at attempts = 17000
+ tracks = 314 at attempts = 18000
+ tracks = 314 at attempts = 19000
+ tracks = 314 at attempts = 20000
+ tracks = 314 at attempts = 21000
+ tracks = 314 at attempts = 22000
+ tracks = 314 at attempts = 23000
+ tracks = 314 at attempts = 24000
+ tracks = 314 at attempts = 25000
+ tracks = 314 at attempts = 26000
+ tracks = 314 at attempts = 27000
+ tracks = 314 at attempts = 28000
+ tracks = 314 at attempts = 29000
+ tracks = 314 at attempts = 30000
+ tracks = 314 at attempts = 31000
+ tracks = 314 at attempts = 32000
+ tracks = 314 at attempts = 33000
+ tracks = 314 at attempts = 34000
+ tracks = 314 at attempts = 35000
+ tracks = 314 at attempts = 36000
+ tracks = 314 at attempts = 37000
+ tracks = 314 at attempts = 38000
+ tracks = 314 at attempts = 39000
+ tracks = 314 at attempts = 40000
+ tracks = 314 at attempts = 41000
  removing redundant feed-through pins
  the connectivity of all the nets is verified
 
 
 ***********************************************
-*ACTUAL* FINAL NUMBER OF ROUTING TRACKS: 208
+*ACTUAL* FINAL NUMBER OF ROUTING TRACKS: 228
 ***********************************************
 
 
@@ -657,14 +657,14 @@ Running place2def to translate graywolf output to DEF format.
 place2def.tcl noc_top FILL 
 Running place2def.tcl
 DEF database: 100 units per micron
-Limits: xbot = -750.0 ybot = -530.0 xtop = 66830.0 ytop = 50130.0
-Core values: 80.0 100 66960.0 50100
+Limits: xbot = -750.0 ybot = -530.0 xtop = 59790.0 ytop = 56130.0
+Core values: 80.0 100 59920.0 56100
 Offsets: 80.0 100
 4 routing layers
-metal1: 255 vertical tracks from -4um with 2um pitch
-metal2: 425 vertical tracks from -3.2um with 1.6um pitch
-metal3: 255 vertical tracks from -4um with 2um pitch
-metal4: 213 vertical tracks from -3.2um with 3.2um pitch
+metal1: 285 vertical tracks from -4um with 2um pitch
+metal2: 381 vertical tracks from -3.2um with 1.6um pitch
+metal3: 285 vertical tracks from -4um with 2um pitch
+metal4: 191 vertical tracks from -3.2um with 3.2um pitch
 Summary: Total components = 1639
   Fill cells  = 0
   Other cells = 1639
@@ -673,15 +673,15 @@ Running addspacers to generate power stripes and align cell right edge
 addspacers.tcl  -stripe 5.0 150.0 PG noc_top  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef FILL
 Reading FILL macros from LEF file.
 Reading DEF file noc_top.def. . .
-Number of rows is 25
-Longest row has width 669.6 um
-addspacers:  Inserting 4 stripes of width 4.8 um (5.0 um requested)
-  Pitch 148.8 um, offset 110.4 um
-stretch:  Number of components is 1975
+Number of rows is 28
+Longest row has width 599.2 um
+addspacers:  Inserting 3 stripes of width 4.8 um (5.0 um requested)
+  Pitch 148.8 um, offset 150.4 um
+stretch:  Number of components is 1949
 Analysis of DEF file:
 Number of components = 1639
-New number of components = 1975
-Number of rows = 25
+New number of components = 1949
+Number of rows = 28
 Adjusting obstructions for power striping
 Done with addspacers.tcl
 Running arrangepins to adjust pin positions for optimal routing.
@@ -691,19 +691,19 @@ Reading DEF file noc_top.def. . .
 Recalculating pin positions
 Writing DEF file noc_top_mod.def. . .
 Done with arrangepins.tcl
-blifanno.tcl /home/tombert/qflow_projects/noc/synthesis/noc_top.blif noc_top.def /home/tombert/qflow_projects/noc/synthesis/noc_top_anno.blif
+blifanno.tcl /home/tombert/qflow_results/examples/noc/synthesis/noc_top.blif noc_top.def /home/tombert/qflow_results/examples/noc/synthesis/noc_top_anno.blif
 Running blifanno.tcl
 Reading DEF file noc_top.def. . .
 Done with blifanno.tcl
 
 Generating RTL verilog and SPICE netlist file in directory
-   /home/tombert/qflow_projects/noc/synthesis
+   /home/tombert/qflow_results/examples/noc/synthesis
 Files:
-   Verilog: /home/tombert/qflow_projects/noc/synthesis/noc_top.rtl.v
-   Verilog: /home/tombert/qflow_projects/noc/synthesis/noc_top.rtlnopwr.v
-   Verilog: /home/tombert/qflow_projects/noc/synthesis/noc_top.rtlbb.v
-   Spice:   /home/tombert/qflow_projects/noc/synthesis/noc_top.spc
+   Verilog: /home/tombert/qflow_results/examples/noc/synthesis/noc_top.rtl.v
+   Verilog: /home/tombert/qflow_results/examples/noc/synthesis/noc_top.rtlnopwr.v
+   Verilog: /home/tombert/qflow_results/examples/noc/synthesis/noc_top.rtlbb.v
+   Spice:   /home/tombert/qflow_results/examples/noc/synthesis/noc_top.spc
 
 Running blif2Verilog.
 Running blif2BSpice.
-Placement script ended on Fri Mar 28 07:27:50 IST 2025
+Placement script ended on Tue Apr 1 14:34:37 IST 2025

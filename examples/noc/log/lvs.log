@@ -1,4 +1,4 @@
-Qflow LVS logfile created on Fri Mar 28 07:28:44 IST 2025
+Qflow LVS logfile created on Tue Apr 1 14:35:14 IST 2025
 netgen ${lvs_options} -batch lvs "${rootname}.spice ${rootname}" 
 	"${synthdir}/${rootname}.spc ${rootname}" ${setup_script} ${outfile} 
 	-json -blackbox
@@ -7,7 +7,7 @@ Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Generating JSON file result
 Treating empty subcircuits as black-box cells
 Reading netlist file noc_top.spice
-Reading netlist file /home/tombert/qflow_projects/noc/synthesis/noc_top.spc
+Reading netlist file /home/tombert/qflow_results/examples/noc/synthesis/noc_top.spc
 Reading setup file /usr/local/share/qflow/tech/osu035/osu035_setup.tcl
 No property w found for device r
 No property l found for device r
@@ -249,7 +249,7 @@ Circuit noc_top contains 1639 device instances.
   Class: INVX2                 instances:  13
   Class: INVX4                 instances:   5
   Class: INVX8                 instances:   9
-Circuit contains 1659 nets.
+Circuit contains 1667 nets.
 Contents of circuit 2:  Circuit: 'noc_top'
 Circuit noc_top contains 1639 device instances.
   Class: OR2X2                 instances:  14
@@ -273,10 +273,10 @@ Circuit noc_top contains 1639 device instances.
   Class: INVX2                 instances:  13
   Class: INVX4                 instances:   5
   Class: INVX8                 instances:   9
-Circuit contains 1659 nets.
+Circuit contains 1667 nets.
 
 Circuit 1 contains 1639 devices, Circuit 2 contains 1639 devices.
-Circuit 1 contains 1659 nets,    Circuit 2 contains 1659 nets.
+Circuit 1 contains 1667 nets,    Circuit 2 contains 1667 nets.
 
 Netlists match uniquely.
 Result: Circuits match uniquely.
@@ -286,4 +286,4 @@ LVS Done.
 LVS reports no net, device, pin, or property mismatches.
 
 Total errors = 0
-LVS checking script ended on Fri Mar 28 07:28:45 IST 2025
+LVS checking script ended on Tue Apr 1 14:35:14 IST 2025

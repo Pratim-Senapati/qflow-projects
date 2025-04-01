@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on Fri Mar 28 07:26:29 IST 2025
+Qflow synthesis logfile created on Tue Apr 1 14:33:48 IST 2025
 Running yosys for verilog parsing and synthesis
 yosys  -s noc_top.ys
 
@@ -30,12 +30,12 @@ yosys  -s noc_top.ys
 1. Executing Liberty frontend.
 Imported 39 cell types from liberty file.
 
-2. Executing Verilog-2005 frontend: /home/tombert/qflow_projects/noc/source/noc_top.v
-Parsing Verilog input from `/home/tombert/qflow_projects/noc/source/noc_top.v' to AST representation.
+2. Executing Verilog-2005 frontend: /home/tombert/qflow_results/examples/noc/source/noc_top.v
+Parsing Verilog input from `/home/tombert/qflow_results/examples/noc/source/noc_top.v' to AST representation.
 Generating RTLIL representation for module `\noc_top'.
-/home/tombert/qflow_projects/noc/source/noc_top.v:110: Warning: Identifier `\arb_source' is implicitly declared.
-/home/tombert/qflow_projects/noc/source/noc_top.v:111: Warning: Identifier `\arb_dest' is implicitly declared.
-/home/tombert/qflow_projects/noc/source/noc_top.v:112: Warning: Identifier `\arb_valid' is implicitly declared.
+/home/tombert/qflow_results/examples/noc/source/noc_top.v:110: Warning: Identifier `\arb_source' is implicitly declared.
+/home/tombert/qflow_results/examples/noc/source/noc_top.v:111: Warning: Identifier `\arb_dest' is implicitly declared.
+/home/tombert/qflow_results/examples/noc/source/noc_top.v:112: Warning: Identifier `\arb_valid' is implicitly declared.
 Successfully finished Verilog frontend.
 
 3. Executing Verilog-2005 frontend: fifo_buffer.v
@@ -88,87 +88,87 @@ Warning: Resizing cell port noc_top.arb_inst.source from 1 bits to 2 bits.
 Cleaned up 0 empty switches.
 
 7.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Removed 4 dead cases from process $proc$arbiter.v:30$69 in module arbiter.
-Marked 10 switch rules as full_case in process $proc$arbiter.v:30$69 in module arbiter.
-Marked 8 switch rules as full_case in process $proc$router.v:29$58 in module router.
-Marked 3 switch rules as full_case in process $proc$processing_element.v:28$51 in module processing_element.
-Removed 2 dead cases from process $proc$fifo_buffer.v:33$17 in module fifo_buffer.
-Marked 6 switch rules as full_case in process $proc$fifo_buffer.v:33$17 in module fifo_buffer.
+Removed 4 dead cases from process $proc$arbiter.v:30$57 in module arbiter.
+Marked 10 switch rules as full_case in process $proc$arbiter.v:30$57 in module arbiter.
+Marked 8 switch rules as full_case in process $proc$router.v:29$46 in module router.
+Marked 3 switch rules as full_case in process $proc$processing_element.v:28$39 in module processing_element.
+Removed 2 dead cases from process $proc$fifo_buffer.v:33$5 in module fifo_buffer.
+Marked 6 switch rules as full_case in process $proc$fifo_buffer.v:33$5 in module fifo_buffer.
 Removed a total of 6 dead cases.
 
 7.2.3. Executing PROC_INIT pass (extract init attributes).
 
 7.2.4. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst in `\arbiter.$proc$arbiter.v:30$69'.
-Found async reset \rst in `\router.$proc$router.v:29$58'.
-Found async reset \rst in `\processing_element.$proc$processing_element.v:28$51'.
-Found async reset \rst in `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
+Found async reset \rst in `\arbiter.$proc$arbiter.v:30$57'.
+Found async reset \rst in `\router.$proc$router.v:29$46'.
+Found async reset \rst in `\processing_element.$proc$processing_element.v:28$39'.
+Found async reset \rst in `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
 
 7.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\arbiter.$proc$arbiter.v:1$179'.
+Creating decoders for process `\arbiter.$proc$arbiter.v:1$167'.
      1/4: $0\router_data_out[3][7:0]
      2/4: $0\router_data_out[2][7:0]
      3/4: $0\router_data_out[1][7:0]
      4/4: $0\router_data_out[0][7:0]
-Creating decoders for process `\arbiter.$proc$arbiter.v:30$69'.
-     1/57: $4$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA[7:0]$173
-     2/57: $3$mem2bits$\router_data_out$arbiter.v:74$64[7:0]$166
-     3/57: $3$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA[7:0]$168
-     4/57: $3$mem2reg_rd$\router_data_out$arbiter.v:74$68_ADDR[1:0]$167
-     5/57: $4$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA[7:0]$155
-     6/57: $3$mem2bits$\router_data_out$arbiter.v:64$63[7:0]$148
-     7/57: $3$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA[7:0]$150
-     8/57: $3$mem2reg_rd$\router_data_out$arbiter.v:64$67_ADDR[1:0]$149
-     9/57: $4$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA[7:0]$137
-    10/57: $3$mem2bits$\router_data_out$arbiter.v:54$62[7:0]$130
-    11/57: $3$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA[7:0]$132
-    12/57: $3$mem2reg_rd$\router_data_out$arbiter.v:54$66_ADDR[1:0]$131
-    13/57: $4$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA[7:0]$119
-    14/57: $3$mem2bits$\router_data_out$arbiter.v:44$61[7:0]$112
-    15/57: $3$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA[7:0]$114
-    16/57: $3$mem2reg_rd$\router_data_out$arbiter.v:44$65_ADDR[1:0]$113
-    17/57: $2$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA[7:0]$105
-    18/57: $2$mem2reg_rd$\router_data_out$arbiter.v:74$68_ADDR[1:0]$104
-    19/57: $2$mem2bits$\router_data_out$arbiter.v:74$64[7:0]$97
-    20/57: $2$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA[7:0]$103
-    21/57: $2$mem2reg_rd$\router_data_out$arbiter.v:64$67_ADDR[1:0]$102
-    22/57: $2$mem2bits$\router_data_out$arbiter.v:64$63[7:0]$96
-    23/57: $2$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA[7:0]$101
-    24/57: $2$mem2reg_rd$\router_data_out$arbiter.v:54$66_ADDR[1:0]$100
-    25/57: $2$mem2bits$\router_data_out$arbiter.v:54$62[7:0]$95
-    26/57: $2$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA[7:0]$99
-    27/57: $2$mem2reg_rd$\router_data_out$arbiter.v:44$65_ADDR[1:0]$98
-    28/57: $2$mem2bits$\router_data_out$arbiter.v:44$61[7:0]$94
-    29/57: $1$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA[7:0]$93
-    30/57: $1$mem2reg_rd$\router_data_out$arbiter.v:74$68_ADDR[1:0]$92
-    31/57: $1$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA[7:0]$91
-    32/57: $1$mem2reg_rd$\router_data_out$arbiter.v:64$67_ADDR[1:0]$90
-    33/57: $1$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA[7:0]$89
-    34/57: $1$mem2reg_rd$\router_data_out$arbiter.v:54$66_ADDR[1:0]$88
-    35/57: $1$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA[7:0]$87
-    36/57: $1$mem2reg_rd$\router_data_out$arbiter.v:44$65_ADDR[1:0]$86
-    37/57: $1$mem2bits$\router_data_out$arbiter.v:74$64[7:0]$85
-    38/57: $1$mem2bits$\router_data_out$arbiter.v:64$63[7:0]$84
-    39/57: $1$mem2bits$\router_data_out$arbiter.v:54$62[7:0]$83
-    40/57: $1$mem2bits$\router_data_out$arbiter.v:44$61[7:0]$82
-    41/57: $0$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA[7:0]$81
-    42/57: $0$mem2reg_rd$\router_data_out$arbiter.v:74$68_ADDR[1:0]$80
-    43/57: $0$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA[7:0]$79
-    44/57: $0$mem2reg_rd$\router_data_out$arbiter.v:64$67_ADDR[1:0]$78
-    45/57: $0$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA[7:0]$77
-    46/57: $0$mem2reg_rd$\router_data_out$arbiter.v:54$66_ADDR[1:0]$76
-    47/57: $0$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA[7:0]$75
-    48/57: $0$mem2reg_rd$\router_data_out$arbiter.v:44$65_ADDR[1:0]$74
-    49/57: $0$mem2bits$\router_data_out$arbiter.v:74$64[7:0]$73
-    50/57: $0$mem2bits$\router_data_out$arbiter.v:64$63[7:0]$72
-    51/57: $0$mem2bits$\router_data_out$arbiter.v:54$62[7:0]$71
-    52/57: $0$mem2bits$\router_data_out$arbiter.v:44$61[7:0]$70
+Creating decoders for process `\arbiter.$proc$arbiter.v:30$57'.
+     1/57: $4$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA[7:0]$161
+     2/57: $3$mem2bits$\router_data_out$arbiter.v:74$52[7:0]$154
+     3/57: $3$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA[7:0]$156
+     4/57: $3$mem2reg_rd$\router_data_out$arbiter.v:74$56_ADDR[1:0]$155
+     5/57: $4$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA[7:0]$143
+     6/57: $3$mem2bits$\router_data_out$arbiter.v:64$51[7:0]$136
+     7/57: $3$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA[7:0]$138
+     8/57: $3$mem2reg_rd$\router_data_out$arbiter.v:64$55_ADDR[1:0]$137
+     9/57: $4$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA[7:0]$125
+    10/57: $3$mem2bits$\router_data_out$arbiter.v:54$50[7:0]$118
+    11/57: $3$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA[7:0]$120
+    12/57: $3$mem2reg_rd$\router_data_out$arbiter.v:54$54_ADDR[1:0]$119
+    13/57: $4$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA[7:0]$107
+    14/57: $3$mem2bits$\router_data_out$arbiter.v:44$49[7:0]$100
+    15/57: $3$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA[7:0]$102
+    16/57: $3$mem2reg_rd$\router_data_out$arbiter.v:44$53_ADDR[1:0]$101
+    17/57: $2$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA[7:0]$93
+    18/57: $2$mem2reg_rd$\router_data_out$arbiter.v:74$56_ADDR[1:0]$92
+    19/57: $2$mem2bits$\router_data_out$arbiter.v:74$52[7:0]$85
+    20/57: $2$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA[7:0]$91
+    21/57: $2$mem2reg_rd$\router_data_out$arbiter.v:64$55_ADDR[1:0]$90
+    22/57: $2$mem2bits$\router_data_out$arbiter.v:64$51[7:0]$84
+    23/57: $2$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA[7:0]$89
+    24/57: $2$mem2reg_rd$\router_data_out$arbiter.v:54$54_ADDR[1:0]$88
+    25/57: $2$mem2bits$\router_data_out$arbiter.v:54$50[7:0]$83
+    26/57: $2$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA[7:0]$87
+    27/57: $2$mem2reg_rd$\router_data_out$arbiter.v:44$53_ADDR[1:0]$86
+    28/57: $2$mem2bits$\router_data_out$arbiter.v:44$49[7:0]$82
+    29/57: $1$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA[7:0]$81
+    30/57: $1$mem2reg_rd$\router_data_out$arbiter.v:74$56_ADDR[1:0]$80
+    31/57: $1$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA[7:0]$79
+    32/57: $1$mem2reg_rd$\router_data_out$arbiter.v:64$55_ADDR[1:0]$78
+    33/57: $1$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA[7:0]$77
+    34/57: $1$mem2reg_rd$\router_data_out$arbiter.v:54$54_ADDR[1:0]$76
+    35/57: $1$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA[7:0]$75
+    36/57: $1$mem2reg_rd$\router_data_out$arbiter.v:44$53_ADDR[1:0]$74
+    37/57: $1$mem2bits$\router_data_out$arbiter.v:74$52[7:0]$73
+    38/57: $1$mem2bits$\router_data_out$arbiter.v:64$51[7:0]$72
+    39/57: $1$mem2bits$\router_data_out$arbiter.v:54$50[7:0]$71
+    40/57: $1$mem2bits$\router_data_out$arbiter.v:44$49[7:0]$70
+    41/57: $0$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA[7:0]$69
+    42/57: $0$mem2reg_rd$\router_data_out$arbiter.v:74$56_ADDR[1:0]$68
+    43/57: $0$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA[7:0]$67
+    44/57: $0$mem2reg_rd$\router_data_out$arbiter.v:64$55_ADDR[1:0]$66
+    45/57: $0$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA[7:0]$65
+    46/57: $0$mem2reg_rd$\router_data_out$arbiter.v:54$54_ADDR[1:0]$64
+    47/57: $0$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA[7:0]$63
+    48/57: $0$mem2reg_rd$\router_data_out$arbiter.v:44$53_ADDR[1:0]$62
+    49/57: $0$mem2bits$\router_data_out$arbiter.v:74$52[7:0]$61
+    50/57: $0$mem2bits$\router_data_out$arbiter.v:64$51[7:0]$60
+    51/57: $0$mem2bits$\router_data_out$arbiter.v:54$50[7:0]$59
+    52/57: $0$mem2bits$\router_data_out$arbiter.v:44$49[7:0]$58
     53/57: $0\start_idx[1:0]
     54/57: $0\toggle[0:0]
     55/57: $0\valid[0:0]
     56/57: $0\destination[1:0]
     57/57: $0\source[1:0]
-Creating decoders for process `\router.$proc$router.v:29$58'.
+Creating decoders for process `\router.$proc$router.v:29$46'.
      1/14: $0\fifo_wr_en[3:0] [3]
      2/14: $0\fifo_wr_en[3:0] [1]
      3/14: $0\fifo_wr_en[3:0] [0]
@@ -183,34 +183,34 @@ Creating decoders for process `\router.$proc$router.v:29$58'.
     12/14: $0\fifo_data_in_0[7:0]
     13/14: $0\fifo_rd_en[3:0] [2]
     14/14: $0\buffer[7:0]
-Creating decoders for process `\processing_element.$proc$processing_element.v:28$51'.
+Creating decoders for process `\processing_element.$proc$processing_element.v:28$39'.
      1/6: $0\rd_en_d[0:0]
      2/6: $0\busy[0:0]
-     3/6: $0\packet_out[7:0]
-     4/6: $0\rd_en[0:0]
-     5/6: $0\wr_en[0:0]
+     3/6: $0\rd_en[0:0]
+     4/6: $0\wr_en[0:0]
+     5/6: $0\packet_out[7:0]
      6/6: $0\ext_data_out[3:0]
-Creating decoders for process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-     1/31: $3$mem2reg_rd$\mem$fifo_buffer.v:53$16_DATA[7:0]$46
-     2/31: $3$mem2reg_rd$\mem$fifo_buffer.v:52$15_DATA[7:0]$45
-     3/31: $2$mem2reg_rd$\mem$fifo_buffer.v:53$16_DATA[7:0]$44
-     4/31: $2$mem2reg_rd$\mem$fifo_buffer.v:53$16_ADDR[1:0]$43
-     5/31: $2$mem2reg_rd$\mem$fifo_buffer.v:52$15_DATA[7:0]$42
-     6/31: $2$mem2reg_rd$\mem$fifo_buffer.v:52$15_ADDR[1:0]$41
-     7/31: $2$mem2reg_wr$\mem$fifo_buffer.v:45$14_ADDR[1:0]$33
-     8/31: $2$mem2reg_wr$\mem$fifo_buffer.v:45$14_DATA[7:0]$34
-     9/31: $1$mem2reg_rd$\mem$fifo_buffer.v:53$16_DATA[7:0]$29
-    10/31: $1$mem2reg_rd$\mem$fifo_buffer.v:53$16_ADDR[1:0]$28
-    11/31: $1$mem2reg_rd$\mem$fifo_buffer.v:52$15_DATA[7:0]$27
-    12/31: $1$mem2reg_rd$\mem$fifo_buffer.v:52$15_ADDR[1:0]$26
-    13/31: $1$mem2reg_wr$\mem$fifo_buffer.v:45$14_DATA[7:0]$25
-    14/31: $1$mem2reg_wr$\mem$fifo_buffer.v:45$14_ADDR[1:0]$24
-    15/31: $0$mem2reg_rd$\mem$fifo_buffer.v:53$16_DATA[7:0]$23
-    16/31: $0$mem2reg_rd$\mem$fifo_buffer.v:53$16_ADDR[1:0]$22
-    17/31: $0$mem2reg_rd$\mem$fifo_buffer.v:52$15_DATA[7:0]$21
-    18/31: $0$mem2reg_rd$\mem$fifo_buffer.v:52$15_ADDR[1:0]$20
-    19/31: $0$mem2reg_wr$\mem$fifo_buffer.v:45$14_DATA[7:0]$19
-    20/31: $0$mem2reg_wr$\mem$fifo_buffer.v:45$14_ADDR[1:0]$18
+Creating decoders for process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
+     1/31: $3$mem2reg_rd$\mem$fifo_buffer.v:53$4_DATA[7:0]$34
+     2/31: $3$mem2reg_rd$\mem$fifo_buffer.v:52$3_DATA[7:0]$33
+     3/31: $2$mem2reg_rd$\mem$fifo_buffer.v:53$4_DATA[7:0]$32
+     4/31: $2$mem2reg_rd$\mem$fifo_buffer.v:53$4_ADDR[1:0]$31
+     5/31: $2$mem2reg_rd$\mem$fifo_buffer.v:52$3_DATA[7:0]$30
+     6/31: $2$mem2reg_rd$\mem$fifo_buffer.v:52$3_ADDR[1:0]$29
+     7/31: $2$mem2reg_wr$\mem$fifo_buffer.v:45$2_ADDR[1:0]$22
+     8/31: $2$mem2reg_wr$\mem$fifo_buffer.v:45$2_DATA[7:0]$21
+     9/31: $1$mem2reg_rd$\mem$fifo_buffer.v:53$4_DATA[7:0]$17
+    10/31: $1$mem2reg_rd$\mem$fifo_buffer.v:53$4_ADDR[1:0]$16
+    11/31: $1$mem2reg_rd$\mem$fifo_buffer.v:52$3_DATA[7:0]$15
+    12/31: $1$mem2reg_rd$\mem$fifo_buffer.v:52$3_ADDR[1:0]$14
+    13/31: $1$mem2reg_wr$\mem$fifo_buffer.v:45$2_ADDR[1:0]$13
+    14/31: $1$mem2reg_wr$\mem$fifo_buffer.v:45$2_DATA[7:0]$12
+    15/31: $0$mem2reg_rd$\mem$fifo_buffer.v:53$4_DATA[7:0]$11
+    16/31: $0$mem2reg_rd$\mem$fifo_buffer.v:53$4_ADDR[1:0]$10
+    17/31: $0$mem2reg_rd$\mem$fifo_buffer.v:52$3_DATA[7:0]$9
+    18/31: $0$mem2reg_rd$\mem$fifo_buffer.v:52$3_ADDR[1:0]$8
+    19/31: $0$mem2reg_wr$\mem$fifo_buffer.v:45$2_ADDR[1:0]$7
+    20/31: $0$mem2reg_wr$\mem$fifo_buffer.v:45$2_DATA[7:0]$6
     21/31: $0\mem[3][7:0]
     22/31: $0\count[2:0]
     23/31: $0\mem[2][7:0]
@@ -222,7 +222,7 @@ Creating decoders for process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
     29/31: $0\pe_data_out[7:0]
     30/31: $0\empty[0:0]
     31/31: $0\full[0:0]
-Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
+Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
      1/12: $0\dest_id[3][1:0]
      2/12: $0\dest_id[2][1:0]
      3/12: $0\dest_id[1][1:0]
@@ -235,150 +235,134 @@ Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_projects/noc/s
     10/12: $0\pe_data_in[2][3:0]
     11/12: $0\pe_data_in[1][3:0]
     12/12: $0\pe_data_in[0][3:0]
-Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:47$11'.
-     1/1: $0$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:47$4[7:0]$12
-Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:46$9'.
-     1/1: $0$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:46$3[7:0]$10
-Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:45$7'.
-     1/1: $0$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:45$2[7:0]$8
-Creating decoders for process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:44$5'.
-     1/1: $0$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:44$1[7:0]$6
 
 7.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\arbiter.\router_data_out[0]' from process `\arbiter.$proc$arbiter.v:1$179'.
-No latch inferred for signal `\arbiter.\router_data_out[1]' from process `\arbiter.$proc$arbiter.v:1$179'.
-No latch inferred for signal `\arbiter.\router_data_out[2]' from process `\arbiter.$proc$arbiter.v:1$179'.
-No latch inferred for signal `\arbiter.\router_data_out[3]' from process `\arbiter.$proc$arbiter.v:1$179'.
-No latch inferred for signal `\noc_top.\pe_data_in[0]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\pe_data_in[1]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\pe_data_in[2]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\pe_data_in[3]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\src_id[0]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\src_id[1]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\src_id[2]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\src_id[3]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\dest_id[0]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\dest_id[1]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\dest_id[2]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.\dest_id[3]' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-No latch inferred for signal `\noc_top.$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:47$4' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:47$11'.
-No latch inferred for signal `\noc_top.$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:46$3' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:46$9'.
-No latch inferred for signal `\noc_top.$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:45$2' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:45$7'.
-No latch inferred for signal `\noc_top.$mem2bits$\pe_packet_out$/home/tombert/qflow_projects/noc/source/noc_top.v:44$1' from process `\noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:44$5'.
+No latch inferred for signal `\arbiter.\router_data_out[0]' from process `\arbiter.$proc$arbiter.v:1$167'.
+No latch inferred for signal `\arbiter.\router_data_out[1]' from process `\arbiter.$proc$arbiter.v:1$167'.
+No latch inferred for signal `\arbiter.\router_data_out[2]' from process `\arbiter.$proc$arbiter.v:1$167'.
+No latch inferred for signal `\arbiter.\router_data_out[3]' from process `\arbiter.$proc$arbiter.v:1$167'.
+No latch inferred for signal `\noc_top.\pe_data_in[0]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\pe_data_in[1]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\pe_data_in[2]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\pe_data_in[3]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\src_id[0]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\src_id[1]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\src_id[2]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\src_id[3]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\dest_id[0]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\dest_id[1]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\dest_id[2]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
+No latch inferred for signal `\noc_top.\dest_id[3]' from process `\noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
 
 7.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\arbiter.\source' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\arbiter.\source' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$637' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.\destination' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$638' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.\valid' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$639' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:44$49' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$640' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.\toggle' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$641' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.\start_idx' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$642' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:54$50' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$643' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:64$51' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$644' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:74$52' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$645' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:44$53_ADDR' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$646' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$647' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:54$54_ADDR' using process `\arbiter.$proc$arbiter.v:30$57'.
+  created $adff cell `$procdff$648' with positive edge clock and positive level reset.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA' using process `\arbiter.$proc$arbiter.v:30$57'.
   created $adff cell `$procdff$649' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.\destination' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:64$55_ADDR' using process `\arbiter.$proc$arbiter.v:30$57'.
   created $adff cell `$procdff$650' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.\valid' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA' using process `\arbiter.$proc$arbiter.v:30$57'.
   created $adff cell `$procdff$651' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:44$61' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:74$56_ADDR' using process `\arbiter.$proc$arbiter.v:30$57'.
   created $adff cell `$procdff$652' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.\toggle' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA' using process `\arbiter.$proc$arbiter.v:30$57'.
   created $adff cell `$procdff$653' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.\start_idx' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\fifo_rd_en' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$654' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:54$62' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\fifo_wr_en' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$655' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:64$63' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\fifo_data_in_0' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$656' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2bits$\router_data_out$arbiter.v:74$64' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\fifo_data_in_1' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$657' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:44$65_ADDR' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\fifo_data_in_2' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$658' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\fifo_data_in_3' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$659' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:54$66_ADDR' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\processing' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$660' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\router.\buffer' using process `\router.$proc$router.v:29$46'.
   created $adff cell `$procdff$661' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:64$67_ADDR' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\processing_element.\ext_data_out' using process `\processing_element.$proc$processing_element.v:28$39'.
   created $adff cell `$procdff$662' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\processing_element.\packet_out' using process `\processing_element.$proc$processing_element.v:28$39'.
   created $adff cell `$procdff$663' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:74$68_ADDR' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\processing_element.\wr_en' using process `\processing_element.$proc$processing_element.v:28$39'.
   created $adff cell `$procdff$664' with positive edge clock and positive level reset.
-Creating register for signal `\arbiter.$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA' using process `\arbiter.$proc$arbiter.v:30$69'.
+Creating register for signal `\processing_element.\rd_en' using process `\processing_element.$proc$processing_element.v:28$39'.
   created $adff cell `$procdff$665' with positive edge clock and positive level reset.
-Creating register for signal `\router.\fifo_rd_en' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\processing_element.\busy' using process `\processing_element.$proc$processing_element.v:28$39'.
   created $adff cell `$procdff$666' with positive edge clock and positive level reset.
-Creating register for signal `\router.\fifo_wr_en' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\processing_element.\rd_en_d' using process `\processing_element.$proc$processing_element.v:28$39'.
   created $adff cell `$procdff$667' with positive edge clock and positive level reset.
-Creating register for signal `\router.\fifo_data_in_0' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\fifo_buffer.\full' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$668' with positive edge clock and positive level reset.
-Creating register for signal `\router.\fifo_data_in_1' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\fifo_buffer.\empty' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$669' with positive edge clock and positive level reset.
-Creating register for signal `\router.\fifo_data_in_2' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\fifo_buffer.\pe_data_out' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$670' with positive edge clock and positive level reset.
-Creating register for signal `\router.\fifo_data_in_3' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\fifo_buffer.\router_data_out' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$671' with positive edge clock and positive level reset.
-Creating register for signal `\router.\processing' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\fifo_buffer.$mem2reg_wr$\mem$fifo_buffer.v:45$2_DATA' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$672' with positive edge clock and positive level reset.
-Creating register for signal `\router.\buffer' using process `\router.$proc$router.v:29$58'.
+Creating register for signal `\fifo_buffer.$mem2reg_wr$\mem$fifo_buffer.v:45$2_ADDR' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$673' with positive edge clock and positive level reset.
-Creating register for signal `\processing_element.\ext_data_out' using process `\processing_element.$proc$processing_element.v:28$51'.
+Creating register for signal `\fifo_buffer.\rd_ptr' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$674' with positive edge clock and positive level reset.
-Creating register for signal `\processing_element.\wr_en' using process `\processing_element.$proc$processing_element.v:28$51'.
+Creating register for signal `\fifo_buffer.\wr_ptr' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$675' with positive edge clock and positive level reset.
-Creating register for signal `\processing_element.\rd_en' using process `\processing_element.$proc$processing_element.v:28$51'.
-  created $adff cell `$procdff$676' with positive edge clock and positive level reset.
-Creating register for signal `\processing_element.\packet_out' using process `\processing_element.$proc$processing_element.v:28$51'.
-  created $adff cell `$procdff$677' with positive edge clock and positive level reset.
-Creating register for signal `\processing_element.\busy' using process `\processing_element.$proc$processing_element.v:28$51'.
-  created $adff cell `$procdff$678' with positive edge clock and positive level reset.
-Creating register for signal `\processing_element.\rd_en_d' using process `\processing_element.$proc$processing_element.v:28$51'.
+Creating register for signal `\fifo_buffer.\mem[0]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
+  created $dff cell `$procdff$676' with positive edge clock.
+Creating register for signal `\fifo_buffer.\mem[1]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
+  created $dff cell `$procdff$677' with positive edge clock.
+Creating register for signal `\fifo_buffer.\mem[2]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
+  created $dff cell `$procdff$678' with positive edge clock.
+Creating register for signal `\fifo_buffer.\count' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$679' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\full' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$680' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\empty' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
+Creating register for signal `\fifo_buffer.\mem[3]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
+  created $dff cell `$procdff$680' with positive edge clock.
+Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:52$3_ADDR' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$681' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\pe_data_out' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
+Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:52$3_DATA' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$682' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\router_data_out' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
+Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:53$4_ADDR' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$683' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.$mem2reg_wr$\mem$fifo_buffer.v:45$14_ADDR' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
+Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:53$4_DATA' using process `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
   created $adff cell `$procdff$684' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\rd_ptr' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$685' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.$mem2reg_wr$\mem$fifo_buffer.v:45$14_DATA' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$686' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\wr_ptr' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$687' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\mem[0]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $dff cell `$procdff$688' with positive edge clock.
-Creating register for signal `\fifo_buffer.\mem[1]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $dff cell `$procdff$689' with positive edge clock.
-Creating register for signal `\fifo_buffer.\mem[2]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $dff cell `$procdff$690' with positive edge clock.
-Creating register for signal `\fifo_buffer.\count' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$691' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.\mem[3]' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $dff cell `$procdff$692' with positive edge clock.
-Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:52$15_ADDR' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$693' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:52$15_DATA' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$694' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:53$16_ADDR' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$695' with positive edge clock and positive level reset.
-Creating register for signal `\fifo_buffer.$mem2reg_rd$\mem$fifo_buffer.v:53$16_DATA' using process `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-  created $adff cell `$procdff$696' with positive edge clock and positive level reset.
 
 7.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `arbiter.$proc$arbiter.v:1$179'.
-Found and cleaned up 13 empty switches in `\arbiter.$proc$arbiter.v:30$69'.
-Removing empty process `arbiter.$proc$arbiter.v:30$69'.
-Found and cleaned up 7 empty switches in `\router.$proc$router.v:29$58'.
-Removing empty process `router.$proc$router.v:29$58'.
-Found and cleaned up 4 empty switches in `\processing_element.$proc$processing_element.v:28$51'.
-Removing empty process `processing_element.$proc$processing_element.v:28$51'.
-Found and cleaned up 5 empty switches in `\fifo_buffer.$proc$fifo_buffer.v:33$17'.
-Removing empty process `fifo_buffer.$proc$fifo_buffer.v:33$17'.
-Removing empty process `noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:1$13'.
-Removing empty process `noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:47$11'.
-Removing empty process `noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:46$9'.
-Removing empty process `noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:45$7'.
-Removing empty process `noc_top.$proc$/home/tombert/qflow_projects/noc/source/noc_top.v:44$5'.
+Removing empty process `arbiter.$proc$arbiter.v:1$167'.
+Found and cleaned up 13 empty switches in `\arbiter.$proc$arbiter.v:30$57'.
+Removing empty process `arbiter.$proc$arbiter.v:30$57'.
+Found and cleaned up 7 empty switches in `\router.$proc$router.v:29$46'.
+Removing empty process `router.$proc$router.v:29$46'.
+Found and cleaned up 4 empty switches in `\processing_element.$proc$processing_element.v:28$39'.
+Removing empty process `processing_element.$proc$processing_element.v:28$39'.
+Found and cleaned up 5 empty switches in `\fifo_buffer.$proc$fifo_buffer.v:33$5'.
+Removing empty process `fifo_buffer.$proc$fifo_buffer.v:33$5'.
+Removing empty process `noc_top.$proc$/home/tombert/qflow_results/examples/noc/source/noc_top.v:1$1'.
 Cleaned up 29 empty switches.
 
 7.3. Executing OPT_EXPR pass (perform const folding).
@@ -398,7 +382,7 @@ Finding unused cells or wires in module \router..
 Finding unused cells or wires in module \processing_element..
 Finding unused cells or wires in module \fifo_buffer..
 Finding unused cells or wires in module \noc_top..
-Removed 65 unused cells and 324 unused wires.
+Removed 65 unused cells and 316 unused wires.
 <suppressed ~73 debug messages>
 
 7.5. Executing CHECK pass (checking for obvious problems).
@@ -435,20 +419,20 @@ Running muxtree optimizer on module \arbiter..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
-    dead port 2/2 on $mux $procmux$189.
-    dead port 2/2 on $mux $procmux$191.
-    dead port 2/2 on $mux $procmux$218.
-    dead port 2/2 on $mux $procmux$220.
-    dead port 2/2 on $mux $procmux$247.
-    dead port 2/2 on $mux $procmux$249.
-    dead port 2/2 on $mux $procmux$276.
-    dead port 2/2 on $mux $procmux$278.
+    dead port 2/2 on $mux $procmux$177.
+    dead port 2/2 on $mux $procmux$179.
+    dead port 2/2 on $mux $procmux$206.
+    dead port 2/2 on $mux $procmux$208.
+    dead port 2/2 on $mux $procmux$235.
+    dead port 2/2 on $mux $procmux$237.
+    dead port 2/2 on $mux $procmux$264.
+    dead port 2/2 on $mux $procmux$266.
 Running muxtree optimizer on module \fifo_buffer..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
-    dead port 2/2 on $mux $procmux$577.
-    dead port 2/2 on $mux $procmux$585.
+    dead port 2/2 on $mux $procmux$565.
+    dead port 2/2 on $mux $procmux$573.
 Running muxtree optimizer on module \noc_top..
   Creating internal representation of mux trees.
   No muxes found in this module.
@@ -459,7 +443,7 @@ Running muxtree optimizer on module \processing_element..
 Running muxtree optimizer on module \router..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $procmux$489: \processing -> 1'0
+      Replacing known input bits on port A of cell $procmux$477: \processing -> 1'0
   Analyzing evaluation results.
 Removed 10 multiplexer ports.
 <suppressed ~39 debug messages>
@@ -470,7 +454,7 @@ Removed 10 multiplexer ports.
   Optimizing cells in module \noc_top.
   Optimizing cells in module \processing_element.
   Optimizing cells in module \router.
-    New ctrl vector for $mux cell $procmux$489: { }
+    New ctrl vector for $mux cell $procmux$477: { }
   Optimizing cells in module \router.
 Performed a total of 1 changes.
 
@@ -561,58 +545,58 @@ Optimizing module router.
 7.6.16. Finished OPT passes. (There is nothing left to do.)
 
 7.7. Executing WREDUCE pass (reducing word size of cells).
-Removed top 30 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:42$107 ($and).
-Removed top 30 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:42$107 ($and).
-Removed top 29 bits (of 32) from port B of cell arbiter.$shiftx$arbiter.v:42$108 ($shiftx).
-Removed top 31 bits (of 32) from port B of cell arbiter.$add$arbiter.v:47$122 ($add).
-Removed top 29 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:47$122 ($add).
-Removed top 29 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:47$123 ($and).
-Removed top 29 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:47$123 ($and).
-Removed top 28 bits (of 32) from port B of cell arbiter.$shiftx$arbiter.v:52$126 ($shiftx).
-Removed top 30 bits (of 32) from port B of cell arbiter.$add$arbiter.v:57$140 ($add).
-Removed top 29 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:57$140 ($add).
-Removed top 30 bits (of 32) from port B of cell arbiter.$add$arbiter.v:67$158 ($add).
-Removed top 29 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:67$158 ($add).
-Removed top 29 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:67$159 ($and).
-Removed top 29 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:67$159 ($and).
-Removed top 28 bits (of 32) from port B of cell arbiter.$shiftx$arbiter.v:72$162 ($shiftx).
-Removed top 30 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:77$177 ($and).
-Removed top 30 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:77$177 ($and).
-Removed top 29 bits (of 32) from port B of cell arbiter.$add$arbiter.v:77$176 ($add).
-Removed top 30 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:77$176 ($add).
-Removed top 2 bits (of 3) from port B of cell arbiter.$add$arbiter.v:77$176 ($add).
-Removed top 2 bits (of 8) from mux cell arbiter.$procmux$184 ($pmux).
-Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$187_CMP0 ($eq).
-Removed top 2 bits (of 8) from mux cell arbiter.$procmux$213 ($pmux).
-Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$216_CMP0 ($eq).
-Removed top 2 bits (of 8) from mux cell arbiter.$procmux$242 ($pmux).
-Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$245_CMP0 ($eq).
-Removed top 2 bits (of 8) from mux cell arbiter.$procmux$271 ($pmux).
-Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$274_CMP0 ($eq).
-Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:44$65_DATA[7:0]$119.
-Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:54$66_DATA[7:0]$137.
-Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:64$67_DATA[7:0]$155.
-Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:74$68_DATA[7:0]$173.
-Removed top 29 bits (of 32) from wire arbiter.$add$arbiter.v:47$122_Y.
-Removed top 29 bits (of 32) from wire arbiter.$add$arbiter.v:57$140_Y.
-Removed top 29 bits (of 32) from wire arbiter.$add$arbiter.v:67$158_Y.
-Removed top 30 bits (of 32) from wire arbiter.$add$arbiter.v:77$176_Y.
-Removed top 30 bits (of 32) from wire arbiter.$mod$arbiter.v:42$107_Y.
-Removed top 29 bits (of 32) from wire arbiter.$mod$arbiter.v:67$159_Y.
-Removed top 30 bits (of 32) from wire arbiter.$mod$arbiter.v:77$177_Y.
-Removed top 31 bits (of 32) from port B of cell fifo_buffer.$add$fifo_buffer.v:46$36 ($add).
-Removed top 30 bits (of 32) from port Y of cell fifo_buffer.$add$fifo_buffer.v:46$36 ($add).
-Removed top 31 bits (of 32) from port B of cell fifo_buffer.$add$fifo_buffer.v:47$37 ($add).
-Removed top 29 bits (of 32) from port Y of cell fifo_buffer.$add$fifo_buffer.v:47$37 ($add).
-Removed top 31 bits (of 32) from port B of cell fifo_buffer.$add$fifo_buffer.v:54$47 ($add).
-Removed top 30 bits (of 32) from port Y of cell fifo_buffer.$add$fifo_buffer.v:54$47 ($add).
-Removed top 31 bits (of 32) from port B of cell fifo_buffer.$sub$fifo_buffer.v:55$48 ($sub).
-Removed top 29 bits (of 32) from port Y of cell fifo_buffer.$sub$fifo_buffer.v:55$48 ($sub).
-Removed top 1 bits (of 2) from port B of cell fifo_buffer.$procmux$575_CMP0 ($eq).
-Removed top 1 bits (of 2) from port B of cell fifo_buffer.$procmux$626_CMP0 ($eq).
-Removed top 30 bits (of 32) from wire fifo_buffer.$add$fifo_buffer.v:46$36_Y.
-Removed top 1 bits (of 2) from port B of cell router.$procmux$422_CMP0 ($eq).
-Removed top 1 bits (of 2) from port B of cell router.$procmux$453_CMP0 ($eq).
+Removed top 30 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:42$95 ($and).
+Removed top 30 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:42$95 ($and).
+Removed top 29 bits (of 32) from port B of cell arbiter.$shiftx$arbiter.v:42$96 ($shiftx).
+Removed top 31 bits (of 32) from port B of cell arbiter.$add$arbiter.v:47$110 ($add).
+Removed top 29 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:47$110 ($add).
+Removed top 29 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:47$111 ($and).
+Removed top 29 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:47$111 ($and).
+Removed top 28 bits (of 32) from port B of cell arbiter.$shiftx$arbiter.v:52$114 ($shiftx).
+Removed top 30 bits (of 32) from port B of cell arbiter.$add$arbiter.v:57$128 ($add).
+Removed top 29 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:57$128 ($add).
+Removed top 30 bits (of 32) from port B of cell arbiter.$add$arbiter.v:67$146 ($add).
+Removed top 29 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:67$146 ($add).
+Removed top 29 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:67$147 ($and).
+Removed top 29 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:67$147 ($and).
+Removed top 28 bits (of 32) from port B of cell arbiter.$shiftx$arbiter.v:72$150 ($shiftx).
+Removed top 30 bits (of 32) from port Y of cell arbiter.$mod$arbiter.v:77$165 ($and).
+Removed top 30 bits (of 32) from port A of cell arbiter.$mod$arbiter.v:77$165 ($and).
+Removed top 29 bits (of 32) from port B of cell arbiter.$add$arbiter.v:77$164 ($add).
+Removed top 30 bits (of 32) from port Y of cell arbiter.$add$arbiter.v:77$164 ($add).
+Removed top 2 bits (of 3) from port B of cell arbiter.$add$arbiter.v:77$164 ($add).
+Removed top 2 bits (of 8) from mux cell arbiter.$procmux$172 ($pmux).
+Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$175_CMP0 ($eq).
+Removed top 2 bits (of 8) from mux cell arbiter.$procmux$201 ($pmux).
+Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$204_CMP0 ($eq).
+Removed top 2 bits (of 8) from mux cell arbiter.$procmux$230 ($pmux).
+Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$233_CMP0 ($eq).
+Removed top 2 bits (of 8) from mux cell arbiter.$procmux$259 ($pmux).
+Removed top 1 bits (of 2) from port B of cell arbiter.$procmux$262_CMP0 ($eq).
+Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:44$53_DATA[7:0]$107.
+Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:54$54_DATA[7:0]$125.
+Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:64$55_DATA[7:0]$143.
+Removed top 2 bits (of 8) from wire arbiter.$4$mem2reg_rd$\router_data_out$arbiter.v:74$56_DATA[7:0]$161.
+Removed top 29 bits (of 32) from wire arbiter.$add$arbiter.v:47$110_Y.
+Removed top 29 bits (of 32) from wire arbiter.$add$arbiter.v:57$128_Y.
+Removed top 29 bits (of 32) from wire arbiter.$add$arbiter.v:67$146_Y.
+Removed top 30 bits (of 32) from wire arbiter.$add$arbiter.v:77$164_Y.
+Removed top 30 bits (of 32) from wire arbiter.$mod$arbiter.v:42$95_Y.
+Removed top 29 bits (of 32) from wire arbiter.$mod$arbiter.v:67$147_Y.
+Removed top 30 bits (of 32) from wire arbiter.$mod$arbiter.v:77$165_Y.
+Removed top 31 bits (of 32) from port B of cell fifo_buffer.$add$fifo_buffer.v:46$24 ($add).
+Removed top 30 bits (of 32) from port Y of cell fifo_buffer.$add$fifo_buffer.v:46$24 ($add).
+Removed top 31 bits (of 32) from port B of cell fifo_buffer.$add$fifo_buffer.v:47$25 ($add).
+Removed top 29 bits (of 32) from port Y of cell fifo_buffer.$add$fifo_buffer.v:47$25 ($add).
+Removed top 31 bits (of 32) from port B of cell fifo_buffer.$add$fifo_buffer.v:54$35 ($add).
+Removed top 30 bits (of 32) from port Y of cell fifo_buffer.$add$fifo_buffer.v:54$35 ($add).
+Removed top 31 bits (of 32) from port B of cell fifo_buffer.$sub$fifo_buffer.v:55$36 ($sub).
+Removed top 29 bits (of 32) from port Y of cell fifo_buffer.$sub$fifo_buffer.v:55$36 ($sub).
+Removed top 1 bits (of 2) from port B of cell fifo_buffer.$procmux$563_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell fifo_buffer.$procmux$614_CMP0 ($eq).
+Removed top 30 bits (of 32) from wire fifo_buffer.$add$fifo_buffer.v:46$24_Y.
+Removed top 1 bits (of 2) from port B of cell router.$procmux$410_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell router.$procmux$441_CMP0 ($eq).
 
 7.8. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -638,32 +622,32 @@ No more expansions possible.
 
 7.11. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module arbiter:
-  creating $macc model for $add$arbiter.v:47$122 ($add).
-  creating $macc model for $add$arbiter.v:57$140 ($add).
-  creating $macc model for $add$arbiter.v:67$158 ($add).
-  creating $macc model for $add$arbiter.v:77$176 ($add).
-  creating $alu model for $macc $add$arbiter.v:77$176.
-  creating $alu model for $macc $add$arbiter.v:67$158.
-  creating $alu model for $macc $add$arbiter.v:57$140.
-  creating $alu model for $macc $add$arbiter.v:47$122.
-  creating $alu cell for $add$arbiter.v:47$122: $auto$alumacc.cc:474:replace_alu$709
-  creating $alu cell for $add$arbiter.v:57$140: $auto$alumacc.cc:474:replace_alu$712
-  creating $alu cell for $add$arbiter.v:67$158: $auto$alumacc.cc:474:replace_alu$715
-  creating $alu cell for $add$arbiter.v:77$176: $auto$alumacc.cc:474:replace_alu$718
+  creating $macc model for $add$arbiter.v:47$110 ($add).
+  creating $macc model for $add$arbiter.v:57$128 ($add).
+  creating $macc model for $add$arbiter.v:67$146 ($add).
+  creating $macc model for $add$arbiter.v:77$164 ($add).
+  creating $alu model for $macc $add$arbiter.v:77$164.
+  creating $alu model for $macc $add$arbiter.v:67$146.
+  creating $alu model for $macc $add$arbiter.v:57$128.
+  creating $alu model for $macc $add$arbiter.v:47$110.
+  creating $alu cell for $add$arbiter.v:47$110: $auto$alumacc.cc:474:replace_alu$697
+  creating $alu cell for $add$arbiter.v:57$128: $auto$alumacc.cc:474:replace_alu$700
+  creating $alu cell for $add$arbiter.v:67$146: $auto$alumacc.cc:474:replace_alu$703
+  creating $alu cell for $add$arbiter.v:77$164: $auto$alumacc.cc:474:replace_alu$706
   created 4 $alu and 0 $macc cells.
 Extracting $alu and $macc cells in module fifo_buffer:
-  creating $macc model for $add$fifo_buffer.v:46$36 ($add).
-  creating $macc model for $add$fifo_buffer.v:47$37 ($add).
-  creating $macc model for $add$fifo_buffer.v:54$47 ($add).
-  creating $macc model for $sub$fifo_buffer.v:55$48 ($sub).
-  creating $alu model for $macc $sub$fifo_buffer.v:55$48.
-  creating $alu model for $macc $add$fifo_buffer.v:54$47.
-  creating $alu model for $macc $add$fifo_buffer.v:47$37.
-  creating $alu model for $macc $add$fifo_buffer.v:46$36.
-  creating $alu cell for $add$fifo_buffer.v:46$36: $auto$alumacc.cc:474:replace_alu$721
-  creating $alu cell for $add$fifo_buffer.v:47$37: $auto$alumacc.cc:474:replace_alu$724
-  creating $alu cell for $add$fifo_buffer.v:54$47: $auto$alumacc.cc:474:replace_alu$727
-  creating $alu cell for $sub$fifo_buffer.v:55$48: $auto$alumacc.cc:474:replace_alu$730
+  creating $macc model for $add$fifo_buffer.v:46$24 ($add).
+  creating $macc model for $add$fifo_buffer.v:47$25 ($add).
+  creating $macc model for $add$fifo_buffer.v:54$35 ($add).
+  creating $macc model for $sub$fifo_buffer.v:55$36 ($sub).
+  creating $alu model for $macc $sub$fifo_buffer.v:55$36.
+  creating $alu model for $macc $add$fifo_buffer.v:54$35.
+  creating $alu model for $macc $add$fifo_buffer.v:47$25.
+  creating $alu model for $macc $add$fifo_buffer.v:46$24.
+  creating $alu cell for $add$fifo_buffer.v:46$24: $auto$alumacc.cc:474:replace_alu$709
+  creating $alu cell for $add$fifo_buffer.v:47$25: $auto$alumacc.cc:474:replace_alu$712
+  creating $alu cell for $add$fifo_buffer.v:54$35: $auto$alumacc.cc:474:replace_alu$715
+  creating $alu cell for $sub$fifo_buffer.v:55$36: $auto$alumacc.cc:474:replace_alu$718
   created 4 $alu and 0 $macc cells.
 Extracting $alu and $macc cells in module noc_top:
   created 0 $alu and 0 $macc cells.
@@ -1264,10 +1248,10 @@ Removed 0 unused modules.
 
 === noc_top ===
 
-   Number of wires:                 48
-   Number of wire bits:            243
-   Number of public wires:          46
-   Number of public wire bits:     241
+   Number of wires:                 49
+   Number of wire bits:            251
+   Number of public wires:          47
+   Number of public wire bits:     249
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -1321,10 +1305,10 @@ Removed 0 unused modules.
      processing_element              4
      router                          1
 
-   Number of wires:               1013
-   Number of wire bits:           1940
-   Number of public wires:         212
-   Number of public wire bits:     871
+   Number of wires:               1014
+   Number of wire bits:           1948
+   Number of public wires:         213
+   Number of public wire bits:     879
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -1501,8 +1485,8 @@ ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
-ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.01 sec
-ABC: Memory =    0.38 MB. Time =     0.01 sec
+ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -1552,8 +1536,8 @@ ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
-ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.01 sec
-ABC: Memory =    0.38 MB. Time =     0.01 sec
+ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -1608,8 +1592,8 @@ ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
-ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.01 sec
-ABC: Memory =    0.38 MB. Time =     0.01 sec
+ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -1652,8 +1636,8 @@ ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
-ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.01 sec
-ABC: Memory =    0.38 MB. Time =     0.01 sec
+ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -1697,6 +1681,7 @@ Removed 369 unused cells and 1965 unused wires.
 
 13. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
 Don't map input port noc_top.clk: Missing option -inpad.
+Don't map input port noc_top.dest: Missing option -inpad.
 Don't map input port noc_top.ext_data_in: Missing option -inpad.
 Mapping port noc_top.ext_data_out using BUFX2.
 Mapping port noc_top.pe_busy using BUFX2.
@@ -1743,10 +1728,10 @@ Optimizing module noc_top.
 
 === noc_top ===
 
-   Number of wires:               1095
-   Number of wire bits:           1660
-   Number of public wires:        1095
-   Number of public wire bits:    1660
+   Number of wires:               1096
+   Number of wire bits:           1668
+   Number of public wires:        1096
+   Number of public wire bits:    1668
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -1769,10 +1754,10 @@ Optimizing module noc_top.
      XOR2X1                          8
 
 Warnings: 8 unique messages, 8 total
-End of script. Logfile hash: d3d14e2c1e
-CPU: user 2.15s system 0.06s, MEM: 26.07 MB total, 19.08 MB resident
+End of script. Logfile hash: 1f2acc18b2
+CPU: user 1.35s system 0.04s, MEM: 26.21 MB total, 19.24 MB resident
 Yosys 0.9 (git sha1 1979e0b)
-Time spent: 19% 18x opt_clean (0 sec), 13% 22x opt_expr (0 sec), ...
+Time spent: 20% 18x opt_clean (0 sec), 12% 22x opt_expr (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef
 Cleaning up output syntax
@@ -1823,7 +1808,7 @@ Warning 3: load of 553.923 is 1.32593 times greater than strongest gate CLKBUF1
 Warning 4: load of 580.992 is 1.39072 times greater than strongest gate CLKBUF1
 Warning 44: load of 206.477 is 1.89977 times greater than strongest gate NOR2X1
 Warning 50: load of 372.335 is 3.4258 times greater than strongest gate NOR2X1
-Warning 192: load of 483.332 is 4.69654 times greater than strongest gate DFFSR
+Warning 198: load of 483.332 is 4.69654 times greater than strongest gate DFFSR
 312 gates exceed specified minimum load.
 6 buffers were added.
 93 gates were changed.
@@ -1854,7 +1839,7 @@ Warning 19: load of 553.923 is 1.32593 times greater than strongest gate CLKBUF1
 Warning 20: load of 580.992 is 1.39072 times greater than strongest gate CLKBUF1
 Warning 109: load of 206.477 is 1.89977 times greater than strongest gate NOR2X1
 Warning 115: load of 372.335 is 3.4258 times greater than strongest gate NOR2X1
-Warning 260: load of 483.332 is 4.69654 times greater than strongest gate DFFSR
+Warning 266: load of 483.332 is 4.69654 times greater than strongest gate DFFSR
 380 gates exceed specified minimum load.
 0 buffers were added.
 6 gates were changed.
@@ -1882,7 +1867,7 @@ This warning will only be repeated for larger overload ratios.  Warning count re
 the total number of overloaded nets.
 Warning 109: load of 206.477 is 1.89977 times greater than strongest gate NOR2X1
 Warning 115: load of 372.335 is 3.4258 times greater than strongest gate NOR2X1
-Warning 260: load of 483.332 is 4.69654 times greater than strongest gate DFFSR
+Warning 266: load of 483.332 is 4.69654 times greater than strongest gate DFFSR
 380 gates exceed specified minimum load.
 0 buffers were added.
 0 gates were changed.
@@ -1899,16 +1884,16 @@ Number of gates changed: 0
 gates resized: 0
 
 Generating RTL verilog and SPICE netlist file in directory
-	 /home/tombert/qflow_projects/noc/synthesis
+	 /home/tombert/qflow_results/examples/noc/synthesis
 Files:
-   Verilog: /home/tombert/qflow_projects/noc/synthesis/noc_top.rtl.v
-   Verilog: /home/tombert/qflow_projects/noc/synthesis/noc_top.rtlnopwr.v
-   Verilog: /home/tombert/qflow_projects/noc/synthesis/noc_top.rtlbb.v
-   Spice:   /home/tombert/qflow_projects/noc/synthesis/noc_top.spc
+   Verilog: /home/tombert/qflow_results/examples/noc/synthesis/noc_top.rtl.v
+   Verilog: /home/tombert/qflow_results/examples/noc/synthesis/noc_top.rtlnopwr.v
+   Verilog: /home/tombert/qflow_results/examples/noc/synthesis/noc_top.rtlbb.v
+   Spice:   /home/tombert/qflow_results/examples/noc/synthesis/noc_top.spc
 
 Running blif2Verilog.
 Running blif2BSpice.
 Running spi2xspice.py
 spi2xspice.py "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" noc_top.spc noc_top.xspice
 
-Synthesis script ended on Fri Mar 28 07:26:33 IST 2025
+Synthesis script ended on Tue Apr 1 14:33:50 IST 2025

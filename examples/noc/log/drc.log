@@ -1,5 +1,5 @@
-Qflow DRC logfile created on Fri Mar 28 07:28:43 IST 2025
-magic -dnull -noconsole  /home/tombert/qflow_projects/noc/layout/run_drc_noc_top.tcl
+Qflow DRC logfile created on Tue Apr 1 14:35:13 IST 2025
+magic -dnull -noconsole  /home/tombert/qflow_results/examples/noc/layout/run_drc_noc_top.tcl
 
 Magic 8.3 revision 50 - Compiled on Tue Feb 11 22:24:09 IST 2025.
 Starting magic under Tcl interpreter
@@ -14,7 +14,7 @@ Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 4 Magic internal units = 1 Lambda
-Loading "/home/tombert/qflow_projects/noc/layout/run_drc_noc_top.tcl" from command line.
+Loading "/home/tombert/qflow_results/examples/noc/layout/run_drc_noc_top.tcl" from command line.
 Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
 This action cannot be undone.
 LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
@@ -23,6 +23,6 @@ LEF read: Processed 3179 lines.
 Scaled magic input cell noc_top geometry by factor of 2
 noc_top: 10000 rects
 noc_top: 20000 rects
-Processing timestamp mismatches: FILL, DFFSR, CLKBUF1, XOR2X1, INVX1, OAI21X1, NAND2X1, BUFX2, XNOR2X1, DFFPOSX1, MUX2X1, AND2X2, OR2X2, INVX2, INVX4, AOI21X1, NOR2X1, NAND3X1, BUFX4, OAI22X1, AOI22X1, INVX8.
+Processing timestamp mismatches: FILL, CLKBUF1, INVX1, DFFSR, DFFPOSX1, OAI21X1, MUX2X1, OR2X2, BUFX2, NAND2X1, BUFX4, XNOR2X1, NOR2X1, NAND3X1, INVX2, AND2X2, XOR2X1, AOI21X1, INVX8, INVX4, OAI22X1, AOI22X1.
 drc = 0
-DRC checking script ended on Fri Mar 28 07:28:44 IST 2025
+DRC checking script ended on Tue Apr 1 14:35:14 IST 2025

@@ -20727,53 +20727,20 @@ pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
 pin name A signal _659_ layer 1 -80 -540
 pin name Y signal _657_ layer 1 80 0
-cell 1120 INVX1_98
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[0] layer 1 -80 -540
-pin name Y signal _660_ layer 1 80 0
-cell 1121 OAI21X1_357
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
+cell 1120 NAND2X1_113
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
 pin_group
-pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf3 layer 1 -160 -330
+pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf3 layer 1 -160 -340
 end_pin_group
-pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[0] layer 1 160 300
-pin name Y signal _661_ layer 1 50 -100
-cell 1122 OAI21X1_358
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal _660_ layer 1 -160 -330
-pin name B signal _659_ layer 1 -80 -140
-pin name C signal _661_ layer 1 160 300
-pin name Y signal _655_[0] layer 1 50 -100
-cell 1123 INVX1_99
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[1] layer 1 -80 -540
-pin name Y signal _662_ layer 1 80 0
-cell 1124 OAI21X1_359
+pin name B signal PE_INST[0].pe.busy layer 1 160 140
+pin name Y signal _660_ layer 1 100 -680
+cell 1121 OAI21X1_357
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20786,10 +20753,29 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[1] layer 1 160 300
-pin name Y signal _663_ layer 1 50 -100
-cell 1125 OAI21X1_360
+pin name B signal FIFO_INST[0].fifo_inst.pe_wr_en layer 1 -80 -140
+pin name C signal _660_ layer 1 160 300
+pin name Y signal _653_ layer 1 50 -100
+cell 1122 INVX1_98
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[0] layer 1 -80 -540
+pin name Y signal _661_ layer 1 80 0
+cell 1123 NAND2X1_114
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal FIFO_INST[0].fifo_inst.pe_data_out[0] layer 1 -160 -340
+pin name B signal PE_INST[0].pe.rd_en_d layer 1 160 140
+pin name Y signal _662_ layer 1 100 -680
+cell 1124 OAI21X1_358
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20799,19 +20785,118 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _662_ layer 1 -160 -330
-pin name B signal _659_ layer 1 -80 -140
-pin name C signal _663_ layer 1 160 300
-pin name Y signal _655_[1] layer 1 50 -100
-cell 1126 INVX1_100
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
+pin name B signal _661_ layer 1 -80 -140
+pin name C signal _662_ layer 1 160 300
+pin name Y signal _654_[0] layer 1 50 -100
+cell 1125 INVX1_99
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[2] layer 1 -80 -540
-pin name Y signal _664_ layer 1 80 0
-cell 1127 OAI21X1_361
+pin name A signal _0_[1] layer 1 -80 -540
+pin name Y signal _663_ layer 1 80 0
+cell 1126 NAND2X1_115
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[0].fifo_inst.pe_data_out[1] layer 1 160 140
+pin name Y signal _664_ layer 1 100 -680
+cell 1127 OAI21X1_359
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
+pin name B signal _663_ layer 1 -80 -140
+pin name C signal _664_ layer 1 160 300
+pin name Y signal _654_[1] layer 1 50 -100
+cell 1128 INVX1_100
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[2] layer 1 -80 -540
+pin name Y signal _665_ layer 1 80 0
+cell 1129 NAND2X1_116
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[0].fifo_inst.pe_data_out[2] layer 1 160 140
+pin name Y signal _666_ layer 1 100 -680
+cell 1130 OAI21X1_360
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
+pin name B signal _665_ layer 1 -80 -140
+pin name C signal _666_ layer 1 160 300
+pin name Y signal _654_[2] layer 1 50 -100
+cell 1131 INVX1_101
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[3] layer 1 -80 -540
+pin name Y signal _667_ layer 1 80 0
+cell 1132 NAND2X1_117
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[0].fifo_inst.pe_data_out[3] layer 1 160 140
+pin name Y signal _668_ layer 1 100 -680
+cell 1133 OAI21X1_361
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
+pin name B signal _667_ layer 1 -80 -140
+pin name C signal _668_ layer 1 160 300
+pin name Y signal _654_[3] layer 1 50 -100
+cell 1134 INVX1_102
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal ext_data_in[0] layer 1 -80 -540
+pin name Y signal _669_ layer 1 80 0
+cell 1135 OAI21X1_362
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20825,9 +20910,9 @@ pin_group
 pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[2] layer 1 160 300
-pin name Y signal _665_ layer 1 50 -100
-cell 1128 OAI21X1_362
+pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[0] layer 1 160 300
+pin name Y signal _670_ layer 1 50 -100
+cell 1136 OAI21X1_363
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20837,19 +20922,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _664_ layer 1 -160 -330
+pin name A signal _669_ layer 1 -160 -330
 pin name B signal _659_ layer 1 -80 -140
-pin name C signal _665_ layer 1 160 300
-pin name Y signal _655_[2] layer 1 50 -100
-cell 1129 INVX1_101
+pin name C signal _670_ layer 1 160 300
+pin name Y signal _655_[0] layer 1 50 -100
+cell 1137 INVX1_103
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[3] layer 1 -80 -540
-pin name Y signal _666_ layer 1 80 0
-cell 1130 OAI21X1_363
+pin name A signal ext_data_in[1] layer 1 -80 -540
+pin name Y signal _671_ layer 1 80 0
+cell 1138 OAI21X1_364
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20863,9 +20948,9 @@ pin_group
 pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf0 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[3] layer 1 160 300
-pin name Y signal _667_ layer 1 50 -100
-cell 1131 OAI21X1_364
+pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[1] layer 1 160 300
+pin name Y signal _672_ layer 1 50 -100
+cell 1139 OAI21X1_365
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20875,19 +20960,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _666_ layer 1 -160 -330
+pin name A signal _671_ layer 1 -160 -330
 pin name B signal _659_ layer 1 -80 -140
-pin name C signal _667_ layer 1 160 300
-pin name Y signal _655_[3] layer 1 50 -100
-cell 1132 INVX1_102
+pin name C signal _672_ layer 1 160 300
+pin name Y signal _655_[1] layer 1 50 -100
+cell 1140 INVX1_104
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[0].fifo_inst.pe_data_in[4] layer 1 -80 -540
-pin name Y signal _668_ layer 1 80 0
-cell 1133 OAI21X1_365
+pin name A signal ext_data_in[2] layer 1 -80 -540
+pin name Y signal _673_ layer 1 80 0
+cell 1141 OAI21X1_366
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20901,9 +20986,9 @@ pin_group
 pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf4 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[4] layer 1 160 300
-pin name Y signal _669_ layer 1 50 -100
-cell 1134 OAI21X1_366
+pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[2] layer 1 160 300
+pin name Y signal _674_ layer 1 50 -100
+cell 1142 OAI21X1_367
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20913,19 +20998,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _668_ layer 1 -160 -330
+pin name A signal _673_ layer 1 -160 -330
 pin name B signal _659_ layer 1 -80 -140
-pin name C signal _669_ layer 1 160 300
-pin name Y signal _655_[4] layer 1 50 -100
-cell 1135 INVX1_103
+pin name C signal _674_ layer 1 160 300
+pin name Y signal _655_[2] layer 1 50 -100
+cell 1143 INVX1_105
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[0].fifo_inst.pe_data_in[5] layer 1 -80 -540
-pin name Y signal _670_ layer 1 80 0
-cell 1136 OAI21X1_367
+pin name A signal ext_data_in[3] layer 1 -80 -540
+pin name Y signal _675_ layer 1 80 0
+cell 1144 OAI21X1_368
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20939,9 +21024,9 @@ pin_group
 pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf3 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[5] layer 1 160 300
-pin name Y signal _671_ layer 1 50 -100
-cell 1137 OAI21X1_368
+pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[3] layer 1 160 300
+pin name Y signal _676_ layer 1 50 -100
+cell 1145 OAI21X1_369
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20951,24 +21036,57 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _670_ layer 1 -160 -330
+pin name A signal _675_ layer 1 -160 -330
 pin name B signal _659_ layer 1 -80 -140
-pin name C signal _671_ layer 1 160 300
-pin name Y signal _655_[5] layer 1 50 -100
-cell 1138 NAND2X1_113
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
+pin name C signal _676_ layer 1 160 300
+pin name Y signal _655_[3] layer 1 50 -100
+cell 1146 INVX1_106
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[0] layer 1 -80 -540
+pin name Y signal _677_ layer 1 80 0
+cell 1147 OAI21X1_370
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
 pin_group
-pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf2 layer 1 -160 -340
+pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[0].pe.busy layer 1 160 140
-pin name Y signal _672_ layer 1 100 -680
-cell 1139 OAI21X1_369
+pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[4] layer 1 160 300
+pin name Y signal _678_ layer 1 50 -100
+cell 1148 OAI21X1_371
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal _677_ layer 1 -160 -330
+pin name B signal _659_ layer 1 -80 -140
+pin name C signal _678_ layer 1 160 300
+pin name Y signal _655_[4] layer 1 50 -100
+cell 1149 INVX1_107
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[1] layer 1 -80 -540
+pin name Y signal _679_ layer 1 80 0
+cell 1150 OAI21X1_372
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -20981,127 +21099,9 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[0].fifo_inst.full_bF$pin/A signal FIFO_INST[0].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
-pin name B signal FIFO_INST[0].fifo_inst.pe_wr_en layer 1 -80 -140
-pin name C signal _672_ layer 1 160 300
-pin name Y signal _653_ layer 1 50 -100
-cell 1140 INVX1_104
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[0] layer 1 -80 -540
-pin name Y signal _673_ layer 1 80 0
-cell 1141 NAND2X1_114
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal FIFO_INST[0].fifo_inst.pe_data_out[0] layer 1 -160 -340
-pin name B signal PE_INST[0].pe.rd_en_d layer 1 160 140
-pin name Y signal _674_ layer 1 100 -680
-cell 1142 OAI21X1_370
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
-pin name B signal _673_ layer 1 -80 -140
-pin name C signal _674_ layer 1 160 300
-pin name Y signal _654_[0] layer 1 50 -100
-cell 1143 INVX1_105
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[1] layer 1 -80 -540
-pin name Y signal _675_ layer 1 80 0
-cell 1144 NAND2X1_115
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[0].fifo_inst.pe_data_out[1] layer 1 160 140
-pin name Y signal _676_ layer 1 100 -680
-cell 1145 OAI21X1_371
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
-pin name B signal _675_ layer 1 -80 -140
-pin name C signal _676_ layer 1 160 300
-pin name Y signal _654_[1] layer 1 50 -100
-cell 1146 INVX1_106
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[2] layer 1 -80 -540
-pin name Y signal _677_ layer 1 80 0
-cell 1147 NAND2X1_116
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[0].fifo_inst.pe_data_out[2] layer 1 160 140
-pin name Y signal _678_ layer 1 100 -680
-cell 1148 OAI21X1_372
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
-pin name B signal _677_ layer 1 -80 -140
-pin name C signal _678_ layer 1 160 300
-pin name Y signal _654_[2] layer 1 50 -100
-cell 1149 INVX1_107
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[3] layer 1 -80 -540
-pin name Y signal _679_ layer 1 80 0
-cell 1150 NAND2X1_117
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[0].fifo_inst.pe_data_out[3] layer 1 160 140
-pin name Y signal _680_ layer 1 100 -680
+pin name B signal PE_INST[0].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[0].fifo_inst.pe_data_in[5] layer 1 160 300
+pin name Y signal _680_ layer 1 50 -100
 cell 1151 OAI21X1_373
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
@@ -21112,10 +21112,10 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[0].pe.rd_en_d layer 1 -160 -330
-pin name B signal _679_ layer 1 -80 -140
+pin name A signal _679_ layer 1 -160 -330
+pin name B signal _659_ layer 1 -80 -140
 pin name C signal _680_ layer 1 160 300
-pin name Y signal _654_[3] layer 1 50 -100
+pin name Y signal _655_[5] layer 1 50 -100
 cell 1152 INVX1_108
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
@@ -21401,8 +21401,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf33 layer 1 -41 -501
 end_pin_group
-pin name D signal _657_ layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_wr_en layer 1 1520 449
+pin name D signal _655_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[0] layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1159 DFFSR_82
@@ -21454,8 +21454,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf32 layer 1 -41 -501
 end_pin_group
-pin name D signal _656_ layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_rd_en layer 1 1520 449
+pin name D signal _655_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[1] layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1160 DFFSR_83
@@ -21507,8 +21507,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf31 layer 1 -41 -501
 end_pin_group
-pin name D signal _655_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[0] layer 1 1520 449
+pin name D signal _655_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[2] layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1161 DFFSR_84
@@ -21560,8 +21560,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf30 layer 1 -41 -501
 end_pin_group
-pin name D signal _655_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[1] layer 1 1520 449
+pin name D signal _655_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[3] layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1162 DFFSR_85
@@ -21613,8 +21613,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf29 layer 1 -41 -501
 end_pin_group
-pin name D signal _655_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[2] layer 1 1520 449
+pin name D signal _655_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[4] layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1163 DFFSR_86
@@ -21666,8 +21666,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf28 layer 1 -41 -501
 end_pin_group
-pin name D signal _655_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[3] layer 1 1520 449
+pin name D signal _655_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[5] layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1164 DFFSR_87
@@ -21719,8 +21719,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf27 layer 1 -41 -501
 end_pin_group
-pin name D signal _655_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[4] layer 1 1520 449
+pin name D signal _657_ layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_wr_en layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1165 DFFSR_88
@@ -21772,8 +21772,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf26 layer 1 -41 -501
 end_pin_group
-pin name D signal _655_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.pe_data_in[5] layer 1 1520 449
+pin name D signal _656_ layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.pe_rd_en layer 1 1520 449
 pin name R signal _658_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1166 DFFSR_89
@@ -21905,53 +21905,20 @@ pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
 pin name A signal _687_ layer 1 -80 -540
 pin name Y signal _685_ layer 1 80 0
-cell 1170 INVX1_110
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[4] layer 1 -80 -540
-pin name Y signal _688_ layer 1 80 0
-cell 1171 OAI21X1_374
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
+cell 1170 NAND2X1_118
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
 pin_group
-pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf3 layer 1 -160 -330
+pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf3 layer 1 -160 -340
 end_pin_group
-pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[0] layer 1 160 300
-pin name Y signal _689_ layer 1 50 -100
-cell 1172 OAI21X1_375
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal _688_ layer 1 -160 -330
-pin name B signal _687_ layer 1 -80 -140
-pin name C signal _689_ layer 1 160 300
-pin name Y signal _683_[0] layer 1 50 -100
-cell 1173 INVX1_111
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[5] layer 1 -80 -540
-pin name Y signal _690_ layer 1 80 0
-cell 1174 OAI21X1_376
+pin name B signal PE_INST[1].pe.busy layer 1 160 140
+pin name Y signal _688_ layer 1 100 -680
+cell 1171 OAI21X1_374
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -21964,10 +21931,29 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[1] layer 1 160 300
-pin name Y signal _691_ layer 1 50 -100
-cell 1175 OAI21X1_377
+pin name B signal FIFO_INST[1].fifo_inst.pe_wr_en layer 1 -80 -140
+pin name C signal _688_ layer 1 160 300
+pin name Y signal _681_ layer 1 50 -100
+cell 1172 INVX1_110
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[4] layer 1 -80 -540
+pin name Y signal _689_ layer 1 80 0
+cell 1173 NAND2X1_119
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal FIFO_INST[1].fifo_inst.pe_data_out[0] layer 1 -160 -340
+pin name B signal PE_INST[1].pe.rd_en_d layer 1 160 140
+pin name Y signal _690_ layer 1 100 -680
+cell 1174 OAI21X1_375
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -21977,19 +21963,118 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _690_ layer 1 -160 -330
-pin name B signal _687_ layer 1 -80 -140
-pin name C signal _691_ layer 1 160 300
-pin name Y signal _683_[1] layer 1 50 -100
-cell 1176 INVX1_112
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
+pin name B signal _689_ layer 1 -80 -140
+pin name C signal _690_ layer 1 160 300
+pin name Y signal _682_[0] layer 1 50 -100
+cell 1175 INVX1_111
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[6] layer 1 -80 -540
-pin name Y signal _692_ layer 1 80 0
-cell 1177 OAI21X1_378
+pin name A signal _0_[5] layer 1 -80 -540
+pin name Y signal _691_ layer 1 80 0
+cell 1176 NAND2X1_120
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[1].fifo_inst.pe_data_out[1] layer 1 160 140
+pin name Y signal _692_ layer 1 100 -680
+cell 1177 OAI21X1_376
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
+pin name B signal _691_ layer 1 -80 -140
+pin name C signal _692_ layer 1 160 300
+pin name Y signal _682_[1] layer 1 50 -100
+cell 1178 INVX1_112
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[6] layer 1 -80 -540
+pin name Y signal _693_ layer 1 80 0
+cell 1179 NAND2X1_121
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[1].fifo_inst.pe_data_out[2] layer 1 160 140
+pin name Y signal _694_ layer 1 100 -680
+cell 1180 OAI21X1_377
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
+pin name B signal _693_ layer 1 -80 -140
+pin name C signal _694_ layer 1 160 300
+pin name Y signal _682_[2] layer 1 50 -100
+cell 1181 INVX1_113
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[7] layer 1 -80 -540
+pin name Y signal _695_ layer 1 80 0
+cell 1182 NAND2X1_122
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[1].fifo_inst.pe_data_out[3] layer 1 160 140
+pin name Y signal _696_ layer 1 100 -680
+cell 1183 OAI21X1_378
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
+pin name B signal _695_ layer 1 -80 -140
+pin name C signal _696_ layer 1 160 300
+pin name Y signal _682_[3] layer 1 50 -100
+cell 1184 INVX1_114
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal ext_data_in[4] layer 1 -80 -540
+pin name Y signal _697_ layer 1 80 0
+cell 1185 OAI21X1_379
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22003,9 +22088,9 @@ pin_group
 pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[2] layer 1 160 300
-pin name Y signal _693_ layer 1 50 -100
-cell 1178 OAI21X1_379
+pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[0] layer 1 160 300
+pin name Y signal _698_ layer 1 50 -100
+cell 1186 OAI21X1_380
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22015,19 +22100,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _692_ layer 1 -160 -330
+pin name A signal _697_ layer 1 -160 -330
 pin name B signal _687_ layer 1 -80 -140
-pin name C signal _693_ layer 1 160 300
-pin name Y signal _683_[2] layer 1 50 -100
-cell 1179 INVX1_113
+pin name C signal _698_ layer 1 160 300
+pin name Y signal _683_[0] layer 1 50 -100
+cell 1187 INVX1_115
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[7] layer 1 -80 -540
-pin name Y signal _694_ layer 1 80 0
-cell 1180 OAI21X1_380
+pin name A signal ext_data_in[5] layer 1 -80 -540
+pin name Y signal _699_ layer 1 80 0
+cell 1188 OAI21X1_381
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22041,9 +22126,9 @@ pin_group
 pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf0 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[3] layer 1 160 300
-pin name Y signal _695_ layer 1 50 -100
-cell 1181 OAI21X1_381
+pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[1] layer 1 160 300
+pin name Y signal _700_ layer 1 50 -100
+cell 1189 OAI21X1_382
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22053,19 +22138,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _694_ layer 1 -160 -330
+pin name A signal _699_ layer 1 -160 -330
 pin name B signal _687_ layer 1 -80 -140
-pin name C signal _695_ layer 1 160 300
-pin name Y signal _683_[3] layer 1 50 -100
-cell 1182 INVX1_114
+pin name C signal _700_ layer 1 160 300
+pin name Y signal _683_[1] layer 1 50 -100
+cell 1190 INVX1_116
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[1].fifo_inst.pe_data_in[4] layer 1 -80 -540
-pin name Y signal _696_ layer 1 80 0
-cell 1183 OAI21X1_382
+pin name A signal ext_data_in[6] layer 1 -80 -540
+pin name Y signal _701_ layer 1 80 0
+cell 1191 OAI21X1_383
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22079,9 +22164,9 @@ pin_group
 pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf4 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[4] layer 1 160 300
-pin name Y signal _697_ layer 1 50 -100
-cell 1184 OAI21X1_383
+pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[2] layer 1 160 300
+pin name Y signal _702_ layer 1 50 -100
+cell 1192 OAI21X1_384
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22091,19 +22176,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _696_ layer 1 -160 -330
+pin name A signal _701_ layer 1 -160 -330
 pin name B signal _687_ layer 1 -80 -140
-pin name C signal _697_ layer 1 160 300
-pin name Y signal _683_[4] layer 1 50 -100
-cell 1185 INVX1_115
+pin name C signal _702_ layer 1 160 300
+pin name Y signal _683_[2] layer 1 50 -100
+cell 1193 INVX1_117
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[1].fifo_inst.pe_data_in[5] layer 1 -80 -540
-pin name Y signal _698_ layer 1 80 0
-cell 1186 OAI21X1_384
+pin name A signal ext_data_in[7] layer 1 -80 -540
+pin name Y signal _703_ layer 1 80 0
+cell 1194 OAI21X1_385
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22117,9 +22202,9 @@ pin_group
 pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf3 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[5] layer 1 160 300
-pin name Y signal _699_ layer 1 50 -100
-cell 1187 OAI21X1_385
+pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[3] layer 1 160 300
+pin name Y signal _704_ layer 1 50 -100
+cell 1195 OAI21X1_386
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22129,24 +22214,57 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _698_ layer 1 -160 -330
+pin name A signal _703_ layer 1 -160 -330
 pin name B signal _687_ layer 1 -80 -140
-pin name C signal _699_ layer 1 160 300
-pin name Y signal _683_[5] layer 1 50 -100
-cell 1188 NAND2X1_118
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
+pin name C signal _704_ layer 1 160 300
+pin name Y signal _683_[3] layer 1 50 -100
+cell 1196 INVX1_118
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[2] layer 1 -80 -540
+pin name Y signal _705_ layer 1 80 0
+cell 1197 OAI21X1_387
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
 pin_group
-pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf2 layer 1 -160 -340
+pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[1].pe.busy layer 1 160 140
-pin name Y signal _700_ layer 1 100 -680
-cell 1189 OAI21X1_386
+pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[4] layer 1 160 300
+pin name Y signal _706_ layer 1 50 -100
+cell 1198 OAI21X1_388
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal _705_ layer 1 -160 -330
+pin name B signal _687_ layer 1 -80 -140
+pin name C signal _706_ layer 1 160 300
+pin name Y signal _683_[4] layer 1 50 -100
+cell 1199 INVX1_119
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[3] layer 1 -80 -540
+pin name Y signal _707_ layer 1 80 0
+cell 1200 OAI21X1_389
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -22159,127 +22277,9 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[1].fifo_inst.full_bF$pin/A signal FIFO_INST[1].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
-pin name B signal FIFO_INST[1].fifo_inst.pe_wr_en layer 1 -80 -140
-pin name C signal _700_ layer 1 160 300
-pin name Y signal _681_ layer 1 50 -100
-cell 1190 INVX1_116
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[4] layer 1 -80 -540
-pin name Y signal _701_ layer 1 80 0
-cell 1191 NAND2X1_119
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal FIFO_INST[1].fifo_inst.pe_data_out[0] layer 1 -160 -340
-pin name B signal PE_INST[1].pe.rd_en_d layer 1 160 140
-pin name Y signal _702_ layer 1 100 -680
-cell 1192 OAI21X1_387
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
-pin name B signal _701_ layer 1 -80 -140
-pin name C signal _702_ layer 1 160 300
-pin name Y signal _682_[0] layer 1 50 -100
-cell 1193 INVX1_117
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[5] layer 1 -80 -540
-pin name Y signal _703_ layer 1 80 0
-cell 1194 NAND2X1_120
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[1].fifo_inst.pe_data_out[1] layer 1 160 140
-pin name Y signal _704_ layer 1 100 -680
-cell 1195 OAI21X1_388
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
-pin name B signal _703_ layer 1 -80 -140
-pin name C signal _704_ layer 1 160 300
-pin name Y signal _682_[1] layer 1 50 -100
-cell 1196 INVX1_118
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[6] layer 1 -80 -540
-pin name Y signal _705_ layer 1 80 0
-cell 1197 NAND2X1_121
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[1].fifo_inst.pe_data_out[2] layer 1 160 140
-pin name Y signal _706_ layer 1 100 -680
-cell 1198 OAI21X1_389
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
-pin name B signal _705_ layer 1 -80 -140
-pin name C signal _706_ layer 1 160 300
-pin name Y signal _682_[2] layer 1 50 -100
-cell 1199 INVX1_119
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[7] layer 1 -80 -540
-pin name Y signal _707_ layer 1 80 0
-cell 1200 NAND2X1_122
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[1].fifo_inst.pe_data_out[3] layer 1 160 140
-pin name Y signal _708_ layer 1 100 -680
+pin name B signal PE_INST[1].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[1].fifo_inst.pe_data_in[5] layer 1 160 300
+pin name Y signal _708_ layer 1 50 -100
 cell 1201 OAI21X1_390
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
@@ -22290,10 +22290,10 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[1].pe.rd_en_d layer 1 -160 -330
-pin name B signal _707_ layer 1 -80 -140
+pin name A signal _707_ layer 1 -160 -330
+pin name B signal _687_ layer 1 -80 -140
 pin name C signal _708_ layer 1 160 300
-pin name Y signal _682_[3] layer 1 50 -100
+pin name Y signal _683_[5] layer 1 50 -100
 cell 1202 INVX1_120
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
@@ -22579,8 +22579,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf19 layer 1 -41 -501
 end_pin_group
-pin name D signal _685_ layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_wr_en layer 1 1520 449
+pin name D signal _683_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[0] layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1209 DFFSR_96
@@ -22632,8 +22632,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf18 layer 1 -41 -501
 end_pin_group
-pin name D signal _684_ layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_rd_en layer 1 1520 449
+pin name D signal _683_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[1] layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1210 DFFSR_97
@@ -22685,8 +22685,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf17 layer 1 -41 -501
 end_pin_group
-pin name D signal _683_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[0] layer 1 1520 449
+pin name D signal _683_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[2] layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1211 DFFSR_98
@@ -22738,8 +22738,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf16 layer 1 -41 -501
 end_pin_group
-pin name D signal _683_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[1] layer 1 1520 449
+pin name D signal _683_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[3] layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1212 DFFSR_99
@@ -22791,8 +22791,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf15 layer 1 -41 -501
 end_pin_group
-pin name D signal _683_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[2] layer 1 1520 449
+pin name D signal _683_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[4] layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1213 DFFSR_100
@@ -22844,8 +22844,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf14 layer 1 -41 -501
 end_pin_group
-pin name D signal _683_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[3] layer 1 1520 449
+pin name D signal _683_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[5] layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1214 DFFSR_101
@@ -22897,8 +22897,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf13 layer 1 -41 -501
 end_pin_group
-pin name D signal _683_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[4] layer 1 1520 449
+pin name D signal _685_ layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_wr_en layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1215 DFFSR_102
@@ -22950,8 +22950,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf12 layer 1 -41 -501
 end_pin_group
-pin name D signal _683_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.pe_data_in[5] layer 1 1520 449
+pin name D signal _684_ layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.pe_rd_en layer 1 1520 449
 pin name R signal _686_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1216 DFFSR_103
@@ -23083,53 +23083,20 @@ pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
 pin name A signal _715_ layer 1 -80 -540
 pin name Y signal _713_ layer 1 80 0
-cell 1220 INVX1_122
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[8] layer 1 -80 -540
-pin name Y signal _716_ layer 1 80 0
-cell 1221 OAI21X1_391
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
+cell 1220 NAND2X1_123
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
 pin_group
-pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf3 layer 1 -160 -330
+pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf3 layer 1 -160 -340
 end_pin_group
-pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[0] layer 1 160 300
-pin name Y signal _717_ layer 1 50 -100
-cell 1222 OAI21X1_392
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal _716_ layer 1 -160 -330
-pin name B signal _715_ layer 1 -80 -140
-pin name C signal _717_ layer 1 160 300
-pin name Y signal _711_[0] layer 1 50 -100
-cell 1223 INVX1_123
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[9] layer 1 -80 -540
-pin name Y signal _718_ layer 1 80 0
-cell 1224 OAI21X1_393
+pin name B signal PE_INST[2].pe.busy layer 1 160 140
+pin name Y signal _716_ layer 1 100 -680
+cell 1221 OAI21X1_391
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23142,10 +23109,29 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[1] layer 1 160 300
-pin name Y signal _719_ layer 1 50 -100
-cell 1225 OAI21X1_394
+pin name B signal FIFO_INST[2].fifo_inst.pe_wr_en layer 1 -80 -140
+pin name C signal _716_ layer 1 160 300
+pin name Y signal _709_ layer 1 50 -100
+cell 1222 INVX1_122
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[8] layer 1 -80 -540
+pin name Y signal _717_ layer 1 80 0
+cell 1223 NAND2X1_124
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal FIFO_INST[2].fifo_inst.pe_data_out[0] layer 1 -160 -340
+pin name B signal PE_INST[2].pe.rd_en_d layer 1 160 140
+pin name Y signal _718_ layer 1 100 -680
+cell 1224 OAI21X1_392
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23155,19 +23141,118 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _718_ layer 1 -160 -330
-pin name B signal _715_ layer 1 -80 -140
-pin name C signal _719_ layer 1 160 300
-pin name Y signal _711_[1] layer 1 50 -100
-cell 1226 INVX1_124
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
+pin name B signal _717_ layer 1 -80 -140
+pin name C signal _718_ layer 1 160 300
+pin name Y signal _710_[0] layer 1 50 -100
+cell 1225 INVX1_123
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[10] layer 1 -80 -540
-pin name Y signal _720_ layer 1 80 0
-cell 1227 OAI21X1_395
+pin name A signal _0_[9] layer 1 -80 -540
+pin name Y signal _719_ layer 1 80 0
+cell 1226 NAND2X1_125
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[2].fifo_inst.pe_data_out[1] layer 1 160 140
+pin name Y signal _720_ layer 1 100 -680
+cell 1227 OAI21X1_393
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
+pin name B signal _719_ layer 1 -80 -140
+pin name C signal _720_ layer 1 160 300
+pin name Y signal _710_[1] layer 1 50 -100
+cell 1228 INVX1_124
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[10] layer 1 -80 -540
+pin name Y signal _721_ layer 1 80 0
+cell 1229 NAND2X1_126
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[2].fifo_inst.pe_data_out[2] layer 1 160 140
+pin name Y signal _722_ layer 1 100 -680
+cell 1230 OAI21X1_394
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
+pin name B signal _721_ layer 1 -80 -140
+pin name C signal _722_ layer 1 160 300
+pin name Y signal _710_[2] layer 1 50 -100
+cell 1231 INVX1_125
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[11] layer 1 -80 -540
+pin name Y signal _723_ layer 1 80 0
+cell 1232 NAND2X1_127
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[2].fifo_inst.pe_data_out[3] layer 1 160 140
+pin name Y signal _724_ layer 1 100 -680
+cell 1233 OAI21X1_395
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
+pin name B signal _723_ layer 1 -80 -140
+pin name C signal _724_ layer 1 160 300
+pin name Y signal _710_[3] layer 1 50 -100
+cell 1234 INVX1_126
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal ext_data_in[8] layer 1 -80 -540
+pin name Y signal _725_ layer 1 80 0
+cell 1235 OAI21X1_396
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23181,9 +23266,9 @@ pin_group
 pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[2] layer 1 160 300
-pin name Y signal _721_ layer 1 50 -100
-cell 1228 OAI21X1_396
+pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[0] layer 1 160 300
+pin name Y signal _726_ layer 1 50 -100
+cell 1236 OAI21X1_397
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23193,19 +23278,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _720_ layer 1 -160 -330
+pin name A signal _725_ layer 1 -160 -330
 pin name B signal _715_ layer 1 -80 -140
-pin name C signal _721_ layer 1 160 300
-pin name Y signal _711_[2] layer 1 50 -100
-cell 1229 INVX1_125
+pin name C signal _726_ layer 1 160 300
+pin name Y signal _711_[0] layer 1 50 -100
+cell 1237 INVX1_127
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[11] layer 1 -80 -540
-pin name Y signal _722_ layer 1 80 0
-cell 1230 OAI21X1_397
+pin name A signal ext_data_in[9] layer 1 -80 -540
+pin name Y signal _727_ layer 1 80 0
+cell 1238 OAI21X1_398
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23219,9 +23304,9 @@ pin_group
 pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf0 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[3] layer 1 160 300
-pin name Y signal _723_ layer 1 50 -100
-cell 1231 OAI21X1_398
+pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[1] layer 1 160 300
+pin name Y signal _728_ layer 1 50 -100
+cell 1239 OAI21X1_399
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23231,19 +23316,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _722_ layer 1 -160 -330
+pin name A signal _727_ layer 1 -160 -330
 pin name B signal _715_ layer 1 -80 -140
-pin name C signal _723_ layer 1 160 300
-pin name Y signal _711_[3] layer 1 50 -100
-cell 1232 INVX1_126
+pin name C signal _728_ layer 1 160 300
+pin name Y signal _711_[1] layer 1 50 -100
+cell 1240 INVX1_128
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[2].fifo_inst.pe_data_in[4] layer 1 -80 -540
-pin name Y signal _724_ layer 1 80 0
-cell 1233 OAI21X1_399
+pin name A signal ext_data_in[10] layer 1 -80 -540
+pin name Y signal _729_ layer 1 80 0
+cell 1241 OAI21X1_400
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23257,9 +23342,9 @@ pin_group
 pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf4 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[4] layer 1 160 300
-pin name Y signal _725_ layer 1 50 -100
-cell 1234 OAI21X1_400
+pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[2] layer 1 160 300
+pin name Y signal _730_ layer 1 50 -100
+cell 1242 OAI21X1_401
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23269,19 +23354,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _724_ layer 1 -160 -330
+pin name A signal _729_ layer 1 -160 -330
 pin name B signal _715_ layer 1 -80 -140
-pin name C signal _725_ layer 1 160 300
-pin name Y signal _711_[4] layer 1 50 -100
-cell 1235 INVX1_127
+pin name C signal _730_ layer 1 160 300
+pin name Y signal _711_[2] layer 1 50 -100
+cell 1243 INVX1_129
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[2].fifo_inst.pe_data_in[5] layer 1 -80 -540
-pin name Y signal _726_ layer 1 80 0
-cell 1236 OAI21X1_401
+pin name A signal ext_data_in[11] layer 1 -80 -540
+pin name Y signal _731_ layer 1 80 0
+cell 1244 OAI21X1_402
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23295,9 +23380,9 @@ pin_group
 pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf3 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[5] layer 1 160 300
-pin name Y signal _727_ layer 1 50 -100
-cell 1237 OAI21X1_402
+pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[3] layer 1 160 300
+pin name Y signal _732_ layer 1 50 -100
+cell 1245 OAI21X1_403
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23307,24 +23392,57 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _726_ layer 1 -160 -330
+pin name A signal _731_ layer 1 -160 -330
 pin name B signal _715_ layer 1 -80 -140
-pin name C signal _727_ layer 1 160 300
-pin name Y signal _711_[5] layer 1 50 -100
-cell 1238 NAND2X1_123
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
+pin name C signal _732_ layer 1 160 300
+pin name Y signal _711_[3] layer 1 50 -100
+cell 1246 INVX1_130
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[4] layer 1 -80 -540
+pin name Y signal _733_ layer 1 80 0
+cell 1247 OAI21X1_404
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
 pin_group
-pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf2 layer 1 -160 -340
+pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[2].pe.busy layer 1 160 140
-pin name Y signal _728_ layer 1 100 -680
-cell 1239 OAI21X1_403
+pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[4] layer 1 160 300
+pin name Y signal _734_ layer 1 50 -100
+cell 1248 OAI21X1_405
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal _733_ layer 1 -160 -330
+pin name B signal _715_ layer 1 -80 -140
+pin name C signal _734_ layer 1 160 300
+pin name Y signal _711_[4] layer 1 50 -100
+cell 1249 INVX1_131
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[5] layer 1 -80 -540
+pin name Y signal _735_ layer 1 80 0
+cell 1250 OAI21X1_406
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -23337,127 +23455,9 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[2].fifo_inst.full_bF$pin/A signal FIFO_INST[2].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
-pin name B signal FIFO_INST[2].fifo_inst.pe_wr_en layer 1 -80 -140
-pin name C signal _728_ layer 1 160 300
-pin name Y signal _709_ layer 1 50 -100
-cell 1240 INVX1_128
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[8] layer 1 -80 -540
-pin name Y signal _729_ layer 1 80 0
-cell 1241 NAND2X1_124
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal FIFO_INST[2].fifo_inst.pe_data_out[0] layer 1 -160 -340
-pin name B signal PE_INST[2].pe.rd_en_d layer 1 160 140
-pin name Y signal _730_ layer 1 100 -680
-cell 1242 OAI21X1_404
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
-pin name B signal _729_ layer 1 -80 -140
-pin name C signal _730_ layer 1 160 300
-pin name Y signal _710_[0] layer 1 50 -100
-cell 1243 INVX1_129
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[9] layer 1 -80 -540
-pin name Y signal _731_ layer 1 80 0
-cell 1244 NAND2X1_125
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[2].fifo_inst.pe_data_out[1] layer 1 160 140
-pin name Y signal _732_ layer 1 100 -680
-cell 1245 OAI21X1_405
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
-pin name B signal _731_ layer 1 -80 -140
-pin name C signal _732_ layer 1 160 300
-pin name Y signal _710_[1] layer 1 50 -100
-cell 1246 INVX1_130
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[10] layer 1 -80 -540
-pin name Y signal _733_ layer 1 80 0
-cell 1247 NAND2X1_126
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[2].fifo_inst.pe_data_out[2] layer 1 160 140
-pin name Y signal _734_ layer 1 100 -680
-cell 1248 OAI21X1_406
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
-pin name B signal _733_ layer 1 -80 -140
-pin name C signal _734_ layer 1 160 300
-pin name Y signal _710_[2] layer 1 50 -100
-cell 1249 INVX1_131
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[11] layer 1 -80 -540
-pin name Y signal _735_ layer 1 80 0
-cell 1250 NAND2X1_127
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[2].fifo_inst.pe_data_out[3] layer 1 160 140
-pin name Y signal _736_ layer 1 100 -680
+pin name B signal PE_INST[2].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[2].fifo_inst.pe_data_in[5] layer 1 160 300
+pin name Y signal _736_ layer 1 50 -100
 cell 1251 OAI21X1_407
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
@@ -23468,10 +23468,10 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[2].pe.rd_en_d layer 1 -160 -330
-pin name B signal _735_ layer 1 -80 -140
+pin name A signal _735_ layer 1 -160 -330
+pin name B signal _715_ layer 1 -80 -140
 pin name C signal _736_ layer 1 160 300
-pin name Y signal _710_[3] layer 1 50 -100
+pin name Y signal _711_[5] layer 1 50 -100
 cell 1252 INVX1_132
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
@@ -23757,8 +23757,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf5 layer 1 -41 -501
 end_pin_group
-pin name D signal _713_ layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_wr_en layer 1 1520 449
+pin name D signal _711_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[0] layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1259 DFFSR_110
@@ -23810,8 +23810,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf4 layer 1 -41 -501
 end_pin_group
-pin name D signal _712_ layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_rd_en layer 1 1520 449
+pin name D signal _711_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[1] layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1260 DFFSR_111
@@ -23863,8 +23863,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf3 layer 1 -41 -501
 end_pin_group
-pin name D signal _711_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[0] layer 1 1520 449
+pin name D signal _711_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[2] layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1261 DFFSR_112
@@ -23916,8 +23916,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf2 layer 1 -41 -501
 end_pin_group
-pin name D signal _711_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[1] layer 1 1520 449
+pin name D signal _711_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[3] layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1262 DFFSR_113
@@ -23969,8 +23969,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf1 layer 1 -41 -501
 end_pin_group
-pin name D signal _711_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[2] layer 1 1520 449
+pin name D signal _711_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[4] layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1263 DFFSR_114
@@ -24022,8 +24022,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf0 layer 1 -41 -501
 end_pin_group
-pin name D signal _711_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[3] layer 1 1520 449
+pin name D signal _711_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[5] layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1264 DFFSR_115
@@ -24075,8 +24075,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf41 layer 1 -41 -501
 end_pin_group
-pin name D signal _711_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[4] layer 1 1520 449
+pin name D signal _713_ layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_wr_en layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1265 DFFSR_116
@@ -24128,8 +24128,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf40 layer 1 -41 -501
 end_pin_group
-pin name D signal _711_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.pe_data_in[5] layer 1 1520 449
+pin name D signal _712_ layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.pe_rd_en layer 1 1520 449
 pin name R signal _714_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1266 DFFSR_117
@@ -24261,53 +24261,20 @@ pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
 pin name A signal _743_ layer 1 -80 -540
 pin name Y signal _741_ layer 1 80 0
-cell 1270 INVX1_134
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[12] layer 1 -80 -540
-pin name Y signal _744_ layer 1 80 0
-cell 1271 OAI21X1_408
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
+cell 1270 NAND2X1_128
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
 pin_group
-pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf3 layer 1 -160 -330
+pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf3 layer 1 -160 -340
 end_pin_group
-pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[0] layer 1 160 300
-pin name Y signal _745_ layer 1 50 -100
-cell 1272 OAI21X1_409
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal _744_ layer 1 -160 -330
-pin name B signal _743_ layer 1 -80 -140
-pin name C signal _745_ layer 1 160 300
-pin name Y signal _739_[0] layer 1 50 -100
-cell 1273 INVX1_135
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[13] layer 1 -80 -540
-pin name Y signal _746_ layer 1 80 0
-cell 1274 OAI21X1_410
+pin name B signal PE_INST[3].pe.busy layer 1 160 140
+pin name Y signal _744_ layer 1 100 -680
+cell 1271 OAI21X1_408
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24320,10 +24287,29 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[1] layer 1 160 300
-pin name Y signal _747_ layer 1 50 -100
-cell 1275 OAI21X1_411
+pin name B signal FIFO_INST[3].fifo_inst.pe_wr_en layer 1 -80 -140
+pin name C signal _744_ layer 1 160 300
+pin name Y signal _737_ layer 1 50 -100
+cell 1272 INVX1_134
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[12] layer 1 -80 -540
+pin name Y signal _745_ layer 1 80 0
+cell 1273 NAND2X1_129
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal FIFO_INST[3].fifo_inst.pe_data_out[0] layer 1 -160 -340
+pin name B signal PE_INST[3].pe.rd_en_d layer 1 160 140
+pin name Y signal _746_ layer 1 100 -680
+cell 1274 OAI21X1_409
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24333,19 +24319,118 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _746_ layer 1 -160 -330
-pin name B signal _743_ layer 1 -80 -140
-pin name C signal _747_ layer 1 160 300
-pin name Y signal _739_[1] layer 1 50 -100
-cell 1276 INVX1_136
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
+pin name B signal _745_ layer 1 -80 -140
+pin name C signal _746_ layer 1 160 300
+pin name Y signal _738_[0] layer 1 50 -100
+cell 1275 INVX1_135
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[14] layer 1 -80 -540
-pin name Y signal _748_ layer 1 80 0
-cell 1277 OAI21X1_412
+pin name A signal _0_[13] layer 1 -80 -540
+pin name Y signal _747_ layer 1 80 0
+cell 1276 NAND2X1_130
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[3].fifo_inst.pe_data_out[1] layer 1 160 140
+pin name Y signal _748_ layer 1 100 -680
+cell 1277 OAI21X1_410
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
+pin name B signal _747_ layer 1 -80 -140
+pin name C signal _748_ layer 1 160 300
+pin name Y signal _738_[1] layer 1 50 -100
+cell 1278 INVX1_136
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[14] layer 1 -80 -540
+pin name Y signal _749_ layer 1 80 0
+cell 1279 NAND2X1_131
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[3].fifo_inst.pe_data_out[2] layer 1 160 140
+pin name Y signal _750_ layer 1 100 -680
+cell 1280 OAI21X1_411
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
+pin name B signal _749_ layer 1 -80 -140
+pin name C signal _750_ layer 1 160 300
+pin name Y signal _738_[2] layer 1 50 -100
+cell 1281 INVX1_137
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal _0_[15] layer 1 -80 -540
+pin name Y signal _751_ layer 1 80 0
+cell 1282 NAND2X1_132
+left -240 right 240 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
+   equiv name twfeed1 layer 1 -160 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
+   equiv name twfeed2 layer 1 0 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
+   equiv name twfeed3 layer 1 160 1000
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -340
+pin name B signal FIFO_INST[3].fifo_inst.pe_data_out[3] layer 1 160 140
+pin name Y signal _752_ layer 1 100 -680
+cell 1283 OAI21X1_412
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
+pin name B signal _751_ layer 1 -80 -140
+pin name C signal _752_ layer 1 160 300
+pin name Y signal _738_[3] layer 1 50 -100
+cell 1284 INVX1_138
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal ext_data_in[12] layer 1 -80 -540
+pin name Y signal _753_ layer 1 80 0
+cell 1285 OAI21X1_413
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24359,9 +24444,9 @@ pin_group
 pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[2] layer 1 160 300
-pin name Y signal _749_ layer 1 50 -100
-cell 1278 OAI21X1_413
+pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[0] layer 1 160 300
+pin name Y signal _754_ layer 1 50 -100
+cell 1286 OAI21X1_414
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24371,19 +24456,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _748_ layer 1 -160 -330
+pin name A signal _753_ layer 1 -160 -330
 pin name B signal _743_ layer 1 -80 -140
-pin name C signal _749_ layer 1 160 300
-pin name Y signal _739_[2] layer 1 50 -100
-cell 1279 INVX1_137
+pin name C signal _754_ layer 1 160 300
+pin name Y signal _739_[0] layer 1 50 -100
+cell 1287 INVX1_139
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal ext_data_in[15] layer 1 -80 -540
-pin name Y signal _750_ layer 1 80 0
-cell 1280 OAI21X1_414
+pin name A signal ext_data_in[13] layer 1 -80 -540
+pin name Y signal _755_ layer 1 80 0
+cell 1288 OAI21X1_415
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24397,9 +24482,9 @@ pin_group
 pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf0 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[3] layer 1 160 300
-pin name Y signal _751_ layer 1 50 -100
-cell 1281 OAI21X1_415
+pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[1] layer 1 160 300
+pin name Y signal _756_ layer 1 50 -100
+cell 1289 OAI21X1_416
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24409,19 +24494,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _750_ layer 1 -160 -330
+pin name A signal _755_ layer 1 -160 -330
 pin name B signal _743_ layer 1 -80 -140
-pin name C signal _751_ layer 1 160 300
-pin name Y signal _739_[3] layer 1 50 -100
-cell 1282 INVX1_138
+pin name C signal _756_ layer 1 160 300
+pin name Y signal _739_[1] layer 1 50 -100
+cell 1290 INVX1_140
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[3].fifo_inst.pe_data_in[4] layer 1 -80 -540
-pin name Y signal _752_ layer 1 80 0
-cell 1283 OAI21X1_416
+pin name A signal ext_data_in[14] layer 1 -80 -540
+pin name Y signal _757_ layer 1 80 0
+cell 1291 OAI21X1_417
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24435,9 +24520,9 @@ pin_group
 pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf4 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[4] layer 1 160 300
-pin name Y signal _753_ layer 1 50 -100
-cell 1284 OAI21X1_417
+pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[2] layer 1 160 300
+pin name Y signal _758_ layer 1 50 -100
+cell 1292 OAI21X1_418
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24447,19 +24532,19 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _752_ layer 1 -160 -330
+pin name A signal _757_ layer 1 -160 -330
 pin name B signal _743_ layer 1 -80 -140
-pin name C signal _753_ layer 1 160 300
-pin name Y signal _739_[4] layer 1 50 -100
-cell 1285 INVX1_139
+pin name C signal _758_ layer 1 160 300
+pin name Y signal _739_[2] layer 1 50 -100
+cell 1293 INVX1_141
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
    equiv name twfeed1 layer 1 -80 1000
 pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed2 layer 1 80 1000
-pin name A signal FIFO_INST[3].fifo_inst.pe_data_in[5] layer 1 -80 -540
-pin name Y signal _754_ layer 1 80 0
-cell 1286 OAI21X1_418
+pin name A signal ext_data_in[15] layer 1 -80 -540
+pin name Y signal _759_ layer 1 80 0
+cell 1294 OAI21X1_419
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24473,9 +24558,9 @@ pin_group
 pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf3 layer 1 -160 -330
 end_pin_group
 pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
-pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[5] layer 1 160 300
-pin name Y signal _755_ layer 1 50 -100
-cell 1287 OAI21X1_419
+pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[3] layer 1 160 300
+pin name Y signal _760_ layer 1 50 -100
+cell 1295 OAI21X1_420
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24485,24 +24570,57 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal _754_ layer 1 -160 -330
+pin name A signal _759_ layer 1 -160 -330
 pin name B signal _743_ layer 1 -80 -140
-pin name C signal _755_ layer 1 160 300
-pin name Y signal _739_[5] layer 1 50 -100
-cell 1288 NAND2X1_128
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
+pin name C signal _760_ layer 1 160 300
+pin name Y signal _739_[3] layer 1 50 -100
+cell 1296 INVX1_142
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[6] layer 1 -80 -540
+pin name Y signal _761_ layer 1 80 0
+cell 1297 OAI21X1_421
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
 pin_group
-pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf2 layer 1 -160 -340
+pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf2 layer 1 -160 -330
 end_pin_group
-pin name B signal PE_INST[3].pe.busy layer 1 160 140
-pin name Y signal _756_ layer 1 100 -680
-cell 1289 OAI21X1_420
+pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[4] layer 1 160 300
+pin name Y signal _762_ layer 1 50 -100
+cell 1298 OAI21X1_422
+left -320 right 320 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
+   equiv name twfeed1 layer 1 -240 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed2 layer 1 -80 1000
+pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed3 layer 1 80 1000
+pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
+   equiv name twfeed4 layer 1 240 1000
+pin name A signal _761_ layer 1 -160 -330
+pin name B signal _743_ layer 1 -80 -140
+pin name C signal _762_ layer 1 160 300
+pin name Y signal _739_[4] layer 1 50 -100
+cell 1299 INVX1_143
+left -160 right 160 bottom -1000 top 1000
+pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
+   equiv name twfeed1 layer 1 -80 1000
+pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
+   equiv name twfeed2 layer 1 80 1000
+pin name A signal dest[7] layer 1 -80 -540
+pin name Y signal _763_ layer 1 80 0
+cell 1300 OAI21X1_423
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
    equiv name twfeed1 layer 1 -240 1000
@@ -24515,127 +24633,9 @@ pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
 pin_group
 pin name FIFO_INST[3].fifo_inst.full_bF$pin/A signal FIFO_INST[3].fifo_inst.full_bF$buf1 layer 1 -160 -330
 end_pin_group
-pin name B signal FIFO_INST[3].fifo_inst.pe_wr_en layer 1 -80 -140
-pin name C signal _756_ layer 1 160 300
-pin name Y signal _737_ layer 1 50 -100
-cell 1290 INVX1_140
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[12] layer 1 -80 -540
-pin name Y signal _757_ layer 1 80 0
-cell 1291 NAND2X1_129
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal FIFO_INST[3].fifo_inst.pe_data_out[0] layer 1 -160 -340
-pin name B signal PE_INST[3].pe.rd_en_d layer 1 160 140
-pin name Y signal _758_ layer 1 100 -680
-cell 1292 OAI21X1_421
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
-pin name B signal _757_ layer 1 -80 -140
-pin name C signal _758_ layer 1 160 300
-pin name Y signal _738_[0] layer 1 50 -100
-cell 1293 INVX1_141
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[13] layer 1 -80 -540
-pin name Y signal _759_ layer 1 80 0
-cell 1294 NAND2X1_130
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[3].fifo_inst.pe_data_out[1] layer 1 160 140
-pin name Y signal _760_ layer 1 100 -680
-cell 1295 OAI21X1_422
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
-pin name B signal _759_ layer 1 -80 -140
-pin name C signal _760_ layer 1 160 300
-pin name Y signal _738_[1] layer 1 50 -100
-cell 1296 INVX1_142
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[14] layer 1 -80 -540
-pin name Y signal _761_ layer 1 80 0
-cell 1297 NAND2X1_131
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[3].fifo_inst.pe_data_out[2] layer 1 160 140
-pin name Y signal _762_ layer 1 100 -680
-cell 1298 OAI21X1_423
-left -320 right 320 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
-   equiv name twfeed1 layer 1 -240 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed2 layer 1 -80 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed3 layer 1 80 1000
-pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
-   equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
-pin name B signal _761_ layer 1 -80 -140
-pin name C signal _762_ layer 1 160 300
-pin name Y signal _738_[2] layer 1 50 -100
-cell 1299 INVX1_143
-left -160 right 160 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
-   equiv name twfeed1 layer 1 -80 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 80 -1000
-   equiv name twfeed2 layer 1 80 1000
-pin name A signal _0_[15] layer 1 -80 -540
-pin name Y signal _763_ layer 1 80 0
-cell 1300 NAND2X1_132
-left -240 right 240 bottom -1000 top 1000
-pin name twfeed1 signal TW_PASS_THRU layer 1 -160 -1000
-   equiv name twfeed1 layer 1 -160 1000
-pin name twfeed2 signal TW_PASS_THRU layer 1 0 -1000
-   equiv name twfeed2 layer 1 0 1000
-pin name twfeed3 signal TW_PASS_THRU layer 1 160 -1000
-   equiv name twfeed3 layer 1 160 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -340
-pin name B signal FIFO_INST[3].fifo_inst.pe_data_out[3] layer 1 160 140
-pin name Y signal _764_ layer 1 100 -680
+pin name B signal PE_INST[3].pe.busy layer 1 -80 -140
+pin name C signal FIFO_INST[3].fifo_inst.pe_data_in[5] layer 1 160 300
+pin name Y signal _764_ layer 1 50 -100
 cell 1301 OAI21X1_424
 left -320 right 320 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -240 -1000
@@ -24646,10 +24646,10 @@ pin name twfeed3 signal TW_PASS_THRU layer 1 80 -1000
    equiv name twfeed3 layer 1 80 1000
 pin name twfeed4 signal TW_PASS_THRU layer 1 240 -1000
    equiv name twfeed4 layer 1 240 1000
-pin name A signal PE_INST[3].pe.rd_en_d layer 1 -160 -330
-pin name B signal _763_ layer 1 -80 -140
+pin name A signal _763_ layer 1 -160 -330
+pin name B signal _743_ layer 1 -80 -140
 pin name C signal _764_ layer 1 160 300
-pin name Y signal _738_[3] layer 1 50 -100
+pin name Y signal _739_[5] layer 1 50 -100
 cell 1302 INVX1_144
 left -160 right 160 bottom -1000 top 1000
 pin name twfeed1 signal TW_PASS_THRU layer 1 -80 -1000
@@ -24935,8 +24935,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf33 layer 1 -41 -501
 end_pin_group
-pin name D signal _741_ layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_wr_en layer 1 1520 449
+pin name D signal _739_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[0] layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1309 DFFSR_124
@@ -24988,8 +24988,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf32 layer 1 -41 -501
 end_pin_group
-pin name D signal _740_ layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_rd_en layer 1 1520 449
+pin name D signal _739_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[1] layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1310 DFFSR_125
@@ -25041,8 +25041,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf31 layer 1 -41 -501
 end_pin_group
-pin name D signal _739_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[0] layer 1 1520 449
+pin name D signal _739_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[2] layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1311 DFFSR_126
@@ -25094,8 +25094,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf30 layer 1 -41 -501
 end_pin_group
-pin name D signal _739_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[1] layer 1 1520 449
+pin name D signal _739_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[3] layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1312 DFFSR_127
@@ -25147,8 +25147,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf29 layer 1 -41 -501
 end_pin_group
-pin name D signal _739_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[2] layer 1 1520 449
+pin name D signal _739_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[4] layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1313 DFFSR_128
@@ -25200,8 +25200,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf28 layer 1 -41 -501
 end_pin_group
-pin name D signal _739_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[3] layer 1 1520 449
+pin name D signal _739_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[5] layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1314 DFFSR_129
@@ -25253,8 +25253,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf27 layer 1 -41 -501
 end_pin_group
-pin name D signal _739_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[4] layer 1 1520 449
+pin name D signal _741_ layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_wr_en layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1315 DFFSR_130
@@ -25306,8 +25306,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf26 layer 1 -41 -501
 end_pin_group
-pin name D signal _739_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.pe_data_in[5] layer 1 1520 449
+pin name D signal _740_ layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.pe_rd_en layer 1 1520 449
 pin name R signal _742_ layer 1 -1040 -90
 pin name S signal vdd layer 1 -1020 59
 cell 1316 DFFSR_131
@@ -29379,8 +29379,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf16 layer 1 -41 -501
 end_pin_group
-pin name D signal _901_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_rd_en layer 1 1520 449
+pin name D signal _897_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[5] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -29434,8 +29434,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf15 layer 1 -41 -501
 end_pin_group
-pin name D signal _901_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_rd_en layer 1 1520 449
+pin name D signal _898_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[0] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -29489,8 +29489,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf14 layer 1 -41 -501
 end_pin_group
-pin name D signal _901_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_rd_en layer 1 1520 449
+pin name D signal _898_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[1] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -29544,8 +29544,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf13 layer 1 -41 -501
 end_pin_group
-pin name D signal _902_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_wr_en layer 1 1520 449
+pin name D signal _898_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[2] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf2 layer 1 -1040 -90
 end_pin_group
@@ -29599,8 +29599,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf12 layer 1 -41 -501
 end_pin_group
-pin name D signal _902_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_wr_en layer 1 1520 449
+pin name D signal _898_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[3] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf1 layer 1 -1040 -90
 end_pin_group
@@ -29654,8 +29654,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf11 layer 1 -41 -501
 end_pin_group
-pin name D signal _902_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_wr_en layer 1 1520 449
+pin name D signal _898_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[4] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf0 layer 1 -1040 -90
 end_pin_group
@@ -29709,8 +29709,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf10 layer 1 -41 -501
 end_pin_group
-pin name D signal _902_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_wr_en layer 1 1520 449
+pin name D signal _898_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[5] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -29764,8 +29764,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf9 layer 1 -41 -501
 end_pin_group
-pin name D signal _897_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[0] layer 1 1520 449
+pin name D signal _899_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[0] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -29819,8 +29819,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf8 layer 1 -41 -501
 end_pin_group
-pin name D signal _897_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[1] layer 1 1520 449
+pin name D signal _899_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[1] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -29874,8 +29874,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf7 layer 1 -41 -501
 end_pin_group
-pin name D signal _897_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[2] layer 1 1520 449
+pin name D signal _899_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[2] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf2 layer 1 -1040 -90
 end_pin_group
@@ -29929,8 +29929,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf6 layer 1 -41 -501
 end_pin_group
-pin name D signal _897_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[3] layer 1 1520 449
+pin name D signal _899_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[3] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf1 layer 1 -1040 -90
 end_pin_group
@@ -29984,8 +29984,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf5 layer 1 -41 -501
 end_pin_group
-pin name D signal _897_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[4] layer 1 1520 449
+pin name D signal _899_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[4] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf0 layer 1 -1040 -90
 end_pin_group
@@ -30039,8 +30039,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf4 layer 1 -41 -501
 end_pin_group
-pin name D signal _897_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[5] layer 1 1520 449
+pin name D signal _899_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[5] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -30094,8 +30094,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf3 layer 1 -41 -501
 end_pin_group
-pin name D signal _898_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[0] layer 1 1520 449
+pin name D signal _900_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[0] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -30149,8 +30149,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf2 layer 1 -41 -501
 end_pin_group
-pin name D signal _898_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[1] layer 1 1520 449
+pin name D signal _900_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[1] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -30204,8 +30204,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf1 layer 1 -41 -501
 end_pin_group
-pin name D signal _898_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[2] layer 1 1520 449
+pin name D signal _900_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[2] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf2 layer 1 -1040 -90
 end_pin_group
@@ -30259,8 +30259,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf0 layer 1 -41 -501
 end_pin_group
-pin name D signal _898_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[3] layer 1 1520 449
+pin name D signal _900_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[3] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf1 layer 1 -1040 -90
 end_pin_group
@@ -30314,8 +30314,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf41 layer 1 -41 -501
 end_pin_group
-pin name D signal _898_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[4] layer 1 1520 449
+pin name D signal _900_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[4] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf0 layer 1 -1040 -90
 end_pin_group
@@ -30369,8 +30369,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf40 layer 1 -41 -501
 end_pin_group
-pin name D signal _898_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[1].fifo_inst.router_data_in[5] layer 1 1520 449
+pin name D signal _900_[5] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[5] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -30424,8 +30424,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf39 layer 1 -41 -501
 end_pin_group
-pin name D signal _899_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[0] layer 1 1520 449
+pin name D signal _903_ layer 1 -400 -340
+pin name Q signal router_inst.processing layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -30479,8 +30479,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf38 layer 1 -41 -501
 end_pin_group
-pin name D signal _899_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[1] layer 1 1520 449
+pin name D signal _896_[0] layer 1 -400 -340
+pin name Q signal router_inst.buffer[0] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -30534,8 +30534,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf37 layer 1 -41 -501
 end_pin_group
-pin name D signal _899_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[2] layer 1 1520 449
+pin name D signal _896_[1] layer 1 -400 -340
+pin name Q signal router_inst.buffer[1] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf2 layer 1 -1040 -90
 end_pin_group
@@ -30589,8 +30589,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf36 layer 1 -41 -501
 end_pin_group
-pin name D signal _899_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[3] layer 1 1520 449
+pin name D signal _896_[2] layer 1 -400 -340
+pin name Q signal router_inst.buffer[2] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf1 layer 1 -1040 -90
 end_pin_group
@@ -30644,8 +30644,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf35 layer 1 -41 -501
 end_pin_group
-pin name D signal _899_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[4] layer 1 1520 449
+pin name D signal _896_[3] layer 1 -400 -340
+pin name Q signal router_inst.buffer[3] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf0 layer 1 -1040 -90
 end_pin_group
@@ -30699,8 +30699,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf34 layer 1 -41 -501
 end_pin_group
-pin name D signal _899_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[2].fifo_inst.router_data_in[5] layer 1 1520 449
+pin name D signal _896_[4] layer 1 -400 -340
+pin name Q signal router_inst.buffer[4] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -30754,8 +30754,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf33 layer 1 -41 -501
 end_pin_group
-pin name D signal _900_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[0] layer 1 1520 449
+pin name D signal _896_[5] layer 1 -400 -340
+pin name Q signal router_inst.buffer[5] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -30809,8 +30809,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf32 layer 1 -41 -501
 end_pin_group
-pin name D signal _900_[1] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[1] layer 1 1520 449
+pin name D signal _901_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_rd_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -30864,8 +30864,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf31 layer 1 -41 -501
 end_pin_group
-pin name D signal _900_[2] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[2] layer 1 1520 449
+pin name D signal _901_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_rd_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf2 layer 1 -1040 -90
 end_pin_group
@@ -30919,8 +30919,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf30 layer 1 -41 -501
 end_pin_group
-pin name D signal _900_[3] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[3] layer 1 1520 449
+pin name D signal _901_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_rd_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf1 layer 1 -1040 -90
 end_pin_group
@@ -30974,8 +30974,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf29 layer 1 -41 -501
 end_pin_group
-pin name D signal _900_[4] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[4] layer 1 1520 449
+pin name D signal _901_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_rd_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf0 layer 1 -1040 -90
 end_pin_group
@@ -31029,8 +31029,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf28 layer 1 -41 -501
 end_pin_group
-pin name D signal _900_[5] layer 1 -400 -340
-pin name Q signal FIFO_INST[3].fifo_inst.router_data_in[5] layer 1 1520 449
+pin name D signal _902_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_wr_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -31084,8 +31084,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf27 layer 1 -41 -501
 end_pin_group
-pin name D signal _903_ layer 1 -400 -340
-pin name Q signal router_inst.processing layer 1 1520 449
+pin name D signal _902_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[1].fifo_inst.router_wr_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -31139,8 +31139,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf26 layer 1 -41 -501
 end_pin_group
-pin name D signal _896_[0] layer 1 -400 -340
-pin name Q signal router_inst.buffer[0] layer 1 1520 449
+pin name D signal _902_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[2].fifo_inst.router_wr_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -31194,8 +31194,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf25 layer 1 -41 -501
 end_pin_group
-pin name D signal _896_[1] layer 1 -400 -340
-pin name Q signal router_inst.buffer[1] layer 1 1520 449
+pin name D signal _902_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[3].fifo_inst.router_wr_en layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf2 layer 1 -1040 -90
 end_pin_group
@@ -31249,8 +31249,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf24 layer 1 -41 -501
 end_pin_group
-pin name D signal _896_[2] layer 1 -400 -340
-pin name Q signal router_inst.buffer[2] layer 1 1520 449
+pin name D signal _897_[0] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[0] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf1 layer 1 -1040 -90
 end_pin_group
@@ -31304,8 +31304,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf23 layer 1 -41 -501
 end_pin_group
-pin name D signal _896_[3] layer 1 -400 -340
-pin name Q signal router_inst.buffer[3] layer 1 1520 449
+pin name D signal _897_[1] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[1] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf0 layer 1 -1040 -90
 end_pin_group
@@ -31359,8 +31359,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf22 layer 1 -41 -501
 end_pin_group
-pin name D signal _896_[4] layer 1 -400 -340
-pin name Q signal router_inst.buffer[4] layer 1 1520 449
+pin name D signal _897_[2] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[2] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf5 layer 1 -1040 -90
 end_pin_group
@@ -31414,8 +31414,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf21 layer 1 -41 -501
 end_pin_group
-pin name D signal _896_[5] layer 1 -400 -340
-pin name Q signal router_inst.buffer[5] layer 1 1520 449
+pin name D signal _897_[3] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[3] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf4 layer 1 -1040 -90
 end_pin_group
@@ -31469,8 +31469,8 @@ pin name twfeed22 signal TW_PASS_THRU layer 1 1680 -1000
 pin_group
 pin name clk_bF$pin/CLK signal clk_bF$buf20 layer 1 -41 -501
 end_pin_group
-pin name D signal _901_[0] layer 1 -400 -340
-pin name Q signal FIFO_INST[0].fifo_inst.router_rd_en layer 1 1520 449
+pin name D signal _897_[4] layer 1 -400 -340
+pin name Q signal FIFO_INST[0].fifo_inst.router_data_in[4] layer 1 1520 449
 pin_group
 pin name _904__bF$pin/R signal _904__bF$buf3 layer 1 -1040 -90
 end_pin_group
@@ -31493,147 +31493,179 @@ pad 2 name twpin_rst
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name rst signal rst layer 1 0 0
 
-pad 3 name twpin_ext_data_in[0]
+pad 3 name twpin_dest[0]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[0] signal dest[0] layer 1 0 0
+
+pad 4 name twpin_dest[1]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[1] signal dest[1] layer 1 0 0
+
+pad 5 name twpin_dest[2]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[2] signal dest[2] layer 1 0 0
+
+pad 6 name twpin_dest[3]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[3] signal dest[3] layer 1 0 0
+
+pad 7 name twpin_dest[4]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[4] signal dest[4] layer 1 0 0
+
+pad 8 name twpin_dest[5]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[5] signal dest[5] layer 1 0 0
+
+pad 9 name twpin_dest[6]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[6] signal dest[6] layer 1 0 0
+
+pad 10 name twpin_dest[7]
+corners 4 -80 -100 -80 100 80 100 80 -100
+pin name dest[7] signal dest[7] layer 1 0 0
+
+pad 11 name twpin_ext_data_in[0]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[0] signal ext_data_in[0] layer 1 0 0
 
-pad 4 name twpin_ext_data_in[1]
+pad 12 name twpin_ext_data_in[1]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[1] signal ext_data_in[1] layer 1 0 0
 
-pad 5 name twpin_ext_data_in[2]
+pad 13 name twpin_ext_data_in[2]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[2] signal ext_data_in[2] layer 1 0 0
 
-pad 6 name twpin_ext_data_in[3]
+pad 14 name twpin_ext_data_in[3]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[3] signal ext_data_in[3] layer 1 0 0
 
-pad 7 name twpin_ext_data_in[4]
+pad 15 name twpin_ext_data_in[4]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[4] signal ext_data_in[4] layer 1 0 0
 
-pad 8 name twpin_ext_data_in[5]
+pad 16 name twpin_ext_data_in[5]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[5] signal ext_data_in[5] layer 1 0 0
 
-pad 9 name twpin_ext_data_in[6]
+pad 17 name twpin_ext_data_in[6]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[6] signal ext_data_in[6] layer 1 0 0
 
-pad 10 name twpin_ext_data_in[7]
+pad 18 name twpin_ext_data_in[7]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[7] signal ext_data_in[7] layer 1 0 0
 
-pad 11 name twpin_ext_data_in[8]
+pad 19 name twpin_ext_data_in[8]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[8] signal ext_data_in[8] layer 1 0 0
 
-pad 12 name twpin_ext_data_in[9]
+pad 20 name twpin_ext_data_in[9]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[9] signal ext_data_in[9] layer 1 0 0
 
-pad 13 name twpin_ext_data_in[10]
+pad 21 name twpin_ext_data_in[10]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[10] signal ext_data_in[10] layer 1 0 0
 
-pad 14 name twpin_ext_data_in[11]
+pad 22 name twpin_ext_data_in[11]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[11] signal ext_data_in[11] layer 1 0 0
 
-pad 15 name twpin_ext_data_in[12]
+pad 23 name twpin_ext_data_in[12]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[12] signal ext_data_in[12] layer 1 0 0
 
-pad 16 name twpin_ext_data_in[13]
+pad 24 name twpin_ext_data_in[13]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[13] signal ext_data_in[13] layer 1 0 0
 
-pad 17 name twpin_ext_data_in[14]
+pad 25 name twpin_ext_data_in[14]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[14] signal ext_data_in[14] layer 1 0 0
 
-pad 18 name twpin_ext_data_in[15]
+pad 26 name twpin_ext_data_in[15]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_in[15] signal ext_data_in[15] layer 1 0 0
 
-pad 19 name twpin_ext_data_out[0]
+pad 27 name twpin_ext_data_out[0]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[0] signal ext_data_out[0] layer 1 0 0
 
-pad 20 name twpin_ext_data_out[1]
+pad 28 name twpin_ext_data_out[1]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[1] signal ext_data_out[1] layer 1 0 0
 
-pad 21 name twpin_ext_data_out[2]
+pad 29 name twpin_ext_data_out[2]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[2] signal ext_data_out[2] layer 1 0 0
 
-pad 22 name twpin_ext_data_out[3]
+pad 30 name twpin_ext_data_out[3]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[3] signal ext_data_out[3] layer 1 0 0
 
-pad 23 name twpin_ext_data_out[4]
+pad 31 name twpin_ext_data_out[4]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[4] signal ext_data_out[4] layer 1 0 0
 
-pad 24 name twpin_ext_data_out[5]
+pad 32 name twpin_ext_data_out[5]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[5] signal ext_data_out[5] layer 1 0 0
 
-pad 25 name twpin_ext_data_out[6]
+pad 33 name twpin_ext_data_out[6]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[6] signal ext_data_out[6] layer 1 0 0
 
-pad 26 name twpin_ext_data_out[7]
+pad 34 name twpin_ext_data_out[7]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[7] signal ext_data_out[7] layer 1 0 0
 
-pad 27 name twpin_ext_data_out[8]
+pad 35 name twpin_ext_data_out[8]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[8] signal ext_data_out[8] layer 1 0 0
 
-pad 28 name twpin_ext_data_out[9]
+pad 36 name twpin_ext_data_out[9]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[9] signal ext_data_out[9] layer 1 0 0
 
-pad 29 name twpin_ext_data_out[10]
+pad 37 name twpin_ext_data_out[10]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[10] signal ext_data_out[10] layer 1 0 0
 
-pad 30 name twpin_ext_data_out[11]
+pad 38 name twpin_ext_data_out[11]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[11] signal ext_data_out[11] layer 1 0 0
 
-pad 31 name twpin_ext_data_out[12]
+pad 39 name twpin_ext_data_out[12]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[12] signal ext_data_out[12] layer 1 0 0
 
-pad 32 name twpin_ext_data_out[13]
+pad 40 name twpin_ext_data_out[13]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[13] signal ext_data_out[13] layer 1 0 0
 
-pad 33 name twpin_ext_data_out[14]
+pad 41 name twpin_ext_data_out[14]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[14] signal ext_data_out[14] layer 1 0 0
 
-pad 34 name twpin_ext_data_out[15]
+pad 42 name twpin_ext_data_out[15]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name ext_data_out[15] signal ext_data_out[15] layer 1 0 0
 
-pad 35 name twpin_pe_busy[0]
+pad 43 name twpin_pe_busy[0]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name pe_busy[0] signal pe_busy[0] layer 1 0 0
 
-pad 36 name twpin_pe_busy[1]
+pad 44 name twpin_pe_busy[1]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name pe_busy[1] signal pe_busy[1] layer 1 0 0
 
-pad 37 name twpin_pe_busy[2]
+pad 45 name twpin_pe_busy[2]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name pe_busy[2] signal pe_busy[2] layer 1 0 0
 
-pad 38 name twpin_pe_busy[3]
+pad 46 name twpin_pe_busy[3]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name pe_busy[3] signal pe_busy[3] layer 1 0 0
 

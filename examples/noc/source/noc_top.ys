@@ -1,6 +1,6 @@
 # Synthesis script for yosys created by qflow
 read_liberty -lib -ignore_miss_dir -setattr blackbox /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib
-read_verilog  /home/tombert/qflow_projects/noc/source/noc_top.v
+read_verilog  /home/tombert/qflow_results/examples/noc/source/noc_top.v
 read_verilog  fifo_buffer.v
 read_verilog  processing_element.v
 read_verilog  router.v

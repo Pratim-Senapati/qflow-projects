@@ -16,7 +16,7 @@ module processing_element (
 
     // Source and Destination IDs
     input wire [1:0] src_id,            // Source ID (specific for each PE instance)
-    input wire [1:0] dest_id,           // Destination ID (dynamically provided)
+    input wire [1:0] dest_id,           // Destination ID (provided from outside)
 
     // Status signals
     output reg busy                      // Signal indicating unsent data

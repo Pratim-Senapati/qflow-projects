@@ -386,8 +386,8 @@ Device classes AOI22X1 and AOI22X1 are equivalent.
 Subcircuit summary:
 Circuit 1: noc_top                         |Circuit 2: noc_top                         
 -------------------------------------------|-------------------------------------------
-AND2X2 (5)                                 |AND2X2 (5)                                 
 OAI21X1 (463)                              |OAI21X1 (463)                              
+AND2X2 (5)                                 |AND2X2 (5)                                 
 MUX2X1 (124)                               |MUX2X1 (124)                               
 DFFSR (178)                                |DFFSR (178)                                
 NAND2X1 (183)                              |NAND2X1 (183)                              
@@ -408,7 +408,7 @@ BUFX2 (26)                                 |BUFX2 (26)
 AOI21X1 (17)                               |AOI21X1 (17)                               
 NOR2X1 (61)                                |NOR2X1 (61)                                
 Number of devices: 1639                    |Number of devices: 1639                    
-Number of nets: 1659                       |Number of nets: 1659                       
+Number of nets: 1667                       |Number of nets: 1667                       
 ---------------------------------------------------------------------------------------
 Circuits match uniquely.
 Netlists match uniquely.
@@ -417,41 +417,49 @@ Subcircuit pins:
 Circuit 1: noc_top                         |Circuit 2: noc_top                         
 -------------------------------------------|-------------------------------------------
 ext_data_out[1]                            |ext_data_out[1]                            
+ext_data_out[0]                            |ext_data_out[0]                            
+ext_data_out[4]                            |ext_data_out[4]                            
+ext_data_out[6]                            |ext_data_out[6]                            
+ext_data_out[10]                           |ext_data_out[10]                           
+ext_data_out[13]                           |ext_data_out[13]                           
+ext_data_out[12]                           |ext_data_out[12]                           
+ext_data_out[15]                           |ext_data_out[15]                           
 ext_data_out[2]                            |ext_data_out[2]                            
 ext_data_out[3]                            |ext_data_out[3]                            
-ext_data_out[0]                            |ext_data_out[0]                            
 ext_data_out[5]                            |ext_data_out[5]                            
 ext_data_out[7]                            |ext_data_out[7]                            
-ext_data_out[6]                            |ext_data_out[6]                            
-ext_data_out[4]                            |ext_data_out[4]                            
-ext_data_out[8]                            |ext_data_out[8]                            
 ext_data_out[9]                            |ext_data_out[9]                            
-ext_data_out[13]                           |ext_data_out[13]                           
-ext_data_out[10]                           |ext_data_out[10]                           
 ext_data_out[11]                           |ext_data_out[11]                           
-ext_data_out[12]                           |ext_data_out[12]                           
+ext_data_out[8]                            |ext_data_out[8]                            
 ext_data_out[14]                           |ext_data_out[14]                           
-ext_data_out[15]                           |ext_data_out[15]                           
+dest[2]                                    |dest[2]                                    
+ext_data_in[7]                             |ext_data_in[7]                             
+dest[3]                                    |dest[3]                                    
+ext_data_in[3]                             |ext_data_in[3]                             
+ext_data_in[5]                             |ext_data_in[5]                             
+ext_data_in[6]                             |ext_data_in[6]                             
+ext_data_in[8]                             |ext_data_in[8]                             
+ext_data_in[1]                             |ext_data_in[1]                             
+dest[1]                                    |dest[1]                                    
+ext_data_in[4]                             |ext_data_in[4]                             
+ext_data_in[12]                            |ext_data_in[12]                            
+ext_data_in[15]                            |ext_data_in[15]                            
 ext_data_in[11]                            |ext_data_in[11]                            
 ext_data_in[0]                             |ext_data_in[0]                             
-ext_data_in[9]                             |ext_data_in[9]                             
-ext_data_in[6]                             |ext_data_in[6]                             
-ext_data_in[7]                             |ext_data_in[7]                             
-ext_data_in[1]                             |ext_data_in[1]                             
-ext_data_in[3]                             |ext_data_in[3]                             
-ext_data_in[12]                            |ext_data_in[12]                            
-ext_data_in[8]                             |ext_data_in[8]                             
-ext_data_in[4]                             |ext_data_in[4]                             
-ext_data_in[5]                             |ext_data_in[5]                             
-ext_data_in[10]                            |ext_data_in[10]                            
-ext_data_in[13]                            |ext_data_in[13]                            
-ext_data_in[14]                            |ext_data_in[14]                            
-ext_data_in[15]                            |ext_data_in[15]                            
 ext_data_in[2]                             |ext_data_in[2]                             
+dest[0]                                    |dest[0]                                    
+ext_data_in[13]                            |ext_data_in[13]                            
+dest[6]                                    |dest[6]                                    
+ext_data_in[10]                            |ext_data_in[10]                            
+dest[5]                                    |dest[5]                                    
+ext_data_in[9]                             |ext_data_in[9]                             
+dest[4]                                    |dest[4]                                    
+ext_data_in[14]                            |ext_data_in[14]                            
+dest[7]                                    |dest[7]                                    
+pe_busy[2]                                 |pe_busy[2]                                 
 pe_busy[3]                                 |pe_busy[3]                                 
 pe_busy[0]                                 |pe_busy[0]                                 
 pe_busy[1]                                 |pe_busy[1]                                 
-pe_busy[2]                                 |pe_busy[2]                                 
 clk                                        |clk                                        
 rst                                        |rst                                        
 vdd                                        |vdd                                        

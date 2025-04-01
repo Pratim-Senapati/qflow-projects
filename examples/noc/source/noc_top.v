@@ -1,7 +1,7 @@
 module noc_top (
     input  wire        clk,
     input  wire        rst,
-
+    input wire [7:0] dest,
     // Flattened external I/O for the 4 PEs
     input  wire [15:0] ext_data_in,       // 4 PEs, each 4 bits
     output wire [15:0] ext_data_out,      // 4 PEs, each 4 bits
@@ -41,10 +41,10 @@ module noc_top (
     assign src_id[3] = 2'b11;
 
     // Destination IDs outside the generate block
-    assign dest_id[0] = pe_packet_out[0][5:4];
-    assign dest_id[1] = pe_packet_out[1][5:4];
-    assign dest_id[2] = pe_packet_out[2][5:4];
-    assign dest_id[3] = pe_packet_out[3][5:4];
+    assign dest_id[0] = dest[1:0];
+    assign dest_id[1] = dest[3:2];
+    assign dest_id[2] = dest[5:4];
+    assign dest_id[3] = dest[7:6];
 
     // Processing Element Instances
     genvar i;

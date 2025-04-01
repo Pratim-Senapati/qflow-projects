@@ -1,6 +1,6 @@
 * XSpice netlist created from SPICE and liberty sources by spi2xspice.py
 *SPICE netlist created from BLIF module noc_top by blif2BSpice
-.subckt noc_top a_vdd a_gnd a_clk a_rst a_ext_data_in_0_ a_ext_data_in_1_ a_ext_data_in_2_ a_ext_data_in_3_ a_ext_data_in_4_ a_ext_data_in_5_ a_ext_data_in_6_ a_ext_data_in_7_ a_ext_data_in_8_ a_ext_data_in_9_ a_ext_data_in_10_ a_ext_data_in_11_ a_ext_data_in_12_ a_ext_data_in_13_ a_ext_data_in_14_ a_ext_data_in_15_ a_ext_data_out_0_ a_ext_data_out_1_ a_ext_data_out_2_ a_ext_data_out_3_ a_ext_data_out_4_ a_ext_data_out_5_ a_ext_data_out_6_ a_ext_data_out_7_ a_ext_data_out_8_ a_ext_data_out_9_ a_ext_data_out_10_ a_ext_data_out_11_ a_ext_data_out_12_ a_ext_data_out_13_ a_ext_data_out_14_ a_ext_data_out_15_ a_pe_busy_0_ a_pe_busy_1_ a_pe_busy_2_ a_pe_busy_3_
+.subckt noc_top a_vdd a_gnd a_clk a_rst a_dest_0_ a_dest_1_ a_dest_2_ a_dest_3_ a_dest_4_ a_dest_5_ a_dest_6_ a_dest_7_ a_ext_data_in_0_ a_ext_data_in_1_ a_ext_data_in_2_ a_ext_data_in_3_ a_ext_data_in_4_ a_ext_data_in_5_ a_ext_data_in_6_ a_ext_data_in_7_ a_ext_data_in_8_ a_ext_data_in_9_ a_ext_data_in_10_ a_ext_data_in_11_ a_ext_data_in_12_ a_ext_data_in_13_ a_ext_data_in_14_ a_ext_data_in_15_ a_ext_data_out_0_ a_ext_data_out_1_ a_ext_data_out_2_ a_ext_data_out_3_ a_ext_data_out_4_ a_ext_data_out_5_ a_ext_data_out_6_ a_ext_data_out_7_ a_ext_data_out_8_ a_ext_data_out_9_ a_ext_data_out_10_ a_ext_data_out_11_ a_ext_data_out_12_ a_ext_data_out_13_ a_ext_data_out_14_ a_ext_data_out_15_ a_pe_busy_0_ a_pe_busy_1_ a_pe_busy_2_ a_pe_busy_3_
 ABUFX4_1 [clk] clk_hier0_bF$buf5 d_lut_BUFX4
 ABUFX4_2 [clk] clk_hier0_bF$buf4 d_lut_BUFX4
 ABUFX4_3 [clk] clk_hier0_bF$buf3 d_lut_BUFX4
@@ -1121,202 +1121,202 @@ ADFFSR_75 _490__1_ clk_bF$buf39 ~vdd ~_501__bF$buf2 FIFO_INST_3_.fifo_inst.count
 ADFFSR_76 _490__2_ clk_bF$buf38 ~vdd ~_501__bF$buf1 FIFO_INST_3_.fifo_inst.count_2_ NULL ddflop
 AOR2X2_9 [FIFO_INST_0_.fifo_inst.full_bF$buf4 PE_INST_0_.pe.busy] _659_ d_lut_OR2X2
 AINVX1_97 [_659_] _657_ d_lut_INVX1
-AINVX1_98 [ext_data_in_0_] _660_ d_lut_INVX1
-AOAI21X1_357 [FIFO_INST_0_.fifo_inst.full_bF$buf3 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_0_] _661_ d_lut_OAI21X1
-AOAI21X1_358 [_660_ _659_ _661_] _655__0_ d_lut_OAI21X1
-AINVX1_99 [ext_data_in_1_] _662_ d_lut_INVX1
-AOAI21X1_359 [FIFO_INST_0_.fifo_inst.full_bF$buf2 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_1_] _663_ d_lut_OAI21X1
-AOAI21X1_360 [_662_ _659_ _663_] _655__1_ d_lut_OAI21X1
-AINVX1_100 [ext_data_in_2_] _664_ d_lut_INVX1
-AOAI21X1_361 [FIFO_INST_0_.fifo_inst.full_bF$buf1 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_2_] _665_ d_lut_OAI21X1
-AOAI21X1_362 [_664_ _659_ _665_] _655__2_ d_lut_OAI21X1
-AINVX1_101 [ext_data_in_3_] _666_ d_lut_INVX1
-AOAI21X1_363 [FIFO_INST_0_.fifo_inst.full_bF$buf0 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_3_] _667_ d_lut_OAI21X1
-AOAI21X1_364 [_666_ _659_ _667_] _655__3_ d_lut_OAI21X1
-AINVX1_102 [FIFO_INST_0_.fifo_inst.pe_data_in_4_] _668_ d_lut_INVX1
-AOAI21X1_365 [FIFO_INST_0_.fifo_inst.full_bF$buf4 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_4_] _669_ d_lut_OAI21X1
-AOAI21X1_366 [_668_ _659_ _669_] _655__4_ d_lut_OAI21X1
-AINVX1_103 [FIFO_INST_0_.fifo_inst.pe_data_in_5_] _670_ d_lut_INVX1
-AOAI21X1_367 [FIFO_INST_0_.fifo_inst.full_bF$buf3 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_5_] _671_ d_lut_OAI21X1
-AOAI21X1_368 [_670_ _659_ _671_] _655__5_ d_lut_OAI21X1
-ANAND2X1_113 [FIFO_INST_0_.fifo_inst.full_bF$buf2 PE_INST_0_.pe.busy] _672_ d_lut_NAND2X1
-AOAI21X1_369 [FIFO_INST_0_.fifo_inst.full_bF$buf1 FIFO_INST_0_.fifo_inst.pe_wr_en _672_] _653_ d_lut_OAI21X1
-AINVX1_104 [_0__0_] _673_ d_lut_INVX1
-ANAND2X1_114 [FIFO_INST_0_.fifo_inst.pe_data_out_0_ PE_INST_0_.pe.rd_en_d] _674_ d_lut_NAND2X1
-AOAI21X1_370 [PE_INST_0_.pe.rd_en_d _673_ _674_] _654__0_ d_lut_OAI21X1
-AINVX1_105 [_0__1_] _675_ d_lut_INVX1
-ANAND2X1_115 [PE_INST_0_.pe.rd_en_d FIFO_INST_0_.fifo_inst.pe_data_out_1_] _676_ d_lut_NAND2X1
-AOAI21X1_371 [PE_INST_0_.pe.rd_en_d _675_ _676_] _654__1_ d_lut_OAI21X1
-AINVX1_106 [_0__2_] _677_ d_lut_INVX1
-ANAND2X1_116 [PE_INST_0_.pe.rd_en_d FIFO_INST_0_.fifo_inst.pe_data_out_2_] _678_ d_lut_NAND2X1
-AOAI21X1_372 [PE_INST_0_.pe.rd_en_d _677_ _678_] _654__2_ d_lut_OAI21X1
-AINVX1_107 [_0__3_] _679_ d_lut_INVX1
-ANAND2X1_117 [PE_INST_0_.pe.rd_en_d FIFO_INST_0_.fifo_inst.pe_data_out_3_] _680_ d_lut_NAND2X1
-AOAI21X1_373 [PE_INST_0_.pe.rd_en_d _679_ _680_] _654__3_ d_lut_OAI21X1
+ANAND2X1_113 [FIFO_INST_0_.fifo_inst.full_bF$buf3 PE_INST_0_.pe.busy] _660_ d_lut_NAND2X1
+AOAI21X1_357 [FIFO_INST_0_.fifo_inst.full_bF$buf2 FIFO_INST_0_.fifo_inst.pe_wr_en _660_] _653_ d_lut_OAI21X1
+AINVX1_98 [_0__0_] _661_ d_lut_INVX1
+ANAND2X1_114 [FIFO_INST_0_.fifo_inst.pe_data_out_0_ PE_INST_0_.pe.rd_en_d] _662_ d_lut_NAND2X1
+AOAI21X1_358 [PE_INST_0_.pe.rd_en_d _661_ _662_] _654__0_ d_lut_OAI21X1
+AINVX1_99 [_0__1_] _663_ d_lut_INVX1
+ANAND2X1_115 [PE_INST_0_.pe.rd_en_d FIFO_INST_0_.fifo_inst.pe_data_out_1_] _664_ d_lut_NAND2X1
+AOAI21X1_359 [PE_INST_0_.pe.rd_en_d _663_ _664_] _654__1_ d_lut_OAI21X1
+AINVX1_100 [_0__2_] _665_ d_lut_INVX1
+ANAND2X1_116 [PE_INST_0_.pe.rd_en_d FIFO_INST_0_.fifo_inst.pe_data_out_2_] _666_ d_lut_NAND2X1
+AOAI21X1_360 [PE_INST_0_.pe.rd_en_d _665_ _666_] _654__2_ d_lut_OAI21X1
+AINVX1_101 [_0__3_] _667_ d_lut_INVX1
+ANAND2X1_117 [PE_INST_0_.pe.rd_en_d FIFO_INST_0_.fifo_inst.pe_data_out_3_] _668_ d_lut_NAND2X1
+AOAI21X1_361 [PE_INST_0_.pe.rd_en_d _667_ _668_] _654__3_ d_lut_OAI21X1
+AINVX1_102 [ext_data_in_0_] _669_ d_lut_INVX1
+AOAI21X1_362 [FIFO_INST_0_.fifo_inst.full_bF$buf1 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_0_] _670_ d_lut_OAI21X1
+AOAI21X1_363 [_669_ _659_ _670_] _655__0_ d_lut_OAI21X1
+AINVX1_103 [ext_data_in_1_] _671_ d_lut_INVX1
+AOAI21X1_364 [FIFO_INST_0_.fifo_inst.full_bF$buf0 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_1_] _672_ d_lut_OAI21X1
+AOAI21X1_365 [_671_ _659_ _672_] _655__1_ d_lut_OAI21X1
+AINVX1_104 [ext_data_in_2_] _673_ d_lut_INVX1
+AOAI21X1_366 [FIFO_INST_0_.fifo_inst.full_bF$buf4 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_2_] _674_ d_lut_OAI21X1
+AOAI21X1_367 [_673_ _659_ _674_] _655__2_ d_lut_OAI21X1
+AINVX1_105 [ext_data_in_3_] _675_ d_lut_INVX1
+AOAI21X1_368 [FIFO_INST_0_.fifo_inst.full_bF$buf3 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_3_] _676_ d_lut_OAI21X1
+AOAI21X1_369 [_675_ _659_ _676_] _655__3_ d_lut_OAI21X1
+AINVX1_106 [dest_0_] _677_ d_lut_INVX1
+AOAI21X1_370 [FIFO_INST_0_.fifo_inst.full_bF$buf2 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_4_] _678_ d_lut_OAI21X1
+AOAI21X1_371 [_677_ _659_ _678_] _655__4_ d_lut_OAI21X1
+AINVX1_107 [dest_1_] _679_ d_lut_INVX1
+AOAI21X1_372 [FIFO_INST_0_.fifo_inst.full_bF$buf1 PE_INST_0_.pe.busy FIFO_INST_0_.fifo_inst.pe_data_in_5_] _680_ d_lut_OAI21X1
+AOAI21X1_373 [_679_ _659_ _680_] _655__5_ d_lut_OAI21X1
 AINVX1_108 [FIFO_INST_0_.fifo_inst.empty_bF$buf2] _656_ d_lut_INVX1
 AINVX8_5 [rst] _658_ d_lut_INVX8
 ADFFSR_77 _654__0_ clk_bF$buf37 ~vdd ~_658_ _0__0_ NULL ddflop
 ADFFSR_78 _654__1_ clk_bF$buf36 ~vdd ~_658_ _0__1_ NULL ddflop
 ADFFSR_79 _654__2_ clk_bF$buf35 ~vdd ~_658_ _0__2_ NULL ddflop
 ADFFSR_80 _654__3_ clk_bF$buf34 ~vdd ~_658_ _0__3_ NULL ddflop
-ADFFSR_81 _657_ clk_bF$buf33 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_wr_en NULL ddflop
-ADFFSR_82 _656_ clk_bF$buf32 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_rd_en NULL ddflop
-ADFFSR_83 _655__0_ clk_bF$buf31 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_0_ NULL ddflop
-ADFFSR_84 _655__1_ clk_bF$buf30 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_1_ NULL ddflop
-ADFFSR_85 _655__2_ clk_bF$buf29 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_2_ NULL ddflop
-ADFFSR_86 _655__3_ clk_bF$buf28 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_3_ NULL ddflop
-ADFFSR_87 _655__4_ clk_bF$buf27 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_4_ NULL ddflop
-ADFFSR_88 _655__5_ clk_bF$buf26 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_81 _655__0_ clk_bF$buf33 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_0_ NULL ddflop
+ADFFSR_82 _655__1_ clk_bF$buf32 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_1_ NULL ddflop
+ADFFSR_83 _655__2_ clk_bF$buf31 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_2_ NULL ddflop
+ADFFSR_84 _655__3_ clk_bF$buf30 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_3_ NULL ddflop
+ADFFSR_85 _655__4_ clk_bF$buf29 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_4_ NULL ddflop
+ADFFSR_86 _655__5_ clk_bF$buf28 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_87 _657_ clk_bF$buf27 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_wr_en NULL ddflop
+ADFFSR_88 _656_ clk_bF$buf26 ~vdd ~_658_ FIFO_INST_0_.fifo_inst.pe_rd_en NULL ddflop
 ADFFSR_89 _653_ clk_bF$buf25 ~vdd ~_658_ PE_INST_0_.pe.busy NULL ddflop
 ADFFSR_90 FIFO_INST_0_.fifo_inst.pe_rd_en clk_bF$buf24 ~vdd ~_658_ PE_INST_0_.pe.rd_en_d NULL ddflop
 AOR2X2_10 [FIFO_INST_1_.fifo_inst.full_bF$buf4 PE_INST_1_.pe.busy] _687_ d_lut_OR2X2
 AINVX1_109 [_687_] _685_ d_lut_INVX1
-AINVX1_110 [ext_data_in_4_] _688_ d_lut_INVX1
-AOAI21X1_374 [FIFO_INST_1_.fifo_inst.full_bF$buf3 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_0_] _689_ d_lut_OAI21X1
-AOAI21X1_375 [_688_ _687_ _689_] _683__0_ d_lut_OAI21X1
-AINVX1_111 [ext_data_in_5_] _690_ d_lut_INVX1
-AOAI21X1_376 [FIFO_INST_1_.fifo_inst.full_bF$buf2 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_1_] _691_ d_lut_OAI21X1
-AOAI21X1_377 [_690_ _687_ _691_] _683__1_ d_lut_OAI21X1
-AINVX1_112 [ext_data_in_6_] _692_ d_lut_INVX1
-AOAI21X1_378 [FIFO_INST_1_.fifo_inst.full_bF$buf1 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_2_] _693_ d_lut_OAI21X1
-AOAI21X1_379 [_692_ _687_ _693_] _683__2_ d_lut_OAI21X1
-AINVX1_113 [ext_data_in_7_] _694_ d_lut_INVX1
-AOAI21X1_380 [FIFO_INST_1_.fifo_inst.full_bF$buf0 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_3_] _695_ d_lut_OAI21X1
-AOAI21X1_381 [_694_ _687_ _695_] _683__3_ d_lut_OAI21X1
-AINVX1_114 [FIFO_INST_1_.fifo_inst.pe_data_in_4_] _696_ d_lut_INVX1
-AOAI21X1_382 [FIFO_INST_1_.fifo_inst.full_bF$buf4 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_4_] _697_ d_lut_OAI21X1
-AOAI21X1_383 [_696_ _687_ _697_] _683__4_ d_lut_OAI21X1
-AINVX1_115 [FIFO_INST_1_.fifo_inst.pe_data_in_5_] _698_ d_lut_INVX1
-AOAI21X1_384 [FIFO_INST_1_.fifo_inst.full_bF$buf3 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_5_] _699_ d_lut_OAI21X1
-AOAI21X1_385 [_698_ _687_ _699_] _683__5_ d_lut_OAI21X1
-ANAND2X1_118 [FIFO_INST_1_.fifo_inst.full_bF$buf2 PE_INST_1_.pe.busy] _700_ d_lut_NAND2X1
-AOAI21X1_386 [FIFO_INST_1_.fifo_inst.full_bF$buf1 FIFO_INST_1_.fifo_inst.pe_wr_en _700_] _681_ d_lut_OAI21X1
-AINVX1_116 [_0__4_] _701_ d_lut_INVX1
-ANAND2X1_119 [FIFO_INST_1_.fifo_inst.pe_data_out_0_ PE_INST_1_.pe.rd_en_d] _702_ d_lut_NAND2X1
-AOAI21X1_387 [PE_INST_1_.pe.rd_en_d _701_ _702_] _682__0_ d_lut_OAI21X1
-AINVX1_117 [_0__5_] _703_ d_lut_INVX1
-ANAND2X1_120 [PE_INST_1_.pe.rd_en_d FIFO_INST_1_.fifo_inst.pe_data_out_1_] _704_ d_lut_NAND2X1
-AOAI21X1_388 [PE_INST_1_.pe.rd_en_d _703_ _704_] _682__1_ d_lut_OAI21X1
-AINVX1_118 [_0__6_] _705_ d_lut_INVX1
-ANAND2X1_121 [PE_INST_1_.pe.rd_en_d FIFO_INST_1_.fifo_inst.pe_data_out_2_] _706_ d_lut_NAND2X1
-AOAI21X1_389 [PE_INST_1_.pe.rd_en_d _705_ _706_] _682__2_ d_lut_OAI21X1
-AINVX1_119 [_0__7_] _707_ d_lut_INVX1
-ANAND2X1_122 [PE_INST_1_.pe.rd_en_d FIFO_INST_1_.fifo_inst.pe_data_out_3_] _708_ d_lut_NAND2X1
-AOAI21X1_390 [PE_INST_1_.pe.rd_en_d _707_ _708_] _682__3_ d_lut_OAI21X1
+ANAND2X1_118 [FIFO_INST_1_.fifo_inst.full_bF$buf3 PE_INST_1_.pe.busy] _688_ d_lut_NAND2X1
+AOAI21X1_374 [FIFO_INST_1_.fifo_inst.full_bF$buf2 FIFO_INST_1_.fifo_inst.pe_wr_en _688_] _681_ d_lut_OAI21X1
+AINVX1_110 [_0__4_] _689_ d_lut_INVX1
+ANAND2X1_119 [FIFO_INST_1_.fifo_inst.pe_data_out_0_ PE_INST_1_.pe.rd_en_d] _690_ d_lut_NAND2X1
+AOAI21X1_375 [PE_INST_1_.pe.rd_en_d _689_ _690_] _682__0_ d_lut_OAI21X1
+AINVX1_111 [_0__5_] _691_ d_lut_INVX1
+ANAND2X1_120 [PE_INST_1_.pe.rd_en_d FIFO_INST_1_.fifo_inst.pe_data_out_1_] _692_ d_lut_NAND2X1
+AOAI21X1_376 [PE_INST_1_.pe.rd_en_d _691_ _692_] _682__1_ d_lut_OAI21X1
+AINVX1_112 [_0__6_] _693_ d_lut_INVX1
+ANAND2X1_121 [PE_INST_1_.pe.rd_en_d FIFO_INST_1_.fifo_inst.pe_data_out_2_] _694_ d_lut_NAND2X1
+AOAI21X1_377 [PE_INST_1_.pe.rd_en_d _693_ _694_] _682__2_ d_lut_OAI21X1
+AINVX1_113 [_0__7_] _695_ d_lut_INVX1
+ANAND2X1_122 [PE_INST_1_.pe.rd_en_d FIFO_INST_1_.fifo_inst.pe_data_out_3_] _696_ d_lut_NAND2X1
+AOAI21X1_378 [PE_INST_1_.pe.rd_en_d _695_ _696_] _682__3_ d_lut_OAI21X1
+AINVX1_114 [ext_data_in_4_] _697_ d_lut_INVX1
+AOAI21X1_379 [FIFO_INST_1_.fifo_inst.full_bF$buf1 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_0_] _698_ d_lut_OAI21X1
+AOAI21X1_380 [_697_ _687_ _698_] _683__0_ d_lut_OAI21X1
+AINVX1_115 [ext_data_in_5_] _699_ d_lut_INVX1
+AOAI21X1_381 [FIFO_INST_1_.fifo_inst.full_bF$buf0 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_1_] _700_ d_lut_OAI21X1
+AOAI21X1_382 [_699_ _687_ _700_] _683__1_ d_lut_OAI21X1
+AINVX1_116 [ext_data_in_6_] _701_ d_lut_INVX1
+AOAI21X1_383 [FIFO_INST_1_.fifo_inst.full_bF$buf4 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_2_] _702_ d_lut_OAI21X1
+AOAI21X1_384 [_701_ _687_ _702_] _683__2_ d_lut_OAI21X1
+AINVX1_117 [ext_data_in_7_] _703_ d_lut_INVX1
+AOAI21X1_385 [FIFO_INST_1_.fifo_inst.full_bF$buf3 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_3_] _704_ d_lut_OAI21X1
+AOAI21X1_386 [_703_ _687_ _704_] _683__3_ d_lut_OAI21X1
+AINVX1_118 [dest_2_] _705_ d_lut_INVX1
+AOAI21X1_387 [FIFO_INST_1_.fifo_inst.full_bF$buf2 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_4_] _706_ d_lut_OAI21X1
+AOAI21X1_388 [_705_ _687_ _706_] _683__4_ d_lut_OAI21X1
+AINVX1_119 [dest_3_] _707_ d_lut_INVX1
+AOAI21X1_389 [FIFO_INST_1_.fifo_inst.full_bF$buf1 PE_INST_1_.pe.busy FIFO_INST_1_.fifo_inst.pe_data_in_5_] _708_ d_lut_OAI21X1
+AOAI21X1_390 [_707_ _687_ _708_] _683__5_ d_lut_OAI21X1
 AINVX1_120 [FIFO_INST_1_.fifo_inst.empty_bF$buf2] _684_ d_lut_INVX1
 AINVX8_6 [rst] _686_ d_lut_INVX8
 ADFFSR_91 _682__0_ clk_bF$buf23 ~vdd ~_686_ _0__4_ NULL ddflop
 ADFFSR_92 _682__1_ clk_bF$buf22 ~vdd ~_686_ _0__5_ NULL ddflop
 ADFFSR_93 _682__2_ clk_bF$buf21 ~vdd ~_686_ _0__6_ NULL ddflop
 ADFFSR_94 _682__3_ clk_bF$buf20 ~vdd ~_686_ _0__7_ NULL ddflop
-ADFFSR_95 _685_ clk_bF$buf19 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_wr_en NULL ddflop
-ADFFSR_96 _684_ clk_bF$buf18 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_rd_en NULL ddflop
-ADFFSR_97 _683__0_ clk_bF$buf17 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_0_ NULL ddflop
-ADFFSR_98 _683__1_ clk_bF$buf16 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_1_ NULL ddflop
-ADFFSR_99 _683__2_ clk_bF$buf15 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_2_ NULL ddflop
-ADFFSR_100 _683__3_ clk_bF$buf14 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_3_ NULL ddflop
-ADFFSR_101 _683__4_ clk_bF$buf13 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_4_ NULL ddflop
-ADFFSR_102 _683__5_ clk_bF$buf12 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_95 _683__0_ clk_bF$buf19 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_0_ NULL ddflop
+ADFFSR_96 _683__1_ clk_bF$buf18 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_1_ NULL ddflop
+ADFFSR_97 _683__2_ clk_bF$buf17 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_2_ NULL ddflop
+ADFFSR_98 _683__3_ clk_bF$buf16 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_3_ NULL ddflop
+ADFFSR_99 _683__4_ clk_bF$buf15 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_4_ NULL ddflop
+ADFFSR_100 _683__5_ clk_bF$buf14 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_101 _685_ clk_bF$buf13 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_wr_en NULL ddflop
+ADFFSR_102 _684_ clk_bF$buf12 ~vdd ~_686_ FIFO_INST_1_.fifo_inst.pe_rd_en NULL ddflop
 ADFFSR_103 _681_ clk_bF$buf11 ~vdd ~_686_ PE_INST_1_.pe.busy NULL ddflop
 ADFFSR_104 FIFO_INST_1_.fifo_inst.pe_rd_en clk_bF$buf10 ~vdd ~_686_ PE_INST_1_.pe.rd_en_d NULL ddflop
 AOR2X2_11 [FIFO_INST_2_.fifo_inst.full_bF$buf4 PE_INST_2_.pe.busy] _715_ d_lut_OR2X2
 AINVX1_121 [_715_] _713_ d_lut_INVX1
-AINVX1_122 [ext_data_in_8_] _716_ d_lut_INVX1
-AOAI21X1_391 [FIFO_INST_2_.fifo_inst.full_bF$buf3 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_0_] _717_ d_lut_OAI21X1
-AOAI21X1_392 [_716_ _715_ _717_] _711__0_ d_lut_OAI21X1
-AINVX1_123 [ext_data_in_9_] _718_ d_lut_INVX1
-AOAI21X1_393 [FIFO_INST_2_.fifo_inst.full_bF$buf2 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_1_] _719_ d_lut_OAI21X1
-AOAI21X1_394 [_718_ _715_ _719_] _711__1_ d_lut_OAI21X1
-AINVX1_124 [ext_data_in_10_] _720_ d_lut_INVX1
-AOAI21X1_395 [FIFO_INST_2_.fifo_inst.full_bF$buf1 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_2_] _721_ d_lut_OAI21X1
-AOAI21X1_396 [_720_ _715_ _721_] _711__2_ d_lut_OAI21X1
-AINVX1_125 [ext_data_in_11_] _722_ d_lut_INVX1
-AOAI21X1_397 [FIFO_INST_2_.fifo_inst.full_bF$buf0 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_3_] _723_ d_lut_OAI21X1
-AOAI21X1_398 [_722_ _715_ _723_] _711__3_ d_lut_OAI21X1
-AINVX1_126 [FIFO_INST_2_.fifo_inst.pe_data_in_4_] _724_ d_lut_INVX1
-AOAI21X1_399 [FIFO_INST_2_.fifo_inst.full_bF$buf4 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_4_] _725_ d_lut_OAI21X1
-AOAI21X1_400 [_724_ _715_ _725_] _711__4_ d_lut_OAI21X1
-AINVX1_127 [FIFO_INST_2_.fifo_inst.pe_data_in_5_] _726_ d_lut_INVX1
-AOAI21X1_401 [FIFO_INST_2_.fifo_inst.full_bF$buf3 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_5_] _727_ d_lut_OAI21X1
-AOAI21X1_402 [_726_ _715_ _727_] _711__5_ d_lut_OAI21X1
-ANAND2X1_123 [FIFO_INST_2_.fifo_inst.full_bF$buf2 PE_INST_2_.pe.busy] _728_ d_lut_NAND2X1
-AOAI21X1_403 [FIFO_INST_2_.fifo_inst.full_bF$buf1 FIFO_INST_2_.fifo_inst.pe_wr_en _728_] _709_ d_lut_OAI21X1
-AINVX1_128 [_0__8_] _729_ d_lut_INVX1
-ANAND2X1_124 [FIFO_INST_2_.fifo_inst.pe_data_out_0_ PE_INST_2_.pe.rd_en_d] _730_ d_lut_NAND2X1
-AOAI21X1_404 [PE_INST_2_.pe.rd_en_d _729_ _730_] _710__0_ d_lut_OAI21X1
-AINVX1_129 [_0__9_] _731_ d_lut_INVX1
-ANAND2X1_125 [PE_INST_2_.pe.rd_en_d FIFO_INST_2_.fifo_inst.pe_data_out_1_] _732_ d_lut_NAND2X1
-AOAI21X1_405 [PE_INST_2_.pe.rd_en_d _731_ _732_] _710__1_ d_lut_OAI21X1
-AINVX1_130 [_0__10_] _733_ d_lut_INVX1
-ANAND2X1_126 [PE_INST_2_.pe.rd_en_d FIFO_INST_2_.fifo_inst.pe_data_out_2_] _734_ d_lut_NAND2X1
-AOAI21X1_406 [PE_INST_2_.pe.rd_en_d _733_ _734_] _710__2_ d_lut_OAI21X1
-AINVX1_131 [_0__11_] _735_ d_lut_INVX1
-ANAND2X1_127 [PE_INST_2_.pe.rd_en_d FIFO_INST_2_.fifo_inst.pe_data_out_3_] _736_ d_lut_NAND2X1
-AOAI21X1_407 [PE_INST_2_.pe.rd_en_d _735_ _736_] _710__3_ d_lut_OAI21X1
+ANAND2X1_123 [FIFO_INST_2_.fifo_inst.full_bF$buf3 PE_INST_2_.pe.busy] _716_ d_lut_NAND2X1
+AOAI21X1_391 [FIFO_INST_2_.fifo_inst.full_bF$buf2 FIFO_INST_2_.fifo_inst.pe_wr_en _716_] _709_ d_lut_OAI21X1
+AINVX1_122 [_0__8_] _717_ d_lut_INVX1
+ANAND2X1_124 [FIFO_INST_2_.fifo_inst.pe_data_out_0_ PE_INST_2_.pe.rd_en_d] _718_ d_lut_NAND2X1
+AOAI21X1_392 [PE_INST_2_.pe.rd_en_d _717_ _718_] _710__0_ d_lut_OAI21X1
+AINVX1_123 [_0__9_] _719_ d_lut_INVX1
+ANAND2X1_125 [PE_INST_2_.pe.rd_en_d FIFO_INST_2_.fifo_inst.pe_data_out_1_] _720_ d_lut_NAND2X1
+AOAI21X1_393 [PE_INST_2_.pe.rd_en_d _719_ _720_] _710__1_ d_lut_OAI21X1
+AINVX1_124 [_0__10_] _721_ d_lut_INVX1
+ANAND2X1_126 [PE_INST_2_.pe.rd_en_d FIFO_INST_2_.fifo_inst.pe_data_out_2_] _722_ d_lut_NAND2X1
+AOAI21X1_394 [PE_INST_2_.pe.rd_en_d _721_ _722_] _710__2_ d_lut_OAI21X1
+AINVX1_125 [_0__11_] _723_ d_lut_INVX1
+ANAND2X1_127 [PE_INST_2_.pe.rd_en_d FIFO_INST_2_.fifo_inst.pe_data_out_3_] _724_ d_lut_NAND2X1
+AOAI21X1_395 [PE_INST_2_.pe.rd_en_d _723_ _724_] _710__3_ d_lut_OAI21X1
+AINVX1_126 [ext_data_in_8_] _725_ d_lut_INVX1
+AOAI21X1_396 [FIFO_INST_2_.fifo_inst.full_bF$buf1 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_0_] _726_ d_lut_OAI21X1
+AOAI21X1_397 [_725_ _715_ _726_] _711__0_ d_lut_OAI21X1
+AINVX1_127 [ext_data_in_9_] _727_ d_lut_INVX1
+AOAI21X1_398 [FIFO_INST_2_.fifo_inst.full_bF$buf0 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_1_] _728_ d_lut_OAI21X1
+AOAI21X1_399 [_727_ _715_ _728_] _711__1_ d_lut_OAI21X1
+AINVX1_128 [ext_data_in_10_] _729_ d_lut_INVX1
+AOAI21X1_400 [FIFO_INST_2_.fifo_inst.full_bF$buf4 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_2_] _730_ d_lut_OAI21X1
+AOAI21X1_401 [_729_ _715_ _730_] _711__2_ d_lut_OAI21X1
+AINVX1_129 [ext_data_in_11_] _731_ d_lut_INVX1
+AOAI21X1_402 [FIFO_INST_2_.fifo_inst.full_bF$buf3 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_3_] _732_ d_lut_OAI21X1
+AOAI21X1_403 [_731_ _715_ _732_] _711__3_ d_lut_OAI21X1
+AINVX1_130 [dest_4_] _733_ d_lut_INVX1
+AOAI21X1_404 [FIFO_INST_2_.fifo_inst.full_bF$buf2 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_4_] _734_ d_lut_OAI21X1
+AOAI21X1_405 [_733_ _715_ _734_] _711__4_ d_lut_OAI21X1
+AINVX1_131 [dest_5_] _735_ d_lut_INVX1
+AOAI21X1_406 [FIFO_INST_2_.fifo_inst.full_bF$buf1 PE_INST_2_.pe.busy FIFO_INST_2_.fifo_inst.pe_data_in_5_] _736_ d_lut_OAI21X1
+AOAI21X1_407 [_735_ _715_ _736_] _711__5_ d_lut_OAI21X1
 AINVX1_132 [FIFO_INST_2_.fifo_inst.empty_bF$buf2] _712_ d_lut_INVX1
 AINVX8_7 [rst] _714_ d_lut_INVX8
 ADFFSR_105 _710__0_ clk_bF$buf9 ~vdd ~_714_ _0__8_ NULL ddflop
 ADFFSR_106 _710__1_ clk_bF$buf8 ~vdd ~_714_ _0__9_ NULL ddflop
 ADFFSR_107 _710__2_ clk_bF$buf7 ~vdd ~_714_ _0__10_ NULL ddflop
 ADFFSR_108 _710__3_ clk_bF$buf6 ~vdd ~_714_ _0__11_ NULL ddflop
-ADFFSR_109 _713_ clk_bF$buf5 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_wr_en NULL ddflop
-ADFFSR_110 _712_ clk_bF$buf4 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_rd_en NULL ddflop
-ADFFSR_111 _711__0_ clk_bF$buf3 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_0_ NULL ddflop
-ADFFSR_112 _711__1_ clk_bF$buf2 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_1_ NULL ddflop
-ADFFSR_113 _711__2_ clk_bF$buf1 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_2_ NULL ddflop
-ADFFSR_114 _711__3_ clk_bF$buf0 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_3_ NULL ddflop
-ADFFSR_115 _711__4_ clk_bF$buf41 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_4_ NULL ddflop
-ADFFSR_116 _711__5_ clk_bF$buf40 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_109 _711__0_ clk_bF$buf5 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_0_ NULL ddflop
+ADFFSR_110 _711__1_ clk_bF$buf4 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_1_ NULL ddflop
+ADFFSR_111 _711__2_ clk_bF$buf3 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_2_ NULL ddflop
+ADFFSR_112 _711__3_ clk_bF$buf2 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_3_ NULL ddflop
+ADFFSR_113 _711__4_ clk_bF$buf1 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_4_ NULL ddflop
+ADFFSR_114 _711__5_ clk_bF$buf0 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_115 _713_ clk_bF$buf41 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_wr_en NULL ddflop
+ADFFSR_116 _712_ clk_bF$buf40 ~vdd ~_714_ FIFO_INST_2_.fifo_inst.pe_rd_en NULL ddflop
 ADFFSR_117 _709_ clk_bF$buf39 ~vdd ~_714_ PE_INST_2_.pe.busy NULL ddflop
 ADFFSR_118 FIFO_INST_2_.fifo_inst.pe_rd_en clk_bF$buf38 ~vdd ~_714_ PE_INST_2_.pe.rd_en_d NULL ddflop
 AOR2X2_12 [FIFO_INST_3_.fifo_inst.full_bF$buf4 PE_INST_3_.pe.busy] _743_ d_lut_OR2X2
 AINVX1_133 [_743_] _741_ d_lut_INVX1
-AINVX1_134 [ext_data_in_12_] _744_ d_lut_INVX1
-AOAI21X1_408 [FIFO_INST_3_.fifo_inst.full_bF$buf3 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_0_] _745_ d_lut_OAI21X1
-AOAI21X1_409 [_744_ _743_ _745_] _739__0_ d_lut_OAI21X1
-AINVX1_135 [ext_data_in_13_] _746_ d_lut_INVX1
-AOAI21X1_410 [FIFO_INST_3_.fifo_inst.full_bF$buf2 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_1_] _747_ d_lut_OAI21X1
-AOAI21X1_411 [_746_ _743_ _747_] _739__1_ d_lut_OAI21X1
-AINVX1_136 [ext_data_in_14_] _748_ d_lut_INVX1
-AOAI21X1_412 [FIFO_INST_3_.fifo_inst.full_bF$buf1 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_2_] _749_ d_lut_OAI21X1
-AOAI21X1_413 [_748_ _743_ _749_] _739__2_ d_lut_OAI21X1
-AINVX1_137 [ext_data_in_15_] _750_ d_lut_INVX1
-AOAI21X1_414 [FIFO_INST_3_.fifo_inst.full_bF$buf0 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_3_] _751_ d_lut_OAI21X1
-AOAI21X1_415 [_750_ _743_ _751_] _739__3_ d_lut_OAI21X1
-AINVX1_138 [FIFO_INST_3_.fifo_inst.pe_data_in_4_] _752_ d_lut_INVX1
-AOAI21X1_416 [FIFO_INST_3_.fifo_inst.full_bF$buf4 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_4_] _753_ d_lut_OAI21X1
-AOAI21X1_417 [_752_ _743_ _753_] _739__4_ d_lut_OAI21X1
-AINVX1_139 [FIFO_INST_3_.fifo_inst.pe_data_in_5_] _754_ d_lut_INVX1
-AOAI21X1_418 [FIFO_INST_3_.fifo_inst.full_bF$buf3 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_5_] _755_ d_lut_OAI21X1
-AOAI21X1_419 [_754_ _743_ _755_] _739__5_ d_lut_OAI21X1
-ANAND2X1_128 [FIFO_INST_3_.fifo_inst.full_bF$buf2 PE_INST_3_.pe.busy] _756_ d_lut_NAND2X1
-AOAI21X1_420 [FIFO_INST_3_.fifo_inst.full_bF$buf1 FIFO_INST_3_.fifo_inst.pe_wr_en _756_] _737_ d_lut_OAI21X1
-AINVX1_140 [_0__12_] _757_ d_lut_INVX1
-ANAND2X1_129 [FIFO_INST_3_.fifo_inst.pe_data_out_0_ PE_INST_3_.pe.rd_en_d] _758_ d_lut_NAND2X1
-AOAI21X1_421 [PE_INST_3_.pe.rd_en_d _757_ _758_] _738__0_ d_lut_OAI21X1
-AINVX1_141 [_0__13_] _759_ d_lut_INVX1
-ANAND2X1_130 [PE_INST_3_.pe.rd_en_d FIFO_INST_3_.fifo_inst.pe_data_out_1_] _760_ d_lut_NAND2X1
-AOAI21X1_422 [PE_INST_3_.pe.rd_en_d _759_ _760_] _738__1_ d_lut_OAI21X1
-AINVX1_142 [_0__14_] _761_ d_lut_INVX1
-ANAND2X1_131 [PE_INST_3_.pe.rd_en_d FIFO_INST_3_.fifo_inst.pe_data_out_2_] _762_ d_lut_NAND2X1
-AOAI21X1_423 [PE_INST_3_.pe.rd_en_d _761_ _762_] _738__2_ d_lut_OAI21X1
-AINVX1_143 [_0__15_] _763_ d_lut_INVX1
-ANAND2X1_132 [PE_INST_3_.pe.rd_en_d FIFO_INST_3_.fifo_inst.pe_data_out_3_] _764_ d_lut_NAND2X1
-AOAI21X1_424 [PE_INST_3_.pe.rd_en_d _763_ _764_] _738__3_ d_lut_OAI21X1
+ANAND2X1_128 [FIFO_INST_3_.fifo_inst.full_bF$buf3 PE_INST_3_.pe.busy] _744_ d_lut_NAND2X1
+AOAI21X1_408 [FIFO_INST_3_.fifo_inst.full_bF$buf2 FIFO_INST_3_.fifo_inst.pe_wr_en _744_] _737_ d_lut_OAI21X1
+AINVX1_134 [_0__12_] _745_ d_lut_INVX1
+ANAND2X1_129 [FIFO_INST_3_.fifo_inst.pe_data_out_0_ PE_INST_3_.pe.rd_en_d] _746_ d_lut_NAND2X1
+AOAI21X1_409 [PE_INST_3_.pe.rd_en_d _745_ _746_] _738__0_ d_lut_OAI21X1
+AINVX1_135 [_0__13_] _747_ d_lut_INVX1
+ANAND2X1_130 [PE_INST_3_.pe.rd_en_d FIFO_INST_3_.fifo_inst.pe_data_out_1_] _748_ d_lut_NAND2X1
+AOAI21X1_410 [PE_INST_3_.pe.rd_en_d _747_ _748_] _738__1_ d_lut_OAI21X1
+AINVX1_136 [_0__14_] _749_ d_lut_INVX1
+ANAND2X1_131 [PE_INST_3_.pe.rd_en_d FIFO_INST_3_.fifo_inst.pe_data_out_2_] _750_ d_lut_NAND2X1
+AOAI21X1_411 [PE_INST_3_.pe.rd_en_d _749_ _750_] _738__2_ d_lut_OAI21X1
+AINVX1_137 [_0__15_] _751_ d_lut_INVX1
+ANAND2X1_132 [PE_INST_3_.pe.rd_en_d FIFO_INST_3_.fifo_inst.pe_data_out_3_] _752_ d_lut_NAND2X1
+AOAI21X1_412 [PE_INST_3_.pe.rd_en_d _751_ _752_] _738__3_ d_lut_OAI21X1
+AINVX1_138 [ext_data_in_12_] _753_ d_lut_INVX1
+AOAI21X1_413 [FIFO_INST_3_.fifo_inst.full_bF$buf1 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_0_] _754_ d_lut_OAI21X1
+AOAI21X1_414 [_753_ _743_ _754_] _739__0_ d_lut_OAI21X1
+AINVX1_139 [ext_data_in_13_] _755_ d_lut_INVX1
+AOAI21X1_415 [FIFO_INST_3_.fifo_inst.full_bF$buf0 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_1_] _756_ d_lut_OAI21X1
+AOAI21X1_416 [_755_ _743_ _756_] _739__1_ d_lut_OAI21X1
+AINVX1_140 [ext_data_in_14_] _757_ d_lut_INVX1
+AOAI21X1_417 [FIFO_INST_3_.fifo_inst.full_bF$buf4 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_2_] _758_ d_lut_OAI21X1
+AOAI21X1_418 [_757_ _743_ _758_] _739__2_ d_lut_OAI21X1
+AINVX1_141 [ext_data_in_15_] _759_ d_lut_INVX1
+AOAI21X1_419 [FIFO_INST_3_.fifo_inst.full_bF$buf3 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_3_] _760_ d_lut_OAI21X1
+AOAI21X1_420 [_759_ _743_ _760_] _739__3_ d_lut_OAI21X1
+AINVX1_142 [dest_6_] _761_ d_lut_INVX1
+AOAI21X1_421 [FIFO_INST_3_.fifo_inst.full_bF$buf2 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_4_] _762_ d_lut_OAI21X1
+AOAI21X1_422 [_761_ _743_ _762_] _739__4_ d_lut_OAI21X1
+AINVX1_143 [dest_7_] _763_ d_lut_INVX1
+AOAI21X1_423 [FIFO_INST_3_.fifo_inst.full_bF$buf1 PE_INST_3_.pe.busy FIFO_INST_3_.fifo_inst.pe_data_in_5_] _764_ d_lut_OAI21X1
+AOAI21X1_424 [_763_ _743_ _764_] _739__5_ d_lut_OAI21X1
 AINVX1_144 [FIFO_INST_3_.fifo_inst.empty_bF$buf2] _740_ d_lut_INVX1
 AINVX8_8 [rst] _742_ d_lut_INVX8
 ADFFSR_119 _738__0_ clk_bF$buf37 ~vdd ~_742_ _0__12_ NULL ddflop
 ADFFSR_120 _738__1_ clk_bF$buf36 ~vdd ~_742_ _0__13_ NULL ddflop
 ADFFSR_121 _738__2_ clk_bF$buf35 ~vdd ~_742_ _0__14_ NULL ddflop
 ADFFSR_122 _738__3_ clk_bF$buf34 ~vdd ~_742_ _0__15_ NULL ddflop
-ADFFSR_123 _741_ clk_bF$buf33 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_wr_en NULL ddflop
-ADFFSR_124 _740_ clk_bF$buf32 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_rd_en NULL ddflop
-ADFFSR_125 _739__0_ clk_bF$buf31 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_0_ NULL ddflop
-ADFFSR_126 _739__1_ clk_bF$buf30 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_1_ NULL ddflop
-ADFFSR_127 _739__2_ clk_bF$buf29 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_2_ NULL ddflop
-ADFFSR_128 _739__3_ clk_bF$buf28 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_3_ NULL ddflop
-ADFFSR_129 _739__4_ clk_bF$buf27 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_4_ NULL ddflop
-ADFFSR_130 _739__5_ clk_bF$buf26 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_123 _739__0_ clk_bF$buf33 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_0_ NULL ddflop
+ADFFSR_124 _739__1_ clk_bF$buf32 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_1_ NULL ddflop
+ADFFSR_125 _739__2_ clk_bF$buf31 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_2_ NULL ddflop
+ADFFSR_126 _739__3_ clk_bF$buf30 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_3_ NULL ddflop
+ADFFSR_127 _739__4_ clk_bF$buf29 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_4_ NULL ddflop
+ADFFSR_128 _739__5_ clk_bF$buf28 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_data_in_5_ NULL ddflop
+ADFFSR_129 _741_ clk_bF$buf27 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_wr_en NULL ddflop
+ADFFSR_130 _740_ clk_bF$buf26 ~vdd ~_742_ FIFO_INST_3_.fifo_inst.pe_rd_en NULL ddflop
 ADFFSR_131 _737_ clk_bF$buf25 ~vdd ~_742_ PE_INST_3_.pe.busy NULL ddflop
 ADFFSR_132 FIFO_INST_3_.fifo_inst.pe_rd_en clk_bF$buf24 ~vdd ~_742_ PE_INST_3_.pe.rd_en_d NULL ddflop
 AINVX1_145 [arb_inst.toggle] _768_ d_lut_INVX1
@@ -1600,45 +1600,45 @@ AOAI21X1_463 [_1003_ _1000_ router_inst.processing] _1004_ d_lut_OAI21X1
 ANAND2X1_182 [router_inst.buffer_5_ _905_] _1005_ d_lut_NAND2X1
 ANAND2X1_183 [_1005_ _1004_] _896__5_ d_lut_NAND2X1
 AINVX8_9 [rst] _904_ d_lut_INVX8
-ADFFSR_140 _901__1_ clk_bF$buf16 ~vdd ~_904__bF$buf5 FIFO_INST_1_.fifo_inst.router_rd_en NULL ddflop
-ADFFSR_141 _901__2_ clk_bF$buf15 ~vdd ~_904__bF$buf4 FIFO_INST_2_.fifo_inst.router_rd_en NULL ddflop
-ADFFSR_142 _901__3_ clk_bF$buf14 ~vdd ~_904__bF$buf3 FIFO_INST_3_.fifo_inst.router_rd_en NULL ddflop
-ADFFSR_143 _902__0_ clk_bF$buf13 ~vdd ~_904__bF$buf2 FIFO_INST_0_.fifo_inst.router_wr_en NULL ddflop
-ADFFSR_144 _902__1_ clk_bF$buf12 ~vdd ~_904__bF$buf1 FIFO_INST_1_.fifo_inst.router_wr_en NULL ddflop
-ADFFSR_145 _902__2_ clk_bF$buf11 ~vdd ~_904__bF$buf0 FIFO_INST_2_.fifo_inst.router_wr_en NULL ddflop
-ADFFSR_146 _902__3_ clk_bF$buf10 ~vdd ~_904__bF$buf5 FIFO_INST_3_.fifo_inst.router_wr_en NULL ddflop
-ADFFSR_147 _897__0_ clk_bF$buf9 ~vdd ~_904__bF$buf4 FIFO_INST_0_.fifo_inst.router_data_in_0_ NULL ddflop
-ADFFSR_148 _897__1_ clk_bF$buf8 ~vdd ~_904__bF$buf3 FIFO_INST_0_.fifo_inst.router_data_in_1_ NULL ddflop
-ADFFSR_149 _897__2_ clk_bF$buf7 ~vdd ~_904__bF$buf2 FIFO_INST_0_.fifo_inst.router_data_in_2_ NULL ddflop
-ADFFSR_150 _897__3_ clk_bF$buf6 ~vdd ~_904__bF$buf1 FIFO_INST_0_.fifo_inst.router_data_in_3_ NULL ddflop
-ADFFSR_151 _897__4_ clk_bF$buf5 ~vdd ~_904__bF$buf0 FIFO_INST_0_.fifo_inst.router_data_in_4_ NULL ddflop
-ADFFSR_152 _897__5_ clk_bF$buf4 ~vdd ~_904__bF$buf5 FIFO_INST_0_.fifo_inst.router_data_in_5_ NULL ddflop
-ADFFSR_153 _898__0_ clk_bF$buf3 ~vdd ~_904__bF$buf4 FIFO_INST_1_.fifo_inst.router_data_in_0_ NULL ddflop
-ADFFSR_154 _898__1_ clk_bF$buf2 ~vdd ~_904__bF$buf3 FIFO_INST_1_.fifo_inst.router_data_in_1_ NULL ddflop
-ADFFSR_155 _898__2_ clk_bF$buf1 ~vdd ~_904__bF$buf2 FIFO_INST_1_.fifo_inst.router_data_in_2_ NULL ddflop
-ADFFSR_156 _898__3_ clk_bF$buf0 ~vdd ~_904__bF$buf1 FIFO_INST_1_.fifo_inst.router_data_in_3_ NULL ddflop
-ADFFSR_157 _898__4_ clk_bF$buf41 ~vdd ~_904__bF$buf0 FIFO_INST_1_.fifo_inst.router_data_in_4_ NULL ddflop
-ADFFSR_158 _898__5_ clk_bF$buf40 ~vdd ~_904__bF$buf5 FIFO_INST_1_.fifo_inst.router_data_in_5_ NULL ddflop
-ADFFSR_159 _899__0_ clk_bF$buf39 ~vdd ~_904__bF$buf4 FIFO_INST_2_.fifo_inst.router_data_in_0_ NULL ddflop
-ADFFSR_160 _899__1_ clk_bF$buf38 ~vdd ~_904__bF$buf3 FIFO_INST_2_.fifo_inst.router_data_in_1_ NULL ddflop
-ADFFSR_161 _899__2_ clk_bF$buf37 ~vdd ~_904__bF$buf2 FIFO_INST_2_.fifo_inst.router_data_in_2_ NULL ddflop
-ADFFSR_162 _899__3_ clk_bF$buf36 ~vdd ~_904__bF$buf1 FIFO_INST_2_.fifo_inst.router_data_in_3_ NULL ddflop
-ADFFSR_163 _899__4_ clk_bF$buf35 ~vdd ~_904__bF$buf0 FIFO_INST_2_.fifo_inst.router_data_in_4_ NULL ddflop
-ADFFSR_164 _899__5_ clk_bF$buf34 ~vdd ~_904__bF$buf5 FIFO_INST_2_.fifo_inst.router_data_in_5_ NULL ddflop
-ADFFSR_165 _900__0_ clk_bF$buf33 ~vdd ~_904__bF$buf4 FIFO_INST_3_.fifo_inst.router_data_in_0_ NULL ddflop
-ADFFSR_166 _900__1_ clk_bF$buf32 ~vdd ~_904__bF$buf3 FIFO_INST_3_.fifo_inst.router_data_in_1_ NULL ddflop
-ADFFSR_167 _900__2_ clk_bF$buf31 ~vdd ~_904__bF$buf2 FIFO_INST_3_.fifo_inst.router_data_in_2_ NULL ddflop
-ADFFSR_168 _900__3_ clk_bF$buf30 ~vdd ~_904__bF$buf1 FIFO_INST_3_.fifo_inst.router_data_in_3_ NULL ddflop
-ADFFSR_169 _900__4_ clk_bF$buf29 ~vdd ~_904__bF$buf0 FIFO_INST_3_.fifo_inst.router_data_in_4_ NULL ddflop
-ADFFSR_170 _900__5_ clk_bF$buf28 ~vdd ~_904__bF$buf5 FIFO_INST_3_.fifo_inst.router_data_in_5_ NULL ddflop
-ADFFSR_171 _903_ clk_bF$buf27 ~vdd ~_904__bF$buf4 router_inst.processing NULL ddflop
-ADFFSR_172 _896__0_ clk_bF$buf26 ~vdd ~_904__bF$buf3 router_inst.buffer_0_ NULL ddflop
-ADFFSR_173 _896__1_ clk_bF$buf25 ~vdd ~_904__bF$buf2 router_inst.buffer_1_ NULL ddflop
-ADFFSR_174 _896__2_ clk_bF$buf24 ~vdd ~_904__bF$buf1 router_inst.buffer_2_ NULL ddflop
-ADFFSR_175 _896__3_ clk_bF$buf23 ~vdd ~_904__bF$buf0 router_inst.buffer_3_ NULL ddflop
-ADFFSR_176 _896__4_ clk_bF$buf22 ~vdd ~_904__bF$buf5 router_inst.buffer_4_ NULL ddflop
-ADFFSR_177 _896__5_ clk_bF$buf21 ~vdd ~_904__bF$buf4 router_inst.buffer_5_ NULL ddflop
-ADFFSR_178 _901__0_ clk_bF$buf20 ~vdd ~_904__bF$buf3 FIFO_INST_0_.fifo_inst.router_rd_en NULL ddflop
+ADFFSR_140 _897__5_ clk_bF$buf16 ~vdd ~_904__bF$buf5 FIFO_INST_0_.fifo_inst.router_data_in_5_ NULL ddflop
+ADFFSR_141 _898__0_ clk_bF$buf15 ~vdd ~_904__bF$buf4 FIFO_INST_1_.fifo_inst.router_data_in_0_ NULL ddflop
+ADFFSR_142 _898__1_ clk_bF$buf14 ~vdd ~_904__bF$buf3 FIFO_INST_1_.fifo_inst.router_data_in_1_ NULL ddflop
+ADFFSR_143 _898__2_ clk_bF$buf13 ~vdd ~_904__bF$buf2 FIFO_INST_1_.fifo_inst.router_data_in_2_ NULL ddflop
+ADFFSR_144 _898__3_ clk_bF$buf12 ~vdd ~_904__bF$buf1 FIFO_INST_1_.fifo_inst.router_data_in_3_ NULL ddflop
+ADFFSR_145 _898__4_ clk_bF$buf11 ~vdd ~_904__bF$buf0 FIFO_INST_1_.fifo_inst.router_data_in_4_ NULL ddflop
+ADFFSR_146 _898__5_ clk_bF$buf10 ~vdd ~_904__bF$buf5 FIFO_INST_1_.fifo_inst.router_data_in_5_ NULL ddflop
+ADFFSR_147 _899__0_ clk_bF$buf9 ~vdd ~_904__bF$buf4 FIFO_INST_2_.fifo_inst.router_data_in_0_ NULL ddflop
+ADFFSR_148 _899__1_ clk_bF$buf8 ~vdd ~_904__bF$buf3 FIFO_INST_2_.fifo_inst.router_data_in_1_ NULL ddflop
+ADFFSR_149 _899__2_ clk_bF$buf7 ~vdd ~_904__bF$buf2 FIFO_INST_2_.fifo_inst.router_data_in_2_ NULL ddflop
+ADFFSR_150 _899__3_ clk_bF$buf6 ~vdd ~_904__bF$buf1 FIFO_INST_2_.fifo_inst.router_data_in_3_ NULL ddflop
+ADFFSR_151 _899__4_ clk_bF$buf5 ~vdd ~_904__bF$buf0 FIFO_INST_2_.fifo_inst.router_data_in_4_ NULL ddflop
+ADFFSR_152 _899__5_ clk_bF$buf4 ~vdd ~_904__bF$buf5 FIFO_INST_2_.fifo_inst.router_data_in_5_ NULL ddflop
+ADFFSR_153 _900__0_ clk_bF$buf3 ~vdd ~_904__bF$buf4 FIFO_INST_3_.fifo_inst.router_data_in_0_ NULL ddflop
+ADFFSR_154 _900__1_ clk_bF$buf2 ~vdd ~_904__bF$buf3 FIFO_INST_3_.fifo_inst.router_data_in_1_ NULL ddflop
+ADFFSR_155 _900__2_ clk_bF$buf1 ~vdd ~_904__bF$buf2 FIFO_INST_3_.fifo_inst.router_data_in_2_ NULL ddflop
+ADFFSR_156 _900__3_ clk_bF$buf0 ~vdd ~_904__bF$buf1 FIFO_INST_3_.fifo_inst.router_data_in_3_ NULL ddflop
+ADFFSR_157 _900__4_ clk_bF$buf41 ~vdd ~_904__bF$buf0 FIFO_INST_3_.fifo_inst.router_data_in_4_ NULL ddflop
+ADFFSR_158 _900__5_ clk_bF$buf40 ~vdd ~_904__bF$buf5 FIFO_INST_3_.fifo_inst.router_data_in_5_ NULL ddflop
+ADFFSR_159 _903_ clk_bF$buf39 ~vdd ~_904__bF$buf4 router_inst.processing NULL ddflop
+ADFFSR_160 _896__0_ clk_bF$buf38 ~vdd ~_904__bF$buf3 router_inst.buffer_0_ NULL ddflop
+ADFFSR_161 _896__1_ clk_bF$buf37 ~vdd ~_904__bF$buf2 router_inst.buffer_1_ NULL ddflop
+ADFFSR_162 _896__2_ clk_bF$buf36 ~vdd ~_904__bF$buf1 router_inst.buffer_2_ NULL ddflop
+ADFFSR_163 _896__3_ clk_bF$buf35 ~vdd ~_904__bF$buf0 router_inst.buffer_3_ NULL ddflop
+ADFFSR_164 _896__4_ clk_bF$buf34 ~vdd ~_904__bF$buf5 router_inst.buffer_4_ NULL ddflop
+ADFFSR_165 _896__5_ clk_bF$buf33 ~vdd ~_904__bF$buf4 router_inst.buffer_5_ NULL ddflop
+ADFFSR_166 _901__0_ clk_bF$buf32 ~vdd ~_904__bF$buf3 FIFO_INST_0_.fifo_inst.router_rd_en NULL ddflop
+ADFFSR_167 _901__1_ clk_bF$buf31 ~vdd ~_904__bF$buf2 FIFO_INST_1_.fifo_inst.router_rd_en NULL ddflop
+ADFFSR_168 _901__2_ clk_bF$buf30 ~vdd ~_904__bF$buf1 FIFO_INST_2_.fifo_inst.router_rd_en NULL ddflop
+ADFFSR_169 _901__3_ clk_bF$buf29 ~vdd ~_904__bF$buf0 FIFO_INST_3_.fifo_inst.router_rd_en NULL ddflop
+ADFFSR_170 _902__0_ clk_bF$buf28 ~vdd ~_904__bF$buf5 FIFO_INST_0_.fifo_inst.router_wr_en NULL ddflop
+ADFFSR_171 _902__1_ clk_bF$buf27 ~vdd ~_904__bF$buf4 FIFO_INST_1_.fifo_inst.router_wr_en NULL ddflop
+ADFFSR_172 _902__2_ clk_bF$buf26 ~vdd ~_904__bF$buf3 FIFO_INST_2_.fifo_inst.router_wr_en NULL ddflop
+ADFFSR_173 _902__3_ clk_bF$buf25 ~vdd ~_904__bF$buf2 FIFO_INST_3_.fifo_inst.router_wr_en NULL ddflop
+ADFFSR_174 _897__0_ clk_bF$buf24 ~vdd ~_904__bF$buf1 FIFO_INST_0_.fifo_inst.router_data_in_0_ NULL ddflop
+ADFFSR_175 _897__1_ clk_bF$buf23 ~vdd ~_904__bF$buf0 FIFO_INST_0_.fifo_inst.router_data_in_1_ NULL ddflop
+ADFFSR_176 _897__2_ clk_bF$buf22 ~vdd ~_904__bF$buf5 FIFO_INST_0_.fifo_inst.router_data_in_2_ NULL ddflop
+ADFFSR_177 _897__3_ clk_bF$buf21 ~vdd ~_904__bF$buf4 FIFO_INST_0_.fifo_inst.router_data_in_3_ NULL ddflop
+ADFFSR_178 _897__4_ clk_bF$buf20 ~vdd ~_904__bF$buf3 FIFO_INST_0_.fifo_inst.router_data_in_4_ NULL ddflop
 ABUFX2_26 [arb_dest] arb_inst.destination_0_ d_lut_BUFX2
 
 .model todig_3v3 adc_bridge(in_high=2.1999999999999997 in_low=1.0999999999999999 rise_delay=10n fall_delay=10n)
@@ -1652,22 +1652,30 @@ AA2D1 [a_vdd] [vdd] todig_3v3
 AA2D2 [a_gnd] [gnd] todig_3v3
 AA2D3 [a_clk] [clk] todig_3v3
 AA2D4 [a_rst] [rst] todig_3v3
-AA2D5 [a_ext_data_in_0_] [ext_data_in_0_] todig_3v3
-AA2D6 [a_ext_data_in_1_] [ext_data_in_1_] todig_3v3
-AA2D7 [a_ext_data_in_2_] [ext_data_in_2_] todig_3v3
-AA2D8 [a_ext_data_in_3_] [ext_data_in_3_] todig_3v3
-AA2D9 [a_ext_data_in_4_] [ext_data_in_4_] todig_3v3
-AA2D10 [a_ext_data_in_5_] [ext_data_in_5_] todig_3v3
-AA2D11 [a_ext_data_in_6_] [ext_data_in_6_] todig_3v3
-AA2D12 [a_ext_data_in_7_] [ext_data_in_7_] todig_3v3
-AA2D13 [a_ext_data_in_8_] [ext_data_in_8_] todig_3v3
-AA2D14 [a_ext_data_in_9_] [ext_data_in_9_] todig_3v3
-AA2D15 [a_ext_data_in_10_] [ext_data_in_10_] todig_3v3
-AA2D16 [a_ext_data_in_11_] [ext_data_in_11_] todig_3v3
-AA2D17 [a_ext_data_in_12_] [ext_data_in_12_] todig_3v3
-AA2D18 [a_ext_data_in_13_] [ext_data_in_13_] todig_3v3
-AA2D19 [a_ext_data_in_14_] [ext_data_in_14_] todig_3v3
-AA2D20 [a_ext_data_in_15_] [ext_data_in_15_] todig_3v3
+AA2D5 [a_dest_0_] [dest_0_] todig_3v3
+AA2D6 [a_dest_1_] [dest_1_] todig_3v3
+AA2D7 [a_dest_2_] [dest_2_] todig_3v3
+AA2D8 [a_dest_3_] [dest_3_] todig_3v3
+AA2D9 [a_dest_4_] [dest_4_] todig_3v3
+AA2D10 [a_dest_5_] [dest_5_] todig_3v3
+AA2D11 [a_dest_6_] [dest_6_] todig_3v3
+AA2D12 [a_dest_7_] [dest_7_] todig_3v3
+AA2D13 [a_ext_data_in_0_] [ext_data_in_0_] todig_3v3
+AA2D14 [a_ext_data_in_1_] [ext_data_in_1_] todig_3v3
+AA2D15 [a_ext_data_in_2_] [ext_data_in_2_] todig_3v3
+AA2D16 [a_ext_data_in_3_] [ext_data_in_3_] todig_3v3
+AA2D17 [a_ext_data_in_4_] [ext_data_in_4_] todig_3v3
+AA2D18 [a_ext_data_in_5_] [ext_data_in_5_] todig_3v3
+AA2D19 [a_ext_data_in_6_] [ext_data_in_6_] todig_3v3
+AA2D20 [a_ext_data_in_7_] [ext_data_in_7_] todig_3v3
+AA2D21 [a_ext_data_in_8_] [ext_data_in_8_] todig_3v3
+AA2D22 [a_ext_data_in_9_] [ext_data_in_9_] todig_3v3
+AA2D23 [a_ext_data_in_10_] [ext_data_in_10_] todig_3v3
+AA2D24 [a_ext_data_in_11_] [ext_data_in_11_] todig_3v3
+AA2D25 [a_ext_data_in_12_] [ext_data_in_12_] todig_3v3
+AA2D26 [a_ext_data_in_13_] [ext_data_in_13_] todig_3v3
+AA2D27 [a_ext_data_in_14_] [ext_data_in_14_] todig_3v3
+AA2D28 [a_ext_data_in_15_] [ext_data_in_15_] todig_3v3
 AD2A1 [ext_data_out_0_] [a_ext_data_out_0_] toana_3v3
 AD2A2 [ext_data_out_1_] [a_ext_data_out_1_] toana_3v3
 AD2A3 [ext_data_out_2_] [a_ext_data_out_2_] toana_3v3
