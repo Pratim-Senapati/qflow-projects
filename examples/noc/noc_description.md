@@ -68,7 +68,7 @@
 - PE extracts only data and output it.
 
 For better understanding refer to diagram below:
-![NOC Architecture](images/noc_architecture.png)
+![NOC Architecture](../../images/noc_architecture.png)
 
 ---
 
