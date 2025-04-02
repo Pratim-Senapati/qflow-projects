@@ -1,5 +1,5 @@
-Qflow gdsii logfile created on Mon Mar 17 20:25:28 IST 2025
-magic -dnull -noconsole  /home/tombert/qflow_results/examples/counter/layout/generate_gds_counter.tcl
+Qflow gdsii logfile created on Wed Apr 2 16:07:53 IST 2025
+magic -dnull -noconsole  /home/tombert/qflow_projects/counter/layout/generate_gds_counter.tcl
 
 Magic 8.3 revision 50 - Compiled on Tue Feb 11 22:24:09 IST 2025.
 Starting magic under Tcl interpreter
@@ -14,7 +14,7 @@ Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 4 Magic internal units = 1 Lambda
-Loading "/home/tombert/qflow_results/examples/counter/layout/generate_gds_counter.tcl" from command line.
+Loading "/home/tombert/qflow_projects/counter/layout/generate_gds_counter.tcl" from command line.
 Root cell box:
            width x height  (   llx,  lly  ), (   urx,  ury  )
 
@@ -226,5 +226,5 @@ Moving label "A" from space to metal1 in cell CLKBUF3.
 Moving label "Y" from space to metal1 in cell CLKBUF3.
 Reading "iit_stdcells".
 Scaled magic input cell counter geometry by factor of 2
-Processing timestamp mismatches: BUFX2, NAND3X1, FILL, INVX1, NOR2X1, AOI21X1, DFFSR, INVX2, XNOR2X1, XOR2X1.
-GDS generating script ended on Mon Mar 17 20:25:29 IST 2025
+Processing timestamp mismatches: FILL, INVX1, BUFX2, XOR2X1, DFFSR, INVX2, NOR2X1, AOI21X1, NAND3X1, XNOR2X1.
+GDS generating script ended on Wed Apr 2 16:07:53 IST 2025

@@ -395,15 +395,3 @@ pad 8 name twpin_count[3]
 corners 4 -80 -100 -80 100 80 100 80 -100
 pin name count[3] signal count[3] layer 1 0 0
 
-padgroup inputs permute
-twpin_rst  fixed
-twpin_clk  fixed
-restrict side L
-
-padgroup outputs permute
-twpin_count[3]  fixed
-twpin_count[2]  fixed
-twpin_count[1]  fixed
-twpin_count[0]  fixed
-restrict side R
-

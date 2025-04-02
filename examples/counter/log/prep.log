@@ -1,4 +1,4 @@
-Qflow project preparation output log Mon Mar 17 20:24:49 2025
+Qflow project preparation output log Wed Apr  2 16:07:42 2025
 
 --------------------------------
 Qflow project setup
@@ -7,5 +7,5 @@ Qflow project setup
 Technology set to osu035
 
 No actions specified on command line;
-creating qflow script file /home/tombert/qflow_results/examples/counter/qflow_exec.sh only.
+creating qflow script file /home/tombert/qflow_projects/counter/qflow_exec.sh only.
 Uncomment lines in this file and source the file to run the flow.

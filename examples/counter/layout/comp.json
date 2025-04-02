@@ -161,25 +161,25 @@
    ],
    "devices": [
        [
-         ["NAND3X1", 1],
          ["XOR2X1", 1],
+         ["NAND3X1", 1],
          ["BUFX2", 6],
-         ["AOI21X1", 1],
          ["INVX2", 1],
+         ["AOI21X1", 1],
          ["NOR2X1", 1],
          ["DFFSR", 4],
-         ["XNOR2X1", 1],
-         ["INVX1", 2 ]
+         ["INVX1", 2],
+         ["XNOR2X1", 1 ]
        ], [
-         ["NAND3X1", 1 ],
          ["XOR2X1", 1 ],
+         ["NAND3X1", 1 ],
          ["BUFX2", 6 ],
-         ["AOI21X1", 1 ],
          ["INVX2", 1 ],
+         ["AOI21X1", 1 ],
          ["NOR2X1", 1 ],
          ["DFFSR", 4 ],
-         ["XNOR2X1", 1 ],
-         ["INVX1", 2 ]
+         ["INVX1", 2 ],
+         ["XNOR2X1", 1 ]
        ]
    ],
    "nets": [

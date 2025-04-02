@@ -32,11 +32,14 @@ XFILL_1_1_0 vdd gnd FILL
 XFILL_1_1_1 vdd gnd FILL
 XFILL_1_1_2 vdd gnd FILL
 XFILL_2_1 vdd gnd FILL
+XFILL_2_2 vdd gnd FILL
 XFILL_2_0_0 vdd gnd FILL
 XFILL_2_0_1 vdd gnd FILL
 XFILL_2_0_2 vdd gnd FILL
 XFILL_2_1_0 vdd gnd FILL
 XFILL_2_1_1 vdd gnd FILL
 XFILL_2_1_2 vdd gnd FILL
+XFILL_3_1 vdd gnd FILL
+XFILL_3_2 vdd gnd FILL
 .ends counter
  

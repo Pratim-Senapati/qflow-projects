@@ -1,6 +1,6 @@
 # Synthesis script for yosys created by qflow
 read_liberty -lib -ignore_miss_dir -setattr blackbox /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib
-read_verilog  /home/tombert/qflow_results/examples/counter/source/counter.v
+read_verilog  /home/tombert/qflow_projects/counter/source/counter.v
 
 # High-level synthesis
 synth -top counter

@@ -1,4 +1,4 @@
-Qflow route logfile created on Mon Mar 17 20:25:26 IST 2025
+Qflow route logfile created on Wed Apr 2 16:07:49 IST 2025
 qrouter -noc  -s counter.cfg
 Qrouter detail maze router version 1.4.59.T
 Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
@@ -23,11 +23,11 @@ Vertical route layer at non-minimum pitch 3.2.  Using smaller pitch 1.6, will ro
 Reading DEF data from file counter.def.
 Diagnostic: Design name: "counter"
   Processed 3 vias total.
-  Processed 37 subcell instances total.
-DEF Read, Line 101: Warning:  Number of pins read (8) does not match the number declared (10).
+  Processed 40 subcell instances total.
+DEF Read, Line 104: Warning:  Number of pins read (8) does not match the number declared (10).
   Processed 20 nets total (0 fixed).
   Processed 2 special nets total (2 fixed).
-DEF read: Processed 215 lines.
+DEF read: Processed 218 lines.
 DEF Read: encountered 0 errors and 1 warning total.
 Output scale = microns / 100, precision 1
 No antenna cell defined!
@@ -75,7 +75,14 @@ Finished routing net _0_[1]
 Nets remaining: 0
 
 ----------------------------------------------
-Progress: Stage 1 total routes completed: 45
+Progress: Stage 1 total routes completed: 44
+Failed net routes: 1
+----------------------------------------------
+*** Running stage2 routing with options mask 10, effort 10
+Nets remaining: 1
+
+----------------------------------------------
+Progress: Stage 2 total routes completed: 45
 No failed routes!
 ----------------------------------------------
 *** Running stage3 routing with defaults, 1st round
@@ -111,13 +118,19 @@ Keeping route for net count[0]
 Keeping route for net count[1]
 Finished routing net count[2]
 Nets remaining: 2
-Finished routing net count[3]
-Nets remaining: 1
+Keeping route for net count[3]
 Finished routing net _0_[1]
 Nets remaining: 0
 
 ----------------------------------------------
-Progress: Stage 3 total routes completed: 86
+Progress: Stage 3 total routes completed: 84
+Failed net routes: 1
+----------------------------------------------
+*** Running stage2 routing with options mask none
+Nets remaining: 1
+
+----------------------------------------------
+Progress: Stage 2 total routes completed: 85
 No failed routes!
 ----------------------------------------------
 *** Running stage3 routing with defaults, 2nd round
@@ -153,13 +166,19 @@ Keeping route for net count[0]
 Keeping route for net count[1]
 Finished routing net count[2]
 Nets remaining: 2
-Finished routing net count[3]
-Nets remaining: 1
+Keeping route for net count[3]
 Finished routing net _0_[1]
 Nets remaining: 0
 
 ----------------------------------------------
-Progress: Stage 3 total routes completed: 127
+Progress: Stage 3 total routes completed: 124
+Failed net routes: 1
+----------------------------------------------
+*** Running stage2 routing with options mask none
+Nets remaining: 1
+
+----------------------------------------------
+Progress: Stage 2 total routes completed: 125
 No failed routes!
 ----------------------------------------------
 *** Writing DEF file counter_route.def
@@ -169,10 +188,10 @@ but qrouter wants to write 20 nets and specialnets.
 Final: No failed routes!
 ----------------------------------------------
 *** Writing RC file counter_route.rc
-Running annotate.tcl antenna.out /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlnopwr.v
-  /home/tombert/qflow_results/examples/counter/synthesis/counter.spc /home/tombert/qflow_results/examples/counter/synthesis/counter.rtlnopwr.anno.v
-  /home/tombert/qflow_results/examples/counter/synthesis/counter.anno.spc  /usr/local/share/qflow/tech/osu035/osu035_stdcells.sp /home/tombert/qflow_results/examples/counter/synthesis/counter_powerground
+Running annotate.tcl antenna.out /home/tombert/qflow_projects/counter/synthesis/counter.rtlnopwr.v
+  /home/tombert/qflow_projects/counter/synthesis/counter.spc /home/tombert/qflow_projects/counter/synthesis/counter.rtlnopwr.anno.v
+  /home/tombert/qflow_projects/counter/synthesis/counter.anno.spc  /usr/local/share/qflow/tech/osu035/osu035_stdcells.sp /home/tombert/qflow_projects/counter/synthesis/counter_powerground
 Running annotate.tcl
 found cell FILL pinlist vdd gnd
 Done with annotate.tcl
-Router script ended on Mon Mar 17 20:25:26 IST 2025
+Router script ended on Wed Apr 2 16:07:50 IST 2025
