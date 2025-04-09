@@ -1,0 +1,1755 @@
+*SPICE netlist created from BLIF module sincos by blif2BSpice
+.include /usr/local/share/qflow/tech/osu035/osu035_stdcells.sp
+.subckt sincos vdd gnd clk rst theta[0] theta[1] theta[2] theta[3] theta[4] theta[5] theta[6] theta[7] sine[0] sine[1] sine[2] sine[3] sine[4] sine[5] sine[6] sine[7] cosine[0] cosine[1] cosine[2] cosine[3] cosine[4] cosine[5] cosine[6] cosine[7] done 
+XBUFX4_1 vdd gnd _644_ _644__bF$buf3 BUFX4
+XBUFX4_2 vdd gnd _644_ _644__bF$buf2 BUFX4
+XBUFX4_3 vdd gnd _644_ _644__bF$buf1 BUFX4
+XBUFX4_4 vdd gnd _644_ _644__bF$buf0 BUFX4
+XCLKBUF1_1 clk vdd gnd clk_bF$buf12 CLKBUF1
+XCLKBUF1_2 clk vdd gnd clk_bF$buf11 CLKBUF1
+XCLKBUF1_3 clk vdd gnd clk_bF$buf10 CLKBUF1
+XCLKBUF1_4 clk vdd gnd clk_bF$buf9 CLKBUF1
+XCLKBUF1_5 clk vdd gnd clk_bF$buf8 CLKBUF1
+XCLKBUF1_6 clk vdd gnd clk_bF$buf7 CLKBUF1
+XCLKBUF1_7 clk vdd gnd clk_bF$buf6 CLKBUF1
+XCLKBUF1_8 clk vdd gnd clk_bF$buf5 CLKBUF1
+XCLKBUF1_9 clk vdd gnd clk_bF$buf4 CLKBUF1
+XCLKBUF1_10 clk vdd gnd clk_bF$buf3 CLKBUF1
+XCLKBUF1_11 clk vdd gnd clk_bF$buf2 CLKBUF1
+XCLKBUF1_12 clk vdd gnd clk_bF$buf1 CLKBUF1
+XCLKBUF1_13 clk vdd gnd clk_bF$buf0 CLKBUF1
+XBUFX4_5 vdd gnd _626_ _626__bF$buf3 BUFX4
+XBUFX4_6 vdd gnd _626_ _626__bF$buf2 BUFX4
+XBUFX4_7 vdd gnd _626_ _626__bF$buf1 BUFX4
+XBUFX2_1 vdd gnd _626_ _626__bF$buf0 BUFX2
+XBUFX4_8 vdd gnd _599_ _599__bF$buf3 BUFX4
+XBUFX4_9 vdd gnd _599_ _599__bF$buf2 BUFX4
+XBUFX4_10 vdd gnd _599_ _599__bF$buf1 BUFX4
+XBUFX4_11 vdd gnd _599_ _599__bF$buf0 BUFX4
+XBUFX4_12 vdd gnd x[6][7] x[6][7_bF$buf3] BUFX4
+XBUFX4_13 vdd gnd x[6][7] x[6][7_bF$buf2] BUFX4
+XBUFX4_14 vdd gnd x[6][7] x[6][7_bF$buf1] BUFX4
+XBUFX4_15 vdd gnd x[6][7] x[6][7_bF$buf0] BUFX4
+XBUFX4_16 vdd gnd y[6][7] y[6][7_bF$buf3] BUFX4
+XBUFX4_17 vdd gnd y[6][7] y[6][7_bF$buf2] BUFX4
+XBUFX4_18 vdd gnd y[6][7] y[6][7_bF$buf1] BUFX4
+XBUFX4_19 vdd gnd y[6][7] y[6][7_bF$buf0] BUFX4
+XBUFX4_20 vdd gnd _38_ _38__bF$buf3 BUFX4
+XBUFX4_21 vdd gnd _38_ _38__bF$buf2 BUFX4
+XBUFX4_22 vdd gnd _38_ _38__bF$buf1 BUFX4
+XBUFX4_23 vdd gnd _38_ _38__bF$buf0 BUFX4
+XBUFX2_2 vdd gnd _563_ _563__bF$buf3 BUFX2
+XBUFX2_3 vdd gnd _563_ _563__bF$buf2 BUFX2
+XBUFX2_4 vdd gnd _563_ _563__bF$buf1 BUFX2
+XBUFX2_5 vdd gnd _563_ _563__bF$buf0 BUFX2
+XBUFX4_24 vdd gnd y[5][7] y[5][7_bF$buf3] BUFX4
+XBUFX4_25 vdd gnd y[5][7] y[5][7_bF$buf2] BUFX4
+XBUFX4_26 vdd gnd y[5][7] y[5][7_bF$buf1] BUFX4
+XBUFX2_6 vdd gnd y[5][7] y[5][7_bF$buf0] BUFX2
+XBUFX4_27 vdd gnd _577_ _577__bF$buf3 BUFX4
+XBUFX2_7 vdd gnd _577_ _577__bF$buf2 BUFX2
+XBUFX2_8 vdd gnd _577_ _577__bF$buf1 BUFX2
+XBUFX2_9 vdd gnd _577_ _577__bF$buf0 BUFX2
+XINVX4_1 vdd gnd _7_[5] z[0][7] INVX4
+XINVX1_1 z[6][1] _559_ vdd gnd INVX1
+XINVX1_2 z[6][0] _21_[0] vdd gnd INVX1
+XNOR2X1_1 vdd _21_[0] gnd _560_ _559_ NOR2X1
+XNOR2X1_2 vdd z[6][0] gnd _561_ z[6][1] NOR2X1
+XINVX1_3 z[6][2] _562_ vdd gnd INVX1
+XINVX4_2 vdd gnd _563_ z[6][7] INVX4
+XINVX1_4 z[6][3] _564_ vdd gnd INVX1
+XNAND2X1_1 vdd _565_ gnd z[6][2] _560_ NAND2X1
+XNAND2X1_2 vdd _566_ gnd _562_ _561_ NAND2X1
+XNOR2X1_3 vdd _566_ gnd _567_ z[6][3] NOR2X1
+XINVX1_5 z[6][5] _568_ vdd gnd INVX1
+XINVX1_6 z[6][4] _569_ vdd gnd INVX1
+XNAND2X1_3 vdd _570_ gnd _569_ _567_ NAND2X1
+XNOR2X1_4 vdd _565_ gnd _571_ _564_ NOR2X1
+XNAND2X1_4 vdd _572_ gnd z[6][4] _571_ NAND2X1
+XOAI21X1_1 gnd vdd _568_ _572_ _573_ z[6][7] OAI21X1
+XOAI21X1_2 gnd vdd z[6][5] _570_ _574_ _563__bF$buf2 OAI21X1
+XINVX1_7 _574_ _575_ vdd gnd INVX1
+XOAI21X1_3 gnd vdd z[6][6] _575_ _21_[7] _573_ OAI21X1
+XINVX1_8 z[5][1] _20_[1] vdd gnd INVX1
+XNOR2X1_5 vdd z[5][1] gnd _576_ z[5][2] NOR2X1
+XINVX4_3 vdd gnd _577_ z[5][7] INVX4
+XINVX1_9 z[5][2] _578_ vdd gnd INVX1
+XNOR2X1_6 vdd _20_[1] gnd _579_ _578_ NOR2X1
+XOAI21X1_4 gnd vdd _576_ _579_ _580_ _577__bF$buf0 OAI21X1
+XOAI21X1_5 gnd vdd _578_ _20_[1] _581_ z[5][7] OAI21X1
+XOAI21X1_6 gnd vdd _576_ _581_ _20_[2] _580_ OAI21X1
+XOAI21X1_7 gnd vdd z[5][7] _576_ _582_ _581_ OAI21X1
+XXNOR2X1_1 _582_ z[5][3] gnd vdd _20_[3] XNOR2X1
+XINVX2_1 vdd gnd _583_ z[5][4] INVX2
+XNAND2X1_5 vdd _584_ gnd z[5][3] _579_ NAND2X1
+XINVX1_10 _576_ _585_ vdd gnd INVX1
+XNOR2X1_7 vdd _585_ gnd _586_ z[5][3] NOR2X1
+XNAND2X1_6 vdd _587_ gnd _577__bF$buf0 _586_ NAND2X1
+XOAI21X1_8 gnd vdd _577__bF$buf0 _584_ _588_ _587_ OAI21X1
+XXNOR2X1_2 _588_ _583_ gnd vdd _20_[4] XNOR2X1
+XNAND2X1_7 vdd _589_ gnd _583_ _586_ NAND2X1
+XNAND2X1_8 vdd _590_ gnd _577__bF$buf0 _589_ NAND2X1
+XOAI21X1_9 gnd vdd _583_ _584_ _591_ z[5][7] OAI21X1
+XNAND2X1_9 vdd _592_ gnd _591_ _590_ NAND2X1
+XXNOR2X1_3 _592_ z[5][5] gnd vdd _20_[5] XNOR2X1
+XINVX1_11 z[5][5] _593_ vdd gnd INVX1
+XOAI21X1_10 gnd vdd z[5][7] _593_ _594_ _590_ OAI21X1
+XNAND2X1_10 vdd _595_ gnd z[5][5] z[5][4] NAND2X1
+XOAI21X1_11 gnd vdd _595_ _584_ _596_ z[5][7] OAI21X1
+XOAI21X1_12 gnd vdd z[5][6] _594_ _20_[7] _596_ OAI21X1
+XOAI21X1_13 gnd vdd _594_ _20_[7] _597_ z[5][6] OAI21X1
+XNAND2X1_11 vdd _598_ gnd _596_ _20_[7] NAND2X1
+XNAND2X1_12 vdd _20_[6] gnd _598_ _597_ NAND2X1
+XINVX8_1 vdd gnd z[2][7] _599_ INVX8
+XINVX1_12 z[2][1] _600_ vdd gnd INVX1
+XINVX1_13 z[2][0] _17_[0] vdd gnd INVX1
+XNAND2X1_13 vdd _601_ gnd _600_ _17_[0] NAND2X1
+XNOR2X1_8 vdd _17_[0] gnd _602_ _600_ NOR2X1
+XNOR2X1_9 vdd _602_ gnd _603_ _599__bF$buf1 NOR2X1
+XNAND2X1_14 vdd _604_ gnd _599__bF$buf1 _602_ NAND2X1
+XOAI21X1_14 gnd vdd z[2][1] z[2][0] _605_ _604_ OAI21X1
+XOAI22X1_1 gnd vdd _605_ _603_ _599__bF$buf1 _601_ _17_[1] OAI22X1
+XINVX1_14 z[2][2] _606_ vdd gnd INVX1
+XOAI21X1_15 gnd vdd _599__bF$buf1 _601_ _607_ _604_ OAI21X1
+XXNOR2X1_4 _607_ _606_ gnd vdd _17_[2] XNOR2X1
+XINVX1_15 z[2][3] _608_ vdd gnd INVX1
+XOR2X2_1 _609_ z[2][2] vdd gnd _601_ OR2X2
+XOAI22X1_2 gnd vdd _609_ _599__bF$buf1 _606_ _604_ _610_ OAI22X1
+XXNOR2X1_5 _610_ _608_ gnd vdd _17_[3] XNOR2X1
+XOR2X2_2 _611_ z[2][3] vdd gnd _609_ OR2X2
+XNAND2X1_15 vdd _612_ gnd z[2][2] _602_ NAND2X1
+XNOR2X1_10 vdd _612_ gnd _613_ _608_ NOR2X1
+XNAND2X1_16 vdd _614_ gnd _599__bF$buf0 _613_ NAND2X1
+XOAI21X1_16 gnd vdd _599__bF$buf1 _611_ _615_ _614_ OAI21X1
+XXNOR2X1_6 _615_ z[2][4] gnd vdd _17_[4] XNOR2X1
+XNOR2X1_11 vdd _613_ gnd _616_ z[2][4] NOR2X1
+XOAI21X1_17 gnd vdd z[2][3] _609_ _617_ z[2][4] OAI21X1
+XNAND2X1_17 vdd _618_ gnd z[2][7] _617_ NAND2X1
+XOAI21X1_18 gnd vdd z[2][7] _616_ _619_ _618_ OAI21X1
+XXNOR2X1_7 _619_ z[2][5] gnd vdd _17_[5] XNOR2X1
+XINVX1_16 z[2][5] _620_ vdd gnd INVX1
+XAND2X2_1 vdd gnd _616_ _620_ _621_ AND2X2
+XOAI21X1_19 gnd vdd _620_ _617_ _622_ z[2][7] OAI21X1
+XOAI21X1_20 gnd vdd z[2][7] _621_ _623_ _622_ OAI21X1
+XXNOR2X1_8 _623_ z[2][6] gnd vdd _17_[6] XNOR2X1
+XNOR2X1_12 vdd _621_ gnd _624_ z[2][7] NOR2X1
+XAOI21X1_1 gnd vdd z[2][6] _622_ _17_[7] _624_ AOI21X1
+XINVX1_17 z[4][2] _19_[2] vdd gnd INVX1
+XNOR2X1_13 vdd z[4][2] gnd _625_ z[4][3] NOR2X1
+XINVX8_2 vdd gnd z[4][7] _626_ INVX8
+XINVX1_18 z[4][3] _627_ vdd gnd INVX1
+XNOR2X1_14 vdd _19_[2] gnd _628_ _627_ NOR2X1
+XOAI21X1_21 gnd vdd _625_ _628_ _629_ _626__bF$buf3 OAI21X1
+XOAI21X1_22 gnd vdd _627_ _19_[2] _630_ z[4][7] OAI21X1
+XOAI21X1_23 gnd vdd _625_ _630_ _19_[3] _629_ OAI21X1
+XOAI21X1_24 gnd vdd z[4][7] _625_ _631_ _630_ OAI21X1
+XXNOR2X1_9 _631_ z[4][4] gnd vdd _19_[4] XNOR2X1
+XINVX1_19 z[4][4] _632_ vdd gnd INVX1
+XNAND2X1_18 vdd _633_ gnd _632_ _625_ NAND2X1
+XINVX1_20 _633_ _634_ vdd gnd INVX1
+XNAND2X1_19 vdd _635_ gnd z[4][4] _628_ NAND2X1
+XNAND2X1_20 vdd _636_ gnd z[4][7] _635_ NAND2X1
+XOAI21X1_25 gnd vdd z[4][7] _634_ _637_ _636_ OAI21X1
+XXNOR2X1_10 _637_ z[4][5] gnd vdd _19_[5] XNOR2X1
+XINVX1_21 z[4][5] _638_ vdd gnd INVX1
+XAOI21X1_2 gnd vdd _634_ _638_ _639_ z[4][7] AOI21X1
+XOAI21X1_26 gnd vdd _638_ _635_ _640_ z[4][7] OAI21X1
+XOAI21X1_27 gnd vdd z[4][6] _639_ _19_[7] _640_ OAI21X1
+XOAI21X1_28 gnd vdd _639_ _19_[7] _641_ z[4][6] OAI21X1
+XNAND2X1_21 vdd _642_ gnd _640_ _19_[7] NAND2X1
+XNAND2X1_22 vdd _19_[6] gnd _642_ _641_ NAND2X1
+XINVX1_22 z[3][3] _18_[3] vdd gnd INVX1
+XNOR2X1_15 vdd z[3][3] gnd _643_ z[3][4] NOR2X1
+XINVX8_3 vdd gnd z[3][7] _644_ INVX8
+XINVX1_23 z[3][4] _645_ vdd gnd INVX1
+XNOR2X1_16 vdd _18_[3] gnd _646_ _645_ NOR2X1
+XOAI21X1_29 gnd vdd _643_ _646_ _647_ _644__bF$buf3 OAI21X1
+XOAI21X1_30 gnd vdd _645_ _18_[3] _648_ z[3][7] OAI21X1
+XOAI21X1_31 gnd vdd _643_ _648_ _18_[4] _647_ OAI21X1
+XOAI21X1_32 gnd vdd z[3][7] _643_ _649_ _648_ OAI21X1
+XXNOR2X1_11 _649_ z[3][5] gnd vdd _18_[5] XNOR2X1
+XNAND2X1_23 vdd _650_ gnd z[3][5] _644__bF$buf3 NAND2X1
+XOAI21X1_33 gnd vdd z[3][7] _643_ _651_ _650_ OAI21X1
+XNAND2X1_24 vdd _652_ gnd z[3][5] _646_ NAND2X1
+XINVX1_24 _652_ _653_ vdd gnd INVX1
+XOAI22X1_3 gnd vdd _653_ _644__bF$buf3 z[3][6] _651_ _18_[7] OAI22X1
+XOAI21X1_34 gnd vdd _651_ _18_[7] _654_ z[3][6] OAI21X1
+XOAI21X1_35 gnd vdd _644__bF$buf3 _653_ _655_ _18_[7] OAI21X1
+XNAND2X1_25 vdd _18_[6] gnd _655_ _654_ NAND2X1
+XXOR2X1_1 _14_[0] vdd x[7][7] y[7][0] gnd XOR2X1
+XINVX4_4 vdd gnd _656_ z[7][7] INVX4
+XINVX2_2 vdd gnd _657_ x[7][7] INVX2
+XAOI21X1_3 gnd vdd _656_ y[7][0] _658_ _657_ AOI21X1
+XOAI21X1_36 gnd vdd _656_ y[7][0] _659_ _658_ OAI21X1
+XXNOR2X1_12 _659_ y[7][1] gnd vdd _14_[1] XNOR2X1
+XNOR2X1_17 vdd y[7][2] gnd _660_ x[7][7] NOR2X1
+XINVX1_25 y[7][2] _661_ vdd gnd INVX1
+XNOR2X1_18 vdd _661_ gnd _662_ _657_ NOR2X1
+XNOR2X1_19 vdd _662_ gnd _663_ _660_ NOR2X1
+XOAI21X1_37 gnd vdd y[7][0] y[7][1] _664_ x[7][7] OAI21X1
+XNAND2X1_26 vdd _665_ gnd y[7][0] y[7][1] NAND2X1
+XINVX1_26 _665_ _666_ vdd gnd INVX1
+XNAND2X1_27 vdd _667_ gnd z[7][7] x[7][7] NAND2X1
+XOAI22X1_4 gnd vdd _666_ _667_ z[7][7] _664_ _668_ OAI22X1
+XXOR2X1_2 _14_[2] vdd _668_ _663_ gnd XOR2X1
+XOR2X2_3 _669_ y[7][1] vdd gnd y[7][0] OR2X2
+XNAND2X1_28 vdd _670_ gnd x[7][7] _661_ NAND2X1
+XOAI21X1_38 gnd vdd _669_ _670_ _671_ _656_ OAI21X1
+XINVX1_27 _662_ _672_ vdd gnd INVX1
+XOAI21X1_39 gnd vdd _665_ _672_ _673_ z[7][7] OAI21X1
+XNAND2X1_29 vdd _674_ gnd _671_ _673_ NAND2X1
+XXNOR2X1_13 _674_ y[7][3] gnd vdd _14_[3] XNOR2X1
+XNAND2X1_30 vdd _675_ gnd y[7][2] y[7][3] NAND2X1
+XNOR2X1_20 vdd _675_ gnd _676_ _665_ NOR2X1
+XINVX1_28 _676_ _677_ vdd gnd INVX1
+XNOR2X1_21 vdd _669_ gnd _678_ y[7][3] NOR2X1
+XNAND3X1_1 _661_ vdd gnd _656_ _678_ _679_ NAND3X1
+XOAI21X1_40 gnd vdd _656_ _677_ _680_ _679_ OAI21X1
+XNAND2X1_31 vdd _681_ gnd x[7][7] _680_ NAND2X1
+XXNOR2X1_14 _681_ y[7][4] gnd vdd _14_[4] XNOR2X1
+XINVX1_29 y[7][5] _682_ vdd gnd INVX1
+XNOR2X1_22 vdd y[7][4] gnd _683_ y[7][2] NOR2X1
+XAOI21X1_4 gnd vdd _678_ _683_ _684_ _682_ AOI21X1
+XNAND3X1_2 _683_ vdd gnd _682_ _678_ _685_ NAND3X1
+XNOR2X1_23 vdd _685_ gnd _686_ _657_ NOR2X1
+XOAI21X1_41 gnd vdd _684_ _686_ _687_ _656_ OAI21X1
+XNAND2X1_32 vdd _688_ gnd x[7][7] y[7][4] NAND2X1
+XOAI21X1_42 gnd vdd _688_ _677_ _689_ _682_ OAI21X1
+XNAND2X1_33 vdd _690_ gnd y[7][4] y[7][5] NAND2X1
+XNOR2X1_24 vdd _677_ gnd _691_ _690_ NOR2X1
+XNOR2X1_25 vdd _691_ gnd _692_ _656_ NOR2X1
+XAOI22X1_1 gnd vdd _689_ _692_ _693_ _657_ y[7][5] AOI22X1
+XNAND2X1_34 vdd _14_[5] gnd _687_ _693_ NAND2X1
+XXNOR2X1_15 x[7][7] y[7][6] gnd vdd _694_ XNOR2X1
+XNAND2X1_35 vdd _695_ gnd x[7][7] _685_ NAND2X1
+XOAI22X1_5 gnd vdd _695_ z[7][7] _667_ _691_ _696_ OAI22X1
+XXNOR2X1_16 _696_ _694_ gnd vdd _14_[6] XNOR2X1
+XXNOR2X1_17 x[7][7] y[7][7] gnd vdd _697_ XNOR2X1
+XINVX1_30 y[7][6] _698_ vdd gnd INVX1
+XOAI21X1_43 gnd vdd _656_ _657_ _699_ _698_ OAI21X1
+XOAI21X1_44 gnd vdd z[7][7] _657_ _700_ y[7][6] OAI21X1
+XAOI21X1_5 gnd vdd _699_ _700_ _701_ _696_ AOI21X1
+XXOR2X1_3 _14_[7] vdd _697_ _701_ gnd XOR2X1
+XINVX1_31 z[1][1] _702_ vdd gnd INVX1
+XINVX1_32 z[1][0] _16_[0] vdd gnd INVX1
+XNOR2X1_26 vdd _16_[0] gnd _703_ _702_ NOR2X1
+XINVX2_3 vdd gnd _704_ z[1][7] INVX2
+XNOR2X1_27 vdd z[1][0] gnd _705_ z[1][1] NOR2X1
+XNAND2X1_36 vdd _706_ gnd _704_ _705_ NAND2X1
+XINVX1_33 _705_ _707_ vdd gnd INVX1
+XAOI21X1_6 gnd vdd _707_ z[1][7] _708_ _703_ AOI21X1
+XAOI22X1_2 gnd vdd _706_ _708_ _16_[1] z[1][7] _703_ AOI22X1
+XINVX1_34 _703_ _709_ vdd gnd INVX1
+XOAI21X1_45 gnd vdd _704_ _709_ _710_ _706_ OAI21X1
+XXNOR2X1_18 _710_ z[1][2] gnd vdd _16_[2] XNOR2X1
+XINVX1_35 z[1][3] _711_ vdd gnd INVX1
+XINVX1_36 z[1][2] _712_ vdd gnd INVX1
+XOAI21X1_46 gnd vdd _702_ _16_[0] _713_ _712_ OAI21X1
+XNAND3X1_3 z[1][2] vdd gnd _704_ _707_ _714_ NAND3X1
+XOAI21X1_47 gnd vdd _704_ _713_ _715_ _714_ OAI21X1
+XXNOR2X1_19 _715_ _711_ gnd vdd _16_[3] XNOR2X1
+XOR2X2_4 _716_ z[1][3] vdd gnd _713_ OR2X2
+XOAI22X1_6 gnd vdd _716_ _704_ _711_ _714_ _717_ OAI22X1
+XXOR2X1_4 _16_[4] vdd z[1][4] _717_ gnd XOR2X1
+XNAND2X1_37 vdd _718_ gnd z[1][4] z[1][3] NAND2X1
+XNOR2X1_28 vdd _716_ gnd _719_ z[1][4] NOR2X1
+XNAND2X1_38 vdd _720_ gnd z[1][7] _719_ NAND2X1
+XOAI21X1_48 gnd vdd _714_ _718_ _721_ _720_ OAI21X1
+XXNOR2X1_20 _721_ z[1][5] gnd vdd _16_[5] XNOR2X1
+XINVX1_37 z[1][5] _722_ vdd gnd INVX1
+XOAI22X1_7 gnd vdd _714_ _718_ z[1][7] _722_ _723_ OAI22X1
+XOAI21X1_49 gnd vdd _722_ _719_ _724_ z[1][7] OAI21X1
+XOAI21X1_50 gnd vdd z[1][6] _723_ _16_[7] _724_ OAI21X1
+XOAI21X1_51 gnd vdd _723_ _16_[7] _725_ z[1][6] OAI21X1
+XNAND2X1_39 vdd _726_ gnd _724_ _16_[7] NAND2X1
+XNAND2X1_40 vdd _16_[6] gnd _726_ _725_ NAND2X1
+XINVX1_38 z[0][1] _15_[1] vdd gnd INVX1
+XINVX1_39 z[0][2] _727_ vdd gnd INVX1
+XNAND2X1_41 vdd _728_ gnd _727_ _15_[1] NAND2X1
+XINVX1_40 _728_ _729_ vdd gnd INVX1
+XNOR2X1_29 vdd _15_[1] gnd _730_ _727_ NOR2X1
+XOAI21X1_52 gnd vdd _730_ _729_ _731_ _7_[5] OAI21X1
+XOAI21X1_53 gnd vdd _727_ _15_[1] _732_ z[0][7] OAI21X1
+XOAI21X1_54 gnd vdd _729_ _732_ _15_[2] _731_ OAI21X1
+XOAI21X1_55 gnd vdd z[0][7] _729_ _733_ _732_ OAI21X1
+XXNOR2X1_21 _733_ z[0][3] gnd vdd _15_[3] XNOR2X1
+XNAND2X1_42 vdd _734_ gnd z[0][3] _730_ NAND2X1
+XNOR2X1_30 vdd _728_ gnd _735_ z[0][3] NOR2X1
+XNAND2X1_43 vdd _736_ gnd _7_[5] _735_ NAND2X1
+XOAI21X1_56 gnd vdd _7_[5] _734_ _737_ _736_ OAI21X1
+XXNOR2X1_22 _737_ z[0][4] gnd vdd _15_[4] XNOR2X1
+XAOI21X1_7 gnd vdd _730_ z[0][3] _738_ z[0][4] AOI21X1
+XOAI21X1_57 gnd vdd z[0][3] _728_ _739_ z[0][4] OAI21X1
+XNAND2X1_44 vdd _740_ gnd _7_[5] _739_ NAND2X1
+XOAI21X1_58 gnd vdd _7_[5] _738_ _741_ _740_ OAI21X1
+XXNOR2X1_23 _741_ z[0][5] gnd vdd _15_[5] XNOR2X1
+XINVX1_41 z[0][6] _742_ vdd gnd INVX1
+XINVX1_42 z[0][5] _743_ vdd gnd INVX1
+XNAND2X1_45 vdd _744_ gnd _743_ _738_ NAND2X1
+XINVX1_43 _744_ _745_ vdd gnd INVX1
+XOAI21X1_59 gnd vdd _743_ _739_ _746_ _7_[5] OAI21X1
+XOAI21X1_60 gnd vdd _7_[5] _745_ _747_ _746_ OAI21X1
+XXNOR2X1_24 _747_ _742_ gnd vdd _15_[6] XNOR2X1
+XOAI21X1_61 gnd vdd _743_ _739_ _748_ _742_ OAI21X1
+XAOI22X1_3 gnd vdd _7_[5] _748_ _15_[7] _744_ z[0][6] AOI22X1
+XINVX1_44 x[4][4] _749_ vdd gnd INVX1
+XNAND2X1_46 vdd _750_ gnd y[4][0] _749_ NAND2X1
+XINVX1_45 y[4][0] _751_ vdd gnd INVX1
+XNAND2X1_47 vdd _752_ gnd x[4][4] _751_ NAND2X1
+XNAND2X1_48 vdd _11_[0] gnd _750_ _752_ NAND2X1
+XOR2X2_5 _753_ x[4][5] vdd gnd y[4][1] OR2X2
+XNAND2X1_49 vdd _754_ gnd y[4][1] x[4][5] NAND2X1
+XNAND2X1_50 vdd _755_ gnd _754_ _753_ NAND2X1
+XNAND2X1_51 vdd _756_ gnd y[4][0] x[4][4] NAND2X1
+XINVX1_46 _756_ _757_ vdd gnd INVX1
+XOAI21X1_62 gnd vdd y[4][0] _749_ _758_ z[4][7] OAI21X1
+XOAI21X1_63 gnd vdd z[4][7] _757_ _759_ _758_ OAI21X1
+XXOR2X1_5 _11_[1] vdd _755_ _759_ gnd XOR2X1
+XXNOR2X1_25 y[4][2] x[4][6] gnd vdd _760_ XNOR2X1
+XINVX1_47 y[4][1] _761_ vdd gnd INVX1
+XNOR2X1_31 vdd x[4][5] gnd _762_ y[4][1] NOR2X1
+XAND2X2_2 vdd gnd y[4][1] x[4][5] _763_ AND2X2
+XOAI21X1_64 gnd vdd _762_ _763_ _764_ _752_ OAI21X1
+XOAI21X1_65 gnd vdd _761_ x[4][5] _765_ _764_ OAI21X1
+XOAI21X1_66 gnd vdd _756_ _762_ _766_ _754_ OAI21X1
+XNAND2X1_52 vdd _767_ gnd _626__bF$buf2 _766_ NAND2X1
+XOAI21X1_67 gnd vdd _626__bF$buf2 _765_ _768_ _767_ OAI21X1
+XXNOR2X1_26 _768_ _760_ gnd vdd _11_[2] XNOR2X1
+XNOR2X1_32 vdd x[4][7] gnd _769_ y[4][3] NOR2X1
+XAND2X2_3 vdd gnd y[4][3] x[4][7] _770_ AND2X2
+XOR2X2_6 _771_ _769_ vdd gnd _770_ OR2X2
+XINVX2_4 vdd gnd _772_ x[4][6] INVX2
+XNAND2X1_53 vdd _773_ gnd y[4][2] _772_ NAND2X1
+XINVX1_48 y[4][2] _774_ vdd gnd INVX1
+XNAND2X1_54 vdd _775_ gnd x[4][6] _774_ NAND2X1
+XNAND2X1_55 vdd _776_ gnd _773_ _775_ NAND2X1
+XNOR2X1_33 vdd _761_ gnd _777_ x[4][5] NOR2X1
+XAOI21X1_8 gnd vdd _755_ _752_ _778_ _777_ AOI21X1
+XOAI21X1_68 gnd vdd _776_ _778_ _779_ _773_ OAI21X1
+XNAND2X1_56 vdd _780_ gnd _766_ _776_ NAND2X1
+XOAI21X1_69 gnd vdd _774_ _772_ _781_ _780_ OAI21X1
+XNAND2X1_57 vdd _782_ gnd _626__bF$buf2 _781_ NAND2X1
+XOAI21X1_70 gnd vdd _626__bF$buf2 _779_ _783_ _782_ OAI21X1
+XXNOR2X1_27 _783_ _771_ gnd vdd _11_[3] XNOR2X1
+XINVX2_5 vdd gnd _784_ x[4][7] INVX2
+XINVX2_6 vdd gnd _785_ y[4][4] INVX2
+XNAND2X1_58 vdd _786_ gnd _784_ _785_ NAND2X1
+XNAND2X1_59 vdd _787_ gnd x[4][7] y[4][4] NAND2X1
+XNAND2X1_60 vdd _788_ gnd _787_ _786_ NAND2X1
+XOAI21X1_71 gnd vdd _769_ _770_ _789_ _760_ OAI21X1
+XNOR2X1_34 vdd _774_ gnd _790_ x[4][6] NOR2X1
+XINVX1_49 y[4][3] _791_ vdd gnd INVX1
+XNOR2X1_35 vdd _791_ gnd _792_ x[4][7] NOR2X1
+XAOI21X1_9 gnd vdd _771_ _790_ _793_ _792_ AOI21X1
+XOAI21X1_72 gnd vdd _789_ _778_ _794_ _793_ OAI21X1
+XAOI21X1_10 gnd vdd y[4][2] x[4][6] _795_ _770_ AOI21X1
+XAOI22X1_4 gnd vdd _795_ _780_ _796_ _791_ _784_ AOI22X1
+XNAND2X1_61 vdd _797_ gnd _626__bF$buf0 _796_ NAND2X1
+XOAI21X1_73 gnd vdd _626__bF$buf0 _794_ _798_ _797_ OAI21X1
+XXNOR2X1_28 _798_ _788_ gnd vdd _11_[4] XNOR2X1
+XXNOR2X1_29 x[4][7] y[4][5] gnd vdd _799_ XNOR2X1
+XINVX1_50 _799_ _800_ vdd gnd INVX1
+XINVX1_51 _788_ _801_ vdd gnd INVX1
+XNAND2X1_62 vdd _802_ gnd _801_ _796_ NAND2X1
+XNAND3X1_4 _787_ vdd gnd _626__bF$buf0 _802_ _803_ NAND3X1
+XNOR2X1_36 vdd _785_ gnd _804_ x[4][7] NOR2X1
+XAOI21X1_11 gnd vdd _794_ _788_ _805_ _804_ AOI21X1
+XOAI21X1_74 gnd vdd _626__bF$buf0 _805_ _806_ _803_ OAI21X1
+XXNOR2X1_30 _806_ _800_ gnd vdd _11_[5] XNOR2X1
+XNOR2X1_37 vdd _784_ gnd _807_ y[4][6] NOR2X1
+XINVX1_52 y[4][6] _808_ vdd gnd INVX1
+XNOR2X1_38 vdd _808_ gnd _809_ x[4][7] NOR2X1
+XNOR2X1_39 vdd _809_ gnd _810_ _807_ NOR2X1
+XINVX1_53 _810_ _811_ vdd gnd INVX1
+XINVX1_54 y[4][5] _812_ vdd gnd INVX1
+XNAND2X1_63 vdd _813_ gnd _785_ _812_ NAND2X1
+XNAND2X1_64 vdd _814_ gnd _799_ _788_ NAND2X1
+XINVX1_55 _814_ _815_ vdd gnd INVX1
+XAOI22X1_5 gnd vdd _815_ _794_ _816_ _784_ _813_ AOI22X1
+XINVX1_56 _769_ _817_ vdd gnd INVX1
+XINVX1_57 x[4][5] _818_ vdd gnd INVX1
+XOAI21X1_75 gnd vdd _761_ _818_ _819_ _756_ OAI21X1
+XNAND2X1_65 vdd _820_ gnd _753_ _819_ NAND2X1
+XOAI21X1_76 gnd vdd _760_ _820_ _821_ _795_ OAI21X1
+XNOR2X1_40 vdd _788_ gnd _822_ _799_ NOR2X1
+XNAND3X1_5 _822_ vdd gnd _817_ _821_ _823_ NAND3X1
+XOAI21X1_77 gnd vdd y[4][4] y[4][5] _824_ x[4][7] OAI21X1
+XNAND2X1_66 vdd _825_ gnd _824_ _823_ NAND2X1
+XMUX2X1_1 z[4][7] vdd gnd _826_ _816_ _825_ MUX2X1
+XXNOR2X1_31 _826_ _811_ gnd vdd _11_[6] XNOR2X1
+XXNOR2X1_32 x[4][7] y[4][7] gnd vdd _827_ XNOR2X1
+XAOI22X1_6 gnd vdd _822_ _796_ _828_ x[4][7] _813_ AOI22X1
+XOAI21X1_78 gnd vdd _784_ _808_ _829_ _626__bF$buf1 OAI21X1
+XINVX1_58 _829_ _830_ vdd gnd INVX1
+XOAI21X1_79 gnd vdd _810_ _828_ _831_ _830_ OAI21X1
+XNOR2X1_41 vdd _770_ gnd _832_ _769_ NOR2X1
+XNOR2X1_42 vdd _776_ gnd _833_ _832_ NOR2X1
+XOAI21X1_80 gnd vdd _769_ _770_ _834_ _790_ OAI21X1
+XOAI21X1_81 gnd vdd _791_ x[4][7] _835_ _834_ OAI21X1
+XAOI21X1_12 gnd vdd _833_ _765_ _836_ _835_ AOI21X1
+XOAI21X1_82 gnd vdd y[4][4] y[4][5] _837_ _784_ OAI21X1
+XOAI21X1_83 gnd vdd _814_ _836_ _838_ _837_ OAI21X1
+XOAI21X1_84 gnd vdd y[4][6] _784_ _839_ z[4][7] OAI21X1
+XINVX1_59 _839_ _840_ vdd gnd INVX1
+XOAI21X1_85 gnd vdd _809_ _838_ _841_ _840_ OAI21X1
+XNAND3X1_6 _831_ vdd gnd _827_ _841_ _842_ NAND3X1
+XINVX1_60 _827_ _843_ vdd gnd INVX1
+XAOI21X1_13 gnd vdd _825_ _811_ _844_ _829_ AOI21X1
+XINVX1_61 _809_ _845_ vdd gnd INVX1
+XAOI21X1_14 gnd vdd _816_ _845_ _846_ _839_ AOI21X1
+XOAI21X1_86 gnd vdd _844_ _846_ _847_ _843_ OAI21X1
+XNAND2X1_67 vdd _11_[7] gnd _842_ _847_ NAND2X1
+XINVX2_7 vdd gnd _848_ x[6][6] INVX2
+XNAND2X1_68 vdd _849_ gnd y[6][0] _848_ NAND2X1
+XINVX1_62 y[6][0] _850_ vdd gnd INVX1
+XNAND2X1_69 vdd _851_ gnd x[6][6] _850_ NAND2X1
+XNAND2X1_70 vdd _13_[0] gnd _849_ _851_ NAND2X1
+XOR2X2_7 _852_ x[6][7_bF$buf3] vdd gnd y[6][1] OR2X2
+XNAND2X1_71 vdd _853_ gnd y[6][1] x[6][7_bF$buf2] NAND2X1
+XNAND2X1_72 vdd _854_ gnd _853_ _852_ NAND2X1
+XNAND2X1_73 vdd _855_ gnd y[6][0] x[6][6] NAND2X1
+XINVX1_63 _855_ _856_ vdd gnd INVX1
+XOAI21X1_87 gnd vdd y[6][0] _848_ _857_ z[6][7] OAI21X1
+XOAI21X1_88 gnd vdd z[6][7] _856_ _858_ _857_ OAI21X1
+XXOR2X1_6 _13_[1] vdd _854_ _858_ gnd XOR2X1
+XXNOR2X1_33 x[6][7_bF$buf1] y[6][2] gnd vdd _859_ XNOR2X1
+XINVX1_64 y[6][1] _860_ vdd gnd INVX1
+XNOR2X1_43 vdd x[6][7_bF$buf0] gnd _861_ y[6][1] NOR2X1
+XAND2X2_4 vdd gnd y[6][1] x[6][7_bF$buf3] _862_ AND2X2
+XOAI21X1_89 gnd vdd _861_ _862_ _863_ _851_ OAI21X1
+XOAI21X1_90 gnd vdd _860_ x[6][7_bF$buf2] _864_ _863_ OAI21X1
+XOAI21X1_91 gnd vdd _855_ _861_ _865_ _853_ OAI21X1
+XNAND2X1_74 vdd _866_ gnd _563__bF$buf1 _865_ NAND2X1
+XOAI21X1_92 gnd vdd _563__bF$buf1 _864_ _867_ _866_ OAI21X1
+XXNOR2X1_34 _867_ _859_ gnd vdd _13_[2] XNOR2X1
+XXOR2X1_7 _868_ vdd y[6][3] x[6][7_bF$buf1] gnd XOR2X1
+XINVX4_5 vdd gnd _869_ x[6][7_bF$buf0] INVX4
+XINVX1_65 y[6][2] _870_ vdd gnd INVX1
+XNOR2X1_44 vdd _860_ gnd _871_ x[6][7_bF$buf3] NOR2X1
+XAOI21X1_15 gnd vdd _854_ _851_ _872_ _871_ AOI21X1
+XOAI21X1_93 gnd vdd x[6][7_bF$buf2] _870_ _873_ _872_ OAI21X1
+XOAI21X1_94 gnd vdd _869_ y[6][2] _874_ _873_ OAI21X1
+XXOR2X1_8 _875_ vdd y[6][2] x[6][7_bF$buf1] gnd XOR2X1
+XNAND2X1_75 vdd _876_ gnd _865_ _875_ NAND2X1
+XOAI21X1_95 gnd vdd _869_ _870_ _877_ _876_ OAI21X1
+XMUX2X1_2 z[6][7] vdd gnd _878_ _874_ _877_ MUX2X1
+XXNOR2X1_35 _878_ _868_ gnd vdd _13_[3] XNOR2X1
+XNOR2X1_45 vdd y[6][4] gnd _879_ x[6][7_bF$buf0] NOR2X1
+XINVX1_66 y[6][4] _880_ vdd gnd INVX1
+XNOR2X1_46 vdd _880_ gnd _881_ _869_ NOR2X1
+XNOR2X1_47 vdd _881_ gnd _882_ _879_ NOR2X1
+XINVX1_67 _882_ _883_ vdd gnd INVX1
+XOAI21X1_96 gnd vdd y[6][2] y[6][3] _884_ _869_ OAI21X1
+XINVX1_68 y[6][3] _885_ vdd gnd INVX1
+XNAND2X1_76 vdd _886_ gnd _869_ _885_ NAND2X1
+XNAND2X1_77 vdd _887_ gnd x[6][7_bF$buf3] y[6][3] NAND2X1
+XNAND2X1_78 vdd _888_ gnd _887_ _886_ NAND2X1
+XNAND2X1_79 vdd _889_ gnd _859_ _888_ NAND2X1
+XOAI21X1_97 gnd vdd _889_ _872_ _890_ _884_ OAI21X1
+XINVX1_69 _886_ _891_ vdd gnd INVX1
+XOAI21X1_98 gnd vdd y[6][2] y[6][3] _892_ x[6][7_bF$buf2] OAI21X1
+XOAI21X1_99 gnd vdd _891_ _876_ _893_ _892_ OAI21X1
+XNAND2X1_80 vdd _894_ gnd _563__bF$buf2 _893_ NAND2X1
+XOAI21X1_100 gnd vdd _563__bF$buf2 _890_ _895_ _894_ OAI21X1
+XXNOR2X1_36 _895_ _883_ gnd vdd _13_[4] XNOR2X1
+XNOR2X1_48 vdd y[6][5] gnd _896_ x[6][7_bF$buf1] NOR2X1
+XINVX1_70 y[6][5] _897_ vdd gnd INVX1
+XNOR2X1_49 vdd _897_ gnd _898_ _869_ NOR2X1
+XNOR2X1_50 vdd _898_ gnd _899_ _896_ NOR2X1
+XAOI21X1_16 gnd vdd _893_ _882_ _900_ _881_ AOI21X1
+XNAND2X1_81 vdd _901_ gnd _870_ _885_ NAND2X1
+XNOR2X1_51 vdd _875_ gnd _902_ _868_ NOR2X1
+XAOI22X1_7 gnd vdd _864_ _902_ _903_ _869_ _901_ AOI22X1
+XNAND2X1_82 vdd _904_ gnd y[6][4] _869_ NAND2X1
+XOAI21X1_101 gnd vdd _882_ _903_ _905_ _904_ OAI21X1
+XMUX2X1_3 z[6][7] vdd gnd _906_ _905_ _900_ MUX2X1
+XXOR2X1_9 _13_[5] vdd _899_ _906_ gnd XOR2X1
+XNOR2X1_52 vdd _869_ gnd _907_ y[6][6] NOR2X1
+XINVX2_8 vdd gnd _908_ y[6][6] INVX2
+XNOR2X1_53 vdd _908_ gnd _909_ x[6][7_bF$buf0] NOR2X1
+XNOR2X1_54 vdd _909_ gnd _910_ _907_ NOR2X1
+XINVX1_71 _910_ _911_ vdd gnd INVX1
+XNAND2X1_83 vdd _912_ gnd _880_ _897_ NAND2X1
+XNOR2X1_55 vdd _899_ gnd _913_ _882_ NOR2X1
+XAOI22X1_8 gnd vdd _913_ _890_ _914_ _869_ _912_ AOI22X1
+XNOR2X1_56 vdd _888_ gnd _915_ _859_ NOR2X1
+XAOI22X1_9 gnd vdd _865_ _915_ _916_ x[6][7_bF$buf3] _901_ AOI22X1
+XOAI21X1_102 gnd vdd y[6][4] y[6][5] _917_ x[6][7_bF$buf2] OAI21X1
+XOAI21X1_103 gnd vdd x[6][7_bF$buf1] y[6][5] _918_ _882_ OAI21X1
+XOAI21X1_104 gnd vdd _918_ _916_ _919_ _917_ OAI21X1
+XMUX2X1_4 z[6][7] vdd gnd _920_ _914_ _919_ MUX2X1
+XXNOR2X1_37 _920_ _911_ gnd vdd _13_[6] XNOR2X1
+XXNOR2X1_38 x[6][7_bF$buf0] y[6][7_bF$buf3] gnd vdd _921_ XNOR2X1
+XINVX1_72 _918_ _922_ vdd gnd INVX1
+XAOI22X1_10 gnd vdd _893_ _922_ _923_ x[6][7_bF$buf3] _912_ AOI22X1
+XOAI21X1_105 gnd vdd _869_ _908_ _924_ _563__bF$buf2 OAI21X1
+XINVX1_73 _924_ _925_ vdd gnd INVX1
+XOAI21X1_106 gnd vdd _910_ _923_ _926_ _925_ OAI21X1
+XOAI21X1_107 gnd vdd y[6][4] y[6][5] _927_ _869_ OAI21X1
+XINVX1_74 _913_ _928_ vdd gnd INVX1
+XOAI21X1_108 gnd vdd _903_ _928_ _929_ _927_ OAI21X1
+XOAI21X1_109 gnd vdd y[6][6] _869_ _930_ z[6][7] OAI21X1
+XINVX1_75 _930_ _931_ vdd gnd INVX1
+XOAI21X1_110 gnd vdd _909_ _929_ _932_ _931_ OAI21X1
+XNAND3X1_7 _926_ vdd gnd _921_ _932_ _933_ NAND3X1
+XINVX1_76 _921_ _934_ vdd gnd INVX1
+XAOI21X1_17 gnd vdd _919_ _911_ _935_ _924_ AOI21X1
+XINVX1_77 _909_ _936_ vdd gnd INVX1
+XAOI21X1_18 gnd vdd _914_ _936_ _937_ _930_ AOI21X1
+XOAI21X1_111 gnd vdd _935_ _937_ _938_ _934_ OAI21X1
+XNAND2X1_84 vdd _13_[7] gnd _933_ _938_ NAND2X1
+XINVX1_78 x[5][5] _939_ vdd gnd INVX1
+XNAND2X1_85 vdd _940_ gnd y[5][0] _939_ NAND2X1
+XINVX1_79 y[5][0] _941_ vdd gnd INVX1
+XNAND2X1_86 vdd _942_ gnd x[5][5] _941_ NAND2X1
+XNAND2X1_87 vdd _12_[0] gnd _940_ _942_ NAND2X1
+XOR2X2_8 _943_ x[5][6] vdd gnd y[5][1] OR2X2
+XNAND2X1_88 vdd _944_ gnd y[5][1] x[5][6] NAND2X1
+XNAND2X1_89 vdd _945_ gnd _944_ _943_ NAND2X1
+XNAND2X1_90 vdd _946_ gnd y[5][0] x[5][5] NAND2X1
+XINVX1_80 _946_ _947_ vdd gnd INVX1
+XOAI21X1_112 gnd vdd y[5][0] _939_ _948_ z[5][7] OAI21X1
+XOAI21X1_113 gnd vdd z[5][7] _947_ _949_ _948_ OAI21X1
+XXOR2X1_10 _12_[1] vdd _945_ _949_ gnd XOR2X1
+XXNOR2X1_39 y[5][2] x[5][7] gnd vdd _950_ XNOR2X1
+XINVX1_81 y[5][1] _951_ vdd gnd INVX1
+XNOR2X1_57 vdd x[5][6] gnd _952_ y[5][1] NOR2X1
+XAND2X2_5 vdd gnd y[5][1] x[5][6] _953_ AND2X2
+XOAI21X1_114 gnd vdd _952_ _953_ _954_ _942_ OAI21X1
+XOAI21X1_115 gnd vdd _951_ x[5][6] _955_ _954_ OAI21X1
+XOAI21X1_116 gnd vdd _946_ _952_ _956_ _944_ OAI21X1
+XNAND2X1_91 vdd _957_ gnd _577__bF$buf3 _956_ NAND2X1
+XOAI21X1_117 gnd vdd _577__bF$buf3 _955_ _958_ _957_ OAI21X1
+XXNOR2X1_40 _958_ _950_ gnd vdd _12_[2] XNOR2X1
+XXOR2X1_11 _959_ vdd y[5][3] x[5][7] gnd XOR2X1
+XINVX4_6 vdd gnd _960_ x[5][7] INVX4
+XINVX1_82 y[5][2] _961_ vdd gnd INVX1
+XNOR2X1_58 vdd _951_ gnd _962_ x[5][6] NOR2X1
+XAOI21X1_19 gnd vdd _945_ _942_ _963_ _962_ AOI21X1
+XOAI21X1_118 gnd vdd _961_ x[5][7] _964_ _963_ OAI21X1
+XOAI21X1_119 gnd vdd y[5][2] _960_ _965_ _964_ OAI21X1
+XXOR2X1_12 _966_ vdd x[5][7] y[5][2] gnd XOR2X1
+XNAND2X1_92 vdd _967_ gnd _956_ _966_ NAND2X1
+XOAI21X1_120 gnd vdd _961_ _960_ _968_ _967_ OAI21X1
+XMUX2X1_5 z[5][7] vdd gnd _969_ _965_ _968_ MUX2X1
+XXNOR2X1_41 _969_ _959_ gnd vdd _12_[3] XNOR2X1
+XNOR2X1_59 vdd y[5][4] gnd _970_ x[5][7] NOR2X1
+XINVX1_83 y[5][4] _971_ vdd gnd INVX1
+XNOR2X1_60 vdd _971_ gnd _972_ _960_ NOR2X1
+XNOR2X1_61 vdd _972_ gnd _973_ _970_ NOR2X1
+XINVX1_84 _973_ _974_ vdd gnd INVX1
+XOAI21X1_121 gnd vdd y[5][2] y[5][3] _975_ _960_ OAI21X1
+XINVX1_85 y[5][3] _976_ vdd gnd INVX1
+XNAND2X1_93 vdd _977_ gnd _960_ _976_ NAND2X1
+XNAND2X1_94 vdd _978_ gnd x[5][7] y[5][3] NAND2X1
+XNAND2X1_95 vdd _979_ gnd _978_ _977_ NAND2X1
+XNAND2X1_96 vdd _980_ gnd _950_ _979_ NAND2X1
+XOAI21X1_122 gnd vdd _980_ _963_ _981_ _975_ OAI21X1
+XINVX1_86 _977_ _982_ vdd gnd INVX1
+XOAI21X1_123 gnd vdd y[5][2] y[5][3] _983_ x[5][7] OAI21X1
+XOAI21X1_124 gnd vdd _982_ _967_ _984_ _983_ OAI21X1
+XNAND2X1_97 vdd _985_ gnd _577__bF$buf3 _984_ NAND2X1
+XOAI21X1_125 gnd vdd _577__bF$buf3 _981_ _986_ _985_ OAI21X1
+XXNOR2X1_42 _986_ _974_ gnd vdd _12_[4] XNOR2X1
+XNOR2X1_62 vdd y[5][5] gnd _987_ x[5][7] NOR2X1
+XINVX2_9 vdd gnd _988_ y[5][5] INVX2
+XNOR2X1_63 vdd _988_ gnd _989_ _960_ NOR2X1
+XNOR2X1_64 vdd _989_ gnd _990_ _987_ NOR2X1
+XAOI21X1_20 gnd vdd _984_ _973_ _991_ _972_ AOI21X1
+XNAND2X1_98 vdd _992_ gnd _961_ _976_ NAND2X1
+XNOR2X1_65 vdd _966_ gnd _993_ _959_ NOR2X1
+XAOI22X1_11 gnd vdd _955_ _993_ _994_ _960_ _992_ AOI22X1
+XNAND2X1_99 vdd _995_ gnd y[5][4] _960_ NAND2X1
+XOAI21X1_126 gnd vdd _973_ _994_ _996_ _995_ OAI21X1
+XMUX2X1_6 z[5][7] vdd gnd _997_ _996_ _991_ MUX2X1
+XXOR2X1_13 _12_[5] vdd _990_ _997_ gnd XOR2X1
+XNOR2X1_66 vdd _960_ gnd _998_ y[5][6] NOR2X1
+XINVX2_10 vdd gnd _999_ y[5][6] INVX2
+XNOR2X1_67 vdd _999_ gnd _1000_ x[5][7] NOR2X1
+XNOR2X1_68 vdd _1000_ gnd _1001_ _998_ NOR2X1
+XINVX1_87 _1001_ _1002_ vdd gnd INVX1
+XNAND2X1_100 vdd _1003_ gnd _971_ _988_ NAND2X1
+XNOR2X1_69 vdd _990_ gnd _1004_ _973_ NOR2X1
+XAOI22X1_12 gnd vdd _1004_ _981_ _1005_ _960_ _1003_ AOI22X1
+XNOR2X1_70 vdd _979_ gnd _1006_ _950_ NOR2X1
+XAOI22X1_13 gnd vdd _956_ _1006_ _1007_ x[5][7] _992_ AOI22X1
+XOAI21X1_127 gnd vdd y[5][4] y[5][5] _1008_ x[5][7] OAI21X1
+XOAI21X1_128 gnd vdd x[5][7] y[5][5] _1009_ _973_ OAI21X1
+XOAI21X1_129 gnd vdd _1009_ _1007_ _1010_ _1008_ OAI21X1
+XMUX2X1_7 z[5][7] vdd gnd _1011_ _1005_ _1010_ MUX2X1
+XXNOR2X1_43 _1011_ _1002_ gnd vdd _12_[6] XNOR2X1
+XXNOR2X1_44 x[5][7] y[5][7_bF$buf3] gnd vdd _1012_ XNOR2X1
+XINVX1_88 _1009_ _1013_ vdd gnd INVX1
+XAOI22X1_14 gnd vdd _984_ _1013_ _1014_ x[5][7] _1003_ AOI22X1
+XOAI21X1_130 gnd vdd _960_ _999_ _1015_ _577__bF$buf2 OAI21X1
+XINVX1_89 _1015_ _1016_ vdd gnd INVX1
+XOAI21X1_131 gnd vdd _1001_ _1014_ _1017_ _1016_ OAI21X1
+XOAI21X1_132 gnd vdd y[5][4] y[5][5] _1018_ _960_ OAI21X1
+XINVX1_90 _1004_ _1019_ vdd gnd INVX1
+XOAI21X1_133 gnd vdd _994_ _1019_ _1020_ _1018_ OAI21X1
+XOAI21X1_134 gnd vdd y[5][6] _960_ _1021_ z[5][7] OAI21X1
+XINVX1_91 _1021_ _1022_ vdd gnd INVX1
+XOAI21X1_135 gnd vdd _1000_ _1020_ _1023_ _1022_ OAI21X1
+XNAND3X1_8 _1017_ vdd gnd _1012_ _1023_ _1024_ NAND3X1
+XINVX1_92 _1012_ _1025_ vdd gnd INVX1
+XAOI21X1_21 gnd vdd _1010_ _1002_ _1026_ _1015_ AOI21X1
+XINVX1_93 _1000_ _1027_ vdd gnd INVX1
+XAOI21X1_22 gnd vdd _1005_ _1027_ _1028_ _1021_ AOI21X1
+XOAI21X1_136 gnd vdd _1026_ _1028_ _1029_ _1025_ OAI21X1
+XNAND2X1_101 vdd _12_[7] gnd _1024_ _1029_ NAND2X1
+XINVX2_11 vdd gnd _0_[0] y[1][7] INVX2
+XNOR2X1_71 vdd _0_[0] gnd _0_[1] z[1][7] NOR2X1
+XINVX1_94 y[1][5] _1030_ vdd gnd INVX1
+XNOR2X1_72 vdd _1030_ gnd _1031_ y[1][7] NOR2X1
+XNOR2X1_73 vdd _0_[0] gnd _1032_ y[1][5] NOR2X1
+XNOR2X1_74 vdd _1032_ gnd _0_[5] _1031_ NOR2X1
+XINVX1_95 _0_[5] _0_[3] vdd gnd INVX1
+XXNOR2X1_45 _0_[5] _704_ gnd vdd _8_[4] XNOR2X1
+XOAI21X1_137 gnd vdd y[1][7] _1030_ _1033_ z[1][7] OAI21X1
+XOAI21X1_138 gnd vdd _0_[0] y[1][5] _8_[7] _1033_ OAI21X1
+XINVX1_96 _8_[4] _8_[6] vdd gnd INVX1
+XINVX1_97 x[3][3] _1034_ vdd gnd INVX1
+XNAND2X1_102 vdd _1035_ gnd y[3][0] _1034_ NAND2X1
+XINVX1_98 y[3][0] _1036_ vdd gnd INVX1
+XNAND2X1_103 vdd _1037_ gnd x[3][3] _1036_ NAND2X1
+XNAND2X1_104 vdd _10_[0] gnd _1035_ _1037_ NAND2X1
+XOR2X2_9 _1038_ x[3][4] vdd gnd y[3][1] OR2X2
+XNAND2X1_105 vdd _1039_ gnd y[3][1] x[3][4] NAND2X1
+XNAND2X1_106 vdd _1040_ gnd _1039_ _1038_ NAND2X1
+XNAND2X1_107 vdd _1041_ gnd y[3][0] x[3][3] NAND2X1
+XINVX1_99 _1041_ _1042_ vdd gnd INVX1
+XOAI21X1_139 gnd vdd y[3][0] _1034_ _1043_ z[3][7] OAI21X1
+XOAI21X1_140 gnd vdd z[3][7] _1042_ _1044_ _1043_ OAI21X1
+XXOR2X1_14 _10_[1] vdd _1040_ _1044_ gnd XOR2X1
+XXNOR2X1_46 y[3][2] x[3][5] gnd vdd _1045_ XNOR2X1
+XINVX1_100 y[3][1] _1046_ vdd gnd INVX1
+XNOR2X1_75 vdd x[3][4] gnd _1047_ y[3][1] NOR2X1
+XAND2X2_6 vdd gnd y[3][1] x[3][4] _1048_ AND2X2
+XOAI21X1_141 gnd vdd _1047_ _1048_ _1049_ _1037_ OAI21X1
+XOAI21X1_142 gnd vdd _1046_ x[3][4] _1050_ _1049_ OAI21X1
+XOAI21X1_143 gnd vdd _1041_ _1047_ _1051_ _1039_ OAI21X1
+XNAND2X1_108 vdd _1052_ gnd _644__bF$buf0 _1051_ NAND2X1
+XOAI21X1_144 gnd vdd _644__bF$buf0 _1050_ _1053_ _1052_ OAI21X1
+XXNOR2X1_47 _1053_ _1045_ gnd vdd _10_[2] XNOR2X1
+XNOR2X1_76 vdd y[3][3] gnd _1054_ x[3][6] NOR2X1
+XAND2X2_7 vdd gnd x[3][6] y[3][3] _1055_ AND2X2
+XOR2X2_10 _1056_ _1054_ vdd gnd _1055_ OR2X2
+XINVX1_101 x[3][5] _1057_ vdd gnd INVX1
+XNAND2X1_109 vdd _1058_ gnd y[3][2] _1057_ NAND2X1
+XINVX1_102 y[3][2] _1059_ vdd gnd INVX1
+XNAND2X1_110 vdd _1060_ gnd x[3][5] _1059_ NAND2X1
+XNAND2X1_111 vdd _1061_ gnd _1058_ _1060_ NAND2X1
+XNOR2X1_77 vdd _1046_ gnd _1062_ x[3][4] NOR2X1
+XAOI21X1_23 gnd vdd _1040_ _1037_ _1063_ _1062_ AOI21X1
+XOAI21X1_145 gnd vdd _1061_ _1063_ _1064_ _1058_ OAI21X1
+XNAND2X1_112 vdd _1065_ gnd _1051_ _1061_ NAND2X1
+XOAI21X1_146 gnd vdd _1059_ _1057_ _1066_ _1065_ OAI21X1
+XNAND2X1_113 vdd _1067_ gnd _644__bF$buf0 _1066_ NAND2X1
+XOAI21X1_147 gnd vdd _644__bF$buf0 _1064_ _1068_ _1067_ OAI21X1
+XXNOR2X1_48 _1068_ _1056_ gnd vdd _10_[3] XNOR2X1
+XINVX2_12 vdd gnd _1069_ x[3][7] INVX2
+XINVX2_13 vdd gnd _1070_ y[3][4] INVX2
+XNAND2X1_114 vdd _1071_ gnd _1069_ _1070_ NAND2X1
+XNAND2X1_115 vdd _1072_ gnd x[3][7] y[3][4] NAND2X1
+XNAND2X1_116 vdd _1073_ gnd _1072_ _1071_ NAND2X1
+XOAI21X1_148 gnd vdd _1054_ _1055_ _1074_ _1045_ OAI21X1
+XNOR2X1_78 vdd _1059_ gnd _1075_ x[3][5] NOR2X1
+XINVX2_14 vdd gnd _1076_ y[3][3] INVX2
+XNOR2X1_79 vdd _1076_ gnd _1077_ x[3][6] NOR2X1
+XAOI21X1_24 gnd vdd _1056_ _1075_ _1078_ _1077_ AOI21X1
+XOAI21X1_149 gnd vdd _1074_ _1063_ _1079_ _1078_ OAI21X1
+XINVX1_103 x[3][6] _1080_ vdd gnd INVX1
+XAOI21X1_25 gnd vdd y[3][2] x[3][5] _1081_ _1055_ AOI21X1
+XAOI22X1_15 gnd vdd _1081_ _1065_ _1082_ _1080_ _1076_ AOI22X1
+XNAND2X1_117 vdd _1083_ gnd _644__bF$buf1 _1082_ NAND2X1
+XOAI21X1_150 gnd vdd _644__bF$buf1 _1079_ _1084_ _1083_ OAI21X1
+XXNOR2X1_49 _1084_ _1073_ gnd vdd _10_[4] XNOR2X1
+XXNOR2X1_50 x[3][7] y[3][5] gnd vdd _1085_ XNOR2X1
+XINVX1_104 _1085_ _1086_ vdd gnd INVX1
+XINVX1_105 _1073_ _1087_ vdd gnd INVX1
+XNAND2X1_118 vdd _1088_ gnd _1087_ _1082_ NAND2X1
+XNAND3X1_9 _1072_ vdd gnd _644__bF$buf1 _1088_ _1089_ NAND3X1
+XNOR2X1_80 vdd _1070_ gnd _1090_ x[3][7] NOR2X1
+XAOI21X1_26 gnd vdd _1079_ _1073_ _1091_ _1090_ AOI21X1
+XOAI21X1_151 gnd vdd _644__bF$buf2 _1091_ _1092_ _1089_ OAI21X1
+XXNOR2X1_51 _1092_ _1086_ gnd vdd _10_[5] XNOR2X1
+XNOR2X1_81 vdd _1069_ gnd _1093_ y[3][6] NOR2X1
+XINVX2_15 vdd gnd _1094_ y[3][6] INVX2
+XNOR2X1_82 vdd _1094_ gnd _1095_ x[3][7] NOR2X1
+XNOR2X1_83 vdd _1095_ gnd _1096_ _1093_ NOR2X1
+XINVX1_106 _1096_ _1097_ vdd gnd INVX1
+XINVX1_107 y[3][5] _1098_ vdd gnd INVX1
+XNAND2X1_119 vdd _1099_ gnd _1070_ _1098_ NAND2X1
+XNAND2X1_120 vdd _1100_ gnd _1085_ _1073_ NAND2X1
+XINVX1_108 _1100_ _1101_ vdd gnd INVX1
+XAOI22X1_16 gnd vdd _1101_ _1079_ _1102_ _1069_ _1099_ AOI22X1
+XINVX1_109 _1054_ _1103_ vdd gnd INVX1
+XINVX1_110 x[3][4] _1104_ vdd gnd INVX1
+XOAI21X1_152 gnd vdd _1046_ _1104_ _1105_ _1041_ OAI21X1
+XNAND2X1_121 vdd _39_ gnd _1038_ _1105_ NAND2X1
+XOAI21X1_153 gnd vdd _1045_ _39_ _40_ _1081_ OAI21X1
+XNOR2X1_84 vdd _1073_ gnd _41_ _1085_ NOR2X1
+XNAND3X1_10 _41_ vdd gnd _1103_ _40_ _42_ NAND3X1
+XOAI21X1_154 gnd vdd y[3][4] y[3][5] _43_ x[3][7] OAI21X1
+XNAND2X1_122 vdd _44_ gnd _43_ _42_ NAND2X1
+XMUX2X1_8 z[3][7] vdd gnd _45_ _1102_ _44_ MUX2X1
+XXNOR2X1_52 _45_ _1097_ gnd vdd _10_[6] XNOR2X1
+XXNOR2X1_53 x[3][7] y[3][7] gnd vdd _46_ XNOR2X1
+XAOI22X1_17 gnd vdd _41_ _1082_ _47_ x[3][7] _1099_ AOI22X1
+XOAI21X1_155 gnd vdd _1069_ _1094_ _48_ _644__bF$buf3 OAI21X1
+XINVX1_111 _48_ _49_ vdd gnd INVX1
+XOAI21X1_156 gnd vdd _1096_ _47_ _50_ _49_ OAI21X1
+XNOR2X1_85 vdd _1055_ gnd _51_ _1054_ NOR2X1
+XNOR2X1_86 vdd _1061_ gnd _52_ _51_ NOR2X1
+XOAI21X1_157 gnd vdd _1054_ _1055_ _53_ _1075_ OAI21X1
+XOAI21X1_158 gnd vdd x[3][6] _1076_ _54_ _53_ OAI21X1
+XAOI21X1_27 gnd vdd _52_ _1050_ _55_ _54_ AOI21X1
+XOAI21X1_159 gnd vdd y[3][4] y[3][5] _56_ _1069_ OAI21X1
+XOAI21X1_160 gnd vdd _1100_ _55_ _57_ _56_ OAI21X1
+XOAI21X1_161 gnd vdd y[3][6] _1069_ _58_ z[3][7] OAI21X1
+XINVX1_112 _58_ _59_ vdd gnd INVX1
+XOAI21X1_162 gnd vdd _1095_ _57_ _60_ _59_ OAI21X1
+XNAND3X1_11 _50_ vdd gnd _46_ _60_ _61_ NAND3X1
+XINVX1_113 _46_ _62_ vdd gnd INVX1
+XAOI21X1_28 gnd vdd _44_ _1097_ _63_ _48_ AOI21X1
+XINVX1_114 _1095_ _64_ vdd gnd INVX1
+XAOI21X1_29 gnd vdd _1102_ _64_ _65_ _58_ AOI21X1
+XOAI21X1_163 gnd vdd _63_ _65_ _66_ _62_ OAI21X1
+XNAND2X1_123 vdd _10_[7] gnd _61_ _66_ NAND2X1
+XNOR2X1_87 vdd x[2][3] gnd _67_ y[2][2] NOR2X1
+XINVX1_115 y[2][2] _68_ vdd gnd INVX1
+XINVX2_16 vdd gnd _69_ x[2][3] INVX2
+XNOR2X1_88 vdd _69_ gnd _70_ _68_ NOR2X1
+XNOR2X1_89 vdd _70_ gnd _9_[1] _67_ NOR2X1
+XINVX2_17 vdd gnd _71_ x[2][4] INVX2
+XAOI21X1_30 gnd vdd _599__bF$buf3 x[2][3] _72_ _67_ AOI21X1
+XXNOR2X1_54 _72_ _71_ gnd vdd _9_[2] XNOR2X1
+XINVX1_116 x[2][5] _73_ vdd gnd INVX1
+XINVX1_117 x[2][0] _74_ vdd gnd INVX1
+XNAND2X1_124 vdd _75_ gnd _73_ _74_ NAND2X1
+XNAND2X1_125 vdd _76_ gnd x[2][5] x[2][0] NAND2X1
+XNAND2X1_126 vdd _77_ gnd _76_ _75_ NAND2X1
+XNOR2X1_90 vdd x[2][4] gnd _78_ x[2][3] NOR2X1
+XNAND2X1_127 vdd _79_ gnd y[2][2] _599__bF$buf3 NAND2X1
+XNAND2X1_128 vdd _80_ gnd z[2][7] _68_ NAND2X1
+XAOI21X1_31 gnd vdd _79_ _80_ _81_ _78_ AOI21X1
+XXNOR2X1_55 _81_ _77_ gnd vdd _9_[3] XNOR2X1
+XNOR2X1_91 vdd y[2][4] gnd _82_ x[2][6] NOR2X1
+XINVX1_118 x[2][6] _83_ vdd gnd INVX1
+XINVX1_119 y[2][4] _84_ vdd gnd INVX1
+XNOR2X1_92 vdd _84_ gnd _85_ _83_ NOR2X1
+XOR2X2_11 _86_ _82_ vdd gnd _85_ OR2X2
+XOAI22X1_8 gnd vdd _78_ y[2][2] _73_ x[2][0] _87_ OAI22X1
+XOAI21X1_164 gnd vdd x[2][5] _74_ _88_ _87_ OAI21X1
+XOAI21X1_165 gnd vdd x[2][5] x[2][0] _89_ y[2][2] OAI21X1
+XOAI21X1_166 gnd vdd _78_ _89_ _90_ _76_ OAI21X1
+XNAND2X1_129 vdd _91_ gnd _599__bF$buf3 _90_ NAND2X1
+XOAI21X1_167 gnd vdd _599__bF$buf0 _88_ _92_ _91_ OAI21X1
+XXNOR2X1_56 _92_ _86_ gnd vdd _9_[4] XNOR2X1
+XXOR2X1_15 _93_ vdd y[2][7] x[2][7] gnd XOR2X1
+XNOR2X1_93 vdd _84_ gnd _94_ x[2][6] NOR2X1
+XAOI21X1_32 gnd vdd _88_ _86_ _95_ _94_ AOI21X1
+XNOR2X1_94 vdd _85_ gnd _96_ _82_ NOR2X1
+XAOI21X1_33 gnd vdd _96_ _90_ _97_ _85_ AOI21X1
+XNAND2X1_130 vdd _98_ gnd _599__bF$buf0 _97_ NAND2X1
+XOAI21X1_168 gnd vdd _599__bF$buf0 _95_ _99_ _98_ OAI21X1
+XXNOR2X1_57 _99_ _93_ gnd vdd _9_[5] XNOR2X1
+XINVX2_18 vdd gnd _100_ y[2][6] INVX2
+XNAND2X1_131 vdd _101_ gnd x[2][7] _100_ NAND2X1
+XINVX2_19 vdd gnd _102_ x[2][7] INVX2
+XNAND2X1_132 vdd _103_ gnd y[2][6] _102_ NAND2X1
+XNAND2X1_133 vdd _104_ gnd _101_ _103_ NAND2X1
+XINVX4_7 vdd gnd _105_ y[2][7] INVX4
+XOAI21X1_169 gnd vdd _102_ _105_ _106_ _97_ OAI21X1
+XOAI21X1_170 gnd vdd x[2][7] y[2][7] _107_ _106_ OAI21X1
+XNOR2X1_95 vdd _102_ gnd _108_ y[2][7] NOR2X1
+XNOR2X1_96 vdd _105_ gnd _109_ x[2][7] NOR2X1
+XINVX1_120 _109_ _110_ vdd gnd INVX1
+XAOI21X1_34 gnd vdd _95_ _110_ _111_ _108_ AOI21X1
+XMUX2X1_9 _599__bF$buf0 vdd gnd _112_ _107_ _111_ MUX2X1
+XXOR2X1_16 _9_[6] vdd _104_ _112_ gnd XOR2X1
+XINVX1_121 _111_ _113_ vdd gnd INVX1
+XOAI21X1_171 gnd vdd x[2][7] _105_ _114_ _101_ OAI21X1
+XAOI21X1_35 gnd vdd _113_ _103_ _115_ _114_ AOI21X1
+XOAI21X1_172 gnd vdd y[2][7] _102_ _116_ z[2][7] OAI21X1
+XNAND3X1_12 _104_ vdd gnd _93_ _106_ _117_ NAND3X1
+XAOI21X1_36 gnd vdd _101_ _105_ _118_ z[2][7] AOI21X1
+XNAND2X1_134 vdd _119_ gnd _118_ _117_ NAND2X1
+XOAI21X1_173 gnd vdd _116_ _115_ _9_[7] _119_ OAI21X1
+XXOR2X1_17 _5_[0] vdd x[6][0] y[6][6] gnd XOR2X1
+XXOR2X1_18 _120_ vdd x[6][1] y[6][7_bF$buf2] gnd XOR2X1
+XNAND2X1_135 vdd _121_ gnd y[6][6] x[6][0] NAND2X1
+XINVX1_122 _121_ _122_ vdd gnd INVX1
+XOAI21X1_174 gnd vdd x[6][0] _908_ _123_ _563__bF$buf1 OAI21X1
+XOAI21X1_175 gnd vdd _563__bF$buf1 _122_ _124_ _123_ OAI21X1
+XXNOR2X1_58 _124_ _120_ gnd vdd _5_[1] XNOR2X1
+XXOR2X1_19 _125_ vdd x[6][2] y[6][7_bF$buf1] gnd XOR2X1
+XINVX4_8 vdd gnd _126_ y[6][7_bF$buf0] INVX4
+XINVX1_123 x[6][1] _127_ vdd gnd INVX1
+XNOR2X1_97 vdd _127_ gnd _128_ _126_ NOR2X1
+XAOI21X1_37 gnd vdd _120_ _122_ _129_ _128_ AOI21X1
+XNAND2X1_136 vdd _130_ gnd z[6][7] _129_ NAND2X1
+XNAND2X1_137 vdd _131_ gnd x[6][1] _126_ NAND2X1
+XOAI22X1_9 gnd vdd x[6][1] _126_ x[6][0] _908_ _132_ OAI22X1
+XAND2X2_8 vdd gnd _132_ _131_ _133_ AND2X2
+XOAI21X1_176 gnd vdd z[6][7] _133_ _134_ _130_ OAI21X1
+XXNOR2X1_59 _134_ _125_ gnd vdd _5_[2] XNOR2X1
+XNAND2X1_138 vdd _135_ gnd x[6][3] _126_ NAND2X1
+XINVX1_124 x[6][3] _136_ vdd gnd INVX1
+XNAND2X1_139 vdd _137_ gnd y[6][7_bF$buf3] _136_ NAND2X1
+XNAND2X1_140 vdd _138_ gnd _135_ _137_ NAND2X1
+XNAND2X1_141 vdd _139_ gnd y[6][7_bF$buf2] x[6][2] NAND2X1
+XINVX1_125 x[6][2] _140_ vdd gnd INVX1
+XNAND2X1_142 vdd _141_ gnd _126_ _140_ NAND2X1
+XNAND2X1_143 vdd _142_ gnd _139_ _141_ NAND2X1
+XOAI21X1_177 gnd vdd _142_ _129_ _143_ _139_ OAI21X1
+XNOR2X1_98 vdd _140_ gnd _144_ y[6][7_bF$buf1] NOR2X1
+XAOI21X1_38 gnd vdd _131_ _132_ _145_ _125_ AOI21X1
+XOAI21X1_178 gnd vdd _144_ _145_ _146_ _563__bF$buf0 OAI21X1
+XOAI21X1_179 gnd vdd _563__bF$buf0 _143_ _147_ _146_ OAI21X1
+XXNOR2X1_60 _147_ _138_ gnd vdd _5_[3] XNOR2X1
+XINVX1_126 x[6][4] _148_ vdd gnd INVX1
+XNOR2X1_99 vdd _148_ gnd _149_ y[6][7_bF$buf0] NOR2X1
+XNOR2X1_100 vdd _126_ gnd _150_ x[6][4] NOR2X1
+XNOR2X1_101 vdd _150_ gnd _151_ _149_ NOR2X1
+XINVX2_20 vdd gnd _152_ _151_ INVX2
+XOAI21X1_180 gnd vdd x[6][2] x[6][3] _153_ y[6][7_bF$buf3] OAI21X1
+XNAND2X1_144 vdd _154_ gnd _125_ _138_ NAND2X1
+XOAI21X1_181 gnd vdd _154_ _129_ _155_ _153_ OAI21X1
+XOAI21X1_182 gnd vdd x[6][2] x[6][3] _156_ _126_ OAI21X1
+XXNOR2X1_61 y[6][7_bF$buf2] x[6][3] gnd vdd _157_ XNOR2X1
+XNAND2X1_145 vdd _158_ gnd _157_ _142_ NAND2X1
+XOAI21X1_183 gnd vdd _133_ _158_ _159_ _156_ OAI21X1
+XNAND2X1_146 vdd _160_ gnd _563__bF$buf3 _159_ NAND2X1
+XOAI21X1_184 gnd vdd _563__bF$buf3 _155_ _161_ _160_ OAI21X1
+XXNOR2X1_62 _161_ _152_ gnd vdd _5_[4] XNOR2X1
+XXNOR2X1_63 y[6][7_bF$buf1] x[6][5] gnd vdd _162_ XNOR2X1
+XAOI21X1_39 gnd vdd _159_ _151_ _163_ _149_ AOI21X1
+XAND2X2_9 vdd gnd _163_ _162_ _164_ AND2X2
+XNOR2X1_102 vdd _163_ gnd _165_ _162_ NOR2X1
+XOAI21X1_185 gnd vdd _165_ _164_ _166_ _563__bF$buf3 OAI21X1
+XNOR2X1_103 vdd _148_ gnd _167_ _126_ NOR2X1
+XAOI21X1_40 gnd vdd _155_ _152_ _168_ _167_ AOI21X1
+XXNOR2X1_64 _168_ _162_ gnd vdd _169_ XNOR2X1
+XOAI21X1_186 gnd vdd _563__bF$buf3 _169_ _5_[5] _166_ OAI21X1
+XNOR2X1_104 vdd y[6][7_bF$buf0] gnd _170_ x[6][6] NOR2X1
+XNOR2X1_105 vdd _126_ gnd _171_ _848_ NOR2X1
+XNOR2X1_106 vdd _171_ gnd _172_ _170_ NOR2X1
+XINVX1_127 _172_ _173_ vdd gnd INVX1
+XOR2X2_12 _174_ x[6][5] vdd gnd x[6][4] OR2X2
+XINVX1_128 _162_ _175_ vdd gnd INVX1
+XNOR2X1_107 vdd _152_ gnd _176_ _175_ NOR2X1
+XAOI22X1_18 gnd vdd _159_ _176_ _177_ _126_ _174_ AOI22X1
+XNOR2X1_108 vdd _177_ gnd _178_ _173_ NOR2X1
+XNAND2X1_147 vdd _179_ gnd _140_ _136_ NAND2X1
+XAOI22X1_19 gnd vdd _137_ _145_ _180_ _126_ _179_ AOI22X1
+XOAI21X1_187 gnd vdd x[6][4] x[6][5] _181_ _126_ OAI21X1
+XOAI21X1_188 gnd vdd _126_ x[6][5] _182_ _151_ OAI21X1
+XOAI21X1_189 gnd vdd _182_ _180_ _183_ _181_ OAI21X1
+XNOR2X1_109 vdd _183_ gnd _184_ _172_ NOR2X1
+XOAI21X1_190 gnd vdd _184_ _178_ _185_ _563__bF$buf0 OAI21X1
+XXNOR2X1_65 y[6][7_bF$buf3] x[6][1] gnd vdd _186_ XNOR2X1
+XINVX1_129 _128_ _187_ vdd gnd INVX1
+XOAI21X1_191 gnd vdd _121_ _186_ _188_ _187_ OAI21X1
+XNOR2X1_110 vdd _142_ gnd _189_ _157_ NOR2X1
+XAOI22X1_20 gnd vdd _189_ _188_ _190_ y[6][7_bF$buf2] _179_ AOI22X1
+XOAI21X1_192 gnd vdd x[6][4] x[6][5] _191_ y[6][7_bF$buf1] OAI21X1
+XOAI21X1_193 gnd vdd _149_ _150_ _192_ _175_ OAI21X1
+XOAI21X1_194 gnd vdd _192_ _190_ _193_ _191_ OAI21X1
+XXNOR2X1_66 _193_ _172_ gnd vdd _194_ XNOR2X1
+XOAI21X1_195 gnd vdd _563__bF$buf3 _194_ _5_[6] _185_ OAI21X1
+XOAI21X1_196 gnd vdd y[6][7_bF$buf0] _848_ _195_ _563__bF$buf0 OAI21X1
+XINVX1_130 _195_ _196_ vdd gnd INVX1
+XOAI21X1_197 gnd vdd _172_ _177_ _197_ _196_ OAI21X1
+XOAI21X1_198 gnd vdd x[6][6] y[6][7_bF$buf3] _198_ z[6][7] OAI21X1
+XINVX1_131 _198_ _199_ vdd gnd INVX1
+XOAI21X1_199 gnd vdd _171_ _193_ _200_ _199_ OAI21X1
+XNAND3X1_13 _197_ vdd gnd _934_ _200_ _201_ NAND3X1
+XAOI21X1_41 gnd vdd _183_ _173_ _202_ _195_ AOI21X1
+XINVX1_132 _171_ _203_ vdd gnd INVX1
+XINVX1_133 _192_ _204_ vdd gnd INVX1
+XAOI22X1_21 gnd vdd _204_ _155_ _205_ y[6][7_bF$buf2] _174_ AOI22X1
+XAOI21X1_42 gnd vdd _205_ _203_ _206_ _198_ AOI21X1
+XOAI21X1_200 gnd vdd _202_ _206_ _207_ _921_ OAI21X1
+XNAND2X1_148 vdd _5_[7] gnd _201_ _207_ NAND2X1
+XINVX2_21 vdd gnd _208_ y[7][7] INVX2
+XNAND2X1_149 vdd _209_ gnd x[7][0] _208_ NAND2X1
+XINVX1_134 x[7][0] _210_ vdd gnd INVX1
+XNAND2X1_150 vdd _211_ gnd y[7][7] _210_ NAND2X1
+XNAND2X1_151 vdd _6_[0] gnd _209_ _211_ NAND2X1
+XINVX1_135 x[7][1] _212_ vdd gnd INVX1
+XNAND2X1_152 vdd _213_ gnd y[7][7] _656_ NAND2X1
+XAOI22X1_22 gnd vdd _211_ _213_ _214_ _656_ _210_ AOI22X1
+XXNOR2X1_67 _214_ _212_ gnd vdd _6_[1] XNOR2X1
+XINVX1_136 x[7][2] _215_ vdd gnd INVX1
+XNAND2X1_153 vdd _216_ gnd _208_ _215_ NAND2X1
+XNAND2X1_154 vdd _217_ gnd y[7][7] x[7][2] NAND2X1
+XNAND2X1_155 vdd _218_ gnd _217_ _216_ NAND2X1
+XINVX2_22 vdd gnd _219_ _213_ INVX2
+XNAND2X1_156 vdd _220_ gnd x[7][0] x[7][1] NAND2X1
+XNAND2X1_157 vdd _221_ gnd _210_ _212_ NAND2X1
+XNOR2X1_111 vdd _208_ gnd _222_ _656_ NOR2X1
+XAOI22X1_23 gnd vdd _220_ _219_ _223_ _221_ _222_ AOI22X1
+XXOR2X1_20 _6_[2] vdd _218_ _223_ gnd XOR2X1
+XOAI21X1_201 gnd vdd _217_ _220_ _224_ _656_ OAI21X1
+XNAND2X1_158 vdd _225_ gnd y[7][7] _215_ NAND2X1
+XOAI21X1_202 gnd vdd _225_ _221_ _226_ z[7][7] OAI21X1
+XNAND2X1_159 vdd _227_ gnd _224_ _226_ NAND2X1
+XXNOR2X1_68 _227_ x[7][3] gnd vdd _6_[3] XNOR2X1
+XINVX1_137 x[7][4] _228_ vdd gnd INVX1
+XNOR2X1_112 vdd _228_ gnd _229_ y[7][7] NOR2X1
+XNOR2X1_113 vdd _208_ gnd _230_ x[7][4] NOR2X1
+XNOR2X1_114 vdd _230_ gnd _231_ _229_ NOR2X1
+XNAND2X1_160 vdd _232_ gnd x[7][2] x[7][3] NAND2X1
+XNOR2X1_115 vdd _232_ gnd _233_ _220_ NOR2X1
+XOR2X2_13 _234_ x[7][3] vdd gnd x[7][2] OR2X2
+XOAI21X1_203 gnd vdd _234_ _221_ _235_ _222_ OAI21X1
+XOAI21X1_204 gnd vdd _213_ _233_ _236_ _235_ OAI21X1
+XXNOR2X1_69 _236_ _231_ gnd vdd _6_[4] XNOR2X1
+XINVX2_23 vdd gnd _237_ x[7][5] INVX2
+XNOR2X1_116 vdd _221_ gnd _238_ _234_ NOR2X1
+XNAND3X1_14 _230_ vdd gnd z[7][7] _238_ _239_ NAND3X1
+XNAND3X1_15 _233_ vdd gnd x[7][4] _219_ _240_ NAND3X1
+XNAND2X1_161 vdd _241_ gnd _240_ _239_ NAND2X1
+XXNOR2X1_70 _241_ _237_ gnd vdd _6_[5] XNOR2X1
+XXOR2X1_21 _242_ vdd x[7][6] y[7][7] gnd XOR2X1
+XNOR2X1_117 vdd _237_ gnd _243_ _228_ NOR2X1
+XNAND2X1_162 vdd _244_ gnd _243_ _233_ NAND2X1
+XNAND3X1_16 _237_ vdd gnd _228_ _238_ _245_ NAND3X1
+XAOI22X1_24 gnd vdd _222_ _245_ _246_ _219_ _244_ AOI22X1
+XXNOR2X1_71 _246_ _242_ gnd vdd _6_[6] XNOR2X1
+XOAI21X1_205 gnd vdd _656_ _208_ _247_ x[7][6] OAI21X1
+XOAI21X1_206 gnd vdd x[7][6] _219_ _248_ _247_ OAI21X1
+XNAND2X1_163 vdd _249_ gnd _248_ _246_ NAND2X1
+XXNOR2X1_72 _249_ _697_ gnd vdd _6_[7] XNOR2X1
+XXOR2X1_22 _2_[0] vdd x[3][0] y[3][3] gnd XOR2X1
+XXOR2X1_23 _250_ vdd x[3][1] y[3][4] gnd XOR2X1
+XNAND2X1_164 vdd _251_ gnd y[3][3] x[3][0] NAND2X1
+XINVX1_138 _251_ _252_ vdd gnd INVX1
+XOAI21X1_207 gnd vdd x[3][0] _1076_ _253_ _644__bF$buf2 OAI21X1
+XOAI21X1_208 gnd vdd _644__bF$buf2 _252_ _254_ _253_ OAI21X1
+XXNOR2X1_73 _254_ _250_ gnd vdd _2_[1] XNOR2X1
+XNOR2X1_118 vdd x[3][2] gnd _255_ y[3][5] NOR2X1
+XAND2X2_10 vdd gnd y[3][5] x[3][2] _256_ AND2X2
+XNOR2X1_119 vdd _256_ gnd _257_ _255_ NOR2X1
+XXNOR2X1_74 y[3][4] x[3][1] gnd vdd _258_ XNOR2X1
+XINVX1_139 x[3][1] _259_ vdd gnd INVX1
+XNOR2X1_120 vdd _259_ gnd _260_ _1070_ NOR2X1
+XINVX1_140 _260_ _261_ vdd gnd INVX1
+XOAI21X1_209 gnd vdd _251_ _258_ _262_ _261_ OAI21X1
+XOAI22X1_10 gnd vdd x[3][1] _1070_ x[3][0] _1076_ _263_ OAI22X1
+XOAI21X1_210 gnd vdd y[3][4] _259_ _264_ _263_ OAI21X1
+XNAND2X1_165 vdd _265_ gnd _644__bF$buf2 _264_ NAND2X1
+XOAI21X1_211 gnd vdd _644__bF$buf3 _262_ _266_ _265_ OAI21X1
+XXNOR2X1_75 _266_ _257_ gnd vdd _2_[2] XNOR2X1
+XNAND2X1_166 vdd _267_ gnd y[3][6] _1034_ NAND2X1
+XNAND2X1_167 vdd _268_ gnd x[3][3] _1094_ NAND2X1
+XNAND2X1_168 vdd _269_ gnd _267_ _268_ NAND2X1
+XNAND2X1_169 vdd _270_ gnd y[3][5] x[3][2] NAND2X1
+XOR2X2_14 _271_ _255_ vdd gnd _256_ OR2X2
+XAOI21X1_43 gnd vdd _250_ _252_ _272_ _260_ AOI21X1
+XOAI21X1_212 gnd vdd _271_ _272_ _273_ _270_ OAI21X1
+XINVX1_141 x[3][2] _274_ vdd gnd INVX1
+XNOR2X1_121 vdd _274_ gnd _275_ y[3][5] NOR2X1
+XNAND2X1_170 vdd _276_ gnd x[3][1] _1070_ NAND2X1
+XAOI21X1_44 gnd vdd _276_ _263_ _277_ _257_ AOI21X1
+XOAI21X1_213 gnd vdd _275_ _277_ _278_ _644__bF$buf2 OAI21X1
+XOAI21X1_214 gnd vdd _644__bF$buf2 _273_ _279_ _278_ OAI21X1
+XXNOR2X1_76 _279_ _269_ gnd vdd _2_[3] XNOR2X1
+XXNOR2X1_77 x[3][4] y[3][7] gnd vdd _280_ XNOR2X1
+XOAI21X1_215 gnd vdd y[3][5] _274_ _281_ _268_ OAI21X1
+XOAI21X1_216 gnd vdd _281_ _277_ _282_ _267_ OAI21X1
+XNAND2X1_171 vdd _283_ gnd _644__bF$buf1 _282_ NAND2X1
+XXNOR2X1_78 x[3][3] y[3][6] gnd vdd _284_ XNOR2X1
+XNOR2X1_122 vdd _271_ gnd _285_ _284_ NOR2X1
+XNOR2X1_123 vdd _1094_ gnd _286_ _1034_ NOR2X1
+XINVX1_142 _286_ _287_ vdd gnd INVX1
+XOAI21X1_217 gnd vdd _270_ _284_ _288_ _287_ OAI21X1
+XAOI21X1_45 gnd vdd _285_ _262_ _289_ _288_ AOI21X1
+XOAI21X1_218 gnd vdd _644__bF$buf1 _289_ _290_ _283_ OAI21X1
+XXNOR2X1_79 _290_ _280_ gnd vdd _2_[4] XNOR2X1
+XXOR2X1_24 _291_ vdd y[3][7] x[3][5] gnd XOR2X1
+XINVX2_24 vdd gnd _292_ _291_ INVX2
+XINVX1_143 _280_ _293_ vdd gnd INVX1
+XINVX2_25 vdd gnd _294_ y[3][7] INVX2
+XAOI21X1_46 gnd vdd _294_ x[3][4] _295_ z[3][7] AOI21X1
+XOAI21X1_219 gnd vdd _293_ _282_ _296_ _295_ OAI21X1
+XNAND2X1_172 vdd _297_ gnd _257_ _269_ NAND2X1
+XAOI21X1_47 gnd vdd _269_ _256_ _298_ _286_ AOI21X1
+XOAI21X1_220 gnd vdd _297_ _272_ _299_ _298_ OAI21X1
+XNOR2X1_124 vdd _294_ gnd _300_ _1104_ NOR2X1
+XAOI21X1_48 gnd vdd _299_ _293_ _301_ _300_ AOI21X1
+XOAI21X1_221 gnd vdd _644__bF$buf1 _301_ _302_ _296_ OAI21X1
+XXNOR2X1_80 _302_ _292_ gnd vdd _2_[5] XNOR2X1
+XNOR2X1_125 vdd y[3][7] gnd _303_ x[3][6] NOR2X1
+XNOR2X1_126 vdd _294_ gnd _304_ _1080_ NOR2X1
+XNOR2X1_127 vdd _304_ gnd _305_ _303_ NOR2X1
+XINVX1_144 _305_ _306_ vdd gnd INVX1
+XNAND2X1_173 vdd _307_ gnd _1104_ _1057_ NAND2X1
+XNOR2X1_128 vdd _292_ gnd _308_ _280_ NOR2X1
+XAOI22X1_25 gnd vdd _308_ _299_ _309_ y[3][7] _307_ AOI22X1
+XNAND2X1_174 vdd _310_ gnd _280_ _292_ NAND2X1
+XOAI21X1_222 gnd vdd x[3][4] x[3][5] _311_ _294_ OAI21X1
+XOAI21X1_223 gnd vdd _310_ _282_ _312_ _311_ OAI21X1
+XMUX2X1_10 z[3][7] vdd gnd _313_ _309_ _312_ MUX2X1
+XXNOR2X1_81 _313_ _306_ gnd vdd _2_[6] XNOR2X1
+XINVX1_145 _264_ _314_ vdd gnd INVX1
+XINVX1_146 _268_ _315_ vdd gnd INVX1
+XAOI21X1_49 gnd vdd _275_ _267_ _316_ _315_ AOI21X1
+XOAI21X1_224 gnd vdd _255_ _256_ _317_ _284_ OAI21X1
+XOAI21X1_225 gnd vdd _317_ _314_ _318_ _316_ OAI21X1
+XINVX1_147 _310_ _319_ vdd gnd INVX1
+XAOI22X1_26 gnd vdd _319_ _318_ _320_ _294_ _307_ AOI22X1
+XOAI21X1_226 gnd vdd y[3][7] _1080_ _321_ _644__bF$buf0 OAI21X1
+XINVX1_148 _321_ _322_ vdd gnd INVX1
+XOAI21X1_227 gnd vdd _305_ _320_ _323_ _322_ OAI21X1
+XOAI21X1_228 gnd vdd x[3][4] x[3][5] _324_ y[3][7] OAI21X1
+XINVX1_149 _308_ _325_ vdd gnd INVX1
+XOAI21X1_229 gnd vdd _325_ _289_ _326_ _324_ OAI21X1
+XOAI21X1_230 gnd vdd x[3][6] y[3][7] _327_ z[3][7] OAI21X1
+XINVX1_150 _327_ _328_ vdd gnd INVX1
+XOAI21X1_231 gnd vdd _304_ _326_ _329_ _328_ OAI21X1
+XNAND3X1_17 _323_ vdd gnd _62_ _329_ _330_ NAND3X1
+XAOI21X1_50 gnd vdd _312_ _306_ _331_ _321_ AOI21X1
+XINVX1_151 _304_ _332_ vdd gnd INVX1
+XAOI21X1_51 gnd vdd _309_ _332_ _333_ _327_ AOI21X1
+XOAI21X1_232 gnd vdd _331_ _333_ _334_ _46_ OAI21X1
+XNAND2X1_175 vdd _2_[7] gnd _330_ _334_ NAND2X1
+XXOR2X1_25 _4_[0] vdd x[5][0] y[5][5] gnd XOR2X1
+XXOR2X1_26 _335_ vdd x[5][1] y[5][6] gnd XOR2X1
+XNAND2X1_176 vdd _336_ gnd y[5][5] x[5][0] NAND2X1
+XINVX1_152 _336_ _337_ vdd gnd INVX1
+XOAI21X1_233 gnd vdd x[5][0] _988_ _338_ _577__bF$buf2 OAI21X1
+XOAI21X1_234 gnd vdd _577__bF$buf2 _337_ _339_ _338_ OAI21X1
+XXNOR2X1_82 _339_ _335_ gnd vdd _4_[1] XNOR2X1
+XXOR2X1_27 _340_ vdd x[5][2] y[5][7_bF$buf2] gnd XOR2X1
+XINVX1_153 x[5][1] _341_ vdd gnd INVX1
+XNOR2X1_129 vdd _341_ gnd _342_ _999_ NOR2X1
+XAOI21X1_52 gnd vdd _335_ _337_ _343_ _342_ AOI21X1
+XNAND2X1_177 vdd _344_ gnd z[5][7] _343_ NAND2X1
+XNAND2X1_178 vdd _345_ gnd x[5][1] _999_ NAND2X1
+XOAI22X1_11 gnd vdd x[5][1] _999_ x[5][0] _988_ _346_ OAI22X1
+XAND2X2_11 vdd gnd _346_ _345_ _347_ AND2X2
+XOAI21X1_235 gnd vdd z[5][7] _347_ _348_ _344_ OAI21X1
+XXNOR2X1_83 _348_ _340_ gnd vdd _4_[2] XNOR2X1
+XINVX2_26 vdd gnd _349_ y[5][7_bF$buf1] INVX2
+XNAND2X1_179 vdd _350_ gnd x[5][3] _349_ NAND2X1
+XINVX1_154 x[5][3] _351_ vdd gnd INVX1
+XNAND2X1_180 vdd _352_ gnd y[5][7_bF$buf0] _351_ NAND2X1
+XNAND2X1_181 vdd _353_ gnd _350_ _352_ NAND2X1
+XNAND2X1_182 vdd _354_ gnd y[5][7_bF$buf3] x[5][2] NAND2X1
+XINVX1_155 x[5][2] _355_ vdd gnd INVX1
+XNAND2X1_183 vdd _356_ gnd _349_ _355_ NAND2X1
+XNAND2X1_184 vdd _357_ gnd _354_ _356_ NAND2X1
+XOAI21X1_236 gnd vdd _357_ _343_ _358_ _354_ OAI21X1
+XNOR2X1_130 vdd _355_ gnd _359_ y[5][7_bF$buf2] NOR2X1
+XAOI21X1_53 gnd vdd _345_ _346_ _360_ _340_ AOI21X1
+XOAI21X1_237 gnd vdd _359_ _360_ _361_ _577__bF$buf2 OAI21X1
+XOAI21X1_238 gnd vdd _577__bF$buf2 _358_ _362_ _361_ OAI21X1
+XXNOR2X1_84 _362_ _353_ gnd vdd _4_[3] XNOR2X1
+XINVX1_156 x[5][4] _363_ vdd gnd INVX1
+XNOR2X1_131 vdd _363_ gnd _364_ y[5][7_bF$buf1] NOR2X1
+XNOR2X1_132 vdd _349_ gnd _365_ x[5][4] NOR2X1
+XNOR2X1_133 vdd _365_ gnd _366_ _364_ NOR2X1
+XINVX1_157 _366_ _367_ vdd gnd INVX1
+XOAI21X1_239 gnd vdd x[5][2] x[5][3] _368_ y[5][7_bF$buf0] OAI21X1
+XNAND2X1_185 vdd _369_ gnd _340_ _353_ NAND2X1
+XOAI21X1_240 gnd vdd _369_ _343_ _370_ _368_ OAI21X1
+XOAI21X1_241 gnd vdd x[5][2] x[5][3] _371_ _349_ OAI21X1
+XXNOR2X1_85 y[5][7_bF$buf3] x[5][3] gnd vdd _372_ XNOR2X1
+XNAND2X1_186 vdd _373_ gnd _372_ _357_ NAND2X1
+XOAI21X1_242 gnd vdd _347_ _373_ _374_ _371_ OAI21X1
+XNAND2X1_187 vdd _375_ gnd _577__bF$buf1 _374_ NAND2X1
+XOAI21X1_243 gnd vdd _577__bF$buf1 _370_ _376_ _375_ OAI21X1
+XXNOR2X1_86 _376_ _367_ gnd vdd _4_[4] XNOR2X1
+XXOR2X1_28 _377_ vdd y[5][7_bF$buf2] x[5][5] gnd XOR2X1
+XAOI21X1_54 gnd vdd _374_ _366_ _378_ _364_ AOI21X1
+XXNOR2X1_87 y[5][6] x[5][1] gnd vdd _379_ XNOR2X1
+XINVX1_158 _342_ _380_ vdd gnd INVX1
+XOAI21X1_244 gnd vdd _336_ _379_ _381_ _380_ OAI21X1
+XNAND2X1_188 vdd _382_ gnd _355_ _351_ NAND2X1
+XNOR2X1_134 vdd _357_ gnd _383_ _372_ NOR2X1
+XAOI22X1_27 gnd vdd _383_ _381_ _384_ y[5][7_bF$buf1] _382_ AOI22X1
+XNAND2X1_189 vdd _385_ gnd y[5][7_bF$buf0] x[5][4] NAND2X1
+XOAI21X1_245 gnd vdd _366_ _384_ _386_ _385_ OAI21X1
+XMUX2X1_11 z[5][7] vdd gnd _387_ _386_ _378_ MUX2X1
+XXNOR2X1_88 _387_ _377_ gnd vdd _4_[5] XNOR2X1
+XNOR2X1_135 vdd y[5][7_bF$buf3] gnd _388_ x[5][6] NOR2X1
+XINVX1_159 x[5][6] _389_ vdd gnd INVX1
+XNOR2X1_136 vdd _349_ gnd _390_ _389_ NOR2X1
+XNOR2X1_137 vdd _390_ gnd _391_ _388_ NOR2X1
+XINVX1_160 _391_ _392_ vdd gnd INVX1
+XNAND2X1_190 vdd _393_ gnd _939_ _363_ NAND2X1
+XINVX1_161 _377_ _394_ vdd gnd INVX1
+XNAND2X1_191 vdd _395_ gnd _366_ _394_ NAND2X1
+XINVX1_162 _395_ _396_ vdd gnd INVX1
+XAOI22X1_28 gnd vdd _374_ _396_ _397_ _349_ _393_ AOI22X1
+XNOR2X1_138 vdd _397_ gnd _398_ _392_ NOR2X1
+XAOI22X1_29 gnd vdd _352_ _360_ _399_ _349_ _382_ AOI22X1
+XOAI21X1_246 gnd vdd x[5][5] x[5][4] _400_ _349_ OAI21X1
+XOAI21X1_247 gnd vdd _395_ _399_ _401_ _400_ OAI21X1
+XNOR2X1_139 vdd _401_ gnd _402_ _391_ NOR2X1
+XOAI21X1_248 gnd vdd _402_ _398_ _403_ _577__bF$buf1 OAI21X1
+XOAI21X1_249 gnd vdd x[5][5] x[5][4] _404_ y[5][7_bF$buf2] OAI21X1
+XOAI21X1_250 gnd vdd _364_ _365_ _405_ _377_ OAI21X1
+XOAI21X1_251 gnd vdd _405_ _384_ _406_ _404_ OAI21X1
+XXNOR2X1_89 _406_ _391_ gnd vdd _407_ XNOR2X1
+XOAI21X1_252 gnd vdd _577__bF$buf1 _407_ _4_[6] _403_ OAI21X1
+XOAI21X1_253 gnd vdd y[5][7_bF$buf1] _389_ _408_ _577__bF$buf3 OAI21X1
+XINVX1_163 _408_ _409_ vdd gnd INVX1
+XOAI21X1_254 gnd vdd _391_ _397_ _410_ _409_ OAI21X1
+XOAI21X1_255 gnd vdd x[5][6] y[5][7_bF$buf0] _411_ z[5][7] OAI21X1
+XINVX1_164 _411_ _412_ vdd gnd INVX1
+XOAI21X1_256 gnd vdd _390_ _406_ _413_ _412_ OAI21X1
+XNAND3X1_18 _410_ vdd gnd _1025_ _413_ _414_ NAND3X1
+XAOI21X1_55 gnd vdd _401_ _392_ _415_ _408_ AOI21X1
+XINVX1_165 _390_ _416_ vdd gnd INVX1
+XINVX1_166 _405_ _417_ vdd gnd INVX1
+XAOI22X1_30 gnd vdd _417_ _370_ _418_ y[5][7_bF$buf3] _393_ AOI22X1
+XAOI21X1_56 gnd vdd _418_ _416_ _419_ _411_ AOI21X1
+XOAI21X1_257 gnd vdd _415_ _419_ _420_ _1012_ OAI21X1
+XNAND2X1_192 vdd _4_[7] gnd _414_ _420_ NAND2X1
+XNAND2X1_193 vdd _421_ gnd x[4][0] _785_ NAND2X1
+XINVX1_167 x[4][0] _422_ vdd gnd INVX1
+XNAND2X1_194 vdd _423_ gnd y[4][4] _422_ NAND2X1
+XNAND2X1_195 vdd _3_[0] gnd _421_ _423_ NAND2X1
+XXOR2X1_29 _424_ vdd x[4][1] y[4][5] gnd XOR2X1
+XNAND2X1_196 vdd _425_ gnd y[4][4] x[4][0] NAND2X1
+XINVX1_168 _425_ _426_ vdd gnd INVX1
+XOAI21X1_258 gnd vdd x[4][0] _785_ _427_ _626__bF$buf1 OAI21X1
+XOAI21X1_259 gnd vdd _626__bF$buf1 _426_ _428_ _427_ OAI21X1
+XXNOR2X1_90 _428_ _424_ gnd vdd _3_[1] XNOR2X1
+XNOR2X1_140 vdd x[4][2] gnd _429_ y[4][6] NOR2X1
+XAND2X2_12 vdd gnd y[4][6] x[4][2] _430_ AND2X2
+XNOR2X1_141 vdd _430_ gnd _431_ _429_ NOR2X1
+XXNOR2X1_91 y[4][5] x[4][1] gnd vdd _432_ XNOR2X1
+XINVX1_169 x[4][1] _433_ vdd gnd INVX1
+XNOR2X1_142 vdd _433_ gnd _434_ _812_ NOR2X1
+XINVX1_170 _434_ _435_ vdd gnd INVX1
+XOAI21X1_260 gnd vdd _425_ _432_ _436_ _435_ OAI21X1
+XOAI21X1_261 gnd vdd _812_ x[4][1] _437_ _423_ OAI21X1
+XOAI21X1_262 gnd vdd y[4][5] _433_ _438_ _437_ OAI21X1
+XNAND2X1_197 vdd _439_ gnd _626__bF$buf1 _438_ NAND2X1
+XOAI21X1_263 gnd vdd _626__bF$buf1 _436_ _440_ _439_ OAI21X1
+XXNOR2X1_92 _440_ _431_ gnd vdd _3_[2] XNOR2X1
+XXOR2X1_30 _441_ vdd x[4][3] y[4][7] gnd XOR2X1
+XNAND2X1_198 vdd _442_ gnd y[4][6] x[4][2] NAND2X1
+XINVX1_171 x[4][2] _443_ vdd gnd INVX1
+XNAND2X1_199 vdd _444_ gnd _808_ _443_ NAND2X1
+XNAND2X1_200 vdd _445_ gnd _442_ _444_ NAND2X1
+XAOI21X1_57 gnd vdd _424_ _426_ _446_ _434_ AOI21X1
+XOAI21X1_264 gnd vdd _445_ _446_ _447_ _442_ OAI21X1
+XNOR2X1_143 vdd _433_ gnd _448_ y[4][5] NOR2X1
+XAOI21X1_58 gnd vdd _432_ _423_ _449_ _448_ AOI21X1
+XNAND2X1_201 vdd _450_ gnd x[4][2] _808_ NAND2X1
+XOAI21X1_265 gnd vdd _431_ _449_ _451_ _450_ OAI21X1
+XNAND2X1_202 vdd _452_ gnd _626__bF$buf3 _451_ NAND2X1
+XOAI21X1_266 gnd vdd _626__bF$buf3 _447_ _453_ _452_ OAI21X1
+XXNOR2X1_93 _453_ _441_ gnd vdd _3_[3] XNOR2X1
+XXNOR2X1_94 x[4][4] y[4][7] gnd vdd _454_ XNOR2X1
+XINVX1_172 x[4][3] _455_ vdd gnd INVX1
+XNOR2X1_144 vdd _455_ gnd _456_ y[4][7] NOR2X1
+XINVX1_173 _456_ _457_ vdd gnd INVX1
+XOAI21X1_267 gnd vdd _450_ _441_ _458_ _457_ OAI21X1
+XAOI21X1_59 gnd vdd _444_ _442_ _459_ _441_ AOI21X1
+XAOI21X1_60 gnd vdd _438_ _459_ _460_ _458_ AOI21X1
+XNAND2X1_203 vdd _461_ gnd _626__bF$buf3 _460_ NAND2X1
+XXNOR2X1_95 y[4][7] x[4][3] gnd vdd _462_ XNOR2X1
+XNOR2X1_145 vdd _445_ gnd _463_ _462_ NOR2X1
+XINVX2_27 vdd gnd _464_ y[4][7] INVX2
+XNOR2X1_146 vdd _455_ gnd _465_ _464_ NOR2X1
+XINVX1_174 _465_ _466_ vdd gnd INVX1
+XOAI21X1_268 gnd vdd _442_ _462_ _467_ _466_ OAI21X1
+XAOI21X1_61 gnd vdd _436_ _463_ _468_ _467_ AOI21X1
+XOAI21X1_269 gnd vdd _626__bF$buf3 _468_ _469_ _461_ OAI21X1
+XXNOR2X1_96 _469_ _454_ gnd vdd _3_[4] XNOR2X1
+XXOR2X1_31 _470_ vdd y[4][7] x[4][5] gnd XOR2X1
+XINVX1_175 _450_ _471_ vdd gnd INVX1
+XAOI21X1_62 gnd vdd _462_ _471_ _472_ _456_ AOI21X1
+XOAI21X1_270 gnd vdd _429_ _430_ _473_ _462_ OAI21X1
+XOAI21X1_271 gnd vdd _473_ _449_ _474_ _472_ OAI21X1
+XNAND2X1_204 vdd _475_ gnd _454_ _474_ NAND2X1
+XAOI21X1_63 gnd vdd _464_ x[4][4] _476_ z[4][7] AOI21X1
+XNAND2X1_205 vdd _477_ gnd x[4][4] y[4][7] NAND2X1
+XOAI21X1_272 gnd vdd _454_ _468_ _478_ _477_ OAI21X1
+XAOI22X1_31 gnd vdd z[4][7] _478_ _479_ _475_ _476_ AOI22X1
+XXNOR2X1_97 _479_ _470_ gnd vdd _3_[5] XNOR2X1
+XNOR2X1_147 vdd y[4][7] gnd _480_ x[4][6] NOR2X1
+XNOR2X1_148 vdd _464_ gnd _481_ _772_ NOR2X1
+XNOR2X1_149 vdd _481_ gnd _482_ _480_ NOR2X1
+XINVX1_176 _482_ _483_ vdd gnd INVX1
+XNAND2X1_206 vdd _484_ gnd _431_ _441_ NAND2X1
+XAOI21X1_64 gnd vdd _441_ _430_ _485_ _465_ AOI21X1
+XOAI21X1_273 gnd vdd _484_ _446_ _486_ _485_ OAI21X1
+XNAND2X1_207 vdd _487_ gnd _749_ _818_ NAND2X1
+XINVX1_177 _470_ _488_ vdd gnd INVX1
+XNOR2X1_150 vdd _488_ gnd _489_ _454_ NOR2X1
+XAOI22X1_32 gnd vdd _489_ _486_ _490_ y[4][7] _487_ AOI22X1
+XNAND2X1_208 vdd _491_ gnd _454_ _488_ NAND2X1
+XOAI21X1_274 gnd vdd x[4][4] x[4][5] _492_ _464_ OAI21X1
+XOAI21X1_275 gnd vdd _491_ _460_ _493_ _492_ OAI21X1
+XMUX2X1_12 z[4][7] vdd gnd _494_ _490_ _493_ MUX2X1
+XXNOR2X1_98 _494_ _483_ gnd vdd _3_[6] XNOR2X1
+XINVX1_178 _491_ _495_ vdd gnd INVX1
+XAOI22X1_33 gnd vdd _495_ _474_ _496_ _464_ _487_ AOI22X1
+XOAI21X1_276 gnd vdd y[4][7] _772_ _497_ _626__bF$buf2 OAI21X1
+XINVX1_179 _497_ _498_ vdd gnd INVX1
+XOAI21X1_277 gnd vdd _482_ _496_ _499_ _498_ OAI21X1
+XOAI21X1_278 gnd vdd x[4][4] x[4][5] _500_ y[4][7] OAI21X1
+XINVX1_180 _489_ _501_ vdd gnd INVX1
+XOAI21X1_279 gnd vdd _468_ _501_ _502_ _500_ OAI21X1
+XOAI21X1_280 gnd vdd x[4][6] y[4][7] _503_ z[4][7] OAI21X1
+XINVX1_181 _503_ _504_ vdd gnd INVX1
+XOAI21X1_281 gnd vdd _481_ _502_ _505_ _504_ OAI21X1
+XNAND3X1_19 _499_ vdd gnd _843_ _505_ _506_ NAND3X1
+XAOI21X1_65 gnd vdd _493_ _483_ _507_ _497_ AOI21X1
+XINVX1_182 _481_ _508_ vdd gnd INVX1
+XAOI21X1_66 gnd vdd _490_ _508_ _509_ _503_ AOI21X1
+XOAI21X1_282 gnd vdd _507_ _509_ _510_ _827_ OAI21X1
+XNAND2X1_209 vdd _3_[7] gnd _506_ _510_ NAND2X1
+XXOR2X1_32 _1_[0] vdd x[2][0] y[2][2] gnd XOR2X1
+XINVX1_183 x[2][1] _511_ vdd gnd INVX1
+XOAI21X1_283 gnd vdd y[2][2] _74_ _512_ _79_ OAI21X1
+XXNOR2X1_99 _512_ _511_ gnd vdd _1_[1] XNOR2X1
+XOAI21X1_284 gnd vdd y[2][2] x[2][1] _513_ x[2][0] OAI21X1
+XINVX1_184 _513_ _514_ vdd gnd INVX1
+XOAI21X1_285 gnd vdd y[2][2] x[2][0] _515_ _511_ OAI21X1
+XNAND2X1_210 vdd _516_ gnd _599__bF$buf3 _515_ NAND2X1
+XOAI21X1_286 gnd vdd _599__bF$buf3 _514_ _517_ _516_ OAI21X1
+XXNOR2X1_100 _517_ y[2][4] gnd vdd _1_[2] XNOR2X1
+XNAND2X1_211 vdd _518_ gnd x[2][3] _105_ NAND2X1
+XNAND2X1_212 vdd _519_ gnd y[2][7] _69_ NAND2X1
+XNAND2X1_213 vdd _520_ gnd _518_ _519_ NAND2X1
+XNAND2X1_214 vdd _521_ gnd _84_ _515_ NAND2X1
+XNOR2X1_151 vdd _513_ gnd _522_ _84_ NOR2X1
+XOAI21X1_287 gnd vdd _599__bF$buf2 _522_ _523_ _521_ OAI21X1
+XXNOR2X1_101 _523_ _520_ gnd vdd _1_[3] XNOR2X1
+XNAND2X1_215 vdd _524_ gnd x[2][4] _100_ NAND2X1
+XNAND2X1_216 vdd _525_ gnd y[2][6] _71_ NAND2X1
+XNAND2X1_217 vdd _526_ gnd _524_ _525_ NAND2X1
+XNAND2X1_218 vdd _527_ gnd _522_ _520_ NAND2X1
+XOAI21X1_288 gnd vdd _69_ _105_ _528_ _527_ OAI21X1
+XINVX1_185 _519_ _529_ vdd gnd INVX1
+XOAI21X1_289 gnd vdd _529_ _521_ _530_ _518_ OAI21X1
+XNAND2X1_219 vdd _531_ gnd _599__bF$buf2 _530_ NAND2X1
+XOAI21X1_290 gnd vdd _599__bF$buf2 _528_ _532_ _531_ OAI21X1
+XXNOR2X1_102 _532_ _526_ gnd vdd _1_[4] XNOR2X1
+XNAND2X1_220 vdd _533_ gnd x[2][5] _105_ NAND2X1
+XNAND2X1_221 vdd _534_ gnd y[2][7] _73_ NAND2X1
+XNAND2X1_222 vdd _535_ gnd _533_ _534_ NAND2X1
+XNAND2X1_223 vdd _536_ gnd _526_ _528_ NAND2X1
+XOAI21X1_291 gnd vdd _71_ _100_ _537_ _536_ OAI21X1
+XOAI21X1_292 gnd vdd x[2][4] _100_ _538_ _530_ OAI21X1
+XOAI21X1_293 gnd vdd _71_ y[2][6] _539_ _538_ OAI21X1
+XNAND2X1_224 vdd _540_ gnd _599__bF$buf2 _539_ NAND2X1
+XOAI21X1_294 gnd vdd _599__bF$buf2 _537_ _541_ _540_ OAI21X1
+XXNOR2X1_103 _541_ _535_ gnd vdd _1_[5] XNOR2X1
+XXOR2X1_33 _542_ vdd y[2][7] x[2][6] gnd XOR2X1
+XNOR2X1_152 vdd _105_ gnd _543_ _69_ NOR2X1
+XAOI21X1_67 gnd vdd _520_ _522_ _544_ _543_ AOI21X1
+XNOR2X1_153 vdd _100_ gnd _545_ _71_ NOR2X1
+XNOR2X1_154 vdd _105_ gnd _546_ _73_ NOR2X1
+XAOI21X1_68 gnd vdd _535_ _545_ _547_ _546_ AOI21X1
+XNAND2X1_225 vdd _548_ gnd _526_ _535_ NAND2X1
+XOAI21X1_295 gnd vdd _548_ _544_ _549_ _547_ OAI21X1
+XOAI21X1_296 gnd vdd _524_ _535_ _550_ _533_ OAI21X1
+XNOR2X1_155 vdd _535_ gnd _551_ _526_ NOR2X1
+XAOI21X1_69 gnd vdd _530_ _551_ _552_ _550_ AOI21X1
+XMUX2X1_13 _599__bF$buf2 vdd gnd _553_ _552_ _549_ MUX2X1
+XXNOR2X1_104 _553_ _542_ gnd vdd _1_[6] XNOR2X1
+XNOR2X1_156 vdd _552_ gnd _554_ _542_ NOR2X1
+XOAI21X1_297 gnd vdd y[2][7] _83_ _555_ _599__bF$buf3 OAI21X1
+XAOI21X1_70 gnd vdd x[2][6] y[2][7] _556_ _549_ AOI21X1
+XOAI21X1_298 gnd vdd x[2][6] y[2][7] _557_ z[2][7] OAI21X1
+XOAI22X1_12 gnd vdd _554_ _555_ _557_ _556_ _558_ OAI22X1
+XXOR2X1_34 _1_[7] vdd _93_ _558_ gnd XOR2X1
+XOAI21X1_299 gnd vdd z[1][7] _1032_ _0_[4] _1033_ OAI21X1
+XINVX1_186 _0_[4] _0_[6] vdd gnd INVX1
+XINVX8_4 vdd gnd rst _38_ INVX8
+XOR2X2_15 _22_ theta[0] vdd gnd _38__bF$buf1 OR2X2
+XNAND2X1_226 vdd _23_ gnd rst theta[0] NAND2X1
+XOR2X2_16 _24_ theta[1] vdd gnd _38__bF$buf1 OR2X2
+XNAND2X1_227 vdd _25_ gnd rst theta[1] NAND2X1
+XOR2X2_17 _26_ theta[2] vdd gnd _38__bF$buf2 OR2X2
+XNAND2X1_228 vdd _27_ gnd rst theta[2] NAND2X1
+XOR2X2_18 _28_ theta[3] vdd gnd _38__bF$buf2 OR2X2
+XNAND2X1_229 vdd _29_ gnd rst theta[3] NAND2X1
+XOR2X2_19 _30_ theta[4] vdd gnd _38__bF$buf0 OR2X2
+XNAND2X1_230 vdd _31_ gnd rst theta[4] NAND2X1
+XOR2X2_20 _32_ theta[5] vdd gnd _38__bF$buf3 OR2X2
+XNAND2X1_231 vdd _33_ gnd rst theta[5] NAND2X1
+XOR2X2_21 _34_ theta[6] vdd gnd _38__bF$buf2 OR2X2
+XNAND2X1_232 vdd _35_ gnd rst theta[6] NAND2X1
+XOR2X2_22 _36_ theta[7] vdd gnd _38__bF$buf2 OR2X2
+XNAND2X1_233 vdd _37_ gnd rst theta[7] NAND2X1
+XBUFX2_10 vdd gnd z[5][0] _20_[0] BUFX2
+XBUFX2_11 vdd gnd z[4][0] _19_[0] BUFX2
+XBUFX2_12 vdd gnd z[4][1] _19_[1] BUFX2
+XBUFX2_13 vdd gnd z[3][0] _18_[0] BUFX2
+XBUFX2_14 vdd gnd z[3][1] _18_[1] BUFX2
+XBUFX2_15 vdd gnd z[3][2] _18_[2] BUFX2
+XBUFX2_16 vdd gnd z[0][7] _7_[7] BUFX2
+XBUFX2_17 vdd gnd z[0][0] _15_[0] BUFX2
+XBUFX2_18 vdd gnd y[1][7] _8_[2] BUFX2
+XBUFX2_19 vdd gnd _1106_[0] cosine[0] BUFX2
+XBUFX2_20 vdd gnd _1106_[1] cosine[1] BUFX2
+XBUFX2_21 vdd gnd _1106_[2] cosine[2] BUFX2
+XBUFX2_22 vdd gnd _1106_[3] cosine[3] BUFX2
+XBUFX2_23 vdd gnd _1106_[4] cosine[4] BUFX2
+XBUFX2_24 vdd gnd _1106_[5] cosine[5] BUFX2
+XBUFX2_25 vdd gnd _1106_[6] cosine[6] BUFX2
+XBUFX2_26 vdd gnd _1106_[7] cosine[7] BUFX2
+XBUFX2_27 vdd gnd _1107_ done BUFX2
+XBUFX2_28 vdd gnd _1108_[0] sine[0] BUFX2
+XBUFX2_29 vdd gnd _1108_[1] sine[1] BUFX2
+XBUFX2_30 vdd gnd _1108_[2] sine[2] BUFX2
+XBUFX2_31 vdd gnd _1108_[3] sine[3] BUFX2
+XBUFX2_32 vdd gnd _1108_[4] sine[4] BUFX2
+XBUFX2_33 vdd gnd _1108_[5] sine[5] BUFX2
+XBUFX2_34 vdd gnd _1108_[6] sine[6] BUFX2
+XBUFX2_35 vdd gnd _1108_[7] sine[7] BUFX2
+XDFFPOSX1_1 vdd _16_[6] gnd z[2][6] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_2 vdd _16_[7] gnd z[2][7] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_3 vdd _17_[0] gnd z[3][0] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_4 vdd _17_[1] gnd z[3][1] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_5 vdd _17_[2] gnd z[3][2] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_6 vdd _17_[3] gnd z[3][3] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_7 vdd _17_[4] gnd z[3][4] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_8 vdd _17_[5] gnd z[3][5] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_9 vdd _17_[6] gnd z[3][6] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_10 vdd _17_[7] gnd z[3][7] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_11 vdd _18_[0] gnd z[4][0] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_12 vdd _18_[1] gnd z[4][1] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_13 vdd _18_[2] gnd z[4][2] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_14 vdd _18_[3] gnd z[4][3] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_15 vdd _18_[4] gnd z[4][4] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_16 vdd _18_[5] gnd z[4][5] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_17 vdd _18_[6] gnd z[4][6] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_18 vdd _18_[7] gnd z[4][7] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_19 vdd _19_[0] gnd z[5][0] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_20 vdd _19_[1] gnd z[5][1] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_21 vdd _19_[2] gnd z[5][2] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_22 vdd _19_[3] gnd z[5][3] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_23 vdd _19_[4] gnd z[5][4] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_24 vdd _19_[5] gnd z[5][5] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_25 vdd _19_[6] gnd z[5][6] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_26 vdd _19_[7] gnd z[5][7] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_27 vdd _20_[0] gnd z[6][0] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_28 vdd _20_[1] gnd z[6][1] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_29 vdd _20_[2] gnd z[6][2] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_30 vdd _20_[3] gnd z[6][3] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_31 vdd _20_[4] gnd z[6][4] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_32 vdd _20_[5] gnd z[6][5] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_33 vdd _20_[6] gnd z[6][6] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_34 vdd _20_[7] gnd z[6][7] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_35 vdd _21_[7] gnd z[7][7] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_36 vdd x[8][0] gnd _1106_[0] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_37 vdd x[8][1] gnd _1106_[1] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_38 vdd x[8][2] gnd _1106_[2] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_39 vdd x[8][3] gnd _1106_[3] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_40 vdd x[8][4] gnd _1106_[4] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_41 vdd x[8][5] gnd _1106_[5] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_42 vdd x[8][6] gnd _1106_[6] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_43 vdd x[8][7] gnd _1106_[7] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_44 vdd y[8][0] gnd _1108_[0] clk_bF$buf11 DFFPOSX1
+XDFFPOSX1_45 vdd y[8][1] gnd _1108_[1] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_46 vdd y[8][2] gnd _1108_[2] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_47 vdd y[8][3] gnd _1108_[3] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_48 vdd y[8][4] gnd _1108_[4] clk_bF$buf11 DFFPOSX1
+XDFFPOSX1_49 vdd y[8][5] gnd _1108_[5] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_50 vdd y[8][6] gnd _1108_[6] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_51 vdd y[8][7] gnd _1108_[7] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_52 vdd _0_[0] gnd x[2][0] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_53 vdd _0_[1] gnd x[2][1] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_54 vdd _0_[3] gnd x[2][3] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_55 vdd _0_[4] gnd x[2][4] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_56 vdd _0_[5] gnd x[2][5] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_57 vdd _0_[6] gnd x[2][6] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_58 vdd gnd gnd x[2][7] clk_bF$buf2 DFFPOSX1
+XDFFPOSX1_59 vdd _1_[0] gnd x[3][0] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_60 vdd _1_[1] gnd x[3][1] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_61 vdd _1_[2] gnd x[3][2] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_62 vdd _1_[3] gnd x[3][3] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_63 vdd _1_[4] gnd x[3][4] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_64 vdd _1_[5] gnd x[3][5] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_65 vdd _1_[6] gnd x[3][6] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_66 vdd _1_[7] gnd x[3][7] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_67 vdd _2_[0] gnd x[4][0] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_68 vdd _2_[1] gnd x[4][1] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_69 vdd _2_[2] gnd x[4][2] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_70 vdd _2_[3] gnd x[4][3] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_71 vdd _2_[4] gnd x[4][4] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_72 vdd _2_[5] gnd x[4][5] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_73 vdd _2_[6] gnd x[4][6] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_74 vdd _2_[7] gnd x[4][7] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_75 vdd _3_[0] gnd x[5][0] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_76 vdd _3_[1] gnd x[5][1] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_77 vdd _3_[2] gnd x[5][2] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_78 vdd _3_[3] gnd x[5][3] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_79 vdd _3_[4] gnd x[5][4] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_80 vdd _3_[5] gnd x[5][5] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_81 vdd _3_[6] gnd x[5][6] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_82 vdd _3_[7] gnd x[5][7] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_83 vdd _4_[0] gnd x[6][0] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_84 vdd _4_[1] gnd x[6][1] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_85 vdd _4_[2] gnd x[6][2] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_86 vdd _4_[3] gnd x[6][3] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_87 vdd _4_[4] gnd x[6][4] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_88 vdd _4_[5] gnd x[6][5] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_89 vdd _4_[6] gnd x[6][6] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_90 vdd _4_[7] gnd x[6][7] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_91 vdd _5_[0] gnd x[7][0] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_92 vdd _5_[1] gnd x[7][1] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_93 vdd _5_[2] gnd x[7][2] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_94 vdd _5_[3] gnd x[7][3] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_95 vdd _5_[4] gnd x[7][4] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_96 vdd _5_[5] gnd x[7][5] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_97 vdd _5_[6] gnd x[7][6] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_98 vdd _5_[7] gnd x[7][7] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_99 vdd _6_[0] gnd x[8][0] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_100 vdd _6_[1] gnd x[8][1] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_101 vdd _6_[2] gnd x[8][2] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_102 vdd _6_[3] gnd x[8][3] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_103 vdd _6_[4] gnd x[8][4] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_104 vdd _6_[5] gnd x[8][5] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_105 vdd _6_[6] gnd x[8][6] clk_bF$buf6 DFFPOSX1
+XDFFPOSX1_106 vdd _6_[7] gnd x[8][7] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_107 vdd _7_[5] gnd y[1][5] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_108 vdd _7_[7] gnd y[1][7] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_109 vdd _8_[2] gnd y[2][2] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_110 vdd _8_[4] gnd y[2][4] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_111 vdd _8_[7] gnd y[2][7] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_112 vdd _8_[6] gnd y[2][6] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_113 vdd vdd gnd y[3][0] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_114 vdd _9_[1] gnd y[3][1] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_115 vdd _9_[2] gnd y[3][2] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_116 vdd _9_[3] gnd y[3][3] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_117 vdd _9_[4] gnd y[3][4] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_118 vdd _9_[5] gnd y[3][5] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_119 vdd _9_[6] gnd y[3][6] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_120 vdd _9_[7] gnd y[3][7] clk_bF$buf0 DFFPOSX1
+XDFFPOSX1_121 vdd _10_[0] gnd y[4][0] clk_bF$buf4 DFFPOSX1
+XDFFPOSX1_122 vdd _10_[1] gnd y[4][1] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_123 vdd _10_[2] gnd y[4][2] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_124 vdd _10_[3] gnd y[4][3] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_125 vdd _10_[4] gnd y[4][4] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_126 vdd _10_[5] gnd y[4][5] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_127 vdd _10_[6] gnd y[4][6] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_128 vdd _10_[7] gnd y[4][7] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_129 vdd _11_[0] gnd y[5][0] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_130 vdd _11_[1] gnd y[5][1] clk_bF$buf7 DFFPOSX1
+XDFFPOSX1_131 vdd _11_[2] gnd y[5][2] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_132 vdd _11_[3] gnd y[5][3] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_133 vdd _11_[4] gnd y[5][4] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_134 vdd _11_[5] gnd y[5][5] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_135 vdd _11_[6] gnd y[5][6] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_136 vdd _11_[7] gnd y[5][7] clk_bF$buf12 DFFPOSX1
+XDFFPOSX1_137 vdd _12_[0] gnd y[6][0] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_138 vdd _12_[1] gnd y[6][1] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_139 vdd _12_[2] gnd y[6][2] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_140 vdd _12_[3] gnd y[6][3] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_141 vdd _12_[4] gnd y[6][4] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_142 vdd _12_[5] gnd y[6][5] clk_bF$buf10 DFFPOSX1
+XDFFPOSX1_143 vdd _12_[6] gnd y[6][6] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_144 vdd _12_[7] gnd y[6][7] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_145 vdd _13_[0] gnd y[7][0] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_146 vdd _13_[1] gnd y[7][1] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_147 vdd _13_[2] gnd y[7][2] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_148 vdd _13_[3] gnd y[7][3] clk_bF$buf8 DFFPOSX1
+XDFFPOSX1_149 vdd _13_[4] gnd y[7][4] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_150 vdd _13_[5] gnd y[7][5] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_151 vdd _13_[6] gnd y[7][6] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_152 vdd _13_[7] gnd y[7][7] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_153 vdd _14_[0] gnd y[8][0] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_154 vdd _14_[1] gnd y[8][1] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_155 vdd _14_[2] gnd y[8][2] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_156 vdd _14_[3] gnd y[8][3] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_157 vdd _14_[4] gnd y[8][4] clk_bF$buf11 DFFPOSX1
+XDFFPOSX1_158 vdd _14_[5] gnd y[8][5] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_159 vdd _14_[6] gnd y[8][6] clk_bF$buf3 DFFPOSX1
+XDFFPOSX1_160 vdd _14_[7] gnd y[8][7] clk_bF$buf9 DFFPOSX1
+XDFFPOSX1_161 vdd _15_[0] gnd z[1][0] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_162 vdd _15_[1] gnd z[1][1] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_163 vdd _15_[2] gnd z[1][2] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_164 vdd _15_[3] gnd z[1][3] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_165 vdd _15_[4] gnd z[1][4] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_166 vdd _15_[5] gnd z[1][5] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_167 vdd _15_[6] gnd z[1][6] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_168 vdd _15_[7] gnd z[1][7] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_169 vdd _16_[0] gnd z[2][0] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_170 vdd _16_[1] gnd z[2][1] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_171 vdd _16_[2] gnd z[2][2] clk_bF$buf5 DFFPOSX1
+XDFFPOSX1_172 vdd _16_[3] gnd z[2][3] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_173 vdd _16_[4] gnd z[2][4] clk_bF$buf1 DFFPOSX1
+XDFFPOSX1_174 vdd _16_[5] gnd z[2][5] clk_bF$buf2 DFFPOSX1
+XDFFSR_1 gnd vdd theta[0] _23_ _22_ z[0][0] clk_bF$buf9 DFFSR
+XDFFSR_2 gnd vdd theta[1] _25_ _24_ z[0][1] clk_bF$buf9 DFFSR
+XDFFSR_3 gnd vdd theta[2] _27_ _26_ z[0][2] clk_bF$buf5 DFFSR
+XDFFSR_4 gnd vdd theta[3] _29_ _28_ z[0][3] clk_bF$buf11 DFFSR
+XDFFSR_5 gnd vdd theta[4] _31_ _30_ z[0][4] clk_bF$buf11 DFFSR
+XDFFSR_6 gnd vdd theta[5] _33_ _32_ z[0][5] clk_bF$buf11 DFFSR
+XDFFSR_7 gnd vdd theta[6] _35_ _34_ z[0][6] clk_bF$buf5 DFFSR
+XDFFSR_8 gnd vdd theta[7] _37_ _36_ z[0][7] clk_bF$buf5 DFFSR
+XDFFSR_9 gnd vdd valid[7] vdd _38__bF$buf3 _1107_ clk_bF$buf11 DFFSR
+XDFFSR_10 gnd vdd vdd vdd _38__bF$buf0 valid[0] clk_bF$buf11 DFFSR
+XDFFSR_11 gnd vdd valid[0] vdd _38__bF$buf0 valid[1] clk_bF$buf11 DFFSR
+XDFFSR_12 gnd vdd valid[1] vdd _38__bF$buf3 valid[2] clk_bF$buf11 DFFSR
+XDFFSR_13 gnd vdd valid[2] vdd _38__bF$buf3 valid[3] clk_bF$buf11 DFFSR
+XDFFSR_14 gnd vdd valid[3] vdd _38__bF$buf3 valid[4] clk_bF$buf11 DFFSR
+XDFFSR_15 gnd vdd valid[4] vdd _38__bF$buf1 valid[5] clk_bF$buf11 DFFSR
+XDFFSR_16 gnd vdd valid[5] vdd _38__bF$buf1 valid[6] clk_bF$buf11 DFFSR
+XDFFSR_17 gnd vdd valid[6] vdd _38__bF$buf0 valid[7] clk_bF$buf11 DFFSR
+XBUFX2_36 vdd gnd gnd _0_[2] BUFX2
+XBUFX2_37 vdd gnd gnd _0_[7] BUFX2
+XBUFX2_38 vdd gnd vdd _7_[0] BUFX2
+XBUFX2_39 vdd gnd _7_[7] _7_[1] BUFX2
+XBUFX2_40 vdd gnd _7_[7] _7_[2] BUFX2
+XBUFX2_41 vdd gnd _7_[7] _7_[3] BUFX2
+XBUFX2_42 vdd gnd _7_[5] _7_[4] BUFX2
+XBUFX2_43 vdd gnd _7_[7] _7_[6] BUFX2
+XBUFX2_44 vdd gnd vdd _8_[0] BUFX2
+XBUFX2_45 vdd gnd _8_[2] _8_[1] BUFX2
+XBUFX2_46 vdd gnd _0_[0] _8_[3] BUFX2
+XBUFX2_47 vdd gnd _8_[7] _8_[5] BUFX2
+XBUFX2_48 vdd gnd vdd _9_[0] BUFX2
+XBUFX2_49 vdd gnd gnd x[2][2] BUFX2
+XBUFX2_50 vdd gnd vdd y[1][0] BUFX2
+XBUFX2_51 vdd gnd y[1][7] y[1][1] BUFX2
+XBUFX2_52 vdd gnd y[1][7] y[1][2] BUFX2
+XBUFX2_53 vdd gnd y[1][7] y[1][3] BUFX2
+XBUFX2_54 vdd gnd y[1][5] y[1][4] BUFX2
+XBUFX2_55 vdd gnd y[1][7] y[1][6] BUFX2
+XBUFX2_56 vdd gnd vdd y[2][0] BUFX2
+XBUFX2_57 vdd gnd y[2][2] y[2][1] BUFX2
+XBUFX2_58 vdd gnd x[2][0] y[2][3] BUFX2
+XBUFX2_59 vdd gnd y[2][7] y[2][5] BUFX2
+XFILL_0_0_0 vdd gnd FILL
+XFILL_0_0_1 vdd gnd FILL
+XFILL_0_0_2 vdd gnd FILL
+XFILL_0_1_0 vdd gnd FILL
+XFILL_0_1_1 vdd gnd FILL
+XFILL_0_1_2 vdd gnd FILL
+XFILL_0_2_0 vdd gnd FILL
+XFILL_0_2_1 vdd gnd FILL
+XFILL_0_2_2 vdd gnd FILL
+XFILL_1_1 vdd gnd FILL
+XFILL_1_2 vdd gnd FILL
+XFILL_1_0_0 vdd gnd FILL
+XFILL_1_0_1 vdd gnd FILL
+XFILL_1_0_2 vdd gnd FILL
+XFILL_1_1_0 vdd gnd FILL
+XFILL_1_1_1 vdd gnd FILL
+XFILL_1_1_2 vdd gnd FILL
+XFILL_1_2_0 vdd gnd FILL
+XFILL_1_2_1 vdd gnd FILL
+XFILL_1_2_2 vdd gnd FILL
+XFILL_2_1 vdd gnd FILL
+XFILL_2_2 vdd gnd FILL
+XFILL_2_0_0 vdd gnd FILL
+XFILL_2_0_1 vdd gnd FILL
+XFILL_2_0_2 vdd gnd FILL
+XFILL_2_1_0 vdd gnd FILL
+XFILL_2_1_1 vdd gnd FILL
+XFILL_2_1_2 vdd gnd FILL
+XFILL_2_2_0 vdd gnd FILL
+XFILL_2_2_1 vdd gnd FILL
+XFILL_2_2_2 vdd gnd FILL
+XFILL_3_1 vdd gnd FILL
+XFILL_3_2 vdd gnd FILL
+XFILL_3_3 vdd gnd FILL
+XFILL_3_0_0 vdd gnd FILL
+XFILL_3_0_1 vdd gnd FILL
+XFILL_3_0_2 vdd gnd FILL
+XFILL_3_1_0 vdd gnd FILL
+XFILL_3_1_1 vdd gnd FILL
+XFILL_3_1_2 vdd gnd FILL
+XFILL_3_2_0 vdd gnd FILL
+XFILL_3_2_1 vdd gnd FILL
+XFILL_3_2_2 vdd gnd FILL
+XFILL_4_1 vdd gnd FILL
+XFILL_4_0_0 vdd gnd FILL
+XFILL_4_0_1 vdd gnd FILL
+XFILL_4_0_2 vdd gnd FILL
+XFILL_4_1_0 vdd gnd FILL
+XFILL_4_1_1 vdd gnd FILL
+XFILL_4_1_2 vdd gnd FILL
+XFILL_4_2_0 vdd gnd FILL
+XFILL_4_2_1 vdd gnd FILL
+XFILL_4_2_2 vdd gnd FILL
+XFILL_5_1 vdd gnd FILL
+XFILL_5_2 vdd gnd FILL
+XFILL_5_3 vdd gnd FILL
+XFILL_5_0_0 vdd gnd FILL
+XFILL_5_0_1 vdd gnd FILL
+XFILL_5_0_2 vdd gnd FILL
+XFILL_5_1_0 vdd gnd FILL
+XFILL_5_1_1 vdd gnd FILL
+XFILL_5_1_2 vdd gnd FILL
+XFILL_5_2_0 vdd gnd FILL
+XFILL_5_2_1 vdd gnd FILL
+XFILL_5_2_2 vdd gnd FILL
+XFILL_6_1 vdd gnd FILL
+XFILL_6_2 vdd gnd FILL
+XFILL_6_0_0 vdd gnd FILL
+XFILL_6_0_1 vdd gnd FILL
+XFILL_6_0_2 vdd gnd FILL
+XFILL_6_1_0 vdd gnd FILL
+XFILL_6_1_1 vdd gnd FILL
+XFILL_6_1_2 vdd gnd FILL
+XFILL_6_2_0 vdd gnd FILL
+XFILL_6_2_1 vdd gnd FILL
+XFILL_6_2_2 vdd gnd FILL
+XFILL_7_1 vdd gnd FILL
+XFILL_7_2 vdd gnd FILL
+XFILL_7_0_0 vdd gnd FILL
+XFILL_7_0_1 vdd gnd FILL
+XFILL_7_0_2 vdd gnd FILL
+XFILL_7_1_0 vdd gnd FILL
+XFILL_7_1_1 vdd gnd FILL
+XFILL_7_1_2 vdd gnd FILL
+XFILL_7_2_0 vdd gnd FILL
+XFILL_7_2_1 vdd gnd FILL
+XFILL_7_2_2 vdd gnd FILL
+XFILL_8_1 vdd gnd FILL
+XFILL_8_2 vdd gnd FILL
+XFILL_8_0_0 vdd gnd FILL
+XFILL_8_0_1 vdd gnd FILL
+XFILL_8_0_2 vdd gnd FILL
+XFILL_8_1_0 vdd gnd FILL
+XFILL_8_1_1 vdd gnd FILL
+XFILL_8_1_2 vdd gnd FILL
+XFILL_8_2_0 vdd gnd FILL
+XFILL_8_2_1 vdd gnd FILL
+XFILL_8_2_2 vdd gnd FILL
+XFILL_9_1 vdd gnd FILL
+XFILL_9_2 vdd gnd FILL
+XFILL_9_3 vdd gnd FILL
+XFILL_9_0_0 vdd gnd FILL
+XFILL_9_0_1 vdd gnd FILL
+XFILL_9_0_2 vdd gnd FILL
+XFILL_9_1_0 vdd gnd FILL
+XFILL_9_1_1 vdd gnd FILL
+XFILL_9_1_2 vdd gnd FILL
+XFILL_9_2_0 vdd gnd FILL
+XFILL_9_2_1 vdd gnd FILL
+XFILL_9_2_2 vdd gnd FILL
+XFILL_10_1 vdd gnd FILL
+XFILL_10_0_0 vdd gnd FILL
+XFILL_10_0_1 vdd gnd FILL
+XFILL_10_0_2 vdd gnd FILL
+XFILL_10_1_0 vdd gnd FILL
+XFILL_10_1_1 vdd gnd FILL
+XFILL_10_1_2 vdd gnd FILL
+XFILL_10_2_0 vdd gnd FILL
+XFILL_10_2_1 vdd gnd FILL
+XFILL_10_2_2 vdd gnd FILL
+XFILL_11_0_0 vdd gnd FILL
+XFILL_11_0_1 vdd gnd FILL
+XFILL_11_0_2 vdd gnd FILL
+XFILL_11_1_0 vdd gnd FILL
+XFILL_11_1_1 vdd gnd FILL
+XFILL_11_1_2 vdd gnd FILL
+XFILL_11_2_0 vdd gnd FILL
+XFILL_11_2_1 vdd gnd FILL
+XFILL_11_2_2 vdd gnd FILL
+XFILL_12_1 vdd gnd FILL
+XFILL_12_2 vdd gnd FILL
+XFILL_12_3 vdd gnd FILL
+XFILL_12_0_0 vdd gnd FILL
+XFILL_12_0_1 vdd gnd FILL
+XFILL_12_0_2 vdd gnd FILL
+XFILL_12_1_0 vdd gnd FILL
+XFILL_12_1_1 vdd gnd FILL
+XFILL_12_1_2 vdd gnd FILL
+XFILL_12_2_0 vdd gnd FILL
+XFILL_12_2_1 vdd gnd FILL
+XFILL_12_2_2 vdd gnd FILL
+XFILL_13_1 vdd gnd FILL
+XFILL_13_0_0 vdd gnd FILL
+XFILL_13_0_1 vdd gnd FILL
+XFILL_13_0_2 vdd gnd FILL
+XFILL_13_1_0 vdd gnd FILL
+XFILL_13_1_1 vdd gnd FILL
+XFILL_13_1_2 vdd gnd FILL
+XFILL_13_2_0 vdd gnd FILL
+XFILL_13_2_1 vdd gnd FILL
+XFILL_13_2_2 vdd gnd FILL
+XFILL_14_1 vdd gnd FILL
+XFILL_14_0_0 vdd gnd FILL
+XFILL_14_0_1 vdd gnd FILL
+XFILL_14_0_2 vdd gnd FILL
+XFILL_14_1_0 vdd gnd FILL
+XFILL_14_1_1 vdd gnd FILL
+XFILL_14_1_2 vdd gnd FILL
+XFILL_14_2_0 vdd gnd FILL
+XFILL_14_2_1 vdd gnd FILL
+XFILL_14_2_2 vdd gnd FILL
+XFILL_15_1 vdd gnd FILL
+XFILL_15_0_0 vdd gnd FILL
+XFILL_15_0_1 vdd gnd FILL
+XFILL_15_0_2 vdd gnd FILL
+XFILL_15_1_0 vdd gnd FILL
+XFILL_15_1_1 vdd gnd FILL
+XFILL_15_1_2 vdd gnd FILL
+XFILL_15_2_0 vdd gnd FILL
+XFILL_15_2_1 vdd gnd FILL
+XFILL_15_2_2 vdd gnd FILL
+XFILL_16_1 vdd gnd FILL
+XFILL_16_2 vdd gnd FILL
+XFILL_16_0_0 vdd gnd FILL
+XFILL_16_0_1 vdd gnd FILL
+XFILL_16_0_2 vdd gnd FILL
+XFILL_16_1_0 vdd gnd FILL
+XFILL_16_1_1 vdd gnd FILL
+XFILL_16_1_2 vdd gnd FILL
+XFILL_16_2_0 vdd gnd FILL
+XFILL_16_2_1 vdd gnd FILL
+XFILL_16_2_2 vdd gnd FILL
+XFILL_17_1 vdd gnd FILL
+XFILL_17_2 vdd gnd FILL
+XFILL_17_0_0 vdd gnd FILL
+XFILL_17_0_1 vdd gnd FILL
+XFILL_17_0_2 vdd gnd FILL
+XFILL_17_1_0 vdd gnd FILL
+XFILL_17_1_1 vdd gnd FILL
+XFILL_17_1_2 vdd gnd FILL
+XFILL_17_2_0 vdd gnd FILL
+XFILL_17_2_1 vdd gnd FILL
+XFILL_17_2_2 vdd gnd FILL
+XFILL_18_1 vdd gnd FILL
+XFILL_18_0_0 vdd gnd FILL
+XFILL_18_0_1 vdd gnd FILL
+XFILL_18_0_2 vdd gnd FILL
+XFILL_18_1_0 vdd gnd FILL
+XFILL_18_1_1 vdd gnd FILL
+XFILL_18_1_2 vdd gnd FILL
+XFILL_18_2_0 vdd gnd FILL
+XFILL_18_2_1 vdd gnd FILL
+XFILL_18_2_2 vdd gnd FILL
+XFILL_19_1 vdd gnd FILL
+XFILL_19_2 vdd gnd FILL
+XFILL_19_0_0 vdd gnd FILL
+XFILL_19_0_1 vdd gnd FILL
+XFILL_19_0_2 vdd gnd FILL
+XFILL_19_1_0 vdd gnd FILL
+XFILL_19_1_1 vdd gnd FILL
+XFILL_19_1_2 vdd gnd FILL
+XFILL_19_2_0 vdd gnd FILL
+XFILL_19_2_1 vdd gnd FILL
+XFILL_19_2_2 vdd gnd FILL
+XFILL_20_1 vdd gnd FILL
+XFILL_20_2 vdd gnd FILL
+XFILL_20_3 vdd gnd FILL
+XFILL_20_0_0 vdd gnd FILL
+XFILL_20_0_1 vdd gnd FILL
+XFILL_20_0_2 vdd gnd FILL
+XFILL_20_1_0 vdd gnd FILL
+XFILL_20_1_1 vdd gnd FILL
+XFILL_20_1_2 vdd gnd FILL
+XFILL_20_2_0 vdd gnd FILL
+XFILL_20_2_1 vdd gnd FILL
+XFILL_20_2_2 vdd gnd FILL
+XFILL_21_1 vdd gnd FILL
+XFILL_21_2 vdd gnd FILL
+.ends sincos
+ 

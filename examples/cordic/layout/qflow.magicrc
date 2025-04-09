@@ -10,7 +10,6 @@ set VDD vdd
 
 drc euclidean on
 drc off
-drc style no_check
 
 addpath digital
 
@@ -21,7 +20,7 @@ box 0 0 0 0
 drc off
 gds read /usr/local/share/qflow/tech/osu035/osu035_stdcells.gds2
 load gds_top
-gds read cordic
+gds read sincos
 select top cell
 expand
 view

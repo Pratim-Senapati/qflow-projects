@@ -1,5 +1,5 @@
-Qflow gdsii logfile created on Mon Feb 24 13:02:48 IST 2025
-magic -dnull -noconsole  /home/tombert/qflow_projects/sin_cos/layout/generate_gds_cordic.tcl
+Qflow gdsii logfile created on Thu Apr 10 02:05:31 IST 2025
+magic -dnull -noconsole  /home/tombert/qflow_projects/sin_cos/layout/generate_gds_sincos.tcl
 
 Magic 8.3 revision 50 - Compiled on Tue Feb 11 22:24:09 IST 2025.
 Starting magic under Tcl interpreter
@@ -14,7 +14,7 @@ Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 Contact size value ignored (using GDS generation rules).
 4 Magic internal units = 1 Lambda
-Loading "/home/tombert/qflow_projects/sin_cos/layout/generate_gds_cordic.tcl" from command line.
+Loading "/home/tombert/qflow_projects/sin_cos/layout/generate_gds_sincos.tcl" from command line.
 Root cell box:
            width x height  (   llx,  lly  ), (   urx,  ury  )
 
@@ -225,6 +225,7 @@ Moving label "vdd" from space to metal1 in cell CLKBUF3.
 Moving label "A" from space to metal1 in cell CLKBUF3.
 Moving label "Y" from space to metal1 in cell CLKBUF3.
 Reading "iit_stdcells".
-Scaled magic input cell cordic geometry by factor of 2
-Processing timestamp mismatches: FILL, DFFSR, AND2X2, NOR2X1, INVX1, BUFX2, XNOR2X1, NAND2X1, NAND3X1, OAI21X1, NOR3X1, XOR2X1, CLKBUF1, BUFX4, INVX8, AOI21X1.
-GDS generating script ended on Mon Feb 24 13:02:48 IST 2025
+Scaled magic input cell sincos geometry by factor of 2
+sincos: 10000 rects
+Processing timestamp mismatches: FILL, DFFSR, BUFX2, OR2X2, NAND2X1, DFFPOSX1, CLKBUF1, OAI21X1, INVX1, INVX2, NOR2X1, AOI21X1, XNOR2X1, AND2X2, BUFX4, XOR2X1, INVX8, INVX4, OAI22X1, MUX2X1, NAND3X1, AOI22X1.
+GDS generating script ended on Thu Apr 10 02:05:32 IST 2025

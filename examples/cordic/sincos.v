@@ -1,52 +1,71 @@
-module cordic(
-    input clk,
-    input rst,
-    input [15:0] theta,  // Input angle
-    output reg [15:0] sine, 
-    output reg [15:0] cosine
+module sincos (
+    input wire clk,
+    input wire rst,
+    input wire [7:0] theta,         // 8-bit input angle
+    output reg [7:0] sine,          // 8-bit sine output
+    output reg [7:0] cosine,        // 8-bit cosine output
+    output reg done                 // High when output is valid
 );
-    reg [15:0] x, y, z;
-    reg [15:0] atan_table[0:15]; // Look-up table for atan values
-    integer i;
-    
-    initial begin
-        atan_table[0] = 16'h3243; // atan(2^0)
-        atan_table[1] = 16'h1DAC; // atan(2^-1)
-        atan_table[2] = 16'h0FAD; // atan(2^-2)
-        atan_table[3] = 16'h0A3E; // atan(2^-3)
-	atan_table[4] = 16'h07FD; // atan(2^-4)
-	atan_table[5] = 16'h03FF; // atan(2^-5)
-	atan_table[6] = 16'h01FF; // atan(2^-6)
-	atan_table[7] = 16'h00FF; // atan(2^-7)
-	atan_table[8] = 16'h007F; // atan(2^-8)
-	atan_table[9] = 16'h003F; // atan(2^-9)
-	atan_table[10] = 16'h001F; // atan(2^-10)
-	atan_table[11] = 16'h000F; // atan(2^-11)
-	atan_table[12] = 16'h0007; // atan(2^-12)
-	atan_table[13] = 16'h0003; // atan(2^-13)
-	atan_table[14] = 16'h0001; // atan(2^-14)
-    end
 
+    localparam stage = 8;
+
+    // Pipeline registers
+    reg signed [7:0] x [0:stage];
+    reg signed [7:0] y [0:stage];
+    reg signed [7:0] z [0:stage];
+
+    reg signed [7:0] atan [0:stage-1];
+    reg [3:0] count; // For startup delay
+    reg [stage-1:0] valid; // Shift register to track data propagation
+
+    // Initialize atan table during reset
+    integer i;
     always @(posedge clk or posedge rst) begin
         if (rst) begin
-            x <= 16'h26DD; // Initial X = 1.0 in fixed point
-            y <= 0;
-            z <= theta;
+            atan[0] <= 8'd50;  // atan(2^0)
+            atan[1] <= 8'd29;  // atan(2^-1)
+            atan[2] <= 8'd15;
+            atan[3] <= 8'd8;
+            atan[4] <= 8'd4;
+            atan[5] <= 8'd2;
+            atan[6] <= 8'd1;
+            atan[7] <= 8'd1;
+
+            // Initialize pipeline state
+            x[0] <= 8'd49;  // ≈ 0.607252935 * 2^7
+            y[0] <= 0;
+            z[0] <= theta;
+
+            valid <= 0;
+            done <= 0;
+            count <= 0;
         end else begin
-            for (i = 0; i < 16; i = i + 1) begin
-                if (z >= 0) begin
-                    x <= x - (y >>> i);
-                    y <= y + (x >>> i);
-                    z <= z - atan_table[i];
+            // Pipeline progression
+            for (i = 0; i < stage; i = i + 1) begin
+                if (z[i] >= 0) begin
+                    x[i+1] <= x[i] - (y[i] >>> i);
+                    y[i+1] <= y[i] + (x[i] >>> i);
+                    z[i+1] <= z[i] - atan[i];
                 end else begin
-                    x <= x + (y >>> i);
-                    y <= y - (x >>> i);
-                    z <= z + atan_table[i];
+                    x[i+1] <= x[i] + (y[i] >>> i);
+                    y[i+1] <= y[i] - (x[i] >>> i);
+                    z[i+1] <= z[i] + atan[i];
                 end
             end
+
+            // Push input for stage 0
+            x[0] <= 8'd49;   // reinitialize X0
+            y[0] <= 0;
+            z[0] <= theta;
+
+            // Track valid data for `done` signal
+            valid <= {valid[stage-2:0], 1'b1};
+            done <= valid[stage-1];
+
+            // Output final results
+            sine   <= y[stage];
+            cosine <= x[stage];
         end
     end
 
-    assign sine = y;
-    assign cosine = x;
 endmodule

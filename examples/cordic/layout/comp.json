@@ -33,87 +33,11 @@
    "pins": [
       [
         "A",
-        "B",
-        "C",
         "gnd",
         "Y",
         "vdd"
       ], [
         "A",
-        "B",
-        "C",
-        "gnd",
-        "Y",
-        "vdd"
-      ]
-   ]
-  },
-  {
-   "pins": [
-      [
-        "A",
-        "B",
-        "C",
-        "gnd",
-        "Y",
-        "vdd"
-      ], [
-        "A",
-        "B",
-        "C",
-        "gnd",
-        "Y",
-        "vdd"
-      ]
-   ]
-  },
-  {
-   "pins": [
-      [
-        "A",
-        "B",
-        "gnd",
-        "Y",
-        "vdd"
-      ], [
-        "A",
-        "B",
-        "gnd",
-        "Y",
-        "vdd"
-      ]
-   ]
-  },
-  {
-   "pins": [
-      [
-        "A",
-        "B",
-        "gnd",
-        "Y",
-        "vdd"
-      ], [
-        "A",
-        "B",
-        "gnd",
-        "Y",
-        "vdd"
-      ]
-   ]
-  },
-  {
-   "pins": [
-      [
-        "A",
-        "B",
-        "C",
-        "gnd",
-        "Y",
-        "vdd"
-      ], [
-        "A",
-        "B",
-        "C",
         "gnd",
         "Y",
         "vdd"
@@ -139,13 +63,11 @@
    "pins": [
       [
         "A",
-        "B",
         "gnd",
         "Y",
         "vdd"
       ], [
         "A",
-        "B",
         "gnd",
         "Y",
         "vdd"
@@ -209,6 +131,23 @@
    "pins": [
       [
         "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
         "gnd",
         "Y",
         "vdd"
@@ -231,6 +170,173 @@
         "A",
         "gnd",
         "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "S",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "S",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Q",
+        "CLK",
+        "D",
+        "gnd",
+        "vdd"
+      ], [
+        "Q",
+        "CLK",
+        "D",
+        "gnd",
         "vdd"
       ]
    ]
@@ -258,47 +364,59 @@
   },
   {
    "name": [
-      "cordic",
-      "cordic"
+      "sincos",
+      "sincos"
    ],
    "devices": [
        [
-         ["AND2X2", 6],
-         ["NAND2X1", 17],
-         ["DFFSR", 32],
-         ["XNOR2X1", 14],
-         ["INVX1", 22],
-         ["INVX8", 1],
-         ["NOR3X1", 7],
-         ["CLKBUF1", 5],
-         ["NAND3X1", 9],
-         ["XOR2X1", 6],
-         ["BUFX4", 5],
-         ["OAI21X1", 8],
-         ["BUFX2", 32],
-         ["AOI21X1", 1],
-         ["NOR2X1", 12 ]
+         ["AND2X2", 12],
+         ["DFFSR", 17],
+         ["OAI21X1", 299],
+         ["NAND2X1", 233],
+         ["AOI22X1", 33],
+         ["OAI22X1", 12],
+         ["INVX2", 27],
+         ["DFFPOSX1", 174],
+         ["OR2X2", 22],
+         ["XNOR2X1", 104],
+         ["INVX1", 186],
+         ["BUFX4", 27],
+         ["INVX8", 4],
+         ["XOR2X1", 34],
+         ["CLKBUF1", 13],
+         ["MUX2X1", 13],
+         ["NAND3X1", 19],
+         ["AOI21X1", 70],
+         ["INVX4", 8],
+         ["BUFX2", 59],
+         ["NOR2X1", 156 ]
        ], [
-         ["AND2X2", 6 ],
-         ["NAND2X1", 17 ],
-         ["DFFSR", 32 ],
-         ["XNOR2X1", 14 ],
-         ["INVX1", 22 ],
-         ["INVX8", 1 ],
-         ["NOR3X1", 7 ],
-         ["CLKBUF1", 5 ],
-         ["NAND3X1", 9 ],
-         ["XOR2X1", 6 ],
-         ["BUFX4", 5 ],
-         ["OAI21X1", 8 ],
-         ["BUFX2", 32 ],
-         ["AOI21X1", 1 ],
-         ["NOR2X1", 12 ]
+         ["AND2X2", 12 ],
+         ["DFFSR", 17 ],
+         ["OAI21X1", 299 ],
+         ["NAND2X1", 233 ],
+         ["AOI22X1", 33 ],
+         ["OAI22X1", 12 ],
+         ["INVX2", 27 ],
+         ["DFFPOSX1", 174 ],
+         ["OR2X2", 22 ],
+         ["XNOR2X1", 104 ],
+         ["INVX1", 186 ],
+         ["BUFX4", 27 ],
+         ["INVX8", 4 ],
+         ["XOR2X1", 34 ],
+         ["CLKBUF1", 13 ],
+         ["MUX2X1", 13 ],
+         ["NAND3X1", 19 ],
+         ["AOI21X1", 70 ],
+         ["INVX4", 8 ],
+         ["BUFX2", 59 ],
+         ["NOR2X1", 156 ]
        ]
    ],
    "nets": [
-    181,
-    181
+    1534,
+    1534
    ],
    "badnets": [
    ],
@@ -306,111 +424,65 @@
    ],
    "pins": [
       [
-        "rst",
-        "sine[12]",
-        "sine[10]",
-        "cosine[14]",
-        "cosine[13]",
-        "cosine[5]",
-        "cosine[11]",
-        "sine[6]",
-        "cosine[3]",
-        "sine[4]",
-        "cosine[7]",
-        "cosine[9]",
+        "done",
+        "cosine[6]",
         "cosine[1]",
-        "sine[2]",
-        "sine[1]",
+        "sine[3]",
+        "sine[6]",
+        "cosine[4]",
+        "cosine[3]",
+        "cosine[5]",
+        "cosine[2]",
         "sine[0]",
-        "sine[11]",
-        "sine[9]",
-        "sine[8]",
+        "sine[4]",
+        "cosine[0]",
+        "sine[1]",
+        "cosine[7]",
         "sine[7]",
         "sine[5]",
-        "sine[3]",
-        "sine[14]",
-        "sine[13]",
-        "cosine[15]",
-        "cosine[8]",
-        "cosine[12]",
-        "cosine[6]",
-        "cosine[10]",
-        "sine[15]",
-        "cosine[2]",
-        "cosine[4]",
-        "cosine[0]",
-        "vdd",
-        "gnd",
+        "sine[2]",
         "clk",
-        "theta[0]",
+        "rst",
         "theta[1]",
+        "theta[0]",
         "theta[2]",
         "theta[3]",
         "theta[4]",
         "theta[5]",
         "theta[6]",
         "theta[7]",
-        "theta[8]",
-        "theta[9]",
-        "theta[10]",
-        "theta[11]",
-        "theta[12]",
-        "theta[13]",
-        "theta[14]",
-        "theta[15]"
+        "vdd",
+        "gnd"
       ], [
-        "rst",
-        "sine[12]",
-        "sine[10]",
-        "cosine[14]",
-        "cosine[13]",
-        "cosine[5]",
-        "cosine[11]",
-        "sine[6]",
-        "cosine[3]",
-        "sine[4]",
-        "cosine[7]",
-        "cosine[9]",
+        "done",
+        "cosine[6]",
         "cosine[1]",
-        "sine[2]",
-        "sine[1]",
+        "sine[3]",
+        "sine[6]",
+        "cosine[4]",
+        "cosine[3]",
+        "cosine[5]",
+        "cosine[2]",
         "sine[0]",
-        "sine[11]",
-        "sine[9]",
-        "sine[8]",
+        "sine[4]",
+        "cosine[0]",
+        "sine[1]",
+        "cosine[7]",
         "sine[7]",
         "sine[5]",
-        "sine[3]",
-        "sine[14]",
-        "sine[13]",
-        "cosine[15]",
-        "cosine[8]",
-        "cosine[12]",
-        "cosine[6]",
-        "cosine[10]",
-        "sine[15]",
-        "cosine[2]",
-        "cosine[4]",
-        "cosine[0]",
-        "vdd",
-        "gnd",
+        "sine[2]",
         "clk",
-        "theta[0]",
+        "rst",
         "theta[1]",
+        "theta[0]",
         "theta[2]",
         "theta[3]",
         "theta[4]",
         "theta[5]",
         "theta[6]",
         "theta[7]",
-        "theta[8]",
-        "theta[9]",
-        "theta[10]",
-        "theta[11]",
-        "theta[12]",
-        "theta[13]",
-        "theta[14]",
-        "theta[15]"
+        "vdd",
+        "gnd"
       ]
    ]
   }

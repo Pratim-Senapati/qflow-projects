@@ -1,6 +1,6 @@
-Qflow synthesis logfile created on Mon Feb 24 13:02:27 IST 2025
+Qflow synthesis logfile created on Thu Apr 10 02:04:04 IST 2025
 Running yosys for verilog parsing and synthesis
-yosys  -s cordic.ys
+yosys  -s sincos.ys
 
  /----------------------------------------------------------------------------\
  |                                                                            |
@@ -25,16 +25,18 @@ yosys  -s cordic.ys
  Yosys 0.9 (git sha1 1979e0b)
 
 
--- Executing script file `cordic.ys' --
+-- Executing script file `sincos.ys' --
 
 1. Executing Liberty frontend.
 Imported 39 cell types from liberty file.
 
 2. Executing Verilog-2005 frontend: /home/tombert/qflow_projects/sin_cos/source/sincos.v
 Parsing Verilog input from `/home/tombert/qflow_projects/sin_cos/source/sincos.v' to AST representation.
-Generating RTLIL representation for module `\cordic'.
-Warning: reg '\sine' is assigned in a continuous assignment at /home/tombert/qflow_projects/sin_cos/source/sincos.v:50.
-Warning: reg '\cosine' is assigned in a continuous assignment at /home/tombert/qflow_projects/sin_cos/source/sincos.v:51.
+Generating RTLIL representation for module `\sincos'.
+Warning: Replacing memory \z with list of registers. See /home/tombert/qflow_projects/sin_cos/source/sincos.v:37
+Warning: Replacing memory \y with list of registers. See /home/tombert/qflow_projects/sin_cos/source/sincos.v:36
+Warning: Replacing memory \x with list of registers. See /home/tombert/qflow_projects/sin_cos/source/sincos.v:35
+Warning: Replacing memory \atan with list of registers. See /home/tombert/qflow_projects/sin_cos/source/sincos.v:25
 Successfully finished Verilog frontend.
 
 3. Executing SYNTH pass.
@@ -42,10 +44,10 @@ Successfully finished Verilog frontend.
 3.1. Executing HIERARCHY pass (managing design hierarchy).
 
 3.1.1. Analyzing design hierarchy..
-Top module:  \cordic
+Top module:  \sincos
 
 3.1.2. Analyzing design hierarchy..
-Top module:  \cordic
+Top module:  \sincos
 Removed 0 unused modules.
 
 3.2. Executing PROC pass (convert processes to netlists).
@@ -54,180 +56,327 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 17 switch rules as full_case in process $proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32 in module cordic.
+Marked 9 switch rules as full_case in process $proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9 in module sincos.
 Removed a total of 0 dead cases.
 
 3.2.3. Executing PROC_INIT pass (extract init attributes).
 
 3.2.4. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst in `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
+Found async reset \rst in `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
 
 3.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-     1/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:27$31_DATA[15:0]$286
-     2/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:27$31_ADDR[31:0]$285
-     3/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:26$30_DATA[15:0]$284
-     4/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:26$30_ADDR[31:0]$283
-     5/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:25$29_DATA[15:0]$282
-     6/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:25$29_ADDR[31:0]$281
-     7/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:24$28_DATA[15:0]$280
-     8/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:24$28_ADDR[31:0]$279
-     9/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$27_DATA[15:0]$278
-    10/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$27_ADDR[31:0]$277
-    11/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:22$26_DATA[15:0]$276
-    12/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:22$26_ADDR[31:0]$275
-    13/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:21$25_DATA[15:0]$274
-    14/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:21$25_ADDR[31:0]$273
-    15/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:20$24_DATA[15:0]$272
-    16/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:20$24_ADDR[31:0]$271
-    17/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:19$23_DATA[15:0]$270
-    18/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:19$23_ADDR[31:0]$269
-    19/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:18$22_DATA[15:0]$268
-    20/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:18$22_ADDR[31:0]$267
-    21/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:17$21_DATA[15:0]$266
-    22/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:17$21_ADDR[31:0]$265
-    23/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:16$20_DATA[15:0]$264
-    24/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:16$20_ADDR[31:0]$263
-    25/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:15$19_DATA[15:0]$262
-    26/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:15$19_ADDR[31:0]$261
-    27/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:14$18_DATA[15:0]$260
-    28/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:14$18_ADDR[31:0]$259
-    29/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:13$17_DATA[15:0]$258
-    30/30: $0$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:13$17_ADDR[31:0]$257
-Creating decoders for process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
-     1/5: $1\i[31:0]
-     2/5: $0\i[31:0]
-     3/5: $0\x[15:0]
-     4/5: $0\z[15:0]
-     5/5: $0\y[15:0]
+Creating decoders for process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+     1/42: $1\i[31:0]
+     2/42: $0\i[31:0]
+     3/42: $0\z[8][7:0]
+     4/42: $0\z[7][7:0]
+     5/42: $0\z[6][7:0]
+     6/42: $0\z[5][7:0]
+     7/42: $0\z[4][7:0]
+     8/42: $0\z[3][7:0]
+     9/42: $0\z[2][7:0]
+    10/42: $0\z[1][7:0]
+    11/42: $0\z[0][7:0]
+    12/42: $0\y[8][7:0]
+    13/42: $0\y[7][7:0]
+    14/42: $0\y[6][7:0]
+    15/42: $0\y[5][7:0]
+    16/42: $0\y[4][7:0]
+    17/42: $0\y[3][7:0]
+    18/42: $0\y[2][7:0]
+    19/42: $0\y[1][7:0]
+    20/42: $0\y[0][7:0]
+    21/42: $0\x[8][7:0]
+    22/42: $0\x[7][7:0]
+    23/42: $0\x[6][7:0]
+    24/42: $0\x[5][7:0]
+    25/42: $0\x[4][7:0]
+    26/42: $0\x[3][7:0]
+    27/42: $0\x[2][7:0]
+    28/42: $0\x[1][7:0]
+    29/42: $0\x[0][7:0]
+    30/42: $0\atan[7][7:0]
+    31/42: $0\atan[6][7:0]
+    32/42: $0\atan[5][7:0]
+    33/42: $0\atan[4][7:0]
+    34/42: $0\atan[3][7:0]
+    35/42: $0\atan[2][7:0]
+    36/42: $0\atan[1][7:0]
+    37/42: $0\atan[0][7:0]
+    38/42: $0\sine[7:0]
+    39/42: $0\cosine[7:0]
+    40/42: $0\valid[7:0]
+    41/42: $0\count[3:0]
+    42/42: $0\done[0:0]
 
 3.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:13$17_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:13$17_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:14$18_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:14$18_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:15$19_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:15$19_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:16$20_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:16$20_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:17$21_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:17$21_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:18$22_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:18$22_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:19$23_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:19$23_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:20$24_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:20$24_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:21$25_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:21$25_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:22$26_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:22$26_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$27_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$27_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:24$28_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:24$28_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:25$29_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:25$29_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:26$30_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:26$30_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:27$31_ADDR' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-No latch inferred for signal `\cordic.$memwr$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:27$31_DATA' from process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
 
 3.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\cordic.\y' using process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
-  created $adff cell `$procdff$431' with positive edge clock and positive level reset.
-Creating register for signal `\cordic.\z' using process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
+Creating register for signal `\sincos.\done' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$170' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\count' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$171' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\valid' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$172' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\i' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$173' with positive edge clock.
+Creating register for signal `\sincos.\cosine' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$174' with positive edge clock.
+Creating register for signal `\sincos.\sine' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$175' with positive edge clock.
+Creating register for signal `\sincos.\atan[0]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$176' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[1]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$177' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[2]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$178' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[3]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$179' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[4]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$180' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[5]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$181' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[6]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$182' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\atan[7]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$183' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\x[0]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$184' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\x[1]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$185' with positive edge clock.
+Creating register for signal `\sincos.\x[2]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$186' with positive edge clock.
+Creating register for signal `\sincos.\x[3]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$187' with positive edge clock.
+Creating register for signal `\sincos.\x[4]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$188' with positive edge clock.
+Creating register for signal `\sincos.\x[5]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$189' with positive edge clock.
+Creating register for signal `\sincos.\x[6]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$190' with positive edge clock.
+Creating register for signal `\sincos.\x[7]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$191' with positive edge clock.
+Creating register for signal `\sincos.\x[8]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$192' with positive edge clock.
+Creating register for signal `\sincos.\y[0]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $adff cell `$procdff$193' with positive edge clock and positive level reset.
+Creating register for signal `\sincos.\y[1]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$194' with positive edge clock.
+Creating register for signal `\sincos.\y[2]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$195' with positive edge clock.
+Creating register for signal `\sincos.\y[3]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$196' with positive edge clock.
+Creating register for signal `\sincos.\y[4]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$197' with positive edge clock.
+Creating register for signal `\sincos.\y[5]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$198' with positive edge clock.
+Creating register for signal `\sincos.\y[6]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$199' with positive edge clock.
+Creating register for signal `\sincos.\y[7]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$200' with positive edge clock.
+Creating register for signal `\sincos.\y[8]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$201' with positive edge clock.
+Creating register for signal `\sincos.\z[0]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
 Warning: Async reset value `\theta' is not constant!
-  created $dffsr cell `$procdff$432' with positive edge clock and positive level non-const reset.
-Creating register for signal `\cordic.\x' using process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
-  created $adff cell `$procdff$439' with positive edge clock and positive level reset.
-Creating register for signal `\cordic.\i' using process `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
-  created $dff cell `$procdff$440' with positive edge clock.
+  created $dffsr cell `$procdff$202' with positive edge clock and positive level non-const reset.
+Creating register for signal `\sincos.\z[1]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$209' with positive edge clock.
+Creating register for signal `\sincos.\z[2]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$210' with positive edge clock.
+Creating register for signal `\sincos.\z[3]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$211' with positive edge clock.
+Creating register for signal `\sincos.\z[4]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$212' with positive edge clock.
+Creating register for signal `\sincos.\z[5]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$213' with positive edge clock.
+Creating register for signal `\sincos.\z[6]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$214' with positive edge clock.
+Creating register for signal `\sincos.\z[7]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$215' with positive edge clock.
+Creating register for signal `\sincos.\z[8]' using process `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+  created $dff cell `$procdff$216' with positive edge clock.
 
 3.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:12$256'.
-Found and cleaned up 16 empty switches in `\cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
-Removing empty process `cordic.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:30$32'.
-Cleaned up 16 empty switches.
+Found and cleaned up 8 empty switches in `\sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+Removing empty process `sincos.$proc$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$9'.
+Cleaned up 8 empty switches.
 
 3.3. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
-<suppressed ~64 debug messages>
+Optimizing module sincos.
+<suppressed ~32 debug messages>
 
 3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
-Removed 181 unused cells and 358 unused wires.
-<suppressed ~183 debug messages>
+Finding unused cells or wires in module \sincos..
+Removed 7 unused cells and 105 unused wires.
+<suppressed ~12 debug messages>
 
 3.5. Executing CHECK pass (checking for obvious problems).
-checking module cordic..
+checking module sincos..
 found and reported 0 problems.
 
 3.6. Executing OPT pass (performing simple optimizations).
 
 3.6.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.6.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 <suppressed ~3 debug messages>
 Removed a total of 1 cells.
 
 3.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~5 debug messages>
+<suppressed ~25 debug messages>
 
 3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
+  Optimizing cells in module \sincos.
 Performed a total of 0 changes.
 
 3.6.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.6.6. Executing OPT_RMDFF pass (remove dff with constant values).
+Removing $procdff$176 ($adff) from module sincos.
+Removing $procdff$177 ($adff) from module sincos.
+Removing $procdff$178 ($adff) from module sincos.
+Removing $procdff$179 ($adff) from module sincos.
+Removing $procdff$180 ($adff) from module sincos.
+Removing $procdff$181 ($adff) from module sincos.
+Removing $procdff$182 ($adff) from module sincos.
+Removing $procdff$184 ($adff) from module sincos.
+Removing $procdff$193 ($adff) from module sincos.
+Replaced 9 DFF cells.
 
 3.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 Removed 0 unused cells and 1 unused wires.
 <suppressed ~1 debug messages>
 
 3.6.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
+<suppressed ~6 debug messages>
 
-3.6.9. Finished OPT passes. (There is nothing left to do.)
+3.6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sincos..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~24 debug messages>
+
+3.6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sincos.
+Performed a total of 0 changes.
+
+3.6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sincos'.
+Removed a total of 0 cells.
+
+3.6.13. Executing OPT_RMDFF pass (remove dff with constant values).
+Removing $procdff$185 ($dff) from module sincos.
+Replaced 1 DFF cells.
+
+3.6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sincos..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+3.6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sincos.
+
+3.6.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.6.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sincos..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~24 debug messages>
+
+3.6.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sincos.
+Performed a total of 0 changes.
+
+3.6.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sincos'.
+Removed a total of 0 cells.
+
+3.6.20. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sincos..
+
+3.6.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sincos.
+
+3.6.23. Finished OPT passes. (There is nothing left to do.)
 
 3.7. Executing WREDUCE pass (reducing word size of cells).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:13$241 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:14$242 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:15$243 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:16$244 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:17$245 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:18$246 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:19$247 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:20$248 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:21$249 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:22$250 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$251 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:24$252 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:25$253 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:26$254 (atan_table).
-Removed top 28 address bits (of 32) from memory init port cordic.$meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:27$255 (atan_table).
-Removed top 28 address bits (of 32) from memory read port cordic.$memrd$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:40$233 (atan_table).
-Removed top 31 bits (of 32) from port B of cell cordic.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:37$228 ($ge).
-Removed top 15 bits (of 16) from port B of cell cordic.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:38$230 ($sub).
-Removed top 15 bits (of 16) from port B of cell cordic.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:39$232 ($add).
-Removed top 15 bits (of 16) from port B of cell cordic.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:42$236 ($add).
-Removed top 15 bits (of 16) from port B of cell cordic.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:43$238 ($sub).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$10 ($ge).
+Removed top 1 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$15 ($sub).
+Removed top 1 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$20 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$21 ($ge).
+Removed top 1 bits (of 8) from port A of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$23 ($sub).
+Removed top 1 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$23 ($sub).
+Removed top 1 bits (of 8) from port A of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$28 ($add).
+Removed top 1 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$28 ($add).
+Removed top 2 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$25 ($add).
+Removed top 2 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$26 ($sub).
+Removed top 2 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$30 ($sub).
+Removed top 2 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$31 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$32 ($ge).
+Removed top 2 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$41 ($sub).
+Removed top 2 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$34 ($sub).
+Removed top 2 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$36 ($add).
+Removed top 3 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$37 ($sub).
+Removed top 2 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$39 ($add).
+Removed top 3 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$42 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$43 ($ge).
+Removed top 3 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$45 ($sub).
+Removed top 3 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$50 ($add).
+Removed top 3 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$47 ($add).
+Removed top 3 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$48 ($sub).
+Removed top 3 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$52 ($sub).
+Removed top 3 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$53 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$54 ($ge).
+Removed top 4 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$63 ($sub).
+Removed top 4 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$56 ($sub).
+Removed top 4 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$58 ($add).
+Removed top 4 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$59 ($sub).
+Removed top 4 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$61 ($add).
+Removed top 4 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$64 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$65 ($ge).
+Removed top 5 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$67 ($sub).
+Removed top 5 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$72 ($add).
+Removed top 5 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$69 ($add).
+Removed top 5 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$70 ($sub).
+Removed top 5 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$74 ($sub).
+Removed top 5 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$75 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$76 ($ge).
+Removed top 6 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$85 ($sub).
+Removed top 6 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$78 ($sub).
+Removed top 6 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$80 ($add).
+Removed top 6 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$81 ($sub).
+Removed top 6 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$83 ($add).
+Removed top 6 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$86 ($add).
+Removed top 31 bits (of 32) from port B of cell sincos.$ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$87 ($ge).
+Removed top 7 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$89 ($sub).
+Removed top 7 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$94 ($add).
+Removed top 7 bits (of 8) from port B of cell sincos.$add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$91 ($add).
+Removed top 7 bits (of 8) from port B of cell sincos.$sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$96 ($sub).
 
 3.8. Executing PEEPOPT pass (run peephole optimizers).
 
 3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.10. Executing TECHMAP pass (map to technology primitives).
 
@@ -241,106 +390,239 @@ No more expansions possible.
 <suppressed ~20 debug messages>
 
 3.11. Executing ALUMACC pass (create $alu and $macc cells).
-Extracting $alu and $macc cells in module cordic:
-  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:39$232 ($add).
-  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:42$236 ($add).
-  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:44$240 ($add).
-  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:38$230 ($sub).
-  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:40$234 ($sub).
-  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:43$238 ($sub).
-  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:43$238.
-  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:40$234.
-  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:38$230.
-  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:44$240.
-  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:42$236.
-  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:39$232.
-  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:37$228 ($ge): new $alu
-  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:37$228: $auto$alumacc.cc:474:replace_alu$442
-  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:39$232: $auto$alumacc.cc:474:replace_alu$451
-  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:42$236: $auto$alumacc.cc:474:replace_alu$454
-  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:38$230: $auto$alumacc.cc:474:replace_alu$457
-  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:44$240: $auto$alumacc.cc:474:replace_alu$460
-  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:40$234: $auto$alumacc.cc:474:replace_alu$463
-  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:43$238: $auto$alumacc.cc:474:replace_alu$466
-  created 7 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module sincos:
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$25 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$36 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$47 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$58 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$69 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$80 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$91 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$28 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$39 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$50 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$61 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$72 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$83 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$94 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$20 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$31 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$42 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$53 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$64 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$75 ($add).
+  creating $macc model for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$86 ($add).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$23 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$34 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$45 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$56 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$67 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$78 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$89 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$15 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$26 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$37 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$48 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$59 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$70 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$81 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$30 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$41 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$52 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$63 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$74 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$85 ($sub).
+  creating $macc model for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$96 ($sub).
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$96.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$85.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$74.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$63.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$52.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$41.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$30.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$81.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$70.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$59.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$48.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$37.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$26.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$15.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$89.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$78.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$67.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$56.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$45.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$34.
+  creating $alu model for $macc $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$23.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$86.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$75.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$64.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$53.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$42.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$31.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$20.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$94.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$83.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$72.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$61.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$50.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$39.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$28.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$91.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$80.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$69.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$58.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$47.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$36.
+  creating $alu model for $macc $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$25.
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$10 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$21 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$32 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$43 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$54 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$65 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$76 ($ge): new $alu
+  creating $alu model for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$87 ($ge): new $alu
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$87: $auto$alumacc.cc:474:replace_alu$225
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$76: $auto$alumacc.cc:474:replace_alu$236
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$65: $auto$alumacc.cc:474:replace_alu$247
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$54: $auto$alumacc.cc:474:replace_alu$258
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$43: $auto$alumacc.cc:474:replace_alu$269
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$32: $auto$alumacc.cc:474:replace_alu$280
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$21: $auto$alumacc.cc:474:replace_alu$291
+  creating $alu cell for $ge$/home/tombert/qflow_projects/sin_cos/source/sincos.v:45$10: $auto$alumacc.cc:474:replace_alu$302
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$25: $auto$alumacc.cc:474:replace_alu$313
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$36: $auto$alumacc.cc:474:replace_alu$316
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$47: $auto$alumacc.cc:474:replace_alu$319
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$58: $auto$alumacc.cc:474:replace_alu$322
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$69: $auto$alumacc.cc:474:replace_alu$325
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$80: $auto$alumacc.cc:474:replace_alu$328
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:47$91: $auto$alumacc.cc:474:replace_alu$331
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$28: $auto$alumacc.cc:474:replace_alu$334
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$39: $auto$alumacc.cc:474:replace_alu$337
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$50: $auto$alumacc.cc:474:replace_alu$340
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$61: $auto$alumacc.cc:474:replace_alu$343
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$72: $auto$alumacc.cc:474:replace_alu$346
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$83: $auto$alumacc.cc:474:replace_alu$349
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:50$94: $auto$alumacc.cc:474:replace_alu$352
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$20: $auto$alumacc.cc:474:replace_alu$355
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$31: $auto$alumacc.cc:474:replace_alu$358
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$42: $auto$alumacc.cc:474:replace_alu$361
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$53: $auto$alumacc.cc:474:replace_alu$364
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$64: $auto$alumacc.cc:474:replace_alu$367
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$75: $auto$alumacc.cc:474:replace_alu$370
+  creating $alu cell for $add$/home/tombert/qflow_projects/sin_cos/source/sincos.v:52$86: $auto$alumacc.cc:474:replace_alu$373
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$23: $auto$alumacc.cc:474:replace_alu$376
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$34: $auto$alumacc.cc:474:replace_alu$379
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$45: $auto$alumacc.cc:474:replace_alu$382
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$56: $auto$alumacc.cc:474:replace_alu$385
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$67: $auto$alumacc.cc:474:replace_alu$388
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$78: $auto$alumacc.cc:474:replace_alu$391
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:46$89: $auto$alumacc.cc:474:replace_alu$394
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$15: $auto$alumacc.cc:474:replace_alu$397
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$26: $auto$alumacc.cc:474:replace_alu$400
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$37: $auto$alumacc.cc:474:replace_alu$403
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$48: $auto$alumacc.cc:474:replace_alu$406
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$59: $auto$alumacc.cc:474:replace_alu$409
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$70: $auto$alumacc.cc:474:replace_alu$412
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:48$81: $auto$alumacc.cc:474:replace_alu$415
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$30: $auto$alumacc.cc:474:replace_alu$418
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$41: $auto$alumacc.cc:474:replace_alu$421
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$52: $auto$alumacc.cc:474:replace_alu$424
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$63: $auto$alumacc.cc:474:replace_alu$427
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$74: $auto$alumacc.cc:474:replace_alu$430
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$85: $auto$alumacc.cc:474:replace_alu$433
+  creating $alu cell for $sub$/home/tombert/qflow_projects/sin_cos/source/sincos.v:51$96: $auto$alumacc.cc:474:replace_alu$436
+  created 50 $alu and 0 $macc cells.
 
 3.12. Executing SHARE pass (SAT-based resource sharing).
 
 3.13. Executing OPT pass (performing simple optimizations).
 
 3.13.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.13.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~5 debug messages>
+<suppressed ~24 debug messages>
 
 3.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
-    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$447: { $auto$alumacc.cc:490:replace_alu$443 [0] $auto$alumacc.cc:490:replace_alu$443 [1] $auto$alumacc.cc:490:replace_alu$443 [2] $auto$alumacc.cc:490:replace_alu$443 [3] $auto$alumacc.cc:490:replace_alu$443 [4] $auto$alumacc.cc:490:replace_alu$443 [5] $auto$alumacc.cc:490:replace_alu$443 [6] $auto$alumacc.cc:490:replace_alu$443 [7] $auto$alumacc.cc:490:replace_alu$443 [8] $auto$alumacc.cc:490:replace_alu$443 [9] $auto$alumacc.cc:490:replace_alu$443 [10] $auto$alumacc.cc:490:replace_alu$443 [11] $auto$alumacc.cc:490:replace_alu$443 [12] $auto$alumacc.cc:490:replace_alu$443 [13] $auto$alumacc.cc:490:replace_alu$443 [14] $auto$alumacc.cc:490:replace_alu$443 [15] }
-  Optimizing cells in module \cordic.
-Performed a total of 1 changes.
+  Optimizing cells in module \sincos.
+    New input vector for $reduce_or cell $auto$alumacc.cc:509:replace_alu$234: { $auto$rtlil.cc:1864:Xor$231 $auto$rtlil.cc:1835:ReduceAnd$233 }
+    New input vector for $reduce_or cell $auto$alumacc.cc:509:replace_alu$289: { $auto$rtlil.cc:1864:Xor$286 $auto$rtlil.cc:1835:ReduceAnd$288 }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$232: { $auto$alumacc.cc:490:replace_alu$226 [0] $auto$alumacc.cc:490:replace_alu$226 [1] $auto$alumacc.cc:490:replace_alu$226 [2] $auto$alumacc.cc:490:replace_alu$226 [3] $auto$alumacc.cc:490:replace_alu$226 [4] $auto$alumacc.cc:490:replace_alu$226 [5] $auto$alumacc.cc:490:replace_alu$226 [6] $auto$alumacc.cc:490:replace_alu$226 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$243: { $auto$alumacc.cc:490:replace_alu$237 [0] $auto$alumacc.cc:490:replace_alu$237 [1] $auto$alumacc.cc:490:replace_alu$237 [2] $auto$alumacc.cc:490:replace_alu$237 [3] $auto$alumacc.cc:490:replace_alu$237 [4] $auto$alumacc.cc:490:replace_alu$237 [5] $auto$alumacc.cc:490:replace_alu$237 [6] $auto$alumacc.cc:490:replace_alu$237 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$254: { $auto$alumacc.cc:490:replace_alu$248 [0] $auto$alumacc.cc:490:replace_alu$248 [1] $auto$alumacc.cc:490:replace_alu$248 [2] $auto$alumacc.cc:490:replace_alu$248 [3] $auto$alumacc.cc:490:replace_alu$248 [4] $auto$alumacc.cc:490:replace_alu$248 [5] $auto$alumacc.cc:490:replace_alu$248 [6] $auto$alumacc.cc:490:replace_alu$248 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$265: { $auto$alumacc.cc:490:replace_alu$259 [0] $auto$alumacc.cc:490:replace_alu$259 [1] $auto$alumacc.cc:490:replace_alu$259 [2] $auto$alumacc.cc:490:replace_alu$259 [3] $auto$alumacc.cc:490:replace_alu$259 [4] $auto$alumacc.cc:490:replace_alu$259 [5] $auto$alumacc.cc:490:replace_alu$259 [6] $auto$alumacc.cc:490:replace_alu$259 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$276: { $auto$alumacc.cc:490:replace_alu$270 [0] $auto$alumacc.cc:490:replace_alu$270 [1] $auto$alumacc.cc:490:replace_alu$270 [2] $auto$alumacc.cc:490:replace_alu$270 [3] $auto$alumacc.cc:490:replace_alu$270 [4] $auto$alumacc.cc:490:replace_alu$270 [5] $auto$alumacc.cc:490:replace_alu$270 [6] $auto$alumacc.cc:490:replace_alu$270 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$287: { $auto$alumacc.cc:490:replace_alu$281 [0] $auto$alumacc.cc:490:replace_alu$281 [1] $auto$alumacc.cc:490:replace_alu$281 [2] $auto$alumacc.cc:490:replace_alu$281 [3] $auto$alumacc.cc:490:replace_alu$281 [4] $auto$alumacc.cc:490:replace_alu$281 [5] $auto$alumacc.cc:490:replace_alu$281 [6] $auto$alumacc.cc:490:replace_alu$281 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$298: { $auto$alumacc.cc:490:replace_alu$292 [0] $auto$alumacc.cc:490:replace_alu$292 [1] $auto$alumacc.cc:490:replace_alu$292 [2] $auto$alumacc.cc:490:replace_alu$292 [3] $auto$alumacc.cc:490:replace_alu$292 [4] $auto$alumacc.cc:490:replace_alu$292 [5] $auto$alumacc.cc:490:replace_alu$292 [6] $auto$alumacc.cc:490:replace_alu$292 [7] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$309: { $auto$alumacc.cc:490:replace_alu$303 [0] $auto$alumacc.cc:490:replace_alu$303 [1] $auto$alumacc.cc:490:replace_alu$303 [2] $auto$alumacc.cc:490:replace_alu$303 [3] $auto$alumacc.cc:490:replace_alu$303 [4] $auto$alumacc.cc:490:replace_alu$303 [5] $auto$alumacc.cc:490:replace_alu$303 [6] $auto$alumacc.cc:490:replace_alu$303 [7] }
+  Optimizing cells in module \sincos.
+Performed a total of 10 changes.
 
 3.13.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.13.6. Executing OPT_RMDFF pass (remove dff with constant values).
 
 3.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
-Removed 0 unused cells and 1 unused wires.
+Finding unused cells or wires in module \sincos..
+Removed 0 unused cells and 8 unused wires.
 <suppressed ~1 debug messages>
 
 3.13.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.13.9. Rerunning OPT passes. (Maybe there is more to do..)
 
 3.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~5 debug messages>
+<suppressed ~24 debug messages>
 
 3.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
+  Optimizing cells in module \sincos.
 Performed a total of 0 changes.
 
 3.13.12. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.13.13. Executing OPT_RMDFF pass (remove dff with constant values).
 
 3.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.13.15. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.13.16. Finished OPT passes. (There is nothing left to do.)
 
 3.14. Executing FSM pass (extract and optimize FSM).
 
 3.14.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking sincos.y[1] as FSM state register:
+    Users of register don't seem to benefit from recoding.
 
 3.14.2. Executing FSM_EXTRACT pass (extracting FSM from design).
 
 3.14.3. Executing FSM_OPT pass (simple optimizations of FSMs).
 
 3.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.14.5. Executing FSM_OPT pass (simple optimizations of FSMs).
 
@@ -353,154 +635,117 @@ Finding unused cells or wires in module \cordic..
 3.15. Executing OPT pass (performing simple optimizations).
 
 3.15.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.15.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.15.3. Executing OPT_RMDFF pass (remove dff with constant values).
 
 3.15.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.15.5. Finished fast OPT passes.
 
 3.16. Executing MEMORY pass.
 
 3.16.1. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
-Checking cell `$memrd$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:40$233' in module `\cordic': no (compatible) $dff found.
 
 3.16.2. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.16.3. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
 
 3.16.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.16.5. Executing MEMORY_COLLECT pass (generating $mem cells).
-Collecting $memrd, $memwr and $meminit for memory `\atan_table' in module `\cordic':
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:13$241 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:14$242 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:15$243 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:16$244 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:17$245 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:18$246 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:19$247 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:20$248 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:21$249 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:22$250 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:23$251 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:24$252 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:25$253 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:26$254 ($meminit)
-  $meminit$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:27$255 ($meminit)
-  $memrd$\atan_table$/home/tombert/qflow_projects/sin_cos/source/sincos.v:40$233 ($memrd)
 
 3.17. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.18. Executing OPT pass (performing simple optimizations).
 
 3.18.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.18.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.18.3. Executing OPT_RMDFF pass (remove dff with constant values).
 
 3.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.18.5. Finished fast OPT passes.
 
 3.19. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
-Mapping memory cell \atan_table in module \cordic:
-  created 16 $dff cells and 0 static cells of width 16.
-  read interface: 0 $dff and 15 $mux cells.
-  write interface: 0 write mux blocks.
 
 3.20. Executing OPT pass (performing simple optimizations).
 
 3.20.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
-<suppressed ~15 debug messages>
+Optimizing module sincos.
 
 3.20.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~5 debug messages>
+<suppressed ~24 debug messages>
 
 3.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
-Performed a total of 0 changes.
+  Optimizing cells in module \sincos.
+    Consolidated identical input bits for $mux cell $procmux$144:
+      Old ports: A=8'11001111, B=8'00110001, Y=$0\y[1][7:0]
+      New ports: A=2'01, B=2'10, Y={ $0\y[1][7:0] [4] $0\y[1][7:0] [1] }
+      New connections: { $0\y[1][7:0] [7:5] $0\y[1][7:0] [3:2] $0\y[1][7:0] [0] } = { $0\y[1][7:0] [1] $0\y[1][7:0] [1] $0\y[1][7:0] [4] $0\y[1][7:0] [1] $0\y[1][7:0] [1] 1'1 }
+  Optimizing cells in module \sincos.
+Performed a total of 1 changes.
 
 3.20.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.20.6. Executing OPT_RMDFF pass (remove dff with constant values).
-Removing $memory\atan_table[14]$498 ($dff) from module cordic.
-Removing $memory\atan_table[13]$496 ($dff) from module cordic.
-Removing $memory\atan_table[12]$494 ($dff) from module cordic.
-Removing $memory\atan_table[11]$492 ($dff) from module cordic.
-Removing $memory\atan_table[10]$490 ($dff) from module cordic.
-Removing $memory\atan_table[9]$488 ($dff) from module cordic.
-Removing $memory\atan_table[8]$486 ($dff) from module cordic.
-Removing $memory\atan_table[7]$484 ($dff) from module cordic.
-Removing $memory\atan_table[6]$482 ($dff) from module cordic.
-Removing $memory\atan_table[5]$480 ($dff) from module cordic.
-Removing $memory\atan_table[4]$478 ($dff) from module cordic.
-Removing $memory\atan_table[3]$476 ($dff) from module cordic.
-Removing $memory\atan_table[2]$474 ($dff) from module cordic.
-Removing $memory\atan_table[1]$472 ($dff) from module cordic.
-Removing $memory\atan_table[0]$470 ($dff) from module cordic.
-Removing $memory\atan_table[15]$500 ($dff) from module cordic.
-Replaced 16 DFF cells.
 
 3.20.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
-Removed 0 unused cells and 47 unused wires.
-<suppressed ~1 debug messages>
+Finding unused cells or wires in module \sincos..
 
 3.20.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.20.9. Rerunning OPT passes. (Maybe there is more to do..)
 
 3.20.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~5 debug messages>
+<suppressed ~24 debug messages>
 
 3.20.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
+  Optimizing cells in module \sincos.
 Performed a total of 0 changes.
 
 3.20.12. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 3.20.13. Executing OPT_RMDFF pass (remove dff with constant values).
 
 3.20.14. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 3.20.15. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.20.16. Finished OPT passes. (There is nothing left to do.)
 
@@ -531,47 +776,97 @@ Generating RTLIL representation for module `\_90_lut'.
 Successfully finished Verilog frontend.
 
 3.21.2. Continuing TECHMAP pass.
-Using extmapper simplemap for cells of type $mux.
-Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=16\B_WIDTH=1\Y_WIDTH=16 for cells of type $alu.
-Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=16\B_WIDTH=16\Y_WIDTH=16 for cells of type $alu.
-Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=4\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=5\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=6\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=7\B_WIDTH=7\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=1\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=2\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=3\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=6\Y_WIDTH=8 for cells of type $alu.
 Using extmapper simplemap for cells of type $reduce_or.
-Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=1\B_WIDTH=16\Y_WIDTH=16 for cells of type $alu.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=7\B_WIDTH=8\Y_WIDTH=8 for cells of type $alu.
+Using extmapper simplemap for cells of type $mux.
 Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $dff.
 Using extmapper simplemap for cells of type $not.
 Using extmapper simplemap for cells of type $dffsr.
-Using template $paramod\_90_lcu\WIDTH=16 for cells of type $lcu.
-Using extmapper simplemap for cells of type $xor.
-Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=5\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=4\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=3\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=2\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=1\Y_WIDTH=8 for cells of type $alu.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=8\B_WIDTH=7\Y_WIDTH=8 for cells of type $alu.
 Using extmapper simplemap for cells of type $and.
+Using template $paramod\_90_lcu\WIDTH=8 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
 Using extmapper simplemap for cells of type $or.
 No more expansions possible.
-<suppressed ~706 debug messages>
+<suppressed ~2254 debug messages>
 
 3.22. Executing OPT pass (performing simple optimizations).
 
 3.22.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
-<suppressed ~666 debug messages>
+Optimizing module sincos.
+<suppressed ~1254 debug messages>
 
 3.22.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
-<suppressed ~51 debug messages>
-Removed a total of 17 cells.
+Finding identical cells in module `\sincos'.
+<suppressed ~765 debug messages>
+Removed a total of 255 cells.
 
 3.22.3. Executing OPT_RMDFF pass (remove dff with constant values).
+Removing $auto$simplemap.cc:420:simplemap_dff$890 ($_DFF_P_) from module sincos.
+Replaced 1 DFF cells.
 
 3.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
-Removed 87 unused cells and 433 unused wires.
-<suppressed ~88 debug messages>
+Finding unused cells or wires in module \sincos..
+Removed 438 unused cells and 1826 unused wires.
+<suppressed ~439 debug messages>
 
-3.22.5. Finished fast OPT passes.
+3.22.5. Rerunning OPT passes. (Removed registers in this run.)
+
+3.22.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sincos.
+<suppressed ~11 debug messages>
+
+3.22.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sincos'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+3.22.8. Executing OPT_RMDFF pass (remove dff with constant values).
+Removing $auto$simplemap.cc:420:simplemap_dff$898 ($_DFF_P_) from module sincos.
+Replaced 1 DFF cells.
+
+3.22.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sincos..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+3.22.10. Rerunning OPT passes. (Removed registers in this run.)
+
+3.22.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sincos.
+<suppressed ~2 debug messages>
+
+3.22.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sincos'.
+Removed a total of 0 cells.
+
+3.22.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.22.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sincos..
+
+3.22.15. Finished fast OPT passes.
 
 3.23. Executing ABC pass (technology mapping using ABC).
 
-3.23.1. Extracting gate netlist of module `\cordic' to `<abc-temp-dir>/input.blif'..
-Extracted 365 gates and 432 wires to a netlist network with 65 inputs and 64 outputs.
+3.23.1. Extracting gate netlist of module `\sincos' to `<abc-temp-dir>/input.blif'..
+Extracted 1768 gates and 1940 wires to a netlist network with 170 inputs and 185 outputs.
 
 3.23.1.1. Executing ABC.
 Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
@@ -587,77 +882,101 @@ ABC: + map
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 3.23.1.2. Re-integrating ABC results.
-ABC RESULTS:               AND cells:       16
-ABC RESULTS:            ANDNOT cells:       32
-ABC RESULTS:              AOI3 cells:        2
-ABC RESULTS:              NAND cells:        7
-ABC RESULTS:               NOR cells:        5
-ABC RESULTS:               NOT cells:        7
-ABC RESULTS:              OAI3 cells:        3
-ABC RESULTS:                OR cells:       23
-ABC RESULTS:             ORNOT cells:        1
-ABC RESULTS:              XNOR cells:        8
-ABC RESULTS:               XOR cells:       24
-ABC RESULTS:        internal signals:      303
-ABC RESULTS:           input signals:       65
-ABC RESULTS:          output signals:       64
+ABC RESULTS:               AND cells:       42
+ABC RESULTS:            ANDNOT cells:      180
+ABC RESULTS:              AOI3 cells:      106
+ABC RESULTS:               MUX cells:      133
+ABC RESULTS:              NAND cells:       47
+ABC RESULTS:               NOR cells:       32
+ABC RESULTS:               NOT cells:       81
+ABC RESULTS:              OAI3 cells:       90
+ABC RESULTS:                OR cells:       81
+ABC RESULTS:             ORNOT cells:       35
+ABC RESULTS:              XNOR cells:       96
+ABC RESULTS:               XOR cells:      322
+ABC RESULTS:              ZERO cells:        1
+ABC RESULTS:        internal signals:     1585
+ABC RESULTS:           input signals:      170
+ABC RESULTS:          output signals:      185
 Removing temp directory.
 
 3.24. Executing OPT pass (performing simple optimizations).
 
 3.24.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 3.24.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
-<suppressed ~12 debug messages>
-Removed a total of 4 cells.
+Finding identical cells in module `\sincos'.
+<suppressed ~69 debug messages>
+Removed a total of 23 cells.
 
 3.24.3. Executing OPT_RMDFF pass (remove dff with constant values).
+Removing $auto$simplemap.cc:420:simplemap_dff$836 ($_DFF_P_) from module sincos.
+Replaced 1 DFF cells.
 
 3.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
-Removed 48 unused cells and 252 unused wires.
-<suppressed ~50 debug messages>
+Finding unused cells or wires in module \sincos..
+Removed 0 unused cells and 994 unused wires.
+<suppressed ~1 debug messages>
 
-3.24.5. Finished fast OPT passes.
+3.24.5. Rerunning OPT passes. (Removed registers in this run.)
+
+3.24.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sincos.
+<suppressed ~2 debug messages>
+
+3.24.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sincos'.
+Removed a total of 0 cells.
+
+3.24.8. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sincos..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.24.10. Finished fast OPT passes.
 
 3.25. Executing HIERARCHY pass (managing design hierarchy).
 
 3.25.1. Analyzing design hierarchy..
-Top module:  \cordic
+Top module:  \sincos
 
 3.25.2. Analyzing design hierarchy..
-Top module:  \cordic
+Top module:  \sincos
 Removed 0 unused modules.
 
 3.26. Printing statistics.
 
-=== cordic ===
+=== sincos ===
 
-   Number of wires:                 85
-   Number of wire bits:            430
-   Number of public wires:          23
-   Number of public wire bits:     338
+   Number of wires:               1120
+   Number of wire bits:           1533
+   Number of public wires:          40
+   Number of public wire bits:     299
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                124
-     $_ANDNOT_                      16
-     $_AOI3_                         2
-     $_DFF_PP0_                     23
-     $_DFF_PP1_                      9
-     $_NAND_                         7
-     $_NOR_                          5
-     $_NOT_                          7
-     $_OAI3_                         3
-     $_ORNOT_                        1
-     $_OR_                          19
-     $_XNOR_                         8
-     $_XOR_                         24
+   Number of cells:               1421
+     $_ANDNOT_                     178
+     $_AND_                         42
+     $_AOI3_                       106
+     $_DFFSR_PPP_                    8
+     $_DFF_PP0_                      9
+     $_DFF_P_                      181
+     $_MUX_                        132
+     $_NAND_                        47
+     $_NOR_                         30
+     $_NOT_                         80
+     $_OAI3_                        90
+     $_ORNOT_                       33
+     $_OR_                          74
+     $_XNOR_                        92
+     $_XOR_                        319
 
 3.27. Executing CHECK pass (checking for obvious problems).
-checking module cordic..
+checking module sincos..
 found and reported 0 problems.
 
 4. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
@@ -698,50 +1017,51 @@ found and reported 0 problems.
     DFFSR _DFFSR_PNP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( S));
     DFFSR _DFFSR_PPN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S(~S));
     DFFSR _DFFSR_PPP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S(~S));
-Mapping DFF cells in module `\cordic':
-  mapped 23 $_DFF_PP0_ cells to \DFFSR cells.
-  mapped 9 $_DFF_PP1_ cells to \DFFSR cells.
+Mapping DFF cells in module `\sincos':
+  mapped 8 $_DFFSR_PPP_ cells to \DFFSR cells.
+  mapped 9 $_DFF_PP0_ cells to \DFFSR cells.
+  mapped 181 $_DFF_P_ cells to \DFFPOSX1 cells.
 
 5. Executing OPT pass (performing simple optimizations).
 
 5.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 5.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
-<suppressed ~93 debug messages>
-Removed a total of 31 cells.
+Finding identical cells in module `\sincos'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
 
 5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
 5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
+  Optimizing cells in module \sincos.
 Performed a total of 0 changes.
 
 5.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 5.6. Executing OPT_RMDFF pass (remove dff with constant values).
 
 5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
-Removed 0 unused cells and 31 unused wires.
+Finding unused cells or wires in module \sincos..
+Removed 0 unused cells and 8 unused wires.
 <suppressed ~1 debug messages>
 
 5.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 5.9. Finished OPT passes. (There is nothing left to do.)
 
 6. Executing ABC pass (technology mapping using ABC).
 
-6.1. Extracting gate netlist of module `\cordic' to `<abc-temp-dir>/input.blif'..
-Extracted 93 gates and 126 wires to a netlist network with 33 inputs and 33 outputs.
+6.1. Extracting gate netlist of module `\sincos' to `<abc-temp-dir>/input.blif'..
+Extracted 1240 gates and 1408 wires to a netlist network with 166 inputs and 182 outputs.
 
 6.1.1. Executing ABC.
 Running ABC command: /usr/local/share/qflow/bin/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
@@ -749,7 +1069,7 @@ ABC: ABC command line: "source <abc-temp-dir>/abc.script".
 ABC: 
 ABC: + read_blif <abc-temp-dir>/input.blif 
 ABC: + read_lib -w /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
@@ -775,64 +1095,71 @@ ABC: + map -M 1
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 6.1.2. Re-integrating ABC results.
-ABC RESULTS:            AND2X2 cells:        6
-ABC RESULTS:           AOI21X1 cells:        1
-ABC RESULTS:             INVX1 cells:       23
-ABC RESULTS:           NAND2X1 cells:       17
-ABC RESULTS:           NAND3X1 cells:        9
-ABC RESULTS:            NOR2X1 cells:       12
-ABC RESULTS:            NOR3X1 cells:        7
-ABC RESULTS:           OAI21X1 cells:        8
-ABC RESULTS:           XNOR2X1 cells:       14
-ABC RESULTS:            XOR2X1 cells:        6
-ABC RESULTS:        internal signals:       60
-ABC RESULTS:           input signals:       33
-ABC RESULTS:          output signals:       33
+ABC RESULTS:            AND2X2 cells:       12
+ABC RESULTS:           AOI21X1 cells:       70
+ABC RESULTS:           AOI22X1 cells:       33
+ABC RESULTS:             BUFX2 cells:        9
+ABC RESULTS:             INVX1 cells:      226
+ABC RESULTS:            MUX2X1 cells:       14
+ABC RESULTS:           NAND2X1 cells:      235
+ABC RESULTS:           NAND3X1 cells:       19
+ABC RESULTS:            NOR2X1 cells:      157
+ABC RESULTS:           OAI21X1 cells:      302
+ABC RESULTS:           OAI22X1 cells:       13
+ABC RESULTS:             OR2X2 cells:       22
+ABC RESULTS:           XNOR2X1 cells:      110
+ABC RESULTS:            XOR2X1 cells:       34
+ABC RESULTS:          _const0_ cells:        1
+ABC RESULTS:          _const1_ cells:        1
+ABC RESULTS:        internal signals:     1060
+ABC RESULTS:           input signals:      166
+ABC RESULTS:          output signals:      182
 Removing temp directory.
 
 7. Executing FLATTEN pass (flatten design).
 No more expansions possible.
 
 8. Executing SETUNDEF pass (replace undef values with defined constants).
-Removed 0 unused cells and 144 unused wires.
+Removed 22 unused cells and 1425 unused wires.
 
 9. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
-Don't map input port cordic.clk: Missing option -inpad.
-Mapping port cordic.cosine using BUFX2.
-Don't map input port cordic.rst: Missing option -inpad.
-Mapping port cordic.sine using BUFX2.
-Don't map input port cordic.theta: Missing option -inpad.
+Don't map input port sincos.clk: Missing option -inpad.
+Mapping port sincos.cosine using BUFX2.
+Mapping port sincos.done using BUFX2.
+Don't map input port sincos.rst: Missing option -inpad.
+Mapping port sincos.sine using BUFX2.
+Don't map input port sincos.theta: Missing option -inpad.
 
 10. Executing OPT pass (performing simple optimizations).
 
 10.1. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 10.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \cordic..
+Running muxtree optimizer on module \sincos..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
 10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \cordic.
+  Optimizing cells in module \sincos.
 Performed a total of 0 changes.
 
 10.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\cordic'.
+Finding identical cells in module `\sincos'.
 Removed a total of 0 cells.
 
 10.6. Executing OPT_RMDFF pass (remove dff with constant values).
 
 10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \sincos..
 
 10.8. Executing OPT_EXPR pass (perform const folding).
-Optimizing module cordic.
+Optimizing module sincos.
 
 10.9. Finished OPT passes. (There is nothing left to do.)
 
@@ -840,127 +1167,127 @@ Optimizing module cordic.
 
 12. Printing statistics.
 
-=== cordic ===
+=== sincos ===
 
-   Number of wires:                 80
-   Number of wire bits:            185
-   Number of public wires:          80
-   Number of public wire bits:     185
+   Number of wires:               1139
+   Number of wire bits:           1496
+   Number of public wires:        1139
+   Number of public wire bits:    1496
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                167
-     AND2X2                          6
-     AOI21X1                         1
-     BUFX2                          32
-     DFFSR                          32
-     INVX1                          23
-     NAND2X1                        17
-     NAND3X1                         9
-     NOR2X1                         12
-     NOR3X1                          7
-     OAI21X1                         8
-     XNOR2X1                        14
-     XOR2X1                          6
+   Number of cells:               1449
+     AND2X2                         12
+     AOI21X1                        70
+     AOI22X1                        33
+     BUFX2                          26
+     DFFPOSX1                      174
+     DFFSR                          17
+     INVX1                         225
+     MUX2X1                         13
+     NAND2X1                       233
+     NAND3X1                        19
+     NOR2X1                        156
+     OAI21X1                       299
+     OAI22X1                        12
+     OR2X2                          22
+     XNOR2X1                       104
+     XOR2X1                         34
 
-Warnings: 3 unique messages, 3 total
-End of script. Logfile hash: 9d2ac6e1ba
-CPU: user 1.01s system 0.08s, MEM: 22.41 MB total, 15.93 MB resident
+Warnings: 5 unique messages, 5 total
+End of script. Logfile hash: 0c230467d3
+CPU: user 3.55s system 0.12s, MEM: 42.39 MB total, 32.55 MB resident
 Yosys 0.9 (git sha1 1979e0b)
-Time spent: 17% 18x opt_expr (0 sec), 17% 18x opt_clean (0 sec), ...
+Time spent: 21% 23x opt_clean (0 sec), 20% 22x opt_merge (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef
 Cleaning up output syntax
-ypostproc.tcl cordic_mapped.blif cordic /usr/local/share/qflow/tech/osu035/osu035.sh vdd gnd 
+ypostproc.tcl sincos_mapped.blif sincos /usr/local/share/qflow/tech/osu035/osu035.sh vdd gnd 
 Cleaning up blif file syntax
 Running blifFanout (iterative)
 Each iteration calls:
-blifFanout -l 200 -c 30 -I cordic_nofanout -s nullstring -p /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y tmp.blif cordic.blif
+blifFanout -l 200 -c 30 -I sincos_nofanout -s nullstring -p /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y tmp.blif sincos.blif
 
 blifFanout for qflow 1.3.17
 Parsing library "osu035_stdcells"
 End of library at line 6636
 Lib Read:  Processed 6637 lines.
-Top internal fanout is 32 (load 1128.79) from node _2_,
+Top internal fanout is 23 (load 772.696) from node _599_,
 driven by INVX1 with strength 102.797 (fF driven at latency 200)
-Top fanout load-to-strength ratio is 10.9808 (latency = 2196.15 ps)
-Top input node fanout is 32 (load 430.301) from node clk.
-Warning 1: load of 154.202 is 1.52156 times greater than strongest gate NAND3X1
+Top fanout load-to-strength ratio is 5.33544 (latency = 1067.09 ps)
+Top input node fanout is 191 (load 7278.35) from node clk.
+Warning 1: load of 122.544 is 1.12751 times greater than strongest gate NOR2X1
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-Warning 7: load of 194.884 is 1.89369 times greater than strongest gate DFFSR
-Warning 10: load of 224.605 is 2.18249 times greater than strongest gate DFFSR
-Warning 11: load of 251.445 is 2.44329 times greater than strongest gate DFFSR
-Warning 22: load of 294.996 is 2.86648 times greater than strongest gate DFFSR
-41 gates exceed specified minimum load.
-10 buffers were added.
-1 gates were changed.
+Warning 2: load of 247.447 is 1.1906 times greater than strongest gate OR2X2
+Warning 4: load of 136.205 is 1.2532 times greater than strongest gate NOR2X1
+Warning 7: load of 180.949 is 1.65573 times greater than strongest gate XNOR2X1
+Warning 43: load of 201.227 is 1.84103 times greater than strongest gate XOR2X1
+Warning 69: load of 220.914 is 2.02114 times greater than strongest gate XOR2X1
+Warning 114: load of 671.002 is 2.13951 times greater than strongest gate DFFPOSX1
+Warning 122: load of 782.696 is 2.49565 times greater than strongest gate DFFPOSX1
+Warning 169: load of 286.789 is 2.78673 times greater than strongest gate DFFSR
+182 gates exceed specified minimum load.
+49 buffers were added.
+39 gates were changed.
 
 Gate counts by drive strength:
 
-	"" gates	In: 32    	Out: 32    	+0
-	"1" gates	In: 97    	Out: 96    	-1
-	"2" gates	In: 38    	Out: 38    	+0
+	"" gates	In: 17    	Out: 17    	+0
+	"1" gates	In: 1372    	Out: 1333    	-39
+	"2" gates	In: 84    	Out: 111    	+27
 
-Number of gates changed: 11
-gates resized: 11
+Number of gates changed: 88
+gates resized: 88
 blifFanout for qflow 1.3.17
 Parsing library "osu035_stdcells"
 End of library at line 6636
 Lib Read:  Processed 6637 lines.
-Top internal fanout is 7 (load 462.716) from node _2__bF$buf4,
-driven by BUFX2 with strength 208.34 (fF driven at latency 200)
-Top fanout load-to-strength ratio is 2.76931 (latency = 553.862 ps)
-Top input node fanout is 5 (load 274.602) from node clk.
-Warning 1: load of 472.716 is 1.13154 times greater than strongest gate CLKBUF1
+Top internal fanout is 16 (load 949.256) from node z[5][7],
+driven by DFFPOSX1 with strength 313.624 (fF driven at latency 200)
+Top fanout load-to-strength ratio is 2.68956 (latency = 537.913 ps)
+Top input node fanout is 13 (load 713.966) from node clk.
+Warning 1: load of 959.256 is 2.29617 times greater than strongest gate CLKBUF1
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-Warning 6: load of 154.202 is 1.52156 times greater than strongest gate NAND3X1
-Warning 11: load of 194.884 is 1.89369 times greater than strongest gate DFFSR
-Warning 14: load of 224.605 is 2.18249 times greater than strongest gate DFFSR
-Warning 15: load of 251.445 is 2.44329 times greater than strongest gate DFFSR
-Warning 26: load of 294.996 is 2.86648 times greater than strongest gate DFFSR
-45 gates exceed specified minimum load.
+Warning 181: load of 286.789 is 2.78673 times greater than strongest gate DFFSR
+194 gates exceed specified minimum load.
 0 buffers were added.
-5 gates were changed.
+27 gates were changed.
 
 Gate counts by drive strength:
 
-	"" gates	In: 32    	Out: 32    	+0
-	"1" gates	In: 101    	Out: 101    	+0
-	"2" gates	In: 43    	Out: 38    	-5
-	"8" gates	In: 1    	Out: 1    	+0
+	"" gates	In: 17    	Out: 17    	+0
+	"1" gates	In: 1346    	Out: 1346    	+0
+	"2" gates	In: 147    	Out: 120    	-27
+	"4" gates	In: 8    	Out: 35    	+27
+	"8" gates	In: 4    	Out: 4    	+0
 
-Number of gates changed: 5
-gates resized: 5
+Number of gates changed: 27
+gates resized: 27
 blifFanout for qflow 1.3.17
 Parsing library "osu035_stdcells"
 End of library at line 6636
 Lib Read:  Processed 6637 lines.
-Top internal fanout is 7 (load 494.673) from node _2__bF$buf4,
-driven by BUFX4 with strength 413.451 (fF driven at latency 200)
-Top fanout load-to-strength ratio is 2.76931 (latency = 553.862 ps)
-Top input node fanout is 5 (load 274.602) from node clk.
-Warning 1: load of 472.716 is 1.13154 times greater than strongest gate CLKBUF1
+Top internal fanout is 16 (load 949.256) from node z[5][7],
+driven by DFFPOSX1 with strength 313.624 (fF driven at latency 200)
+Top fanout load-to-strength ratio is 2.68956 (latency = 537.913 ps)
+Top input node fanout is 13 (load 713.966) from node clk.
+Warning 1: load of 959.256 is 2.29617 times greater than strongest gate CLKBUF1
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-Warning 6: load of 504.673 is 1.22064 times greater than strongest gate BUFX4
-Warning 11: load of 154.202 is 1.52156 times greater than strongest gate NAND3X1
-Warning 16: load of 194.884 is 1.89369 times greater than strongest gate DFFSR
-Warning 19: load of 224.605 is 2.18249 times greater than strongest gate DFFSR
-Warning 20: load of 251.445 is 2.44329 times greater than strongest gate DFFSR
-Warning 31: load of 294.996 is 2.86648 times greater than strongest gate DFFSR
-50 gates exceed specified minimum load.
+Warning 184: load of 286.789 is 2.78673 times greater than strongest gate DFFSR
+197 gates exceed specified minimum load.
 0 buffers were added.
 0 gates were changed.
 
 Gate counts by drive strength:
 
-	"" gates	In: 32    	Out: 32    	+0
-	"1" gates	In: 101    	Out: 101    	+0
-	"2" gates	In: 38    	Out: 38    	+0
-	"4" gates	In: 5    	Out: 5    	+0
-	"8" gates	In: 1    	Out: 1    	+0
+	"" gates	In: 17    	Out: 17    	+0
+	"1" gates	In: 1346    	Out: 1346    	+0
+	"2" gates	In: 120    	Out: 120    	+0
+	"4" gates	In: 35    	Out: 35    	+0
+	"8" gates	In: 4    	Out: 4    	+0
 
 Number of gates changed: 0
 gates resized: 0
@@ -968,14 +1295,14 @@ gates resized: 0
 Generating RTL verilog and SPICE netlist file in directory
 	 /home/tombert/qflow_projects/sin_cos/synthesis
 Files:
-   Verilog: /home/tombert/qflow_projects/sin_cos/synthesis/cordic.rtl.v
-   Verilog: /home/tombert/qflow_projects/sin_cos/synthesis/cordic.rtlnopwr.v
-   Verilog: /home/tombert/qflow_projects/sin_cos/synthesis/cordic.rtlbb.v
-   Spice:   /home/tombert/qflow_projects/sin_cos/synthesis/cordic.spc
+   Verilog: /home/tombert/qflow_projects/sin_cos/synthesis/sincos.rtl.v
+   Verilog: /home/tombert/qflow_projects/sin_cos/synthesis/sincos.rtlnopwr.v
+   Verilog: /home/tombert/qflow_projects/sin_cos/synthesis/sincos.rtlbb.v
+   Spice:   /home/tombert/qflow_projects/sin_cos/synthesis/sincos.spc
 
 Running blif2Verilog.
 Running blif2BSpice.
 Running spi2xspice.py
-spi2xspice.py "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" cordic.spc cordic.xspice
+spi2xspice.py "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" sincos.spc sincos.xspice
 
-Synthesis script ended on Mon Feb 24 13:02:29 IST 2025
+Synthesis script ended on Thu Apr 10 02:04:09 IST 2025

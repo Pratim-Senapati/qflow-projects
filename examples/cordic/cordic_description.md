@@ -4,22 +4,24 @@ This project implements a CORDIC (COordinate Rotation DIgital Computer) algorith
 ## ✅ Key Features:
 - Input:
 
-	- `theta`: The input angle in radians, represented as a 16-bit fixed-point number.
+	- `theta`: The input angle in radians, represented as a 8-bit fixed-point number.
 
 	- `clk`: Clock signal for sequential operations.
 
-	- `reset`: Resets the module.
+	- `rst`: Resets the module and initializes values.
 
 - Output:
 
-	- `sine`: Sine of the input angle (16-bit fixed-point format).
+	- `sine`: Sine of the input angle (8-bit fixed-point format).
 
-	- `cosine`: Cosine of the input angle (16-bit fixed-point format).
+	- `cosine`: Cosine of the input angle (8-bit fixed-point format).
+
+	- `done`: Goes high when value is at output port.
 
 ## ⚙️ Algorithm Workflow:
 1. Initialization:
 
-	- The angle is compared against predefined arctangent values (look-up table).
+	- Arctangent values are calculated and stored for iterative operations in Look-Up Table.
 
 2. Iterations:
 
@@ -29,7 +31,7 @@ This project implements a CORDIC (COordinate Rotation DIgital Computer) algorith
 
 3. Output:
 
-	- The final sine and cosine values are generated in fixed-point format with 16-bit precision.
+	- The final sine and cosine values are generated in fixed-point format with 8-bit precision.
 
 ## 🔥 Usage:
 - This module demonstrates fixed-point arithmetic, efficient trigonometric calculations, and iterative algorithms in Verilog.
