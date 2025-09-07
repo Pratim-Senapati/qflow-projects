@@ -12,9 +12,7 @@ This project implements a 4-point Fast Fourier Transform (FFT) in Verilog, desig
 
 	- Stage 2: Applies complex multiplication using pre-defined twiddle factors (Wn) to rotate data in the complex plane.
 
-- **Magnitude Calculation:** The final output combines the real and imaginary parts into a single magnitude value using the formula:
-
-	- Magnitude = sqrt(Real^2 + Imag^2)
+- **Magnitude Calculation:** The magnitude for each complex sample is approximated using the efficient `max(|real|, |imag|) + 0.5 * min(|real|, |imag|)` algorithm, which closely estimates the result of `sqrt(Real^2 + Imag^2)` with minimal error.
 
 ## 🔥 Usage:
 - This module demonstrates digital signal processing (DSP) concepts in Verilog, covering complex arithmetic and efficient data manipulation.
